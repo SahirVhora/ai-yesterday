@@ -186,7 +186,7 @@
     }
     .primary { background: var(--accent); color: #111; border-color: var(--accent); }
     .secondary { background: rgba(255,255,255,0.03); color: var(--text2); }
-    .stats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; margin: 22px 0; }
+    .stats { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 14px; margin: 22px 0; }
     .stat {
       background: var(--card);
       border: 1px solid var(--border);
@@ -221,6 +221,19 @@
     .timeline { display: grid; gap: 10px; }
     .timeline-item { display: grid; grid-template-columns: 110px 1fr; gap: 14px; align-items: start; padding: 14px; border: 1px solid var(--border); border-radius: var(--radius); background: var(--card); }
     .date-badge { color: var(--accent2); font-family: 'SF Mono', 'Cascadia Code', monospace; font-size: 12px; }
+    .trend-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+    .trend-card, .source-card, .category-card { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 16px; }
+    .category-card { color: var(--text); text-align: left; cursor: pointer; font: inherit; transition: all 0.2s ease; }
+    .category-card:hover { background: var(--card2); border-color: rgba(200,168,78,0.36); transform: translateY(-2px); }
+    .trend-card strong, .category-card strong { display: block; font-size: 18px; margin-bottom: 8px; color: var(--text); }
+    .trend-card p, .category-card p { margin: 8px 0 0; color: var(--muted); line-height: 1.45; }
+    .trend-metrics { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+    .metric-pill { border: 1px solid var(--border); border-radius: 999px; padding: 4px 8px; color: var(--text2); font-size: 11px; background: rgba(255,255,255,0.03); }
+    .source-list { display: grid; gap: 10px; }
+    .source-card { display: grid; grid-template-columns: 1.3fr 0.7fr 0.7fr 0.7fr; gap: 12px; align-items: center; }
+    .source-score { color: var(--accent2); font-family: 'SF Mono', 'Cascadia Code', monospace; font-weight: 700; }
+    .category-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+    .category-count { color: var(--accent2); font-family: 'SF Mono', 'Cascadia Code', monospace; font-size: 24px; }
     .empty { border: 1px dashed var(--border); color: var(--muted); padding: 28px; border-radius: var(--radius); text-align: center; }
     mark.highlight { background: rgba(200,168,78,0.35); color: inherit; border-radius: 3px; padding: 0 2px; }
     @media (max-width: 900px) { .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
@@ -233,7 +246,8 @@
       .content { padding: 24px 16px 70px; }
       .hero { padding: 26px; }
       .stats { grid-template-columns: 1fr; }
-      .timeline-item { grid-template-columns: 1fr; }
+      .timeline-item, .source-card { grid-template-columns: 1fr; }
+      .trend-grid, .category-grid { grid-template-columns: 1fr; }
     }
     @media print {
       .sidebar, .topbar, .mobile-menu, .hero-actions { display: none; }
@@ -254,6 +268,9 @@
     <div class="search"><input id="search" placeholder="Search everything..." autocomplete="off"></div>
     <div class="nav-title">Views</div>
     <a class="nav-link" href="#today">Yesterday <span class="pill" id="navCount">0</span></a>
+    <a class="nav-link" href="#trends">Weekly trends <span class="pill">New</span></a>
+    <a class="nav-link" href="#categories">Category pages <span class="pill">Live</span></a>
+    <a class="nav-link" href="#sources">Sources <span class="pill">Quality</span></a>
     <a class="nav-link" href="#timeline">History <span class="pill">Archive</span></a>
     <div class="nav-title">Importance</div>
     <button class="filter-btn active" data-filter="all">All signals <span class="pill">All</span></button>
@@ -278,6 +295,7 @@
           <p>Every morning this page can collect yesterday's most useful AI developments, translate them into simple language, flag what actually matters, and keep the archive searchable.</p>
           <div class="hero-actions">
             <a class="primary" href="#today">Read yesterday's briefing</a>
+            <a class="secondary" href="#trends">See weekly trends</a>
             <a class="secondary" href="#timeline">Browse history</a>
           </div>
         </div>
@@ -288,6 +306,8 @@
         <div class="stat"><strong id="statCritical">0</strong><span>Critical items</span></div>
         <div class="stat"><strong id="statSources">0</strong><span>Sources monitored</span></div>
         <div class="stat"><strong id="statScanned">0</strong><span>Feed items scanned</span></div>
+        <div class="stat"><strong id="statEngine">Rules</strong><span>Summary engine</span></div>
+        <div class="stat"><strong id="statTopCategory">-</strong><span>Top weekly theme</span></div>
       </section>
 
       <section id="today">
@@ -298,6 +318,36 @@
           </div>
         </div>
         <div class="cards" id="cards"></div>
+      </section>
+
+      <section id="trends">
+        <div class="section-head">
+          <div>
+            <h3>Weekly trend view</h3>
+            <p>Rolling seven-day category signals built from archived daily digests.</p>
+          </div>
+        </div>
+        <div class="trend-grid" id="trendList"></div>
+      </section>
+
+      <section id="categories">
+        <div class="section-head">
+          <div>
+            <h3>Category pages</h3>
+            <p>Quick entry points for models, products, research, business and policy.</p>
+          </div>
+        </div>
+        <div class="category-grid" id="categoryPages"></div>
+      </section>
+
+      <section id="sources">
+        <div class="section-head">
+          <div>
+            <h3>Source quality</h3>
+            <p>Tracks which feeds are useful, noisy or unavailable.</p>
+          </div>
+        </div>
+        <div class="source-list" id="sourceQuality"></div>
       </section>
 
       <section id="timeline">
@@ -313,7 +363,7 @@
   </main>
 
   <script>
-    const state = { allItems: [], visibleItems: [], metadata: {}, importance: 'all', category: 'all', query: '' };
+    const state = { allItems: [], visibleItems: [], metadata: {}, importance: 'all', category: 'all', query: '', weeklyTrends: [], sourceQuality: [] };
     const fallbackData = {
       metadata: { name: 'AI Yesterday', generated_at: new Date().toISOString(), coverage_date: '2026-06-03', source_count: 10, feed_items_scanned: 0, item_count: 3, mode: 'inline_demo' },
       categories: ['Models', 'Products', 'Policy'],
@@ -321,6 +371,14 @@
         { title: 'OpenAI, Anthropic, Google and open-source labs continue rapid model and agent releases', source: 'Demo', url: 'https://openai.com/news/', published: '2026-06-03T09:00:00Z', category: 'Models', importance: 'Critical', score: 96, summary: 'In simple terms, AI assistants are becoming better at doing multi-step work, not just answering questions.', why_it_matters: 'Track this closely because it may affect products, skills, costs or competitive advantage within weeks.' },
         { title: 'AI coding tools keep moving from autocomplete to autonomous development', source: 'Demo', url: 'https://github.blog/ai-and-ml/', published: '2026-06-03T12:30:00Z', category: 'Products', importance: 'High', score: 88, summary: 'Developer tools are increasingly able to plan, edit, test and explain code changes.', why_it_matters: 'Small teams can build faster, but review, testing and security checks become more important.' },
         { title: 'AI regulation and safety debates are becoming part of normal product planning', source: 'Demo', url: 'https://www.technologyreview.com/topic/artificial-intelligence/', published: '2026-06-03T16:00:00Z', category: 'Policy', importance: 'Medium', score: 72, summary: 'Governments and companies are paying closer attention to how AI systems are tested, explained and controlled.', why_it_matters: 'Businesses using AI need simple governance: what data is used, who checks outputs, and where humans stay accountable.' }
+      ],
+      weekly_trends: [
+        { category: 'Models', items: 2, critical: 1, average_score: 86, source_count: 3, plain_english: 'Models produced one critical signal. This is worth watching closely this week.' },
+        { category: 'Products', items: 1, critical: 0, average_score: 78, source_count: 1, plain_english: 'Products has a lighter signal this week. Useful context, but not the main priority.' }
+      ],
+      source_quality: [
+        { name: 'OpenAI', tier: 5, feed_items_scanned: 20, selected_items: 2, signal_ratio: 0.1, quality_score: 74, status: 'active' },
+        { name: 'MIT Technology Review AI', tier: 4, feed_items_scanned: 12, selected_items: 1, signal_ratio: 0.083, quality_score: 47, status: 'active' }
       ]
     };
 
@@ -351,6 +409,8 @@
     function applyData(data) {
       state.allItems = data.items || [];
       state.metadata = data.metadata || {};
+      state.weeklyTrends = data.weekly_trends || [];
+      state.sourceQuality = data.source_quality || [];
       state.categories = data.categories || [...new Set(state.allItems.map(i => i.category || 'Signals'))];
       document.getElementById('coverageDate').textContent = 'Coverage: ' + formatDate(state.metadata.coverage_date);
       document.getElementById('generatedAt').textContent = 'Generated: ' + formatTime(state.metadata.generated_at);
@@ -380,6 +440,8 @@
       document.getElementById('statCritical').textContent = state.allItems.filter(i => i.importance === 'Critical').length;
       document.getElementById('statSources').textContent = state.metadata.source_count || 0;
       document.getElementById('statScanned').textContent = state.metadata.feed_items_scanned || 0;
+      document.getElementById('statEngine').textContent = state.metadata.summary_engine === 'openrouter' ? 'AI' : 'Rules';
+      document.getElementById('statTopCategory').textContent = state.weeklyTrends[0]?.category || '-';
       document.getElementById('navCount').textContent = state.allItems.length;
       const cards = document.getElementById('cards');
       if (!state.visibleItems.length) {
@@ -388,7 +450,7 @@
         cards.innerHTML = state.visibleItems.map(item => `
           <article class="news-card" data-card>
             <div class="card-top">
-              <div class="meta"><span>${escapeHtml(item.category)}</span><span>${escapeHtml(item.source)}</span><span>${formatDate(item.published)}</span></div>
+              <div class="meta"><span>${escapeHtml(item.category)}</span><span>${escapeHtml(item.source)}</span><span>${formatDate(item.published)}</span><span>${item.summary_engine === 'openrouter' ? 'AI summary' : 'Rules summary'}</span></div>
               <span class="tag ${escapeHtml(item.importance)}">${escapeHtml(item.importance)} · ${escapeHtml(item.score)}</span>
             </div>
             <h4>${highlight(item.title)}</h4>
@@ -398,6 +460,9 @@
           </article>`).join('');
       }
       renderTimeline();
+      renderTrends();
+      renderCategoryPages();
+      renderSources();
     }
     function renderTimeline() {
       const grouped = {};
@@ -410,6 +475,59 @@
         <div class="timeline-item">
           <div class="date-badge">${formatDate(date)}</div>
           <div><strong>${items.length} AI signals</strong><br><span class="meta">${items.filter(i => i.importance === 'Critical').length} critical · ${items.map(i => i.category).filter((v,i,a) => a.indexOf(v) === i).join(', ')}</span></div>
+        </div>`).join('');
+    }
+    function renderTrends() {
+      const el = document.getElementById('trendList');
+      if (!state.weeklyTrends.length) {
+        el.innerHTML = '<div class="empty">Weekly trends will appear after the first archived digest.</div>';
+        return;
+      }
+      el.innerHTML = state.weeklyTrends.map(row => `
+        <div class="trend-card">
+          <strong>${escapeHtml(row.category)}</strong>
+          <p>${escapeHtml(row.plain_english)}</p>
+          <div class="trend-metrics">
+            <span class="metric-pill">${escapeHtml(row.items)} items</span>
+            <span class="metric-pill">${escapeHtml(row.critical)} critical</span>
+            <span class="metric-pill">avg score ${escapeHtml(row.average_score)}</span>
+            <span class="metric-pill">${escapeHtml(row.source_count)} sources</span>
+          </div>
+        </div>`).join('');
+    }
+    function renderCategoryPages() {
+      const el = document.getElementById('categoryPages');
+      const categories = state.categories.map(cat => {
+        const items = state.allItems.filter(item => item.category === cat);
+        const critical = items.filter(item => item.importance === 'Critical').length;
+        const top = items[0]?.title || 'No current signal';
+        return { cat, items, critical, top };
+      });
+      el.innerHTML = categories.map(row => `
+        <button class="category-card" data-category-card="${escapeHtml(row.cat)}">
+          <span class="category-count">${row.items.length}</span>
+          <strong>${escapeHtml(row.cat)}</strong>
+          <p>${row.critical} critical · Top signal: ${escapeHtml(row.top)}</p>
+        </button>`).join('');
+      el.querySelectorAll('[data-category-card]').forEach(btn => btn.addEventListener('click', () => {
+        state.category = btn.dataset.categoryCard;
+        updateActiveButtons();
+        render();
+        document.getElementById('today').scrollIntoView({ behavior: 'smooth' });
+      }));
+    }
+    function renderSources() {
+      const el = document.getElementById('sourceQuality');
+      if (!state.sourceQuality.length) {
+        el.innerHTML = '<div class="empty">Source quality data will appear after the collector runs.</div>';
+        return;
+      }
+      el.innerHTML = state.sourceQuality.map(src => `
+        <div class="source-card">
+          <div><strong>${escapeHtml(src.name)}</strong><br><span class="meta">${escapeHtml(src.status)} · tier ${escapeHtml(src.tier)}</span></div>
+          <div><span class="source-score">${escapeHtml(src.quality_score)}</span><br><span class="meta">quality</span></div>
+          <div><strong>${escapeHtml(src.selected_items)}</strong><br><span class="meta">selected</span></div>
+          <div><strong>${escapeHtml(src.feed_items_scanned)}</strong><br><span class="meta">scanned</span></div>
         </div>`).join('');
     }
     document.querySelectorAll('[data-filter]').forEach(btn => btn.addEventListener('click', () => { state.importance = btn.dataset.filter; updateActiveButtons(); render(); }));

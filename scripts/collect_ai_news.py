@@ -7,6 +7,7 @@ from __future__ import annotations
 import email.utils
 import html
 import json
+import os
 import re
 import sys
 import urllib.request
@@ -16,6 +17,9 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "data" / "digest.json"
+HISTORY_DIR = ROOT / "data" / "history"
+OPENROUTER_MODEL = os.environ.get("OPENROUTER_MODEL", "meta-llama/llama-3.1-8b-instruct:free")
+OPENROUTER_KEY = os.environ.get("OPENROUTER_API_KEY")
 
 SOURCES = [
     {"name": "OpenAI", "url": "https://openai.com/news/rss.xml", "tier": 5},
@@ -160,6 +164,123 @@ def why_it_matters(category: str, imp: str) -> str:
     return "Good trend signal. Save it if it connects to your work, learning or product ideas."
 
 
+def source_quality(source: dict, feed_items: list[dict], selected_count: int) -> dict:
+    scanned = len(feed_items)
+    signal_ratio = round(selected_count / scanned, 3) if scanned else 0
+    quality = source["tier"] * 10 + selected_count * 7
+    if scanned > 300 and selected_count < 2:
+        quality -= 8
+    if selected_count >= 3:
+        quality += 10
+    return {
+        "name": source["name"],
+        "tier": source["tier"],
+        "feed_items_scanned": scanned,
+        "selected_items": selected_count,
+        "signal_ratio": signal_ratio,
+        "quality_score": max(0, min(100, quality)),
+        "status": "active" if scanned else "unavailable",
+    }
+
+
+def call_openrouter(item: dict) -> dict | None:
+    if not OPENROUTER_KEY:
+        return None
+    prompt = (
+        "Rewrite this AI news item for a non-technical reader. Return compact JSON with "
+        "summary and why_it_matters. No markdown. Keep each field under 35 words.\n\n"
+        f"Title: {item['title']}\nSource: {item['source']}\nCategory: {item['category']}\n"
+        f"Existing summary: {item['summary']}"
+    )
+    body = json.dumps({
+        "model": OPENROUTER_MODEL,
+        "messages": [
+            {"role": "system", "content": "You explain AI news in simple, useful British English."},
+            {"role": "user", "content": prompt},
+        ],
+        "temperature": 0.2,
+        "max_tokens": 180,
+    }).encode("utf-8")
+    req = urllib.request.Request(
+        "https://openrouter.ai/api/v1/chat/completions",
+        data=body,
+        headers={
+            "Authorization": f"Bearer {OPENROUTER_KEY}",
+            "Content-Type": "application/json",
+            "HTTP-Referer": "https://sahirvhora.github.io/ai-yesterday/",
+            "X-Title": "AI Yesterday",
+        },
+        method="POST",
+    )
+    try:
+        with urllib.request.urlopen(req, timeout=18) as response:
+            payload = json.loads(response.read().decode("utf-8"))
+        content = payload["choices"][0]["message"]["content"]
+        content = content.strip().removeprefix("```json").removesuffix("```").strip()
+        parsed = json.loads(content)
+        if parsed.get("summary") and parsed.get("why_it_matters"):
+            return {"summary": clean_text(parsed["summary"]), "why_it_matters": clean_text(parsed["why_it_matters"])}
+    except Exception as exc:
+        print(f"WARN OpenRouter failed for {item['title'][:50]}: {exc}", file=sys.stderr)
+    return None
+
+
+def enrich_with_openrouter(items: list[dict]) -> int:
+    enriched = 0
+    if not OPENROUTER_KEY:
+        return enriched
+    for item in items[:8]:
+        improved = call_openrouter(item)
+        if improved:
+            item.update(improved)
+            item["summary_engine"] = "openrouter"
+            item["summary_model"] = OPENROUTER_MODEL
+            enriched += 1
+    return enriched
+
+
+def build_weekly_trends(current: dict) -> list[dict]:
+    totals: dict[str, dict] = {}
+    files = sorted(HISTORY_DIR.glob("*.json"))[-6:]
+    datasets = []
+    for path in files:
+        try:
+            datasets.append(json.loads(path.read_text(encoding="utf-8")))
+        except Exception:
+            continue
+    datasets.append(current)
+    for data in datasets:
+        for item in data.get("items", []):
+            category = item.get("category") or "Signals"
+            bucket = totals.setdefault(category, {"category": category, "items": 0, "critical": 0, "score": 0, "sources": set()})
+            bucket["items"] += 1
+            bucket["score"] += int(item.get("score") or 0)
+            bucket["sources"].add(item.get("source") or "Unknown")
+            if item.get("importance") == "Critical":
+                bucket["critical"] += 1
+    trends = []
+    for bucket in totals.values():
+        items = bucket["items"]
+        trends.append({
+            "category": bucket["category"],
+            "items": items,
+            "critical": bucket["critical"],
+            "average_score": round(bucket["score"] / items, 1) if items else 0,
+            "source_count": len(bucket["sources"]),
+            "plain_english": trend_explanation(bucket["category"], items, bucket["critical"]),
+        })
+    trends.sort(key=lambda row: (row["critical"], row["items"], row["average_score"]), reverse=True)
+    return trends[:8]
+
+
+def trend_explanation(category: str, items: int, critical: int) -> str:
+    if critical:
+        return f"{category} produced {critical} critical signal{'s' if critical != 1 else ''}. This is worth watching closely this week."
+    if items >= 5:
+        return f"{category} is a busy area this week. Expect incremental product or research movement rather than one big headline."
+    return f"{category} has a lighter signal this week. Useful context, but not the main priority."
+
+
 def parse_feed(source: dict) -> list[dict]:
     try:
         root = ET.fromstring(fetch(source["url"]))
@@ -209,9 +330,11 @@ def collect() -> dict:
     items = []
     seen = set()
     feed_count = 0
+    source_scores = []
     for source in SOURCES:
         feed_items = parse_feed(source)
         feed_count += len(feed_items)
+        selected_for_source = 0
         for item in feed_items:
             dt = datetime.fromisoformat(item["published"].replace("Z", "+00:00"))
             key = re.sub(r"\W+", "", item["title"].lower())[:90]
@@ -219,13 +342,19 @@ def collect() -> dict:
                 continue
             if start <= dt < end:
                 seen.add(key)
+                selected_for_source += 1
                 items.append(item)
+        source_scores.append(source_quality(source, feed_items, selected_for_source))
     if not items:
         items = FALLBACK_ITEMS
+        source_scores = [{"name": "Fallback sample", "tier": 1, "feed_items_scanned": 0, "selected_items": len(items), "signal_ratio": 1, "quality_score": 25, "status": "fallback"}]
     items.sort(key=lambda x: (x["score"], x["published"]), reverse=True)
     items = items[:24]
+    enriched_count = enrich_with_openrouter(items)
+    for item in items:
+        item.setdefault("summary_engine", "rules")
     categories = sorted({item["category"] for item in items})
-    return {
+    data = {
         "metadata": {
             "name": "AI Yesterday",
             "generated_at": now.isoformat().replace("+00:00", "Z"),
@@ -234,17 +363,27 @@ def collect() -> dict:
             "feed_items_scanned": feed_count,
             "item_count": len(items),
             "mode": "live" if items != FALLBACK_ITEMS else "fallback_sample",
+            "summary_engine": "openrouter" if enriched_count else "rules",
+            "openrouter_items_enriched": enriched_count,
+            "openrouter_model": OPENROUTER_MODEL if enriched_count else None,
         },
         "items": items,
         "categories": categories,
+        "source_quality": sorted(source_scores, key=lambda row: row["quality_score"], reverse=True),
     }
+    data["weekly_trends"] = build_weekly_trends(data)
+    return data
 
 
 def main() -> None:
     OUT.parent.mkdir(parents=True, exist_ok=True)
+    HISTORY_DIR.mkdir(parents=True, exist_ok=True)
     data = collect()
     OUT.write_text(json.dumps(data, indent=2, ensure_ascii=False), encoding="utf-8")
+    history_path = HISTORY_DIR / f"{data['metadata']['coverage_date']}.json"
+    history_path.write_text(json.dumps(data, indent=2, ensure_ascii=False), encoding="utf-8")
     print(f"Wrote {OUT} with {data['metadata']['item_count']} items ({data['metadata']['mode']})")
+    print(f"Archived {history_path}")
 
 
 if __name__ == "__main__":

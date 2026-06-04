@@ -1,111 +1,153 @@
 #!/usr/bin/env python3
-from PIL import Image, ImageDraw, ImageFont, ImageFilter
-from pathlib import Path
+from __future__ import annotations
+
 import math
+from pathlib import Path
+from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
 ROOT = Path(__file__).resolve().parents[1]
-OUT = ROOT / "preview.png"
 W, H = 1280, 640
-
-BG = (9, 13, 20)
-CARD = (17, 22, 32)
-CARD2 = (23, 28, 40)
-GOLD = (200, 168, 78)
-GOLD2 = (240, 207, 106)
-TEXT = (230, 233, 240)
-MUTED = (155, 163, 178)
-BLUE = (105, 167, 255)
-RED = (255, 93, 115)
-GREEN = (80, 209, 141)
-
 FONT_BOLD = "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"
 FONT_REG = "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"
 FONT_MONO = "/usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf"
 
-def font(path, size):
+
+def font(path: str, size: int) -> ImageFont.FreeTypeFont:
     return ImageFont.truetype(path, size)
 
-def rounded(draw, xy, r, fill, outline=None, width=1):
+
+def rr(draw: ImageDraw.ImageDraw, xy: tuple[int, int, int, int], r: int, fill, outline=None, width: int = 1) -> None:
     draw.rounded_rectangle(xy, radius=r, fill=fill, outline=outline, width=width)
 
-def gradient_bg():
-    img = Image.new("RGB", (W, H), BG)
+
+def text(draw: ImageDraw.ImageDraw, xy: tuple[int, int], value: str, size: int, fill, bold: bool = False, mono: bool = False) -> None:
+    draw.text(xy, value, font=font(FONT_MONO if mono else FONT_BOLD if bold else FONT_REG, size), fill=fill)
+
+
+def glow_background(base: tuple[int, int, int], glow_points: list[tuple[int, int, tuple[int, int, int], float]]) -> Image.Image:
+    img = Image.new("RGB", (W, H), base)
     px = img.load()
     for y in range(H):
         for x in range(W):
-            dx = x - 160
-            dy = y - 80
-            glow = max(0, 1 - math.sqrt(dx*dx + dy*dy) / 650)
-            dx2 = x - 1080
-            dy2 = y - 520
-            glow2 = max(0, 1 - math.sqrt(dx2*dx2 + dy2*dy2) / 520)
-            r = int(BG[0] + glow * 42 + glow2 * 20)
-            g = int(BG[1] + glow * 34 + glow2 * 35)
-            b = int(BG[2] + glow * 10 + glow2 * 68)
-            px[x, y] = (min(r,255), min(g,255), min(b,255))
+            r, g, b = base
+            for gx, gy, color, radius in glow_points:
+                dist = math.sqrt((x - gx) ** 2 + (y - gy) ** 2)
+                strength = max(0.0, 1.0 - dist / radius) ** 1.8
+                r += int(color[0] * strength)
+                g += int(color[1] * strength)
+                b += int(color[2] * strength)
+            px[x, y] = (min(r, 255), min(g, 255), min(b, 255))
     return img
 
-img = gradient_bg()
-d = ImageDraw.Draw(img)
 
-# grid
-for x in range(0, W, 48):
-    d.line([(x, 0), (x, H)], fill=(255, 255, 255, 10), width=1)
-for y in range(0, H, 48):
-    d.line([(0, y), (W, y)], fill=(255, 255, 255, 10), width=1)
+def add_noise_grid(img: Image.Image, line=(255, 255, 255, 14), step: int = 44) -> None:
+    d = ImageDraw.Draw(img, "RGBA")
+    for x in range(0, W, step):
+        d.line([(x, 0), (x, H)], fill=line, width=1)
+    for y in range(0, H, step):
+        d.line([(0, y), (W, y)], fill=line, width=1)
 
-# orbital rings
-for i, color in enumerate([(200,168,78,70), (105,167,255,45), (255,255,255,24)]):
-    overlay = Image.new("RGBA", (W,H), (0,0,0,0))
-    od = ImageDraw.Draw(overlay)
-    od.ellipse((745-i*24, 92-i*24, 1215+i*24, 562+i*24), outline=color, width=2)
-    img = Image.alpha_composite(img.convert("RGBA"), overlay).convert("RGB")
-    d = ImageDraw.Draw(img)
 
-# main glass card
-shadow = Image.new("RGBA", (W,H), (0,0,0,0))
-sd = ImageDraw.Draw(shadow)
-sd.rounded_rectangle((72, 72, 790, 558), radius=34, fill=(0,0,0,110))
-shadow = shadow.filter(ImageFilter.GaussianBlur(22))
-img = Image.alpha_composite(img.convert("RGBA"), shadow).convert("RGB")
-d = ImageDraw.Draw(img)
-rounded(d, (72, 72, 790, 558), 34, CARD, (45, 51, 65), 2)
+def save(img: Image.Image, filename: str) -> None:
+    out = ROOT / filename
+    img.save(out, "PNG", optimize=True)
+    print(out)
 
-# badge
-d.rounded_rectangle((112, 112, 334, 152), radius=20, fill=(200,168,78,26), outline=GOLD)
-d.text((132, 122), "DAILY AI BRIEFING", font=font(FONT_BOLD, 18), fill=GOLD2)
 
-# title
-d.text((112, 188), "AI", font=font(FONT_BOLD, 112), fill=TEXT)
-d.text((112, 296), "Yesterday", font=font(FONT_BOLD, 94), fill=TEXT)
-d.rectangle((116, 405, 468, 413), fill=GOLD)
+def variant_linear() -> Image.Image:
+    img = glow_background((2, 3, 6), [(210, 100, (70, 55, 160), 650), (1110, 520, (28, 60, 125), 520)])
+    add_noise_grid(img, (255, 255, 255, 9), 40)
+    d = ImageDraw.Draw(img, "RGBA")
+    for i in range(9):
+        d.arc((700 - i * 26, 70 - i * 14, 1230 + i * 18, 590 + i * 14), 195, 18, fill=(114, 112, 255, 38 - i * 3), width=2)
+    rr(d, (70, 70, 822, 560), 28, (15, 16, 20, 232), (255, 255, 255, 24), 1)
+    rr(d, (110, 110, 308, 146), 18, (94, 106, 210, 70), (130, 143, 255, 90), 1)
+    text(d, (130, 118), "AI INTELLIGENCE", 16, (210, 214, 255), bold=True)
+    text(d, (110, 188), "AI", 108, (247, 248, 248), bold=True)
+    text(d, (110, 292), "Yesterday", 92, (247, 248, 248), bold=True)
+    text(d, (114, 426), "Daily AI developments translated", 31, (208, 214, 224))
+    text(d, (114, 468), "for busy humans.", 31, (208, 214, 224))
+    rr(d, (110, 516, 364, 546), 15, (255, 255, 255, 12), (255, 255, 255, 35), 1)
+    text(d, (128, 523), "sahirvhora.github.io/ai-yesterday", 14, (138, 143, 152), mono=True)
+    labels = [("11", "curated signals", (255, 93, 115)), ("9", "sources monitored", (113, 112, 255)), ("2332", "items scanned", (80, 209, 141))]
+    for idx, (num, label, color) in enumerate(labels):
+        y = 136 + idx * 102
+        rr(d, (878, y, 1176, y + 78), 12, (255, 255, 255, 12), (255, 255, 255, 26), 1)
+        d.ellipse((900, y + 28, 912, y + 40), fill=color)
+        text(d, (930, y + 13), num, 31, color, mono=True)
+        text(d, (930, y + 50), label, 17, (138, 143, 152))
+    rr(d, (878, 466, 1176, 542), 12, (94, 106, 210, 52), (130, 143, 255, 58), 1)
+    text(d, (904, 486), "Critical - High - Plain English", 19, (231, 233, 246), bold=True)
+    text(d, (904, 515), "Source links and searchable history", 15, (151, 157, 174))
+    return img.convert("RGB")
 
-# subtitle
-d.text((112, 438), "Yesterday's AI developments", font=font(FONT_REG, 31), fill=(205, 210, 220))
-d.text((112, 478), "translated into plain English.", font=font(FONT_REG, 31), fill=(205, 210, 220))
 
-# right dashboard cards
-cards = [
-    (850, 136, 1158, 214, "11", "curated signals", RED),
-    (850, 238, 1158, 316, "9", "sources monitored", BLUE),
-    (850, 340, 1158, 418, "2332", "items scanned", GOLD2),
-]
-for x1,y1,x2,y2,num,label,color in cards:
-    rounded(d, (x1,y1,x2,y2), 18, CARD2, (48,56,72), 1)
-    d.ellipse((x1+20, y1+24, x1+34, y1+38), fill=color)
-    d.text((x1+52, y1+14), num, font=font(FONT_MONO, 31), fill=color)
-    d.text((x1+52, y1+51), label, font=font(FONT_REG, 18), fill=MUTED)
+def variant_vercel() -> Image.Image:
+    img = Image.new("RGB", (W, H), (250, 250, 250))
+    d = ImageDraw.Draw(img, "RGBA")
+    for i in range(0, W, 64):
+        d.line([(i, 0), (i, H)], fill=(0, 0, 0, 10), width=1)
+    for i in range(0, H, 64):
+        d.line([(0, i), (W, i)], fill=(0, 0, 0, 10), width=1)
+    d.polygon([(878, 88), (1184, 570), (574, 570)], fill=(0, 0, 0, 14))
+    rr(d, (74, 72, 1186, 560), 24, (255, 255, 255, 248), (0, 0, 0, 22), 1)
+    text(d, (116, 114), "AI YESTERDAY", 18, (23, 23, 23), bold=True, mono=True)
+    text(d, (116, 178), "Daily AI news,", 74, (23, 23, 23), bold=True)
+    text(d, (116, 264), "without the noise.", 74, (23, 23, 23), bold=True)
+    text(d, (120, 390), "Plain-English summaries, impact flags, source links", 28, (77, 77, 77))
+    text(d, (120, 430), "and a searchable history of AI developments.", 28, (77, 77, 77))
+    pills = [("Critical", (255, 91, 79)), ("Models", (10, 114, 239)), ("Policy", (222, 29, 141))]
+    x = 118
+    for label, color in pills:
+        rr(d, (x, 500, x + 128, 536), 18, (255, 255, 255, 255), (0, 0, 0, 26), 1)
+        d.ellipse((x + 16, 512, x + 28, 524), fill=color)
+        text(d, (x + 38, 507), label, 16, (23, 23, 23), bold=True)
+        x += 146
+    metrics = [("11", "signals"), ("9", "sources"), ("daily", "updates")]
+    for idx, (num, label) in enumerate(metrics):
+        y = 164 + idx * 92
+        rr(d, (870, y, 1118, y + 64), 10, (255, 255, 255, 255), (0, 0, 0, 28), 1)
+        text(d, (896, y + 10), num, 26, (23, 23, 23), bold=True, mono=True)
+        text(d, (984, y + 17), label, 18, (102, 102, 102))
+    text(d, (874, 496), "sahirvhora.github.io/ai-yesterday", 16, (77, 77, 77), mono=True)
+    return img
 
-# mini news stack
-for i, (label, color) in enumerate([("Critical", RED), ("High", GOLD2), ("Plain English", GREEN)]):
-    y = 462 + i*42
-    d.rounded_rectangle((850, y, 1160, y+28), radius=14, fill=(255,255,255,18), outline=(255,255,255,35))
-    d.ellipse((866, y+9, 876, y+19), fill=color)
-    d.text((890, y+5), label, font=font(FONT_BOLD, 16), fill=(218,224,235))
 
-# footer
-d.text((72, 594), "sahirvhora.github.io/ai-yesterday", font=font(FONT_MONO, 20), fill=GOLD2)
-d.text((806, 594), "Searchable history - source links - impact flags", font=font(FONT_REG, 18), fill=MUTED)
+def variant_superhuman() -> Image.Image:
+    img = glow_background((27, 25, 56), [(250, 120, (94, 65, 160), 600), (1060, 80, (104, 54, 130), 520), (980, 560, (36, 38, 80), 520)])
+    d = ImageDraw.Draw(img, "RGBA")
+    for i in range(8):
+        d.ellipse((780 - i * 20, 50 - i * 18, 1210 + i * 18, 500 + i * 18), outline=(203, 183, 251, 42 - i * 4), width=2)
+    rr(d, (76, 76, 1184, 560), 34, (255, 255, 255, 20), (255, 255, 255, 46), 1)
+    text(d, (118, 118), "AI YESTERDAY", 18, (203, 183, 251), bold=True)
+    text(d, (118, 178), "Read AI", 86, (255, 255, 255, 242), bold=True)
+    text(d, (118, 266), "like a human.", 86, (255, 255, 255, 242), bold=True)
+    text(d, (122, 410), "A calm premium briefing for yesterday's AI developments", 29, (255, 255, 255, 205))
+    rr(d, (122, 488, 344, 536), 8, (233, 229, 221, 245), None, 1)
+    text(d, (148, 501), "Open daily briefing", 18, (41, 40, 39), bold=True)
+    rr(d, (816, 130, 1128, 444), 24, (255, 255, 255, 232), (220, 215, 211, 255), 1)
+    text(d, (846, 158), "Yesterday", 22, (41, 40, 39), bold=True)
+    rows = [("Critical", "Governance", (255, 93, 115)), ("High", "Agents", (113, 76, 182)), ("Medium", "Research", (80, 209, 141)), ("Source", "Open links", (203, 183, 251))]
+    for idx, (left, right, color) in enumerate(rows):
+        y = 208 + idx * 54
+        d.ellipse((850, y + 6, 862, y + 18), fill=color)
+        text(d, (878, y), left, 18, (41, 40, 39), bold=True)
+        text(d, (1000, y), right, 17, (102, 100, 98))
+    text(d, (816, 506), "sahirvhora.github.io/ai-yesterday", 16, (255, 255, 255, 190), mono=True)
+    return img.convert("RGB")
 
-img.save(OUT, "PNG")
-print(OUT)
+
+def main() -> None:
+    variants = {
+        "preview-linear.png": variant_linear(),
+        "preview-vercel.png": variant_vercel(),
+        "preview-superhuman.png": variant_superhuman(),
+    }
+    for name, image in variants.items():
+        save(image, name)
+    variants["preview-linear.png"].save(ROOT / "preview.png", "PNG", optimize=True)
+    print(ROOT / "preview.png")
+
+
+if __name__ == "__main__":
+    main()
