@@ -234,6 +234,25 @@
     .source-score { color: var(--accent2); font-family: 'SF Mono', 'Cascadia Code', monospace; font-weight: 700; }
     .category-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
     .category-count { color: var(--accent2); font-family: 'SF Mono', 'Cascadia Code', monospace; font-size: 24px; }
+    .archive-picker { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+    .archive-select {
+      background: var(--card);
+      color: var(--text);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 10px 14px;
+      font: inherit;
+      min-width: 190px;
+    }
+    .archive-btn {
+      background: rgba(200,168,78,0.12);
+      color: var(--accent2);
+      border: 1px solid rgba(200,168,78,0.28);
+      border-radius: 999px;
+      padding: 10px 14px;
+      font-weight: 700;
+      cursor: pointer;
+    }
     .empty { border: 1px dashed var(--border); color: var(--muted); padding: 28px; border-radius: var(--radius); text-align: center; }
     mark.highlight { background: rgba(200,168,78,0.35); color: inherit; border-radius: 3px; padding: 0 2px; }
     @media (max-width: 900px) { .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
@@ -248,6 +267,8 @@
       .stats { grid-template-columns: 1fr; }
       .timeline-item, .source-card { grid-template-columns: 1fr; }
       .trend-grid, .category-grid { grid-template-columns: 1fr; }
+      .section-head { align-items: flex-start; flex-direction: column; }
+      .archive-picker, .archive-select, .archive-btn { width: 100%; }
     }
     @media print {
       .sidebar, .topbar, .mobile-menu, .hero-actions { display: none; }
@@ -316,6 +337,10 @@
             <h3>Yesterday's AI briefing</h3>
             <p>Ranked by likely impact, with layman summary and source link.</p>
           </div>
+          <div class="archive-picker" aria-label="Choose archive date">
+            <select class="archive-select" id="archiveSelect"><option value="latest">Latest digest</option></select>
+            <button class="archive-btn" id="loadArchiveBtn">Load date</button>
+          </div>
         </div>
         <div class="cards" id="cards"></div>
       </section>
@@ -363,7 +388,7 @@
   </main>
 
   <script>
-    const state = { allItems: [], visibleItems: [], metadata: {}, importance: 'all', category: 'all', query: '', weeklyTrends: [], sourceQuality: [], archives: [] };
+    const state = { allItems: [], visibleItems: [], metadata: {}, importance: 'all', category: 'all', query: '', weeklyTrends: [], sourceQuality: [], archives: [], selectedArchive: 'latest' };
     const fallbackData = {
       metadata: { name: 'AI Yesterday', generated_at: new Date().toISOString(), coverage_date: '2026-06-03', source_count: 10, feed_items_scanned: 0, item_count: 3, mode: 'inline_demo' },
       categories: ['Models', 'Products', 'Policy'],
@@ -426,13 +451,39 @@
       state.metadata = data.metadata || {};
       state.weeklyTrends = data.weekly_trends || [];
       state.sourceQuality = data.source_quality || [];
-      state.archives = data.archives || [];
+      state.archives = data.archives || state.archives || [];
       state.categories = data.categories || [...new Set(state.allItems.map(i => i.category || 'Signals'))];
       document.getElementById('coverageDate').textContent = 'Coverage: ' + formatDate(state.metadata.coverage_date);
       document.getElementById('generatedAt').textContent = 'Generated: ' + formatTime(state.metadata.generated_at);
-      document.getElementById('modeText').textContent = state.metadata.mode === 'live' ? 'Live digest loaded' : 'Demo or fallback data loaded';
+      document.getElementById('modeText').textContent = state.selectedArchive === 'latest' ? 'Latest digest loaded' : 'Archive loaded: ' + state.metadata.coverage_date;
+      buildArchivePicker();
       buildCategoryNav();
       render();
+    }
+    function buildArchivePicker() {
+      const select = document.getElementById('archiveSelect');
+      const current = state.selectedArchive || 'latest';
+      select.innerHTML = '<option value="latest">Latest digest</option>' + state.archives.map(row =>
+        `<option value="${escapeHtml(row.file)}">${formatDate(row.date)} · ${escapeHtml(row.item_count)} signals</option>`
+      ).join('');
+      select.value = current;
+    }
+    async function loadSelectedArchive() {
+      const select = document.getElementById('archiveSelect');
+      const value = select.value;
+      state.selectedArchive = value;
+      state.importance = 'all';
+      state.category = 'all';
+      try {
+        const res = await fetch((value === 'latest' ? 'data/digest.json' : value) + '?ts=' + Date.now());
+        if (!res.ok) throw new Error('archive missing');
+        const data = await res.json();
+        data.archives = state.archives;
+        applyData(data);
+        document.getElementById('today').scrollIntoView({ behavior: 'smooth' });
+      } catch (err) {
+        document.getElementById('cards').innerHTML = '<div class="empty">Could not load that archive date. Try latest digest.</div>';
+      }
     }
     function buildCategoryNav() {
       const nav = document.getElementById('categoryNav');
@@ -488,9 +539,14 @@
             <div>
               <strong>${escapeHtml(row.item_count)} AI signals</strong><br>
               <span class="meta">${escapeHtml(row.critical_count)} critical · ${escapeHtml(row.mode)} · generated ${formatTime(row.generated_at)}</span><br>
-              <a class="source-link" target="_blank" rel="noopener" href="${escapeHtml(row.file)}">Open archive JSON</a>
+              <button class="archive-btn" data-archive-file="${escapeHtml(row.file)}">View this date on page</button>
+              <a class="source-link" target="_blank" rel="noopener" href="${escapeHtml(row.file)}">Open JSON</a>
             </div>
           </div>`).join('');
+        document.querySelectorAll('[data-archive-file]').forEach(btn => btn.addEventListener('click', () => {
+          document.getElementById('archiveSelect').value = btn.dataset.archiveFile;
+          loadSelectedArchive();
+        }));
         return;
       }
       const grouped = {};
@@ -560,6 +616,8 @@
     }
     document.querySelectorAll('[data-filter]').forEach(btn => btn.addEventListener('click', () => { state.importance = btn.dataset.filter; updateActiveButtons(); render(); }));
     document.getElementById('search').addEventListener('input', e => { state.query = e.target.value.trim(); render(); });
+    document.getElementById('loadArchiveBtn').addEventListener('click', loadSelectedArchive);
+    document.getElementById('archiveSelect').addEventListener('change', loadSelectedArchive);
     document.addEventListener('keydown', e => { if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'k') { e.preventDefault(); document.getElementById('search').focus(); } });
     document.getElementById('themeBtn').addEventListener('click', () => {
       const next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
