@@ -234,6 +234,16 @@
     .source-score { color: var(--accent2); font-family: 'SF Mono', 'Cascadia Code', monospace; font-weight: 700; }
     .category-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
     .category-count { color: var(--accent2); font-family: 'SF Mono', 'Cascadia Code', monospace; font-size: 24px; }
+    .month-grid { display: grid; gap: 16px; }
+    .month-card { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 16px; }
+    .month-head { display: flex; justify-content: space-between; gap: 12px; align-items: center; margin-bottom: 12px; }
+    .month-head h4 { margin: 0; font-size: 19px; }
+    .date-grid { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 8px; }
+    .date-chip { background: rgba(255,255,255,0.03); color: var(--text2); border: 1px solid var(--border); border-radius: 12px; padding: 10px 8px; text-align: left; cursor: pointer; font: inherit; }
+    .date-chip:hover { border-color: rgba(200,168,78,0.36); color: var(--accent2); }
+    .date-chip.empty-day { opacity: 0.45; }
+    .date-chip strong { display: block; color: var(--text); font-size: 13px; }
+    .date-chip span { display: block; color: var(--muted); font-size: 11px; margin-top: 4px; }
     .archive-picker { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
     .archive-select {
       background: var(--card);
@@ -266,7 +276,7 @@
       .hero { padding: 26px; }
       .stats { grid-template-columns: 1fr; }
       .timeline-item, .source-card { grid-template-columns: 1fr; }
-      .trend-grid, .category-grid { grid-template-columns: 1fr; }
+      .trend-grid, .category-grid, .date-grid { grid-template-columns: 1fr; }
       .section-head { align-items: flex-start; flex-direction: column; }
       .archive-picker, .archive-select, .archive-btn { width: 100%; }
     }
@@ -293,6 +303,7 @@
     <a class="nav-link" href="#categories">Category pages <span class="pill">Live</span></a>
     <a class="nav-link" href="#sources">Sources <span class="pill">Quality</span></a>
     <a class="nav-link" href="#timeline">History <span class="pill">Archive</span></a>
+    <a class="nav-link" href="#months">Month view <span class="pill">May</span></a>
     <div class="nav-title">Importance</div>
     <button class="filter-btn active" data-filter="all">All signals <span class="pill">All</span></button>
     <button class="filter-btn" data-filter="Critical">Critical <span class="pill">Must read</span></button>
@@ -384,6 +395,16 @@
         </div>
         <div class="timeline" id="timelineList"></div>
       </section>
+
+      <section id="months">
+        <div class="section-head">
+          <div>
+            <h3>Month-wise archive</h3>
+            <p>Pick a month, then open any archived date directly on this page.</p>
+          </div>
+        </div>
+        <div class="month-grid" id="monthArchive"></div>
+      </section>
     </div>
   </main>
 
@@ -415,6 +436,9 @@
     }
     function formatTime(value) {
       try { return new Intl.DateTimeFormat('en-GB', { dateStyle: 'medium', timeStyle: 'short' }).format(new Date(value)); } catch(e) { return value || ''; }
+    }
+    function formatMonth(value) {
+      try { return new Intl.DateTimeFormat('en-GB', { month: 'long', year: 'numeric' }).format(new Date(value + '-01')); } catch(e) { return value || ''; }
     }
     function cleanDisplayText(text) {
       return String(text || '')
@@ -527,6 +551,7 @@
           </article>`).join('');
       }
       renderTimeline();
+      renderMonths();
       renderTrends();
       renderCategoryPages();
       renderSources();
@@ -560,6 +585,40 @@
           <div class="date-badge">${formatDate(date)}</div>
           <div><strong>${items.length} AI signals</strong><br><span class="meta">${items.filter(i => i.importance === 'Critical').length} critical · ${items.map(i => i.category).filter((v,i,a) => a.indexOf(v) === i).join(', ')}</span></div>
         </div>`).join('');
+    }
+    function renderMonths() {
+      const el = document.getElementById('monthArchive');
+      if (!state.archives.length) {
+        el.innerHTML = '<div class="empty">Month view will appear when archive data is available.</div>';
+        return;
+      }
+      const months = {};
+      state.archives.forEach(row => {
+        const month = row.date.slice(0, 7);
+        months[month] = months[month] || [];
+        months[month].push(row);
+      });
+      el.innerHTML = Object.entries(months).sort((a,b) => b[0].localeCompare(a[0])).map(([month, rows]) => {
+        rows.sort((a,b) => b.date.localeCompare(a.date));
+        const total = rows.reduce((sum, row) => sum + Number(row.item_count || 0), 0);
+        const critical = rows.reduce((sum, row) => sum + Number(row.critical_count || 0), 0);
+        return `<div class="month-card">
+          <div class="month-head">
+            <h4>${formatMonth(month)}</h4>
+            <span class="metric-pill">${rows.length} days · ${total} signals · ${critical} critical</span>
+          </div>
+          <div class="date-grid">
+            ${rows.map(row => `<button class="date-chip ${Number(row.item_count || 0) ? '' : 'empty-day'}" data-archive-file="${escapeHtml(row.file)}">
+              <strong>${formatDate(row.date)}</strong>
+              <span>${escapeHtml(row.item_count)} signals · ${escapeHtml(row.critical_count)} critical</span>
+            </button>`).join('')}
+          </div>
+        </div>`;
+      }).join('');
+      el.querySelectorAll('[data-archive-file]').forEach(btn => btn.addEventListener('click', () => {
+        document.getElementById('archiveSelect').value = btn.dataset.archiveFile;
+        loadSelectedArchive();
+      }));
     }
     function renderTrends() {
       const el = document.getElementById('trendList');
