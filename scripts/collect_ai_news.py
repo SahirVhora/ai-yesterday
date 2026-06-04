@@ -87,6 +87,12 @@ FALLBACK_ITEMS = [
 def clean_text(value: str | None) -> str:
     value = re.sub(r"<[^>]+>", " ", value or "")
     value = html.unescape(value)
+    value = value.replace("\u2014", "-").replace("\u2013", "-")
+    value = re.sub(r"Article URL:\s*https?://\S+", " ", value, flags=re.IGNORECASE)
+    value = re.sub(r"Comments URL:\s*https?://\S+", " ", value, flags=re.IGNORECASE)
+    value = re.sub(r"https?://\S+", " ", value)
+    value = re.sub(r"#\s*Comments:\s*\d+", " ", value, flags=re.IGNORECASE)
+    value = re.sub(r"Points:\s*\d+", " ", value, flags=re.IGNORECASE)
     value = re.sub(r"\s+", " ", value).strip()
     return value
 
@@ -292,7 +298,7 @@ def parse_feed(source: dict) -> list[dict]:
     atom_entries = root.findall("{http://www.w3.org/2005/Atom}entry")
     for item in channel_items:
         title = clean_text(item.findtext("title"))
-        link = clean_text(item.findtext("link"))
+        link = html.unescape((item.findtext("link") or "").strip())
         description = clean_text(item.findtext("description") or item.findtext("summary"))
         published = parse_date(item.findtext("pubDate") or item.findtext("published") or item.findtext("updated"))
         entries.append(make_entry(source, title, link, description, published))

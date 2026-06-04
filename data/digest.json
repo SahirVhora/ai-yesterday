@@ -1,7 +1,7 @@
 {
   "metadata": {
     "name": "AI Yesterday",
-    "generated_at": "2026-06-04T16:36:11.725101Z",
+    "generated_at": "2026-06-04T16:52:22.372050Z",
     "coverage_date": "2026-06-03",
     "source_count": 9,
     "feed_items_scanned": 2332,
@@ -104,7 +104,7 @@
       "category": "Products",
       "importance": "Low",
       "score": 31,
-      "summary": "In simple terms, this is about turning AI research into tools people can actually use. Article URL: https://www.science.org/content/article/mathematicians-issue-warning-ai-rapidly-gains-ground Comments URL: https://news.ycombinator.com/item?id=48382052 Points: 275 # Comments: 314",
+      "summary": "In simple terms, this is about turning AI research into tools people can actually use. Mathematicians issue warning as AI rapidly gains ground",
       "why_it_matters": "Worth testing because it could reduce manual work or create a new workflow for non-technical users.",
       "summary_engine": "rules"
     },
@@ -116,7 +116,7 @@
       "category": "Research",
       "importance": "Low",
       "score": 31,
-      "summary": "In simple terms, researchers are testing a new way to make AI better or safer. Article URL: https://www.utoronto.ca/news/u-t-researchers-demonstrate-ai-worm-could-target-any-online-device Comments URL: https://news.ycombinator.com/item?id=48379664 Points: 146 # Comments: 45",
+      "summary": "In simple terms, researchers are testing a new way to make AI better or safer. U of T researchers demonstrate AI worm could target any online device",
       "why_it_matters": "Useful background signal. It may not matter today, but it can shape tools that appear later.",
       "summary_engine": "rules"
     },
@@ -128,19 +128,19 @@
       "category": "Products",
       "importance": "Low",
       "score": 28,
-      "summary": "In simple terms, this is about turning AI research into tools people can actually use. https://www.bloomberg.com/news/articles/2026-06-02/uber-caps... ( https://archive.ph/ZrwAy ) Comments URL: https://news.ycombinator.com/item?id=48383056 Points: 567 # Comments: 693",
+      "summary": "In simple terms, this is about turning AI research into tools people can actually use. Uber's $1,500/month AI limit is a useful signal for AI tool pricing",
       "why_it_matters": "Worth testing because it could reduce manual work or create a new workflow for non-technical users.",
       "summary_engine": "rules"
     },
     {
-      "title": "32GB of DDR5 now costs $375 – AI shortage continues to squeeze PC building",
+      "title": "32GB of DDR5 now costs $375 - AI shortage continues to squeeze PC building",
       "source": "Hacker News AI",
       "url": "https://www.tomshardware.com/pc-components/ddr5/32gb-of-ddr5-now-costs-usd375-minimum-ai-shortage-continues-to-squeeze-pc-building",
       "published": "2026-06-03T12:43:43Z",
       "category": "Signals",
       "importance": "Low",
       "score": 24,
-      "summary": "In simple terms, this is a useful signal about where AI is heading. Article URL: https://www.tomshardware.com/pc-components/ddr5/32gb-of-ddr5-now-costs-usd375-minimum-ai-shortage-continues-to-squeeze-pc-building Comments URL: https://news.ycombinator.com/item?id=48383241 Points: 414...",
+      "summary": "In simple terms, this is a useful signal about where AI is heading. 32GB of DDR5 now costs $375 - AI shortage continues to squeeze PC building",
       "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
       "summary_engine": "rules"
     }
@@ -246,11 +246,19 @@
     },
     {
       "category": "Signals",
-      "items": 5,
+      "items": 6,
       "critical": 0,
-      "average_score": 42.4,
+      "average_score": 39.3,
       "source_count": 3,
       "plain_english": "Signals is a busy area this week. Expect incremental product or research movement rather than one big headline."
+    },
+    {
+      "category": "Products",
+      "items": 6,
+      "critical": 0,
+      "average_score": 37.0,
+      "source_count": 2,
+      "plain_english": "Products is a busy area this week. Expect incremental product or research movement rather than one big headline."
     },
     {
       "category": "Models",
@@ -261,16 +269,8 @@
       "plain_english": "Models has a lighter signal this week. Useful context, but not the main priority."
     },
     {
-      "category": "Products",
-      "items": 4,
-      "critical": 0,
-      "average_score": 40.8,
-      "source_count": 2,
-      "plain_english": "Products has a lighter signal this week. Useful context, but not the main priority."
-    },
-    {
       "category": "Research",
-      "items": 1,
+      "items": 2,
       "critical": 0,
       "average_score": 31.0,
       "source_count": 1,

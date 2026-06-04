@@ -391,8 +391,18 @@
     function formatTime(value) {
       try { return new Intl.DateTimeFormat('en-GB', { dateStyle: 'medium', timeStyle: 'short' }).format(new Date(value)); } catch(e) { return value || ''; }
     }
+    function cleanDisplayText(text) {
+      return String(text || '')
+        .replace(/Article URL:\s*https?:\/\/\S+/ig, ' ')
+        .replace(/Comments URL:\s*https?:\/\/\S+/ig, ' ')
+        .replace(/https?:\/\/\S+/ig, ' ')
+        .replace(/#\s*Comments:\s*\d+/ig, ' ')
+        .replace(/Points:\s*\d+/ig, ' ')
+        .replace(/\s+/g, ' ')
+        .trim();
+    }
     function highlight(text) {
-      const safe = escapeHtml(text);
+      const safe = escapeHtml(cleanDisplayText(text));
       if (!state.query) return safe;
       const re = new RegExp('(' + state.query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + ')', 'ig');
       return safe.replace(re, '<mark class="highlight">$1</mark>');
