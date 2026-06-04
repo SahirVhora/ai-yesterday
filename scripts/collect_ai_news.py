@@ -5,6 +5,7 @@ Stdlib only so it can run in GitHub Actions without setup.
 from __future__ import annotations
 
 import email.utils
+import argparse
 import html
 import json
 import os
@@ -328,15 +329,16 @@ def make_entry(source: dict, title: str, link: str, description: str, published:
     }
 
 
-def collect() -> dict:
+def collect(coverage_date=None, allow_fallback: bool = True) -> dict:
     now = datetime.now(timezone.utc)
-    yesterday = (now - timedelta(days=1)).date()
-    start = datetime.combine(yesterday, datetime.min.time(), tzinfo=timezone.utc)
+    target_date = coverage_date or (now - timedelta(days=1)).date()
+    start = datetime.combine(target_date, datetime.min.time(), tzinfo=timezone.utc)
     end = start + timedelta(days=1)
     items = []
     seen = set()
     feed_count = 0
     source_scores = []
+    fallback_used = False
     for source in SOURCES:
         feed_items = parse_feed(source)
         feed_count += len(feed_items)
@@ -351,8 +353,9 @@ def collect() -> dict:
                 selected_for_source += 1
                 items.append(item)
         source_scores.append(source_quality(source, feed_items, selected_for_source))
-    if not items:
+    if not items and allow_fallback:
         items = FALLBACK_ITEMS
+        fallback_used = True
         source_scores = [{"name": "Fallback sample", "tier": 1, "feed_items_scanned": 0, "selected_items": len(items), "signal_ratio": 1, "quality_score": 25, "status": "fallback"}]
     items.sort(key=lambda x: (x["score"], x["published"]), reverse=True)
     items = items[:24]
@@ -364,11 +367,11 @@ def collect() -> dict:
         "metadata": {
             "name": "AI Yesterday",
             "generated_at": now.isoformat().replace("+00:00", "Z"),
-            "coverage_date": yesterday.isoformat(),
+            "coverage_date": target_date.isoformat(),
             "source_count": len(SOURCES),
             "feed_items_scanned": feed_count,
             "item_count": len(items),
-            "mode": "live" if items != FALLBACK_ITEMS else "fallback_sample",
+            "mode": "fallback_sample" if fallback_used else ("live" if items else "no_items"),
             "summary_engine": "openrouter" if enriched_count else "rules",
             "openrouter_items_enriched": enriched_count,
             "openrouter_model": OPENROUTER_MODEL if enriched_count else None,
@@ -381,15 +384,73 @@ def collect() -> dict:
     return data
 
 
-def main() -> None:
+def parse_iso_date(value: str):
+    return datetime.strptime(value, "%Y-%m-%d").date()
+
+
+def date_range(start, end):
+    current = start
+    while current <= end:
+        yield current
+        current += timedelta(days=1)
+
+
+def rebuild_history_index() -> None:
+    archives = []
+    for path in sorted(HISTORY_DIR.glob("20*.json"), reverse=True):
+        try:
+            data = json.loads(path.read_text(encoding="utf-8"))
+            meta = data.get("metadata", {})
+        except Exception:
+            continue
+        archives.append({
+            "date": meta.get("coverage_date") or path.stem,
+            "file": f"data/history/{path.name}",
+            "item_count": meta.get("item_count", len(data.get("items", []))),
+            "critical_count": sum(1 for item in data.get("items", []) if item.get("importance") == "Critical"),
+            "mode": meta.get("mode", "unknown"),
+            "generated_at": meta.get("generated_at"),
+        })
+    (HISTORY_DIR / "index.json").write_text(json.dumps({"archives": archives}, indent=2, ensure_ascii=False), encoding="utf-8")
+
+
+def write_digest(data: dict, write_current: bool = True) -> None:
     OUT.parent.mkdir(parents=True, exist_ok=True)
     HISTORY_DIR.mkdir(parents=True, exist_ok=True)
-    data = collect()
-    OUT.write_text(json.dumps(data, indent=2, ensure_ascii=False), encoding="utf-8")
     history_path = HISTORY_DIR / f"{data['metadata']['coverage_date']}.json"
+    if write_current:
+        OUT.write_text(json.dumps(data, indent=2, ensure_ascii=False), encoding="utf-8")
     history_path.write_text(json.dumps(data, indent=2, ensure_ascii=False), encoding="utf-8")
-    print(f"Wrote {OUT} with {data['metadata']['item_count']} items ({data['metadata']['mode']})")
+    rebuild_history_index()
+    if write_current:
+        print(f"Wrote {OUT} with {data['metadata']['item_count']} items ({data['metadata']['mode']})")
     print(f"Archived {history_path}")
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser(description="Collect AI Yesterday digest data.")
+    parser.add_argument("--date", help="Coverage date to collect, format YYYY-MM-DD. Defaults to yesterday UTC.")
+    parser.add_argument("--start", help="First coverage date for backfill, format YYYY-MM-DD.")
+    parser.add_argument("--end", help="Last coverage date for backfill, format YYYY-MM-DD.")
+    parser.add_argument("--history-only", action="store_true", help="Write only data/history/<date>.json, not data/digest.json.")
+    parser.add_argument("--no-fallback", action="store_true", help="For backfills, write an empty no_items digest instead of sample data when no live items match.")
+    args = parser.parse_args()
+
+    if args.start or args.end:
+        if not args.start or not args.end:
+            parser.error("--start and --end must be used together")
+        start = parse_iso_date(args.start)
+        end = parse_iso_date(args.end)
+        if end < start:
+            parser.error("--end must be on or after --start")
+        for target_date in date_range(start, end):
+            data = collect(target_date, allow_fallback=not args.no_fallback)
+            write_digest(data, write_current=not args.history_only)
+        return
+
+    target_date = parse_iso_date(args.date) if args.date else None
+    data = collect(target_date, allow_fallback=not args.no_fallback)
+    write_digest(data, write_current=not args.history_only)
 
 
 if __name__ == "__main__":

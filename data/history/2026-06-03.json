@@ -1,7 +1,7 @@
 {
   "metadata": {
     "name": "AI Yesterday",
-    "generated_at": "2026-06-04T16:52:22.372050Z",
+    "generated_at": "2026-06-04T16:58:37.206826Z",
     "coverage_date": "2026-06-03",
     "source_count": 9,
     "feed_items_scanned": 2332,
@@ -238,43 +238,51 @@
   "weekly_trends": [
     {
       "category": "Policy",
-      "items": 4,
+      "items": 5,
       "critical": 2,
-      "average_score": 85.0,
+      "average_score": 84.0,
       "source_count": 1,
       "plain_english": "Policy produced 2 critical signals. This is worth watching closely this week."
     },
     {
-      "category": "Signals",
-      "items": 6,
-      "critical": 0,
-      "average_score": 39.3,
+      "category": "Models",
+      "items": 8,
+      "critical": 1,
+      "average_score": 63.8,
       "source_count": 3,
+      "plain_english": "Models produced 1 critical signal. This is worth watching closely this week."
+    },
+    {
+      "category": "Signals",
+      "items": 17,
+      "critical": 0,
+      "average_score": 34.6,
+      "source_count": 4,
       "plain_english": "Signals is a busy area this week. Expect incremental product or research movement rather than one big headline."
     },
     {
       "category": "Products",
-      "items": 6,
+      "items": 14,
       "critical": 0,
-      "average_score": 37.0,
-      "source_count": 2,
+      "average_score": 48.5,
+      "source_count": 4,
       "plain_english": "Products is a busy area this week. Expect incremental product or research movement rather than one big headline."
     },
     {
-      "category": "Models",
-      "items": 4,
-      "critical": 0,
-      "average_score": 63.5,
-      "source_count": 1,
-      "plain_english": "Models has a lighter signal this week. Useful context, but not the main priority."
-    },
-    {
       "category": "Research",
-      "items": 2,
+      "items": 3,
       "critical": 0,
-      "average_score": 31.0,
+      "average_score": 28.7,
       "source_count": 1,
       "plain_english": "Research has a lighter signal this week. Useful context, but not the main priority."
+    },
+    {
+      "category": "Business",
+      "items": 1,
+      "critical": 0,
+      "average_score": 44.0,
+      "source_count": 1,
+      "plain_english": "Business has a lighter signal this week. Useful context, but not the main priority."
     }
   ]
 }

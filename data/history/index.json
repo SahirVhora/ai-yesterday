@@ -1,0 +1,28 @@
+{
+  "archives": [
+    {
+      "date": "2026-06-03",
+      "file": "data/history/2026-06-03.json",
+      "item_count": 11,
+      "critical_count": 1,
+      "mode": "live",
+      "generated_at": "2026-06-04T16:58:37.206826Z"
+    },
+    {
+      "date": "2026-06-02",
+      "file": "data/history/2026-06-02.json",
+      "item_count": 13,
+      "critical_count": 0,
+      "mode": "live",
+      "generated_at": "2026-06-04T16:58:27.612883Z"
+    },
+    {
+      "date": "2026-06-01",
+      "file": "data/history/2026-06-01.json",
+      "item_count": 13,
+      "critical_count": 1,
+      "mode": "live",
+      "generated_at": "2026-06-04T16:58:20.080593Z"
+    }
+  ]
+}
