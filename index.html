@@ -1,0 +1,405 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="AI Yesterday turns daily AI news into plain English summaries, importance flags and source links.">
+  <title>AI Yesterday - Daily AI Briefing</title>
+  <style>
+    :root {
+      --bg: #090d14;
+      --sidebar: #0d1119;
+      --card: #111620;
+      --card2: #171c28;
+      --border: #1c212b;
+      --text: #e6e9f0;
+      --text2: #c5c9d4;
+      --muted: #7b8496;
+      --muted2: #5f6675;
+      --accent: #c8a84e;
+      --accent2: #f0cf6a;
+      --critical: #ff5d73;
+      --high: #ffac4d;
+      --medium: #69a7ff;
+      --low: #50d18d;
+      --radius: 10px;
+      --shadow: 0 20px 70px rgba(0,0,0,0.35);
+    }
+    [data-theme="light"] {
+      --bg: #f6f3eb;
+      --sidebar: #fffaf0;
+      --card: #ffffff;
+      --card2: #f3efe5;
+      --border: #ded6c3;
+      --text: #161b24;
+      --text2: #303846;
+      --muted: #657083;
+      --muted2: #7f8795;
+      --shadow: 0 18px 50px rgba(65,48,20,0.12);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: radial-gradient(circle at top left, rgba(200,168,78,0.14), transparent 34%), var(--bg);
+      color: var(--text);
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      transition: background 0.4s ease, color 0.4s ease;
+    }
+    a { color: inherit; }
+    .sidebar {
+      position: fixed;
+      inset: 0 auto 0 0;
+      width: 292px;
+      background: linear-gradient(180deg, var(--sidebar), rgba(13,17,25,0.92));
+      border-right: 1px solid var(--border);
+      padding: 22px 18px;
+      overflow-y: auto;
+      z-index: 100;
+    }
+    .brand { margin-bottom: 22px; }
+    .brand-kicker { color: var(--accent2); font-size: 11px; letter-spacing: 1.8px; text-transform: uppercase; font-weight: 700; }
+    .brand h1 { margin: 6px 0 4px; font-size: 26px; line-height: 1.05; }
+    .brand p { margin: 0; color: var(--muted); font-size: 13px; line-height: 1.45; }
+    .search { margin: 18px 0; position: relative; }
+    .search input {
+      width: 100%;
+      border: 1px solid var(--border);
+      background: var(--card);
+      color: var(--text);
+      border-radius: 999px;
+      padding: 11px 14px;
+      outline: none;
+    }
+    .nav-title { margin: 22px 0 8px; color: var(--muted2); font-size: 11px; letter-spacing: 1px; text-transform: uppercase; font-weight: 700; }
+    .nav-link, .filter-btn {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      padding: 10px 12px;
+      margin: 3px 0;
+      border-radius: 8px;
+      color: var(--text2);
+      text-decoration: none;
+      border: 1px solid transparent;
+      background: transparent;
+      cursor: pointer;
+      font: inherit;
+      font-size: 13px;
+      text-align: left;
+    }
+    .nav-link:hover, .filter-btn:hover, .filter-btn.active { background: var(--card2); border-color: var(--border); color: var(--accent2); }
+    .pill { font-size: 10px; color: var(--muted); border: 1px solid var(--border); border-radius: 999px; padding: 2px 7px; }
+    .status { margin-top: 22px; padding: 12px; border: 1px solid var(--border); border-radius: var(--radius); color: var(--muted); font-size: 12px; background: rgba(255,255,255,0.02); }
+    .dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: var(--low); margin-right: 6px; box-shadow: 0 0 12px var(--low); }
+    .main { margin-left: 292px; min-height: 100vh; }
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(18px);
+      background: rgba(9,13,20,0.78);
+      border-bottom: 1px solid var(--border);
+      padding: 14px 26px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+    [data-theme="light"] .topbar { background: rgba(246,243,235,0.82); }
+    .topbar-meta { color: var(--muted); font-size: 12px; }
+    .theme-toggle-btn, .mobile-menu {
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      border: 1.5px solid var(--border);
+      background: var(--card);
+      color: var(--text2);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .theme-toggle-btn:hover { border-color: var(--accent); color: var(--accent2); box-shadow: 0 0 16px rgba(200,168,78,0.15); transform: rotate(15deg); }
+    .mobile-menu { display: none; position: fixed; top: 12px; left: 12px; z-index: 220; }
+    .content { max-width: 1120px; margin: 0 auto; padding: 36px 28px 80px; }
+    .hero {
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      padding: 34px;
+      background: linear-gradient(135deg, rgba(200,168,78,0.16), rgba(105,167,255,0.07)), var(--card);
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+    }
+    .hero:after {
+      content: '';
+      position: absolute;
+      right: -110px;
+      top: -120px;
+      width: 320px;
+      height: 320px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(200,168,78,0.25), transparent 62%);
+    }
+    .hero-inner { position: relative; z-index: 1; max-width: 760px; }
+    .eyebrow { color: var(--accent2); text-transform: uppercase; font-size: 12px; letter-spacing: 1.6px; font-weight: 800; }
+    .hero h2 { font-size: clamp(34px, 6vw, 68px); line-height: 0.95; margin: 12px 0 14px; letter-spacing: -2px; }
+    .hero p { color: var(--text2); font-size: 17px; line-height: 1.65; margin: 0; }
+    .hero-actions { display: flex; gap: 12px; margin-top: 24px; flex-wrap: wrap; }
+    .primary, .secondary {
+      border-radius: 999px;
+      padding: 12px 18px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 13px;
+      border: 1px solid var(--border);
+    }
+    .primary { background: var(--accent); color: #111; border-color: var(--accent); }
+    .secondary { background: rgba(255,255,255,0.03); color: var(--text2); }
+    .stats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; margin: 22px 0; }
+    .stat {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 16px;
+    }
+    .stat strong { display: block; font-size: 27px; line-height: 1; color: var(--accent2); font-family: 'SF Mono', 'Cascadia Code', monospace; }
+    .stat span { display: block; margin-top: 8px; color: var(--muted); font-size: 12px; }
+    .section-head { display: flex; align-items: end; justify-content: space-between; gap: 18px; margin: 34px 0 14px; }
+    .section-head h3 { margin: 0; font-size: 24px; }
+    .section-head p { margin: 4px 0 0; color: var(--muted); font-size: 13px; }
+    .cards { display: grid; gap: 14px; }
+    .news-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 18px;
+      transition: all 0.2s ease;
+    }
+    .news-card:hover { background: var(--card2); transform: translateY(-2px); border-color: rgba(200,168,78,0.36); }
+    .card-top { display: flex; justify-content: space-between; gap: 14px; align-items: flex-start; }
+    .news-card h4 { margin: 8px 0 10px; font-size: 19px; line-height: 1.25; }
+    .meta { color: var(--muted); font-size: 12px; display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+    .tag { display: inline-flex; align-items: center; border-radius: 999px; padding: 4px 9px; font-size: 11px; font-weight: 800; border: 1px solid var(--border); color: var(--text2); }
+    .tag.Critical { color: var(--critical); border-color: rgba(255,93,115,0.35); background: rgba(255,93,115,0.09); }
+    .tag.High { color: var(--high); border-color: rgba(255,172,77,0.35); background: rgba(255,172,77,0.09); }
+    .tag.Medium { color: var(--medium); border-color: rgba(105,167,255,0.35); background: rgba(105,167,255,0.09); }
+    .tag.Low { color: var(--low); border-color: rgba(80,209,141,0.35); background: rgba(80,209,141,0.09); }
+    .summary { color: var(--text2); line-height: 1.55; margin: 10px 0; }
+    .why { color: var(--muted); line-height: 1.5; padding: 12px; background: rgba(200,168,78,0.06); border-left: 3px solid var(--accent); border-radius: 8px; }
+    .source-link { color: var(--accent2); text-decoration: none; font-weight: 700; font-size: 13px; }
+    .timeline { display: grid; gap: 10px; }
+    .timeline-item { display: grid; grid-template-columns: 110px 1fr; gap: 14px; align-items: start; padding: 14px; border: 1px solid var(--border); border-radius: var(--radius); background: var(--card); }
+    .date-badge { color: var(--accent2); font-family: 'SF Mono', 'Cascadia Code', monospace; font-size: 12px; }
+    .empty { border: 1px dashed var(--border); color: var(--muted); padding: 28px; border-radius: var(--radius); text-align: center; }
+    mark.highlight { background: rgba(200,168,78,0.35); color: inherit; border-radius: 3px; padding: 0 2px; }
+    @media (max-width: 900px) { .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+    @media (max-width: 768px) {
+      .mobile-menu { display: flex; }
+      .sidebar { transform: translateX(-100%); transition: transform 0.25s ease; }
+      .sidebar.open { transform: translateX(0); }
+      .main { margin-left: 0; }
+      .topbar { padding-left: 58px; }
+      .content { padding: 24px 16px 70px; }
+      .hero { padding: 26px; }
+      .stats { grid-template-columns: 1fr; }
+      .timeline-item { grid-template-columns: 1fr; }
+    }
+    @media print {
+      .sidebar, .topbar, .mobile-menu, .hero-actions { display: none; }
+      .main { margin: 0; }
+      body { background: #fff; color: #111; }
+      .news-card, .stat, .hero { break-inside: avoid; box-shadow: none; }
+    }
+  </style>
+</head>
+<body>
+  <button class="mobile-menu" id="mobileMenu" aria-label="Open menu">☰</button>
+  <aside class="sidebar" id="sidebar">
+    <div class="brand">
+      <div class="brand-kicker">Daily AI Briefing</div>
+      <h1>AI Yesterday</h1>
+      <p>Plain-English AI news, ranked by importance, saved as a searchable history.</p>
+    </div>
+    <div class="search"><input id="search" placeholder="Search everything..." autocomplete="off"></div>
+    <div class="nav-title">Views</div>
+    <a class="nav-link" href="#today">Yesterday <span class="pill" id="navCount">0</span></a>
+    <a class="nav-link" href="#timeline">History <span class="pill">Archive</span></a>
+    <div class="nav-title">Importance</div>
+    <button class="filter-btn active" data-filter="all">All signals <span class="pill">All</span></button>
+    <button class="filter-btn" data-filter="Critical">Critical <span class="pill">Must read</span></button>
+    <button class="filter-btn" data-filter="High">High <span class="pill">Track</span></button>
+    <button class="filter-btn" data-filter="Medium">Medium <span class="pill">Skim</span></button>
+    <div class="nav-title">Categories</div>
+    <div id="categoryNav"></div>
+    <div class="status"><span class="dot"></span><span id="modeText">Loading live digest...</span></div>
+  </aside>
+
+  <main class="main">
+    <div class="topbar">
+      <div class="topbar-meta"><strong id="coverageDate">Loading...</strong> <span id="generatedAt"></span></div>
+      <button class="theme-toggle-btn" id="themeBtn" aria-label="Toggle theme">☀</button>
+    </div>
+    <div class="content">
+      <section class="hero">
+        <div class="hero-inner">
+          <div class="eyebrow">Built for busy humans</div>
+          <h2>Understand AI without drowning in AI news.</h2>
+          <p>Every morning this page can collect yesterday's most useful AI developments, translate them into simple language, flag what actually matters, and keep the archive searchable.</p>
+          <div class="hero-actions">
+            <a class="primary" href="#today">Read yesterday's briefing</a>
+            <a class="secondary" href="#timeline">Browse history</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="stats" aria-label="Digest statistics">
+        <div class="stat"><strong id="statItems">0</strong><span>Curated signals</span></div>
+        <div class="stat"><strong id="statCritical">0</strong><span>Critical items</span></div>
+        <div class="stat"><strong id="statSources">0</strong><span>Sources monitored</span></div>
+        <div class="stat"><strong id="statScanned">0</strong><span>Feed items scanned</span></div>
+      </section>
+
+      <section id="today">
+        <div class="section-head">
+          <div>
+            <h3>Yesterday's AI briefing</h3>
+            <p>Ranked by likely impact, with layman summary and source link.</p>
+          </div>
+        </div>
+        <div class="cards" id="cards"></div>
+      </section>
+
+      <section id="timeline">
+        <div class="section-head">
+          <div>
+            <h3>History</h3>
+            <p>Daily snapshots stay in data files so you can trace trends backwards.</p>
+          </div>
+        </div>
+        <div class="timeline" id="timelineList"></div>
+      </section>
+    </div>
+  </main>
+
+  <script>
+    const state = { allItems: [], visibleItems: [], metadata: {}, importance: 'all', category: 'all', query: '' };
+    const fallbackData = {
+      metadata: { name: 'AI Yesterday', generated_at: new Date().toISOString(), coverage_date: '2026-06-03', source_count: 10, feed_items_scanned: 0, item_count: 3, mode: 'inline_demo' },
+      categories: ['Models', 'Products', 'Policy'],
+      items: [
+        { title: 'OpenAI, Anthropic, Google and open-source labs continue rapid model and agent releases', source: 'Demo', url: 'https://openai.com/news/', published: '2026-06-03T09:00:00Z', category: 'Models', importance: 'Critical', score: 96, summary: 'In simple terms, AI assistants are becoming better at doing multi-step work, not just answering questions.', why_it_matters: 'Track this closely because it may affect products, skills, costs or competitive advantage within weeks.' },
+        { title: 'AI coding tools keep moving from autocomplete to autonomous development', source: 'Demo', url: 'https://github.blog/ai-and-ml/', published: '2026-06-03T12:30:00Z', category: 'Products', importance: 'High', score: 88, summary: 'Developer tools are increasingly able to plan, edit, test and explain code changes.', why_it_matters: 'Small teams can build faster, but review, testing and security checks become more important.' },
+        { title: 'AI regulation and safety debates are becoming part of normal product planning', source: 'Demo', url: 'https://www.technologyreview.com/topic/artificial-intelligence/', published: '2026-06-03T16:00:00Z', category: 'Policy', importance: 'Medium', score: 72, summary: 'Governments and companies are paying closer attention to how AI systems are tested, explained and controlled.', why_it_matters: 'Businesses using AI need simple governance: what data is used, who checks outputs, and where humans stay accountable.' }
+      ]
+    };
+
+    function escapeHtml(value) {
+      return String(value || '').replace(/[&<>'"]/g, ch => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' }[ch]));
+    }
+    function formatDate(value) {
+      try { return new Intl.DateTimeFormat('en-GB', { dateStyle: 'medium' }).format(new Date(value)); } catch(e) { return value || ''; }
+    }
+    function formatTime(value) {
+      try { return new Intl.DateTimeFormat('en-GB', { dateStyle: 'medium', timeStyle: 'short' }).format(new Date(value)); } catch(e) { return value || ''; }
+    }
+    function highlight(text) {
+      const safe = escapeHtml(text);
+      if (!state.query) return safe;
+      const re = new RegExp('(' + state.query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + ')', 'ig');
+      return safe.replace(re, '<mark class="highlight">$1</mark>');
+    }
+    async function loadData() {
+      try {
+        const res = await fetch('data/digest.json?ts=' + Date.now());
+        if (!res.ok) throw new Error('digest missing');
+        applyData(await res.json());
+      } catch (err) {
+        applyData(fallbackData);
+      }
+    }
+    function applyData(data) {
+      state.allItems = data.items || [];
+      state.metadata = data.metadata || {};
+      state.categories = data.categories || [...new Set(state.allItems.map(i => i.category || 'Signals'))];
+      document.getElementById('coverageDate').textContent = 'Coverage: ' + formatDate(state.metadata.coverage_date);
+      document.getElementById('generatedAt').textContent = 'Generated: ' + formatTime(state.metadata.generated_at);
+      document.getElementById('modeText').textContent = state.metadata.mode === 'live' ? 'Live digest loaded' : 'Demo or fallback data loaded';
+      buildCategoryNav();
+      render();
+    }
+    function buildCategoryNav() {
+      const nav = document.getElementById('categoryNav');
+      nav.innerHTML = '<button class="filter-btn active" data-category="all">All categories <span class="pill">All</span></button>' +
+        state.categories.map(cat => `<button class="filter-btn" data-category="${escapeHtml(cat)}">${escapeHtml(cat)} <span class="pill">${state.allItems.filter(i => i.category === cat).length}</span></button>`).join('');
+      nav.querySelectorAll('[data-category]').forEach(btn => btn.addEventListener('click', () => { state.category = btn.dataset.category; updateActiveButtons(); render(); }));
+    }
+    function updateActiveButtons() {
+      document.querySelectorAll('[data-filter]').forEach(btn => btn.classList.toggle('active', btn.dataset.filter === state.importance));
+      document.querySelectorAll('[data-category]').forEach(btn => btn.classList.toggle('active', btn.dataset.category === state.category));
+    }
+    function render() {
+      const q = state.query.toLowerCase();
+      state.visibleItems = state.allItems.filter(item => {
+        const text = [item.title, item.source, item.category, item.importance, item.summary, item.why_it_matters].join(' ').toLowerCase();
+        return (state.importance === 'all' || item.importance === state.importance) &&
+          (state.category === 'all' || item.category === state.category) &&
+          (!q || text.includes(q));
+      });
+      document.getElementById('statItems').textContent = state.allItems.length;
+      document.getElementById('statCritical').textContent = state.allItems.filter(i => i.importance === 'Critical').length;
+      document.getElementById('statSources').textContent = state.metadata.source_count || 0;
+      document.getElementById('statScanned').textContent = state.metadata.feed_items_scanned || 0;
+      document.getElementById('navCount').textContent = state.allItems.length;
+      const cards = document.getElementById('cards');
+      if (!state.visibleItems.length) {
+        cards.innerHTML = '<div class="empty">No matching AI signals. Clear search or filters.</div>';
+      } else {
+        cards.innerHTML = state.visibleItems.map(item => `
+          <article class="news-card" data-card>
+            <div class="card-top">
+              <div class="meta"><span>${escapeHtml(item.category)}</span><span>${escapeHtml(item.source)}</span><span>${formatDate(item.published)}</span></div>
+              <span class="tag ${escapeHtml(item.importance)}">${escapeHtml(item.importance)} · ${escapeHtml(item.score)}</span>
+            </div>
+            <h4>${highlight(item.title)}</h4>
+            <div class="summary">${highlight(item.summary)}</div>
+            <div class="why"><strong>Why it matters:</strong> ${highlight(item.why_it_matters)}</div>
+            <p><a class="source-link" target="_blank" rel="noopener" href="${escapeHtml(item.url)}">Open source link</a></p>
+          </article>`).join('');
+      }
+      renderTimeline();
+    }
+    function renderTimeline() {
+      const grouped = {};
+      state.allItems.forEach(item => {
+        const date = (item.published || '').slice(0, 10) || state.metadata.coverage_date || 'Unknown';
+        grouped[date] = grouped[date] || [];
+        grouped[date].push(item);
+      });
+      document.getElementById('timelineList').innerHTML = Object.entries(grouped).sort((a,b) => b[0].localeCompare(a[0])).map(([date, items]) => `
+        <div class="timeline-item">
+          <div class="date-badge">${formatDate(date)}</div>
+          <div><strong>${items.length} AI signals</strong><br><span class="meta">${items.filter(i => i.importance === 'Critical').length} critical · ${items.map(i => i.category).filter((v,i,a) => a.indexOf(v) === i).join(', ')}</span></div>
+        </div>`).join('');
+    }
+    document.querySelectorAll('[data-filter]').forEach(btn => btn.addEventListener('click', () => { state.importance = btn.dataset.filter; updateActiveButtons(); render(); }));
+    document.getElementById('search').addEventListener('input', e => { state.query = e.target.value.trim(); render(); });
+    document.addEventListener('keydown', e => { if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'k') { e.preventDefault(); document.getElementById('search').focus(); } });
+    document.getElementById('themeBtn').addEventListener('click', () => {
+      const next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      localStorage.setItem('ai-yesterday-theme', next);
+      document.getElementById('themeBtn').textContent = next === 'dark' ? '☀' : '☾';
+    });
+    document.getElementById('mobileMenu').addEventListener('click', () => document.getElementById('sidebar').classList.toggle('open'));
+    document.querySelectorAll('.sidebar a').forEach(a => a.addEventListener('click', () => document.getElementById('sidebar').classList.remove('open')));
+    const savedTheme = localStorage.getItem('ai-yesterday-theme') || 'dark';
+    document.documentElement.setAttribute('data-theme', savedTheme);
+    document.getElementById('themeBtn').textContent = savedTheme === 'dark' ? '☀' : '☾';
+    loadData();
+  </script>
+</body>
+</html>
