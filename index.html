@@ -263,6 +263,31 @@
       font-weight: 700;
       cursor: pointer;
     }
+    .month-toggle {
+      display: flex; justify-content: space-between; align-items: center;
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 14px 16px;
+      cursor: pointer; font: inherit; color: var(--text); width: 100%; text-align: left;
+      transition: border-color 0.2s;
+    }
+    .month-toggle:hover { border-color: rgba(200,168,78,0.36); }
+    .month-toggle .arrow { transition: transform 0.2s; font-size: 14px; }
+    .month-toggle.open .arrow { transform: rotate(90deg); }
+    .month-body { display: none; margin-top: 10px; }
+    .month-body.open { display: block; }
+    .date-compact-row {
+      display: grid; grid-template-columns: 1fr auto auto auto; gap: 10px; align-items: center;
+      padding: 8px 12px; border: 1px solid var(--border); border-radius: 10px;
+      margin-bottom: 6px; background: rgba(255,255,255,0.015);
+    }
+    .date-compact-row .date-label { font-family: 'SF Mono', 'Cascadia Code', monospace; color: var(--accent2); font-size: 12px; }
+    .date-compact-row .date-brief { color: var(--text2); font-size: 12px; }
+    .date-compact-row .view-link { color: var(--accent2); font-weight: 700; font-size: 11px; cursor: pointer; background: none; border: none; font: inherit; }
+    .date-compact-row .view-link:hover { text-decoration: underline; }
+    @media (max-width: 768px) {
+      .date-compact-row { grid-template-columns: 1fr auto; }
+      .date-compact-row .date-brief { display: none; }
+    }
     .empty { border: 1px dashed var(--border); color: var(--muted); padding: 28px; border-radius: var(--radius); text-align: center; }
     mark.highlight { background: rgba(200,168,78,0.35); color: inherit; border-radius: 3px; padding: 0 2px; }
     @media (max-width: 900px) { .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
@@ -557,18 +582,43 @@
       renderSources();
     }
     function renderTimeline() {
+      const el = document.getElementById('timelineList');
       if (state.archives.length) {
-        document.getElementById('timelineList').innerHTML = state.archives.map(row => `
-          <div class="timeline-item">
-            <div class="date-badge">${formatDate(row.date)}</div>
-            <div>
-              <strong>${escapeHtml(row.item_count)} AI signals</strong><br>
-              <span class="meta">${escapeHtml(row.critical_count)} critical · ${escapeHtml(row.mode)} · generated ${formatTime(row.generated_at)}</span><br>
-              <button class="archive-btn" data-archive-file="${escapeHtml(row.file)}">View this date on page</button>
-              <a class="source-link" target="_blank" rel="noopener" href="${escapeHtml(row.file)}">Open JSON</a>
+        const months = {};
+        state.archives.forEach(row => {
+          const month = row.date.slice(0, 7);
+          months[month] = months[month] || [];
+          months[month].push(row);
+        });
+        const entries = Object.entries(months).sort((a,b) => b[0].localeCompare(a[0]));
+        const now = new Date().toISOString().slice(0, 7);
+        el.innerHTML = entries.map(([month, rows]) => {
+          rows.sort((a,b) => b.date.localeCompare(a.date));
+          const total = rows.reduce((s,r) => s + Number(r.item_count||0), 0);
+          const critical = rows.reduce((s,r) => s + Number(r.critical_count||0), 0);
+          const isOpen = month === now;
+          return `<div class="month-group">
+            <button class="month-toggle${isOpen ? ' open' : ''}" data-toggle-month="${month}">
+              <span><strong>${formatMonth(month)}</strong> · ${rows.length} days · ${total} signals · ${critical} critical</span>
+              <span class="arrow">▶</span>
+            </button>
+            <div class="month-body${isOpen ? ' open' : ''}" data-month-body="${month}">
+              ${rows.map(row => `<div class="date-compact-row">
+                <span class="date-label">${formatDate(row.date)}</span>
+                <span class="date-brief">${escapeHtml(row.item_count)} signals · ${escapeHtml(row.critical_count)} critical</span>
+                <button class="view-link" data-archive-file="${escapeHtml(row.file)}">View on page</button>
+                <button class="view-link" style="color:var(--muted)" data-archive-file="${escapeHtml(row.file)}" data-json="1">JSON</button>
+              </div>`).join('')}
             </div>
-          </div>`).join('');
-        document.querySelectorAll('[data-archive-file]').forEach(btn => btn.addEventListener('click', () => {
+          </div>`;
+        }).join('');
+        el.querySelectorAll('.month-toggle').forEach(btn => btn.addEventListener('click', () => {
+          const body = el.querySelector(`[data-month-body="${btn.dataset.toggleMonth}"]`);
+          body.classList.toggle('open');
+          btn.classList.toggle('open');
+        }));
+        el.querySelectorAll('.view-link').forEach(btn => btn.addEventListener('click', () => {
+          if (btn.dataset.json) { window.open(btn.dataset.archiveFile, '_blank'); return; }
           document.getElementById('archiveSelect').value = btn.dataset.archiveFile;
           loadSelectedArchive();
         }));
@@ -580,7 +630,7 @@
         grouped[date] = grouped[date] || [];
         grouped[date].push(item);
       });
-      document.getElementById('timelineList').innerHTML = Object.entries(grouped).sort((a,b) => b[0].localeCompare(a[0])).map(([date, items]) => `
+      el.innerHTML = Object.entries(grouped).sort((a,b) => b[0].localeCompare(a[0])).map(([date, items]) => `
         <div class="timeline-item">
           <div class="date-badge">${formatDate(date)}</div>
           <div><strong>${items.length} AI signals</strong><br><span class="meta">${items.filter(i => i.importance === 'Critical').length} critical · ${items.map(i => i.category).filter((v,i,a) => a.indexOf(v) === i).join(', ')}</span></div>
@@ -598,23 +648,33 @@
         months[month] = months[month] || [];
         months[month].push(row);
       });
+      const now = new Date().toISOString().slice(0, 7);
       el.innerHTML = Object.entries(months).sort((a,b) => b[0].localeCompare(a[0])).map(([month, rows]) => {
         rows.sort((a,b) => b.date.localeCompare(a.date));
         const total = rows.reduce((sum, row) => sum + Number(row.item_count || 0), 0);
         const critical = rows.reduce((sum, row) => sum + Number(row.critical_count || 0), 0);
+        const isOpen = month === now;
         return `<div class="month-card">
-          <div class="month-head">
-            <h4>${formatMonth(month)}</h4>
-            <span class="metric-pill">${rows.length} days · ${total} signals · ${critical} critical</span>
-          </div>
-          <div class="date-grid">
-            ${rows.map(row => `<button class="date-chip ${Number(row.item_count || 0) ? '' : 'empty-day'}" data-archive-file="${escapeHtml(row.file)}">
-              <strong>${formatDate(row.date)}</strong>
-              <span>${escapeHtml(row.item_count)} signals · ${escapeHtml(row.critical_count)} critical</span>
-            </button>`).join('')}
+          <button class="month-toggle${isOpen ? ' open' : ''}" data-toggle-month="${month}">
+            <span><strong>${formatMonth(month)}</strong> · ${rows.length} days · ${total} signals · ${critical} critical</span>
+            <span class="arrow">▶</span>
+          </button>
+          <div class="month-body${isOpen ? ' open' : ''}" data-month-body="${month}">
+            <div class="date-grid" style="margin-top:10px">
+              ${rows.map(row => `<button class="date-chip ${Number(row.item_count || 0) ? '' : 'empty-day'}" data-archive-file="${escapeHtml(row.file)}">
+                <strong>${formatDate(row.date)}</strong>
+                <span>${escapeHtml(row.item_count)} signals · ${escapeHtml(row.critical_count)} critical</span>
+              </button>`).join('')}
+            </div>
           </div>
         </div>`;
       }).join('');
+      el.querySelectorAll('.month-toggle').forEach(btn => btn.addEventListener('click', () => {
+        const body = el.querySelector(`[data-month-body="${btn.dataset.toggleMonth}"]`);
+        if (!body) return;
+        body.classList.toggle('open');
+        btn.classList.toggle('open');
+      }));
       el.querySelectorAll('[data-archive-file]').forEach(btn => btn.addEventListener('click', () => {
         document.getElementById('archiveSelect').value = btn.dataset.archiveFile;
         loadSelectedArchive();
