@@ -1,11 +1,11 @@
 {
   "metadata": {
     "name": "AI Yesterday",
-    "generated_at": "2026-06-04T16:35:38.713041Z",
+    "generated_at": "2026-06-04T16:36:11.725101Z",
     "coverage_date": "2026-06-03",
     "source_count": 9,
-    "feed_items_scanned": 2312,
-    "item_count": 7,
+    "feed_items_scanned": 2332,
+    "item_count": 11,
     "mode": "live",
     "summary_engine": "rules",
     "openrouter_items_enriched": 0,
@@ -95,12 +95,61 @@
       "summary": "In simple terms, this is a useful signal about where AI is heading. Can't make sense of Dashlane's vault theft notification? You're not alone.",
       "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
       "summary_engine": "rules"
+    },
+    {
+      "title": "Mathematicians issue warning as AI rapidly gains ground",
+      "source": "Hacker News AI",
+      "url": "https://www.science.org/content/article/mathematicians-issue-warning-ai-rapidly-gains-ground",
+      "published": "2026-06-03T10:05:48Z",
+      "category": "Products",
+      "importance": "Low",
+      "score": 31,
+      "summary": "In simple terms, this is about turning AI research into tools people can actually use. Article URL: https://www.science.org/content/article/mathematicians-issue-warning-ai-rapidly-gains-ground Comments URL: https://news.ycombinator.com/item?id=48382052 Points: 275 # Comments: 314",
+      "why_it_matters": "Worth testing because it could reduce manual work or create a new workflow for non-technical users.",
+      "summary_engine": "rules"
+    },
+    {
+      "title": "U of T researchers demonstrate AI worm could target any online device",
+      "source": "Hacker News AI",
+      "url": "https://www.utoronto.ca/news/u-t-researchers-demonstrate-ai-worm-could-target-any-online-device",
+      "published": "2026-06-03T03:47:21Z",
+      "category": "Research",
+      "importance": "Low",
+      "score": 31,
+      "summary": "In simple terms, researchers are testing a new way to make AI better or safer. Article URL: https://www.utoronto.ca/news/u-t-researchers-demonstrate-ai-worm-could-target-any-online-device Comments URL: https://news.ycombinator.com/item?id=48379664 Points: 146 # Comments: 45",
+      "why_it_matters": "Useful background signal. It may not matter today, but it can shape tools that appear later.",
+      "summary_engine": "rules"
+    },
+    {
+      "title": "Uber's $1,500/month AI limit is a useful signal for AI tool pricing",
+      "source": "Hacker News AI",
+      "url": "https://simonwillison.net/2026/Jun/3/uber-caps-usage/",
+      "published": "2026-06-03T12:25:14Z",
+      "category": "Products",
+      "importance": "Low",
+      "score": 28,
+      "summary": "In simple terms, this is about turning AI research into tools people can actually use. https://www.bloomberg.com/news/articles/2026-06-02/uber-caps... ( https://archive.ph/ZrwAy ) Comments URL: https://news.ycombinator.com/item?id=48383056 Points: 567 # Comments: 693",
+      "why_it_matters": "Worth testing because it could reduce manual work or create a new workflow for non-technical users.",
+      "summary_engine": "rules"
+    },
+    {
+      "title": "32GB of DDR5 now costs $375 – AI shortage continues to squeeze PC building",
+      "source": "Hacker News AI",
+      "url": "https://www.tomshardware.com/pc-components/ddr5/32gb-of-ddr5-now-costs-usd375-minimum-ai-shortage-continues-to-squeeze-pc-building",
+      "published": "2026-06-03T12:43:43Z",
+      "category": "Signals",
+      "importance": "Low",
+      "score": 24,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. Article URL: https://www.tomshardware.com/pc-components/ddr5/32gb-of-ddr5-now-costs-usd375-minimum-ai-shortage-continues-to-squeeze-pc-building Comments URL: https://news.ycombinator.com/item?id=48383241 Points: 414...",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules"
     }
   ],
   "categories": [
     "Models",
     "Policy",
     "Products",
+    "Research",
     "Signals"
   ],
   "source_quality": [
@@ -111,6 +160,15 @@
       "selected_items": 4,
       "signal_ratio": 0.004,
       "quality_score": 88,
+      "status": "active"
+    },
+    {
+      "name": "Hacker News AI",
+      "tier": 2,
+      "feed_items_scanned": 20,
+      "selected_items": 4,
+      "signal_ratio": 0.2,
+      "quality_score": 58,
       "status": "active"
     },
     {
@@ -168,15 +226,6 @@
       "status": "active"
     },
     {
-      "name": "Hacker News AI",
-      "tier": 2,
-      "feed_items_scanned": 0,
-      "selected_items": 0,
-      "signal_ratio": 0,
-      "quality_score": 20,
-      "status": "unavailable"
-    },
-    {
       "name": "arXiv AI",
       "tier": 2,
       "feed_items_scanned": 381,
@@ -196,6 +245,14 @@
       "plain_english": "Policy produced 2 critical signals. This is worth watching closely this week."
     },
     {
+      "category": "Signals",
+      "items": 5,
+      "critical": 0,
+      "average_score": 42.4,
+      "source_count": 3,
+      "plain_english": "Signals is a busy area this week. Expect incremental product or research movement rather than one big headline."
+    },
+    {
       "category": "Models",
       "items": 4,
       "critical": 0,
@@ -204,20 +261,20 @@
       "plain_english": "Models has a lighter signal this week. Useful context, but not the main priority."
     },
     {
-      "category": "Signals",
+      "category": "Products",
       "items": 4,
       "critical": 0,
-      "average_score": 47.0,
+      "average_score": 40.8,
       "source_count": 2,
-      "plain_english": "Signals has a lighter signal this week. Useful context, but not the main priority."
+      "plain_english": "Products has a lighter signal this week. Useful context, but not the main priority."
     },
     {
-      "category": "Products",
-      "items": 2,
+      "category": "Research",
+      "items": 1,
       "critical": 0,
-      "average_score": 52.0,
+      "average_score": 31.0,
       "source_count": 1,
-      "plain_english": "Products has a lighter signal this week. Useful context, but not the main priority."
+      "plain_english": "Research has a lighter signal this week. Useful context, but not the main priority."
     }
   ]
 }
