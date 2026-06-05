@@ -3,23 +3,44 @@ name: Build AI Yesterday digest
 on:
   schedule:
     - cron: '15 7 * * *'
+    - cron: '15 12 * * *'
   workflow_dispatch:
 
 permissions:
   contents: write
 
+concurrency:
+  group: ai-yesterday-digest
+  cancel-in-progress: false
+
 jobs:
   build-digest:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - name: Collect yesterday's AI news
-        run: python scripts/collect_ai_news.py
-      - name: Commit updated digest
+      - name: Backfill missed archive days
+        shell: bash
         run: |
+          set -euo pipefail
+          for offset in 7 6 5 4 3 2; do
+            target="$(date -u -d "$offset days ago" +%F)"
+            if [ ! -f "data/history/$target.json" ]; then
+              python scripts/collect_ai_news.py --date "$target" --history-only --no-fallback
+            fi
+          done
+      - name: Collect yesterday's AI news
+        shell: bash
+        run: |
+          set -euo pipefail
+          python scripts/collect_ai_news.py --date "$(date -u -d 'yesterday' +%F)" --no-fallback
+      - name: Commit updated digest
+        shell: bash
+        run: |
+          set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/digest.json data/history
