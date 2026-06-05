@@ -17,6 +17,10 @@ jobs:
   build-digest:
     runs-on: ubuntu-latest
     timeout-minutes: 20
+    env:
+      OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+      OPENROUTER_MODEL: ${{ vars.OPENROUTER_MODEL || 'openai/gpt-4o-mini' }}
+      OPENROUTER_MAX_ITEMS: "12"
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
