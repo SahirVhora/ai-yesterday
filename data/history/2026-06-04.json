@@ -1,18 +1,18 @@
 {
   "metadata": {
     "name": "AI Yesterday",
-    "generated_at": "2026-06-05T09:47:31.252692Z",
+    "generated_at": "2026-06-05T09:53:24.385234Z",
     "coverage_date": "2026-06-04",
     "source_count": 9,
     "feed_items_scanned": 2370,
     "item_count": 14,
     "mode": "live",
-    "summary_engine": "openrouter",
+    "summary_engine": "rules",
     "openrouter_enabled": true,
     "openrouter_items_attempted": 12,
-    "openrouter_items_enriched": 1,
-    "openrouter_model": "openrouter/free",
-    "briefing_quality_score": 85.4
+    "openrouter_items_enriched": 0,
+    "openrouter_model": "meta-llama/llama-3.3-70b-instruct:free",
+    "briefing_quality_score": 83.9
   },
   "items": [
     {
@@ -127,11 +127,10 @@
       "category": "Signals",
       "importance": "Low",
       "score": 34,
-      "summary": ": Anthropic has released an open-source framework that uses AI models to automatically search for software vulnerabilities, aiming to help developers identify security flaws earlier in the development cycle.",
-      "why_it_matters": ": By providing a transparent tool for AI-driven security testing, teams can integrate automated checks into their workflows, potentially reducing the cost and time of manual vulnerability assessments.",
-      "summary_engine": "openrouter",
-      "summary_model": "openrouter/free",
-      "briefing_quality_score": 100
+      "summary": "In simple terms, this is a useful signal about where AI is heading. Anthropic's open-source framework for AI-powered vulnerability discovery",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 80
     },
     {
       "title": "Google employees internally share memes about how its AI sucks",
