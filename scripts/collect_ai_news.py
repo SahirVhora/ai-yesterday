@@ -20,7 +20,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "data" / "digest.json"
 HISTORY_DIR = ROOT / "data" / "history"
-OPENROUTER_MODEL = os.environ.get("OPENROUTER_MODEL", "openrouter/free")
+OPENROUTER_MODEL = os.environ.get("OPENROUTER_MODEL", "meta-llama/llama-3.3-70b-instruct:free")
 OPENROUTER_FALLBACK_MODEL = os.environ.get("OPENROUTER_FALLBACK_MODEL", "openrouter/free")
 OPENROUTER_KEY = os.environ.get("OPENROUTER_API_KEY")
 OPENROUTER_MAX_ITEMS = int(os.environ.get("OPENROUTER_MAX_ITEMS", "12"))
@@ -123,6 +123,30 @@ def extract_json_object(value: str) -> dict:
         if not match:
             raise
         return json.loads(match.group(0))
+
+
+def extract_briefing_fields(value: str) -> dict:
+    try:
+        parsed = extract_json_object(value)
+        if isinstance(parsed, dict):
+            return parsed
+    except Exception:
+        pass
+    text = clean_text(value)
+    summary = ""
+    why = ""
+    summary_match = re.search(r"(?:summary|plain english)\s*[:\-]\s*(.+?)(?:\s+why(?: it matters)?\s*[:\-]|$)", text, flags=re.IGNORECASE)
+    why_match = re.search(r"why(?: it matters)?\s*[:\-]\s*(.+)$", text, flags=re.IGNORECASE)
+    if summary_match:
+        summary = summary_match.group(1).strip()
+    if why_match:
+        why = why_match.group(1).strip()
+    if not summary and not why:
+        quote_summary = re.search(r'"summary"\s*:\s*"([^"]+)', value, flags=re.IGNORECASE | re.DOTALL)
+        quote_why = re.search(r'"why_it_matters"\s*:\s*"([^"]+)', value, flags=re.IGNORECASE | re.DOTALL)
+        summary = clean_text(quote_summary.group(1)) if quote_summary else ""
+        why = clean_text(quote_why.group(1)) if quote_why else ""
+    return {"summary": summary, "why_it_matters": why}
 
 
 def has_weak_briefing_text(summary: str, why: str, title: str) -> bool:
@@ -276,7 +300,6 @@ def request_openrouter(item: dict, model: str) -> dict:
         ],
         "temperature": 0.15,
         "max_tokens": 220,
-        "response_format": {"type": "json_object"},
     }).encode("utf-8")
     req = urllib.request.Request(
         "https://openrouter.ai/api/v1/chat/completions",
@@ -312,8 +335,15 @@ def build_openrouter_prompt(item: dict) -> str:
 
 
 def parse_openrouter_briefing(item: dict, payload: dict) -> dict | None:
-    content = payload["choices"][0]["message"]["content"]
-    parsed = extract_json_object(content)
+    if "choices" not in payload:
+        raise ValueError(payload.get("error", {}).get("message") or "OpenRouter response missing choices")
+    message = payload["choices"][0].get("message", {})
+    content = message.get("content")
+    if isinstance(content, list):
+        content = " ".join(str(part.get("text") or part.get("content") or part) for part in content)
+    if not content:
+        raise ValueError("OpenRouter response had no content")
+    parsed = extract_briefing_fields(content)
     if parsed.get("summary") and parsed.get("why_it_matters"):
         summary = clamp_words(parsed["summary"], 55)
         why = clamp_words(parsed["why_it_matters"], 38)

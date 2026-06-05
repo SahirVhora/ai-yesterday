@@ -57,13 +57,13 @@ Set an API key before running the collector:
 
 ```bash
 export OPENROUTER_API_KEY="..."
-export OPENROUTER_MODEL="openrouter/free"
+export OPENROUTER_MODEL="meta-llama/llama-3.3-70b-instruct:free"
 python3 scripts/collect_ai_news.py
 ```
 
 For GitHub Actions, add a repository secret named `OPENROUTER_API_KEY`. The scheduled workflow will enrich the top briefing items through OpenRouter and record `openrouter_items_enriched` plus `briefing_quality_score` in `data/digest.json`.
 
-You can override the model with a repository variable named `OPENROUTER_MODEL`. If a paid model returns a payment error, the collector retries `openrouter/free`. If no key is present, the collector falls back to rules-based summaries.
+You can override the model with a repository variable named `OPENROUTER_MODEL`. If a paid or specific free model is unavailable, the collector retries `openrouter/free`. If no key is present, the collector falls back to rules-based summaries.
 
 ## Generate preview images
 
