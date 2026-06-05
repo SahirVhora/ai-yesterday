@@ -1,18 +1,18 @@
 {
   "metadata": {
     "name": "AI Yesterday",
-    "generated_at": "2026-06-05T10:54:29.298485Z",
+    "generated_at": "2026-06-05T15:27:21.919955Z",
     "coverage_date": "2026-06-04",
     "source_count": 9,
-    "feed_items_scanned": 2370,
-    "item_count": 14,
+    "feed_items_scanned": 2350,
+    "item_count": 8,
     "mode": "live",
-    "summary_engine": "rules",
+    "summary_engine": "openrouter",
     "openrouter_enabled": true,
     "openrouter_items_attempted": 4,
-    "openrouter_items_enriched": 0,
+    "openrouter_items_enriched": 1,
     "openrouter_model": "openrouter/free",
-    "briefing_quality_score": 83.9
+    "briefing_quality_score": 86.9
   },
   "items": [
     {
@@ -23,9 +23,10 @@
       "category": "Models",
       "importance": "High",
       "score": 74,
-      "summary": "In simple terms, this is about making AI systems more capable or cheaper to run. Learn how Endava is using AI agents, ChatGPT Enterprise, and Codex to accelerate software delivery, automate workflows, and build an AI-native culture across the enterprise.",
-      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
-      "summary_engine": "rules",
+      "summary": "Endava is integrating AI agents, ChatGPT Enterprise, and Codex to streamline software development, automate tasks, and foster an AI-driven workplace culture.",
+      "why_it_matters": "This approach may reduce development costs and speed up delivery, offering insights for businesses aiming to adopt AI in operations.",
+      "summary_engine": "openrouter",
+      "summary_model": "openrouter/free",
       "briefing_quality_score": 100
     },
     {
@@ -118,84 +119,6 @@
       "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
       "summary_engine": "rules",
       "briefing_quality_score": 100
-    },
-    {
-      "title": "Anthropic's open-source framework for AI-powered vulnerability discovery",
-      "source": "Hacker News AI",
-      "url": "https://github.com/anthropics/defending-code-reference-harness",
-      "published": "2026-06-04T20:11:20Z",
-      "category": "Signals",
-      "importance": "Low",
-      "score": 34,
-      "summary": "In simple terms, this is a useful signal about where AI is heading. Anthropic's open-source framework for AI-powered vulnerability discovery",
-      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
-      "summary_engine": "rules",
-      "briefing_quality_score": 80
-    },
-    {
-      "title": "Google employees internally share memes about how its AI sucks",
-      "source": "Hacker News AI",
-      "url": "https://www.404media.co/google-employees-internally-share-memes-about-how-its-ai-sucks/",
-      "published": "2026-06-04T15:42:33Z",
-      "category": "Signals",
-      "importance": "Low",
-      "score": 34,
-      "summary": "In simple terms, this is a useful signal about where AI is heading. Google employees internally share memes about how its AI sucks",
-      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
-      "summary_engine": "rules",
-      "briefing_quality_score": 80
-    },
-    {
-      "title": "The LLM warnings Google fired Timnit Gebru over have all come true",
-      "source": "Hacker News AI",
-      "url": "https://www.tumblr.com/dreaminginthedeepsouth/817865966907228160/darren-oconnor-timnit-gebru-was-fired-from",
-      "published": "2026-06-04T15:34:43Z",
-      "category": "Models",
-      "importance": "Low",
-      "score": 34,
-      "summary": "In simple terms, this is about making AI systems more capable or cheaper to run. The LLM warnings Google fired Timnit Gebru over have all come true",
-      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
-      "summary_engine": "rules",
-      "briefing_quality_score": 80
-    },
-    {
-      "title": "South Korean Forums Will Need to Scan Every Images with AI Censorship Tools",
-      "source": "Hacker News AI",
-      "url": "https://discuss.privacyguides.net/t/south-korean-online-communities-will-need-to-scan-every-images-with-ai-censorship-tools/38341",
-      "published": "2026-06-04T23:45:56Z",
-      "category": "Products",
-      "importance": "Low",
-      "score": 28,
-      "summary": "In simple terms, this is about turning AI research into tools people can actually use. South Korean Forums Will Need to Scan Every Images with AI Censorship Tools",
-      "why_it_matters": "Worth testing because it could reduce manual work or create a new workflow for non-technical users.",
-      "summary_engine": "rules",
-      "briefing_quality_score": 80
-    },
-    {
-      "title": "When AI Builds Itself: Our progress toward recursive self-improvement",
-      "source": "Hacker News AI",
-      "url": "https://www.anthropic.com/institute/recursive-self-improvement",
-      "published": "2026-06-04T16:20:17Z",
-      "category": "Signals",
-      "importance": "Low",
-      "score": 24,
-      "summary": "In simple terms, this is a useful signal about where AI is heading. When AI Builds Itself: Our progress toward recursive self-improvement",
-      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
-      "summary_engine": "rules",
-      "briefing_quality_score": 80
-    },
-    {
-      "title": "Failing grades soar with AI usage, dwindling math skills in Berkeley CS classes",
-      "source": "Hacker News AI",
-      "url": "https://www.dailycal.org/news/campus/academics/failing-grades-soar-as-professors-see-greater-ai-usage-dwindling-math-skills-in-uc-berkeley/article_16fad0bf-02cb-4b8c-8d88-888ffd9f8608.html",
-      "published": "2026-06-04T00:18:02Z",
-      "category": "Signals",
-      "importance": "Low",
-      "score": 24,
-      "summary": "In simple terms, this is a useful signal about where AI is heading. Failing grades soar with AI usage, dwindling math skills in Berkeley CS classes",
-      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
-      "summary_engine": "rules",
-      "briefing_quality_score": 80
     }
   ],
   "categories": [
@@ -213,15 +136,6 @@
       "selected_items": 3,
       "signal_ratio": 0.003,
       "quality_score": 81,
-      "status": "active"
-    },
-    {
-      "name": "Hacker News AI",
-      "tier": 2,
-      "feed_items_scanned": 20,
-      "selected_items": 6,
-      "signal_ratio": 0.3,
-      "quality_score": 72,
       "status": "active"
     },
     {
@@ -279,6 +193,15 @@
       "status": "active"
     },
     {
+      "name": "Hacker News AI",
+      "tier": 2,
+      "feed_items_scanned": 0,
+      "selected_items": 0,
+      "signal_ratio": 0,
+      "quality_score": 20,
+      "status": "unavailable"
+    },
+    {
       "name": "arXiv AI",
       "tier": 2,
       "feed_items_scanned": 418,
@@ -291,9 +214,9 @@
   "weekly_trends": [
     {
       "category": "Models",
-      "items": 12,
+      "items": 11,
       "critical": 1,
-      "average_score": 59.9,
+      "average_score": 62.3,
       "source_count": 4,
       "plain_english": "Models produced 1 critical signal. This is worth watching closely this week."
     },
@@ -307,17 +230,17 @@
     },
     {
       "category": "Signals",
-      "items": 24,
+      "items": 20,
       "critical": 0,
-      "average_score": 32.2,
+      "average_score": 32.9,
       "source_count": 4,
       "plain_english": "Signals is a busy area this week. Expect incremental product or research movement rather than one big headline."
     },
     {
       "category": "Products",
-      "items": 17,
+      "items": 16,
       "critical": 0,
-      "average_score": 49.3,
+      "average_score": 50.6,
       "source_count": 4,
       "plain_english": "Products is a busy area this week. Expect incremental product or research movement rather than one big headline."
     },
