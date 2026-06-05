@@ -1,7 +1,7 @@
 {
   "metadata": {
     "name": "AI Yesterday",
-    "generated_at": "2026-06-05T09:53:24.385234Z",
+    "generated_at": "2026-06-05T10:54:29.298485Z",
     "coverage_date": "2026-06-04",
     "source_count": 9,
     "feed_items_scanned": 2370,
@@ -9,9 +9,9 @@
     "mode": "live",
     "summary_engine": "rules",
     "openrouter_enabled": true,
-    "openrouter_items_attempted": 12,
+    "openrouter_items_attempted": 4,
     "openrouter_items_enriched": 0,
-    "openrouter_model": "meta-llama/llama-3.3-70b-instruct:free",
+    "openrouter_model": "openrouter/free",
     "briefing_quality_score": 83.9
   },
   "items": [
