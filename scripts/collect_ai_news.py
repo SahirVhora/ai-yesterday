@@ -20,10 +20,14 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "data" / "digest.json"
 HISTORY_DIR = ROOT / "data" / "history"
-OPENROUTER_MODEL = os.environ.get("OPENROUTER_MODEL", "meta-llama/llama-3.3-70b-instruct:free")
+OPENROUTER_MODEL = os.environ.get("OPENROUTER_MODEL", "openrouter/free")
 OPENROUTER_FALLBACK_MODEL = os.environ.get("OPENROUTER_FALLBACK_MODEL", "openrouter/free")
 OPENROUTER_KEY = os.environ.get("OPENROUTER_API_KEY")
-OPENROUTER_MAX_ITEMS = int(os.environ.get("OPENROUTER_MAX_ITEMS", "12"))
+OPENROUTER_MAX_ITEMS = int(os.environ.get("OPENROUTER_MAX_ITEMS", "4"))
+
+
+class OpenRouterRateLimited(Exception):
+    pass
 
 SOURCES = [
     {"name": "OpenAI", "url": "https://openai.com/news/rss.xml", "tier": 5},
@@ -360,10 +364,17 @@ def call_openrouter(item: dict) -> dict | None:
     try:
         return parse_openrouter_briefing(item, request_openrouter(item, OPENROUTER_MODEL))
     except urllib.error.HTTPError as exc:
+        if exc.code == 429:
+            raise OpenRouterRateLimited("OpenRouter rate limit reached")
         if exc.code == 402 and OPENROUTER_MODEL != OPENROUTER_FALLBACK_MODEL:
             print(f"WARN OpenRouter paid model unavailable; retrying free router for {item['title'][:50]}", file=sys.stderr)
             try:
                 return parse_openrouter_briefing(item, request_openrouter(item, OPENROUTER_FALLBACK_MODEL))
+            except urllib.error.HTTPError as retry_exc:
+                if retry_exc.code == 429:
+                    raise OpenRouterRateLimited("OpenRouter fallback rate limit reached")
+                print(f"WARN OpenRouter fallback failed for {item['title'][:50]}: HTTP {retry_exc.code}", file=sys.stderr)
+                return None
             except Exception as retry_exc:
                 print(f"WARN OpenRouter fallback failed for {item['title'][:50]}: {retry_exc}", file=sys.stderr)
                 return None
@@ -384,7 +395,11 @@ def enrich_with_openrouter(items: list[dict]) -> dict:
         return stats
     for item in items[:OPENROUTER_MAX_ITEMS]:
         stats["attempted"] += 1
-        improved = call_openrouter(item)
+        try:
+            improved = call_openrouter(item)
+        except OpenRouterRateLimited as exc:
+            print(f"WARN {exc}; stopping enrichment for this run", file=sys.stderr)
+            break
         if improved:
             item.update(improved)
             item["summary_engine"] = "openrouter"
