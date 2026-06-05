@@ -1,18 +1,18 @@
 {
   "metadata": {
     "name": "AI Yesterday",
-    "generated_at": "2026-06-05T09:33:48.237255Z",
+    "generated_at": "2026-06-05T09:47:31.252692Z",
     "coverage_date": "2026-06-04",
     "source_count": 9,
     "feed_items_scanned": 2370,
     "item_count": 14,
     "mode": "live",
-    "summary_engine": "rules",
+    "summary_engine": "openrouter",
     "openrouter_enabled": true,
     "openrouter_items_attempted": 12,
-    "openrouter_items_enriched": 0,
-    "openrouter_model": "openai/gpt-4o-mini",
-    "briefing_quality_score": 83.9
+    "openrouter_items_enriched": 1,
+    "openrouter_model": "openrouter/free",
+    "briefing_quality_score": 85.4
   },
   "items": [
     {
@@ -127,10 +127,11 @@
       "category": "Signals",
       "importance": "Low",
       "score": 34,
-      "summary": "In simple terms, this is a useful signal about where AI is heading. Anthropic's open-source framework for AI-powered vulnerability discovery",
-      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
-      "summary_engine": "rules",
-      "briefing_quality_score": 80
+      "summary": ": Anthropic has released an open-source framework that uses AI models to automatically search for software vulnerabilities, aiming to help developers identify security flaws earlier in the development cycle.",
+      "why_it_matters": ": By providing a transparent tool for AI-driven security testing, teams can integrate automated checks into their workflows, potentially reducing the cost and time of manual vulnerability assessments.",
+      "summary_engine": "openrouter",
+      "summary_model": "openrouter/free",
+      "briefing_quality_score": 100
     },
     {
       "title": "Google employees internally share memes about how its AI sucks",
@@ -315,17 +316,17 @@
     },
     {
       "category": "Products",
-      "items": 15,
+      "items": 17,
       "critical": 0,
-      "average_score": 48.7,
+      "average_score": 49.3,
       "source_count": 4,
       "plain_english": "Products is a busy area this week. Expect incremental product or research movement rather than one big headline."
     },
     {
       "category": "Business",
-      "items": 2,
+      "items": 3,
       "critical": 0,
-      "average_score": 54.5,
+      "average_score": 58.0,
       "source_count": 2,
       "plain_english": "Business has a lighter signal this week. Useful context, but not the main priority."
     },
