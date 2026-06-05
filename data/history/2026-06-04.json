@@ -1,15 +1,18 @@
 {
   "metadata": {
     "name": "AI Yesterday",
-    "generated_at": "2026-06-05T09:07:59.894746Z",
+    "generated_at": "2026-06-05T09:33:48.237255Z",
     "coverage_date": "2026-06-04",
     "source_count": 9,
-    "feed_items_scanned": 1577,
-    "item_count": 11,
+    "feed_items_scanned": 2370,
+    "item_count": 14,
     "mode": "live",
     "summary_engine": "rules",
+    "openrouter_enabled": true,
+    "openrouter_items_attempted": 12,
     "openrouter_items_enriched": 0,
-    "openrouter_model": null
+    "openrouter_model": "openai/gpt-4o-mini",
+    "briefing_quality_score": 83.9
   },
   "items": [
     {
@@ -22,7 +25,21 @@
       "score": 74,
       "summary": "In simple terms, this is about making AI systems more capable or cheaper to run. Learn how Endava is using AI agents, ChatGPT Enterprise, and Codex to accelerate software delivery, automate workflows, and build an AI-native culture across the enterprise.",
       "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
-      "summary_engine": "rules"
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "Nemotron 3.5 Content Safety: Customizable Multimodal Safety for Global Enterprise AI",
+      "source": "Hugging Face",
+      "url": "https://huggingface.co/blog/nvidia/nemotron-3-5-content-safety",
+      "published": "2026-06-04T18:57:45Z",
+      "category": "Business",
+      "importance": "High",
+      "score": 65,
+      "summary": "In simple terms, money and strategy are moving toward this part of AI. Nemotron 3.5 Content Safety: Customizable Multimodal Safety for Global Enterprise AI",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 80
     },
     {
       "title": "Dreaming: Better memory for a more helpful ChatGPT",
@@ -34,7 +51,8 @@
       "score": 60,
       "summary": "In simple terms, this is about making AI systems more capable or cheaper to run. ChatGPT introduces a new memory system to better remember preferences, keeping context fresh and relevant across conversations.",
       "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
-      "summary_engine": "rules"
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
     },
     {
       "title": "Biodefense in the Intelligence Age",
@@ -46,7 +64,8 @@
       "score": 60,
       "summary": "In simple terms, this affects the rules, risks or responsibilities around AI. Biodefense in the Intelligence Age",
       "why_it_matters": "Important for anyone using AI at work because compliance and data handling expectations are changing.",
-      "summary_engine": "rules"
+      "summary_engine": "rules",
+      "briefing_quality_score": 55
     },
     {
       "title": "How courts are coping with a flood of AI-generated lawsuits",
@@ -58,7 +77,34 @@
       "score": 55,
       "summary": "In simple terms, this affects the rules, risks or responsibilities around AI. Most days in her chambers, Judge Maritza Braswell, a federal magistrate judge in Colorado, sifts through stacks of documents written by people without a lawyer. Many of them can’t afford to hire a lawyer, and others...",
       "why_it_matters": "Important for anyone using AI at work because compliance and data handling expectations are changing.",
-      "summary_engine": "rules"
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "Designing the hf CLI as an agent-optimized way to work with the Hub",
+      "source": "Hugging Face",
+      "url": "https://huggingface.co/blog/hf-cli-for-agents",
+      "published": "2026-06-04T00:00:00Z",
+      "category": "Products",
+      "importance": "Medium",
+      "score": 55,
+      "summary": "In simple terms, this is about turning AI research into tools people can actually use. Designing the hf CLI as an agent-optimized way to work with the Hub",
+      "why_it_matters": "Worth testing because it could reduce manual work or create a new workflow for non-technical users.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 80
+    },
+    {
+      "title": "EVA-Bench Data 2.0: 3 Domains, 121 Tools, 213 Scenarios",
+      "source": "Hugging Face",
+      "url": "https://huggingface.co/blog/ServiceNow-AI/eva-bench-data",
+      "published": "2026-06-04T12:24:58Z",
+      "category": "Products",
+      "importance": "Medium",
+      "score": 52,
+      "summary": "In simple terms, this is about turning AI research into tools people can actually use. EVA-Bench Data 2.0: 3 Domains, 121 Tools, 213 Scenarios",
+      "why_it_matters": "Worth testing because it could reduce manual work or create a new workflow for non-technical users.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 80
     },
     {
       "title": "Dashlane explains how attackers managed to download encrypted password vaults",
@@ -70,7 +116,8 @@
       "score": 36,
       "summary": "In simple terms, this is a useful signal about where AI is heading. By targeting large numbers of users, attackers increased their chances of success.",
       "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
-      "summary_engine": "rules"
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
     },
     {
       "title": "Anthropic's open-source framework for AI-powered vulnerability discovery",
@@ -82,7 +129,8 @@
       "score": 34,
       "summary": "In simple terms, this is a useful signal about where AI is heading. Anthropic's open-source framework for AI-powered vulnerability discovery",
       "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
-      "summary_engine": "rules"
+      "summary_engine": "rules",
+      "briefing_quality_score": 80
     },
     {
       "title": "Google employees internally share memes about how its AI sucks",
@@ -94,7 +142,8 @@
       "score": 34,
       "summary": "In simple terms, this is a useful signal about where AI is heading. Google employees internally share memes about how its AI sucks",
       "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
-      "summary_engine": "rules"
+      "summary_engine": "rules",
+      "briefing_quality_score": 80
     },
     {
       "title": "The LLM warnings Google fired Timnit Gebru over have all come true",
@@ -106,7 +155,8 @@
       "score": 34,
       "summary": "In simple terms, this is about making AI systems more capable or cheaper to run. The LLM warnings Google fired Timnit Gebru over have all come true",
       "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
-      "summary_engine": "rules"
+      "summary_engine": "rules",
+      "briefing_quality_score": 80
     },
     {
       "title": "South Korean Forums Will Need to Scan Every Images with AI Censorship Tools",
@@ -118,7 +168,8 @@
       "score": 28,
       "summary": "In simple terms, this is about turning AI research into tools people can actually use. South Korean Forums Will Need to Scan Every Images with AI Censorship Tools",
       "why_it_matters": "Worth testing because it could reduce manual work or create a new workflow for non-technical users.",
-      "summary_engine": "rules"
+      "summary_engine": "rules",
+      "briefing_quality_score": 80
     },
     {
       "title": "When AI Builds Itself: Our progress toward recursive self-improvement",
@@ -130,7 +181,8 @@
       "score": 24,
       "summary": "In simple terms, this is a useful signal about where AI is heading. When AI Builds Itself: Our progress toward recursive self-improvement",
       "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
-      "summary_engine": "rules"
+      "summary_engine": "rules",
+      "briefing_quality_score": 80
     },
     {
       "title": "Failing grades soar with AI usage, dwindling math skills in Berkeley CS classes",
@@ -142,10 +194,12 @@
       "score": 24,
       "summary": "In simple terms, this is a useful signal about where AI is heading. Failing grades soar with AI usage, dwindling math skills in Berkeley CS classes",
       "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
-      "summary_engine": "rules"
+      "summary_engine": "rules",
+      "briefing_quality_score": 80
     }
   ],
   "categories": [
+    "Business",
     "Models",
     "Policy",
     "Products",
@@ -171,6 +225,15 @@
       "status": "active"
     },
     {
+      "name": "Hugging Face",
+      "tier": 4,
+      "feed_items_scanned": 793,
+      "selected_items": 3,
+      "signal_ratio": 0.004,
+      "quality_score": 71,
+      "status": "active"
+    },
+    {
       "name": "Google DeepMind",
       "tier": 5,
       "feed_items_scanned": 100,
@@ -187,15 +250,6 @@
       "signal_ratio": 0.1,
       "quality_score": 47,
       "status": "active"
-    },
-    {
-      "name": "Hugging Face",
-      "tier": 4,
-      "feed_items_scanned": 0,
-      "selected_items": 0,
-      "signal_ratio": 0,
-      "quality_score": 40,
-      "status": "unavailable"
     },
     {
       "name": "Ars Technica AI",
@@ -237,35 +291,43 @@
   "weekly_trends": [
     {
       "category": "Models",
-      "items": 9,
+      "items": 12,
       "critical": 1,
-      "average_score": 61.2,
+      "average_score": 59.9,
       "source_count": 4,
       "plain_english": "Models produced 1 critical signal. This is worth watching closely this week."
     },
     {
       "category": "Policy",
-      "items": 5,
+      "items": 7,
       "critical": 1,
-      "average_score": 73.0,
+      "average_score": 68.6,
       "source_count": 2,
       "plain_english": "Policy produced 1 critical signal. This is worth watching closely this week."
     },
     {
       "category": "Signals",
-      "items": 19,
+      "items": 24,
       "critical": 0,
-      "average_score": 32.7,
+      "average_score": 32.2,
       "source_count": 4,
       "plain_english": "Signals is a busy area this week. Expect incremental product or research movement rather than one big headline."
     },
     {
       "category": "Products",
-      "items": 12,
+      "items": 15,
       "critical": 0,
-      "average_score": 49.7,
+      "average_score": 48.7,
       "source_count": 4,
       "plain_english": "Products is a busy area this week. Expect incremental product or research movement rather than one big headline."
+    },
+    {
+      "category": "Business",
+      "items": 2,
+      "critical": 0,
+      "average_score": 54.5,
+      "source_count": 2,
+      "plain_english": "Business has a lighter signal this week. Useful context, but not the main priority."
     },
     {
       "category": "Research",
@@ -274,14 +336,6 @@
       "average_score": 27.5,
       "source_count": 1,
       "plain_english": "Research has a lighter signal this week. Useful context, but not the main priority."
-    },
-    {
-      "category": "Business",
-      "items": 1,
-      "critical": 0,
-      "average_score": 44.0,
-      "source_count": 1,
-      "plain_english": "Business has a lighter signal this week. Useful context, but not the main priority."
     }
   ]
 }
