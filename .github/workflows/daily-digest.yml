@@ -19,7 +19,8 @@ jobs:
     timeout-minutes: 20
     env:
       OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
-      OPENROUTER_MODEL: ${{ vars.OPENROUTER_MODEL || 'openai/gpt-4o-mini' }}
+      OPENROUTER_MODEL: ${{ vars.OPENROUTER_MODEL || 'openrouter/free' }}
+      OPENROUTER_FALLBACK_MODEL: openrouter/free
       OPENROUTER_MAX_ITEMS: "12"
     steps:
       - uses: actions/checkout@v4

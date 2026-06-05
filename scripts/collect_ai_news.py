@@ -11,6 +11,7 @@ import json
 import os
 import re
 import sys
+import urllib.error
 import urllib.request
 import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
@@ -19,7 +20,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "data" / "digest.json"
 HISTORY_DIR = ROOT / "data" / "history"
-OPENROUTER_MODEL = os.environ.get("OPENROUTER_MODEL", "openai/gpt-4o-mini")
+OPENROUTER_MODEL = os.environ.get("OPENROUTER_MODEL", "openrouter/free")
+OPENROUTER_FALLBACK_MODEL = os.environ.get("OPENROUTER_FALLBACK_MODEL", "openrouter/free")
 OPENROUTER_KEY = os.environ.get("OPENROUTER_API_KEY")
 OPENROUTER_MAX_ITEMS = int(os.environ.get("OPENROUTER_MAX_ITEMS", "12"))
 
@@ -258,26 +260,10 @@ def source_quality(source: dict, feed_items: list[dict], selected_count: int) ->
     }
 
 
-def call_openrouter(item: dict) -> dict | None:
-    if not OPENROUTER_KEY:
-        return None
-    prompt = (
-        "Create a concise daily briefing entry for a smart non-technical reader. "
-        "Return only valid JSON with keys summary and why_it_matters.\n\n"
-        "Quality rules:\n"
-        "- summary: 28-45 words, plain English, specific to the story, no hype.\n"
-        "- why_it_matters: 18-32 words, explain the practical implication.\n"
-        "- Do not mention that this is an article, feed item, briefing, or AI news item.\n"
-        "- Do not include URLs, markdown, source labels, or invented facts.\n"
-        "- Use British English and a calm analytical tone.\n\n"
-        f"Title: {item['title']}\nSource: {item['source']}\nCategory: {item['category']}\n"
-        f"Importance: {item['importance']} ({item['score']}/100)\n"
-        f"Published: {item['published']}\n"
-        f"Current rules summary: {item['summary']}\n"
-        f"Current why it matters: {item['why_it_matters']}"
-    )
+def request_openrouter(item: dict, model: str) -> dict:
+    prompt = build_openrouter_prompt(item)
     body = json.dumps({
-        "model": OPENROUTER_MODEL,
+        "model": model,
         "messages": [
             {
                 "role": "system",
@@ -303,18 +289,55 @@ def call_openrouter(item: dict) -> dict | None:
         },
         method="POST",
     )
+    with urllib.request.urlopen(req, timeout=18) as response:
+        return json.loads(response.read().decode("utf-8"))
+
+
+def build_openrouter_prompt(item: dict) -> str:
+    return (
+        "Create a concise daily briefing entry for a smart non-technical reader. "
+        "Return only valid JSON with keys summary and why_it_matters.\n\n"
+        "Quality rules:\n"
+        "- summary: 28-45 words, plain English, specific to the story, no hype.\n"
+        "- why_it_matters: 18-32 words, explain the practical implication.\n"
+        "- Do not mention that this is an article, feed item, briefing, or AI news item.\n"
+        "- Do not include URLs, markdown, source labels, or invented facts.\n"
+        "- Use British English and a calm analytical tone.\n\n"
+        f"Title: {item['title']}\nSource: {item['source']}\nCategory: {item['category']}\n"
+        f"Importance: {item['importance']} ({item['score']}/100)\n"
+        f"Published: {item['published']}\n"
+        f"Current rules summary: {item['summary']}\n"
+        f"Current why it matters: {item['why_it_matters']}"
+    )
+
+
+def parse_openrouter_briefing(item: dict, payload: dict) -> dict | None:
+    content = payload["choices"][0]["message"]["content"]
+    parsed = extract_json_object(content)
+    if parsed.get("summary") and parsed.get("why_it_matters"):
+        summary = clamp_words(parsed["summary"], 55)
+        why = clamp_words(parsed["why_it_matters"], 38)
+        if has_weak_briefing_text(summary, why, item["title"]):
+            print(f"WARN OpenRouter weak output rejected: {item['title'][:50]}", file=sys.stderr)
+            return None
+        return {"summary": summary, "why_it_matters": why}
+    return None
+
+
+def call_openrouter(item: dict) -> dict | None:
+    if not OPENROUTER_KEY:
+        return None
     try:
-        with urllib.request.urlopen(req, timeout=18) as response:
-            payload = json.loads(response.read().decode("utf-8"))
-        content = payload["choices"][0]["message"]["content"]
-        parsed = extract_json_object(content)
-        if parsed.get("summary") and parsed.get("why_it_matters"):
-            summary = clamp_words(parsed["summary"], 55)
-            why = clamp_words(parsed["why_it_matters"], 38)
-            if has_weak_briefing_text(summary, why, item["title"]):
-                print(f"WARN OpenRouter weak output rejected: {item['title'][:50]}", file=sys.stderr)
+        return parse_openrouter_briefing(item, request_openrouter(item, OPENROUTER_MODEL))
+    except urllib.error.HTTPError as exc:
+        if exc.code == 402 and OPENROUTER_MODEL != OPENROUTER_FALLBACK_MODEL:
+            print(f"WARN OpenRouter paid model unavailable; retrying free router for {item['title'][:50]}", file=sys.stderr)
+            try:
+                return parse_openrouter_briefing(item, request_openrouter(item, OPENROUTER_FALLBACK_MODEL))
+            except Exception as retry_exc:
+                print(f"WARN OpenRouter fallback failed for {item['title'][:50]}: {retry_exc}", file=sys.stderr)
                 return None
-            return {"summary": summary, "why_it_matters": why}
+        print(f"WARN OpenRouter failed for {item['title'][:50]}: HTTP {exc.code}", file=sys.stderr)
     except Exception as exc:
         print(f"WARN OpenRouter failed for {item['title'][:50]}: {exc}", file=sys.stderr)
     return None
