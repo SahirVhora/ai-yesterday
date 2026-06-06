@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 from __future__ import annotations
 
+import json
 import math
 from pathlib import Path
 from PIL import Image, ImageDraw, ImageFilter, ImageFont
@@ -10,6 +11,22 @@ W, H = 1280, 640
 FONT_BOLD = "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"
 FONT_REG = "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"
 FONT_MONO = "/usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf"
+
+# Load live stats from digest
+DIGEST_PATH = ROOT / "data" / "digest.json"
+if DIGEST_PATH.exists():
+    with open(DIGEST_PATH) as f:
+        _digest = json.load(f)
+    _meta = _digest.get("metadata", {})
+    STAT_SIGNALS = str(_meta.get("item_count", 0))
+    STAT_SOURCES = str(_meta.get("source_count", 0))
+    STAT_SCANNED = str(_meta.get("feed_items_scanned", 0))
+    STAT_CRITICAL = str(sum(1 for i in _digest.get("items", []) if i.get("importance") == "Critical"))
+else:
+    STAT_SIGNALS = "0"
+    STAT_SOURCES = "0"
+    STAT_SCANNED = "0"
+    STAT_CRITICAL = "0"
 
 
 def font(path: str, size: int) -> ImageFont.FreeTypeFont:
@@ -69,7 +86,7 @@ def variant_linear() -> Image.Image:
     text(d, (114, 468), "for busy humans.", 31, (208, 214, 224))
     rr(d, (110, 516, 364, 546), 15, (255, 255, 255, 12), (255, 255, 255, 35), 1)
     text(d, (128, 523), "sahirvhora.github.io/ai-yesterday", 14, (138, 143, 152), mono=True)
-    labels = [("11", "curated signals", (255, 93, 115)), ("9", "sources monitored", (113, 112, 255)), ("2332", "items scanned", (80, 209, 141))]
+    labels = [(STAT_SIGNALS, "curated signals", (255, 93, 115)), (STAT_SOURCES, "sources monitored", (113, 112, 255)), (STAT_SCANNED, "items scanned", (80, 209, 141))]
     for idx, (num, label, color) in enumerate(labels):
         y = 136 + idx * 102
         rr(d, (878, y, 1176, y + 78), 12, (255, 255, 255, 12), (255, 255, 255, 26), 1)
@@ -103,7 +120,7 @@ def variant_vercel() -> Image.Image:
         d.ellipse((x + 16, 512, x + 28, 524), fill=color)
         text(d, (x + 38, 507), label, 16, (23, 23, 23), bold=True)
         x += 146
-    metrics = [("11", "signals"), ("9", "sources"), ("daily", "updates")]
+    metrics = [(STAT_SIGNALS, "signals"), (STAT_SOURCES, "sources"), ("daily", "updates")]
     for idx, (num, label) in enumerate(metrics):
         y = 164 + idx * 92
         rr(d, (870, y, 1118, y + 64), 10, (255, 255, 255, 255), (0, 0, 0, 28), 1)
