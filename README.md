@@ -2,11 +2,10 @@
 
 [![Live Site](https://img.shields.io/badge/Live%20Site-sahirvhora.github.io%2Fai--yesterday-gold)](https://sahirvhora.github.io/ai-yesterday/)
 [![Updated](https://img.shields.io/badge/Updated-Daily-blue)](https://sahirvhora.github.io/ai-yesterday/)
-[![Signals](https://img.shields.io/badge/Signals-8%20today-green)](https://sahirvhora.github.io/ai-yesterday/)
-[![Sources](https://img.shields.io/badge/Sources-9%20monitored-purple)](https://sahirvhora.github.io/ai-yesterday/)
-[![Scanned](https://img.shields.io/badge/Scanned-2%2C371%20feed%20items-orange)](https://sahirvhora.github.io/ai-yesterday/)
-[![Summary](https://img.shields.io/badge/Summary-OpenRouter%20AI-teal)](https://sahirvhora.github.io/ai-yesterday/)
-[![MIT License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
+[![Signals](https://img.shields.io/badge/Curated-Daily-green)](https://sahirvhora.github.io/ai-yesterday/)
+[![Sources](https://img.shields.io/badge/Sources-9%20feeds-purple)](https://sahirvhora.github.io/ai-yesterday/)
+[![AI Summary](https://img.shields.io/badge/Summary-OpenRouter%20AI-teal)](https://sahirvhora.github.io/ai-yesterday/)
+[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
 
 **A daily AI briefing that translates yesterday's most useful AI developments into plain-English summaries, importance flags, source links and searchable history.**
 
