@@ -1,18 +1,18 @@
 {
   "metadata": {
     "name": "AI Yesterday",
-    "generated_at": "2026-06-06T09:30:28.802240Z",
+    "generated_at": "2026-06-06T14:06:45.290561Z",
     "coverage_date": "2026-06-05",
     "source_count": 9,
-    "feed_items_scanned": 2351,
-    "item_count": 3,
+    "feed_items_scanned": 2371,
+    "item_count": 8,
     "mode": "live",
-    "summary_engine": "rules",
+    "summary_engine": "openrouter",
     "openrouter_enabled": true,
-    "openrouter_items_attempted": 3,
-    "openrouter_items_enriched": 0,
+    "openrouter_items_attempted": 4,
+    "openrouter_items_enriched": 2,
     "openrouter_model": "openrouter/free",
-    "briefing_quality_score": 93.3
+    "briefing_quality_score": 86.9
   },
   "items": [
     {
@@ -29,17 +29,32 @@
       "briefing_quality_score": 100
     },
     {
-      "title": "Thousand Token Wood: shipping a multi-agent economy on a 3B model",
-      "source": "Hugging Face",
-      "url": "https://huggingface.co/blog/build-small-hackathon/thousand-token-wood-sim",
-      "published": "2026-06-05T22:18:46Z",
+      "title": "Ask HN: What is your (AI) dev tech stack / workflow?",
+      "source": "Hacker News AI",
+      "url": "https://news.ycombinator.com/item?id=48413629",
+      "published": "2026-06-05T15:13:54Z",
       "category": "Models",
-      "importance": "High",
-      "score": 62,
-      "summary": "In simple terms, this is about making AI systems more capable or cheaper to run. Thousand Token Wood: shipping a multi-agent economy on a 3B model",
-      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
-      "summary_engine": "rules",
-      "briefing_quality_score": 80
+      "importance": "Medium",
+      "score": 42,
+      "summary": "A developer asked the Hacker News community to describe the practical AI tools and workflows they use daily. The aim is to design workshops that help both beginners and experienced programmers become productive with current AI development methods.",
+      "why_it_matters": "Understanding which tools working developers actually favour helps teams and learners focus training budgets and study time on skills that are genuinely in demand today.",
+      "summary_engine": "openrouter",
+      "summary_model": "openrouter/free",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "Show HN: Lowfat - pluggable CLI filter that saved 91.8% of my LLM tokens",
+      "source": "Hacker News AI",
+      "url": "https://github.com/zdk/lowfat",
+      "published": "2026-06-05T09:10:42Z",
+      "category": "Models",
+      "importance": "Medium",
+      "score": 42,
+      "summary": "A new tool called 'lowfat' helps reduce the amount of text from large language models, saving tokens for better performance.",
+      "why_it_matters": "It shows a practical way to make AI more efficient, which could benefit developers and businesses managing large text outputs.",
+      "summary_engine": "openrouter",
+      "summary_model": "openrouter/free",
+      "briefing_quality_score": 100
     },
     {
       "title": "How a USB-connected speaker can infect a PC without ever being touched",
@@ -53,6 +68,58 @@
       "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
       "summary_engine": "rules",
       "briefing_quality_score": 100
+    },
+    {
+      "title": "Open Code Review - An AI-powered code review CLI tool",
+      "source": "Hacker News AI",
+      "url": "https://github.com/alibaba/open-code-review",
+      "published": "2026-06-05T00:04:29Z",
+      "category": "Products",
+      "importance": "Low",
+      "score": 28,
+      "summary": "In simple terms, this is about turning AI research into tools people can actually use. Open Code Review - An AI-powered code review CLI tool",
+      "why_it_matters": "Worth testing because it could reduce manual work or create a new workflow for non-technical users.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 80
+    },
+    {
+      "title": "Hacker News, Sans AI",
+      "source": "Hacker News AI",
+      "url": "https://elijahpotter.dev/articles/hacker-news-sans-AI",
+      "published": "2026-06-05T20:38:40Z",
+      "category": "Signals",
+      "importance": "Low",
+      "score": 24,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. Hacker News, Sans AI",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 55
+    },
+    {
+      "title": "Fine-tuning an LLM to write docs like it's 1995",
+      "source": "Hacker News AI",
+      "url": "https://passo.uno/fine-tuning-docs-llm/",
+      "published": "2026-06-05T05:46:06Z",
+      "category": "Models",
+      "importance": "Low",
+      "score": 24,
+      "summary": "In simple terms, this is about making AI systems more capable or cheaper to run. Fine-tuning an LLM to write docs like it's 1995",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 80
+    },
+    {
+      "title": "The Pentagon is running an AI propaganda mill targeting Latin America",
+      "source": "Hacker News AI",
+      "url": "https://theintercept.com/2026/06/02/la-tilde-propaganda-latin-america-pentagon/",
+      "published": "2026-06-05T04:38:41Z",
+      "category": "Signals",
+      "importance": "Low",
+      "score": 24,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. The Pentagon is running an AI propaganda mill targeting Latin America",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 80
     }
   ],
   "categories": [
@@ -61,6 +128,15 @@
     "Signals"
   ],
   "source_quality": [
+    {
+      "name": "Hacker News AI",
+      "tier": 2,
+      "feed_items_scanned": 20,
+      "selected_items": 6,
+      "signal_ratio": 0.3,
+      "quality_score": 72,
+      "status": "active"
+    },
     {
       "name": "Google DeepMind",
       "tier": 5,
@@ -89,21 +165,21 @@
       "status": "active"
     },
     {
-      "name": "Hugging Face",
-      "tier": 4,
-      "feed_items_scanned": 794,
-      "selected_items": 1,
-      "signal_ratio": 0.001,
-      "quality_score": 39,
-      "status": "active"
-    },
-    {
       "name": "Ars Technica AI",
       "tier": 3,
       "feed_items_scanned": 20,
       "selected_items": 1,
       "signal_ratio": 0.05,
       "quality_score": 37,
+      "status": "active"
+    },
+    {
+      "name": "Hugging Face",
+      "tier": 4,
+      "feed_items_scanned": 794,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 32,
       "status": "active"
     },
     {
@@ -125,15 +201,6 @@
       "status": "active"
     },
     {
-      "name": "Hacker News AI",
-      "tier": 2,
-      "feed_items_scanned": 0,
-      "selected_items": 0,
-      "signal_ratio": 0,
-      "quality_score": 20,
-      "status": "unavailable"
-    },
-    {
       "name": "arXiv AI",
       "tier": 2,
       "feed_items_scanned": 418,
@@ -146,10 +213,10 @@
   "weekly_trends": [
     {
       "category": "Models",
-      "items": 9,
+      "items": 12,
       "critical": 1,
-      "average_score": 64.3,
-      "source_count": 3,
+      "average_score": 57.2,
+      "source_count": 4,
       "plain_english": "Models produced 1 critical signal. This is worth watching closely this week."
     },
     {
@@ -162,17 +229,17 @@
     },
     {
       "category": "Signals",
-      "items": 16,
+      "items": 19,
       "critical": 0,
-      "average_score": 33.9,
+      "average_score": 32.9,
       "source_count": 4,
       "plain_english": "Signals is a busy area this week. Expect incremental product or research movement rather than one big headline."
     },
     {
       "category": "Products",
-      "items": 14,
+      "items": 16,
       "critical": 0,
-      "average_score": 52.9,
+      "average_score": 52.1,
       "source_count": 4,
       "plain_english": "Products is a busy area this week. Expect incremental product or research movement rather than one big headline."
     },
