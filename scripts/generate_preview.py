@@ -69,16 +69,13 @@ def variant_linear() -> Image.Image:
     text(d, (114, 468), "for busy humans.", 31, (208, 214, 224))
     rr(d, (110, 516, 364, 546), 15, (255, 255, 255, 12), (255, 255, 255, 35), 1)
     text(d, (128, 523), "sahirvhora.github.io/ai-yesterday", 14, (138, 143, 152), mono=True)
-    labels = [("11", "curated signals", (255, 93, 115)), ("9", "sources monitored", (113, 112, 255)), ("2332", "items scanned", (80, 209, 141))]
-    for idx, (num, label, color) in enumerate(labels):
-        y = 136 + idx * 102
-        rr(d, (878, y, 1176, y + 78), 12, (255, 255, 255, 12), (255, 255, 255, 26), 1)
-        d.ellipse((900, y + 28, 912, y + 40), fill=color)
-        text(d, (930, y + 13), num, 31, color, mono=True)
-        text(d, (930, y + 50), label, 17, (138, 143, 152))
-    rr(d, (878, 466, 1176, 542), 12, (94, 106, 210, 52), (130, 143, 255, 58), 1)
-    text(d, (904, 486), "Critical - High - Plain English", 19, (231, 233, 246), bold=True)
-    text(d, (904, 515), "Source links and searchable history", 15, (151, 157, 174))
+    # Right-side decorative feature list
+    features = ["Plain-English summaries", "Impact flags", "Source links", "Searchable history"]
+    for idx, feat in enumerate(features):
+        y = 154 + idx * 88
+        rr(d, (878, y, 1188, y + 60), 10, (255, 255, 255, 10), (255, 255, 255, 22), 1)
+        d.ellipse((900, y + 20, 912, y + 32), fill=(114, 112, 255, 180))
+        text(d, (930, y + 16), feat, 19, (208, 214, 224))
     return img.convert("RGB")
 
 
@@ -103,15 +100,14 @@ def variant_vercel() -> Image.Image:
         d.ellipse((x + 16, 512, x + 28, 524), fill=color)
         text(d, (x + 38, 507), label, 16, (23, 23, 23), bold=True)
         x += 146
-    metrics = [("11", "signals"), ("9", "sources"), ("daily", "updates")]
-    for idx, (num, label) in enumerate(metrics):
-        y = 164 + idx * 92
-        rr(d, (870, y, 1118, y + 64), 10, (255, 255, 255, 255), (0, 0, 0, 28), 1)
-        text(d, (896, y + 10), num, 26, (23, 23, 23), bold=True, mono=True)
-        text(d, (984, y + 17), label, 18, (102, 102, 102))
+    features = ["Plain-English summaries", "Impact & importance flags", "Source links included"]
+    for idx, feat in enumerate(features):
+        y = 174 + idx * 88
+        rr(d, (870, y, 1130, y + 60), 10, (255, 255, 255, 255), (0, 0, 0, 28), 1)
+        d.ellipse((892, y + 20, 904, y + 32), fill=(10, 114, 239))
+        text(d, (922, y + 17), feat, 16, (23, 23, 23), bold=True)
     text(d, (874, 496), "sahirvhora.github.io/ai-yesterday", 16, (77, 77, 77), mono=True)
     return img
-
 
 def variant_superhuman() -> Image.Image:
     img = glow_background((27, 25, 56), [(250, 120, (94, 65, 160), 600), (1060, 80, (104, 54, 130), 520), (980, 560, (36, 38, 80), 520)])

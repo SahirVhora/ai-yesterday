@@ -11,6 +11,7 @@ import json
 import os
 import re
 import sys
+import urllib.error
 import urllib.request
 import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
@@ -19,8 +20,14 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "data" / "digest.json"
 HISTORY_DIR = ROOT / "data" / "history"
-OPENROUTER_MODEL = os.environ.get("OPENROUTER_MODEL", "meta-llama/llama-3.1-8b-instruct:free")
+OPENROUTER_MODEL = os.environ.get("OPENROUTER_MODEL", "openrouter/free")
+OPENROUTER_FALLBACK_MODEL = os.environ.get("OPENROUTER_FALLBACK_MODEL", "openrouter/free")
 OPENROUTER_KEY = os.environ.get("OPENROUTER_API_KEY")
+OPENROUTER_MAX_ITEMS = int(os.environ.get("OPENROUTER_MAX_ITEMS", "4"))
+
+
+class OpenRouterRateLimited(Exception):
+    pass
 
 SOURCES = [
     {"name": "OpenAI", "url": "https://openai.com/news/rss.xml", "tier": 5},
@@ -96,6 +103,97 @@ def clean_text(value: str | None) -> str:
     value = re.sub(r"Points:\s*\d+", " ", value, flags=re.IGNORECASE)
     value = re.sub(r"\s+", " ", value).strip()
     return value
+
+
+def word_count(value: str) -> int:
+    return len(re.findall(r"\b[\w'-]+\b", value or ""))
+
+
+def clamp_words(value: str, max_words: int) -> str:
+    words = re.findall(r"\S+", clean_text(value))
+    if len(words) <= max_words:
+        return " ".join(words)
+    return " ".join(words[:max_words]).rstrip(".,;:") + "."
+
+
+def extract_json_object(value: str) -> dict:
+    text = value.strip()
+    text = re.sub(r"^```(?:json)?", "", text, flags=re.IGNORECASE).strip()
+    text = re.sub(r"```$", "", text).strip()
+    try:
+        return json.loads(text)
+    except json.JSONDecodeError:
+        match = re.search(r"\{.*\}", text, flags=re.DOTALL)
+        if not match:
+            raise
+        return json.loads(match.group(0))
+
+
+def extract_briefing_fields(value: str) -> dict:
+    try:
+        parsed = extract_json_object(value)
+        if isinstance(parsed, dict):
+            return parsed
+    except Exception:
+        pass
+    text = clean_text(value)
+    summary = ""
+    why = ""
+    summary_match = re.search(r"(?:summary|plain english)\s*[:\-]\s*(.+?)(?:\s+why(?: it matters)?\s*[:\-]|$)", text, flags=re.IGNORECASE)
+    why_match = re.search(r"why(?: it matters)?\s*[:\-]\s*(.+)$", text, flags=re.IGNORECASE)
+    if summary_match:
+        summary = summary_match.group(1).strip()
+    if why_match:
+        why = why_match.group(1).strip()
+    if not summary and not why:
+        quote_summary = re.search(r'"summary"\s*:\s*"([^"]+)', value, flags=re.IGNORECASE | re.DOTALL)
+        quote_why = re.search(r'"why_it_matters"\s*:\s*"([^"]+)', value, flags=re.IGNORECASE | re.DOTALL)
+        summary = clean_text(quote_summary.group(1)) if quote_summary else ""
+        why = clean_text(quote_why.group(1)) if quote_why else ""
+    return {"summary": summary, "why_it_matters": why}
+
+
+def has_weak_briefing_text(summary: str, why: str, title: str) -> bool:
+    combined = f"{summary} {why}".lower()
+    generic_phrases = [
+        "this ai news item",
+        "this article",
+        "the article",
+        "busy non-technical reader",
+        "staying informed",
+        "rapidly evolving ai landscape",
+    ]
+    title_words = {w for w in re.findall(r"[a-z0-9]+", title.lower()) if len(w) > 3}
+    summary_words = set(re.findall(r"[a-z0-9]+", summary.lower()))
+    title_overlap = len(title_words & summary_words) / max(len(title_words), 1)
+    return (
+        any(phrase in combined for phrase in generic_phrases)
+        or "http" in combined
+        or word_count(summary) < 18
+        or word_count(why) < 14
+        or title_overlap > 0.82
+    )
+
+
+def briefing_quality_score(item: dict) -> int:
+    summary = clean_text(item.get("summary"))
+    why = clean_text(item.get("why_it_matters"))
+    score = 100
+    if not summary or not why:
+        return 0
+    if word_count(summary) < 18:
+        score -= 25
+    if word_count(summary) > 55:
+        score -= 15
+    if word_count(why) < 14:
+        score -= 20
+    if "http" in f"{summary} {why}".lower():
+        score -= 25
+    if has_weak_briefing_text(summary, why, item.get("title", "")):
+        score -= 20
+    if item.get("summary_engine") == "openrouter":
+        score += 5
+    return max(0, min(100, score))
 
 
 def parse_date(value: str | None) -> datetime:
@@ -190,23 +288,22 @@ def source_quality(source: dict, feed_items: list[dict], selected_count: int) ->
     }
 
 
-def call_openrouter(item: dict) -> dict | None:
-    if not OPENROUTER_KEY:
-        return None
-    prompt = (
-        "Rewrite this AI news item for a non-technical reader. Return compact JSON with "
-        "summary and why_it_matters. No markdown. Keep each field under 35 words.\n\n"
-        f"Title: {item['title']}\nSource: {item['source']}\nCategory: {item['category']}\n"
-        f"Existing summary: {item['summary']}"
-    )
+def request_openrouter(item: dict, model: str) -> dict:
+    prompt = build_openrouter_prompt(item)
     body = json.dumps({
-        "model": OPENROUTER_MODEL,
+        "model": model,
         "messages": [
-            {"role": "system", "content": "You explain AI news in simple, useful British English."},
+            {
+                "role": "system",
+                "content": (
+                    "You are an expert AI industry editor. You turn raw AI headlines into "
+                    "clear, specific, non-hyped briefings for busy professionals."
+                ),
+            },
             {"role": "user", "content": prompt},
         ],
-        "temperature": 0.2,
-        "max_tokens": 180,
+        "temperature": 0.15,
+        "max_tokens": 220,
     }).encode("utf-8")
     req = urllib.request.Request(
         "https://openrouter.ai/api/v1/chat/completions",
@@ -219,31 +316,96 @@ def call_openrouter(item: dict) -> dict | None:
         },
         method="POST",
     )
+    with urllib.request.urlopen(req, timeout=18) as response:
+        return json.loads(response.read().decode("utf-8"))
+
+
+def build_openrouter_prompt(item: dict) -> str:
+    return (
+        "Create a concise daily briefing entry for a smart non-technical reader. "
+        "Return only valid JSON with keys summary and why_it_matters.\n\n"
+        "Quality rules:\n"
+        "- summary: 28-45 words, plain English, specific to the story, no hype.\n"
+        "- why_it_matters: 18-32 words, explain the practical implication.\n"
+        "- Do not mention that this is an article, feed item, briefing, or AI news item.\n"
+        "- Do not include URLs, markdown, source labels, or invented facts.\n"
+        "- Use British English and a calm analytical tone.\n\n"
+        f"Title: {item['title']}\nSource: {item['source']}\nCategory: {item['category']}\n"
+        f"Importance: {item['importance']} ({item['score']}/100)\n"
+        f"Published: {item['published']}\n"
+        f"Current rules summary: {item['summary']}\n"
+        f"Current why it matters: {item['why_it_matters']}"
+    )
+
+
+def parse_openrouter_briefing(item: dict, payload: dict) -> dict | None:
+    if "choices" not in payload:
+        raise ValueError(payload.get("error", {}).get("message") or "OpenRouter response missing choices")
+    message = payload["choices"][0].get("message", {})
+    content = message.get("content")
+    if isinstance(content, list):
+        content = " ".join(str(part.get("text") or part.get("content") or part) for part in content)
+    if not content:
+        raise ValueError("OpenRouter response had no content")
+    parsed = extract_briefing_fields(content)
+    if parsed.get("summary") and parsed.get("why_it_matters"):
+        summary = clamp_words(parsed["summary"], 55)
+        why = clamp_words(parsed["why_it_matters"], 38)
+        if has_weak_briefing_text(summary, why, item["title"]):
+            print(f"WARN OpenRouter weak output rejected: {item['title'][:50]}", file=sys.stderr)
+            return None
+        return {"summary": summary, "why_it_matters": why}
+    return None
+
+
+def call_openrouter(item: dict) -> dict | None:
+    if not OPENROUTER_KEY:
+        return None
     try:
-        with urllib.request.urlopen(req, timeout=18) as response:
-            payload = json.loads(response.read().decode("utf-8"))
-        content = payload["choices"][0]["message"]["content"]
-        content = content.strip().removeprefix("```json").removesuffix("```").strip()
-        parsed = json.loads(content)
-        if parsed.get("summary") and parsed.get("why_it_matters"):
-            return {"summary": clean_text(parsed["summary"]), "why_it_matters": clean_text(parsed["why_it_matters"])}
+        return parse_openrouter_briefing(item, request_openrouter(item, OPENROUTER_MODEL))
+    except urllib.error.HTTPError as exc:
+        if exc.code == 429:
+            raise OpenRouterRateLimited("OpenRouter rate limit reached")
+        if exc.code == 402 and OPENROUTER_MODEL != OPENROUTER_FALLBACK_MODEL:
+            print(f"WARN OpenRouter paid model unavailable; retrying free router for {item['title'][:50]}", file=sys.stderr)
+            try:
+                return parse_openrouter_briefing(item, request_openrouter(item, OPENROUTER_FALLBACK_MODEL))
+            except urllib.error.HTTPError as retry_exc:
+                if retry_exc.code == 429:
+                    raise OpenRouterRateLimited("OpenRouter fallback rate limit reached")
+                print(f"WARN OpenRouter fallback failed for {item['title'][:50]}: HTTP {retry_exc.code}", file=sys.stderr)
+                return None
+            except Exception as retry_exc:
+                print(f"WARN OpenRouter fallback failed for {item['title'][:50]}: {retry_exc}", file=sys.stderr)
+                return None
+        print(f"WARN OpenRouter failed for {item['title'][:50]}: HTTP {exc.code}", file=sys.stderr)
     except Exception as exc:
         print(f"WARN OpenRouter failed for {item['title'][:50]}: {exc}", file=sys.stderr)
     return None
 
 
-def enrich_with_openrouter(items: list[dict]) -> int:
-    enriched = 0
+def enrich_with_openrouter(items: list[dict]) -> dict:
+    stats = {
+        "enabled": bool(OPENROUTER_KEY),
+        "attempted": 0,
+        "enriched": 0,
+        "model": OPENROUTER_MODEL if OPENROUTER_KEY else None,
+    }
     if not OPENROUTER_KEY:
-        return enriched
-    for item in items[:8]:
-        improved = call_openrouter(item)
+        return stats
+    for item in items[:OPENROUTER_MAX_ITEMS]:
+        stats["attempted"] += 1
+        try:
+            improved = call_openrouter(item)
+        except OpenRouterRateLimited as exc:
+            print(f"WARN {exc}; stopping enrichment for this run", file=sys.stderr)
+            break
         if improved:
             item.update(improved)
             item["summary_engine"] = "openrouter"
             item["summary_model"] = OPENROUTER_MODEL
-            enriched += 1
-    return enriched
+            stats["enriched"] += 1
+    return stats
 
 
 def build_weekly_trends(current: dict) -> list[dict]:
@@ -359,9 +521,11 @@ def collect(coverage_date=None, allow_fallback: bool = True) -> dict:
         source_scores = [{"name": "Fallback sample", "tier": 1, "feed_items_scanned": 0, "selected_items": len(items), "signal_ratio": 1, "quality_score": 25, "status": "fallback"}]
     items.sort(key=lambda x: (x["score"], x["published"]), reverse=True)
     items = items[:24]
-    enriched_count = enrich_with_openrouter(items)
+    openrouter_stats = enrich_with_openrouter(items)
     for item in items:
         item.setdefault("summary_engine", "rules")
+        item["briefing_quality_score"] = briefing_quality_score(item)
+    average_quality = round(sum(item["briefing_quality_score"] for item in items) / len(items), 1) if items else 0
     categories = sorted({item["category"] for item in items})
     data = {
         "metadata": {
@@ -372,9 +536,12 @@ def collect(coverage_date=None, allow_fallback: bool = True) -> dict:
             "feed_items_scanned": feed_count,
             "item_count": len(items),
             "mode": "fallback_sample" if fallback_used else ("live" if items else "no_items"),
-            "summary_engine": "openrouter" if enriched_count else "rules",
-            "openrouter_items_enriched": enriched_count,
-            "openrouter_model": OPENROUTER_MODEL if enriched_count else None,
+            "summary_engine": "openrouter" if openrouter_stats["enriched"] else "rules",
+            "openrouter_enabled": openrouter_stats["enabled"],
+            "openrouter_items_attempted": openrouter_stats["attempted"],
+            "openrouter_items_enriched": openrouter_stats["enriched"],
+            "openrouter_model": openrouter_stats["model"],
+            "briefing_quality_score": average_quality,
         },
         "items": items,
         "categories": categories,
