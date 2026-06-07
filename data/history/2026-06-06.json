@@ -1,37 +1,21 @@
 {
   "metadata": {
     "name": "AI Yesterday",
-    "generated_at": "2026-06-07T10:09:30.927081Z",
+    "generated_at": "2026-06-07T14:19:02.830269Z",
     "coverage_date": "2026-06-06",
     "source_count": 9,
     "feed_items_scanned": 1933,
-    "item_count": 1,
-    "mode": "live",
+    "item_count": 0,
+    "mode": "no_items",
     "summary_engine": "rules",
     "openrouter_enabled": true,
-    "openrouter_items_attempted": 1,
+    "openrouter_items_attempted": 0,
     "openrouter_items_enriched": 0,
     "openrouter_model": "openrouter/free",
-    "briefing_quality_score": 80.0
+    "briefing_quality_score": 0
   },
-  "items": [
-    {
-      "title": "Five labs, five minds: building a multi-model finance drama on small models",
-      "source": "Hugging Face",
-      "url": "https://huggingface.co/blog/build-small-hackathon/thousand-token-wood-sim-v2",
-      "published": "2026-06-06T19:02:33Z",
-      "category": "Models",
-      "importance": "Medium",
-      "score": 55,
-      "summary": "In simple terms, this is about making AI systems more capable or cheaper to run. Five labs, five minds: building a multi-model finance drama on small models",
-      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
-      "summary_engine": "rules",
-      "briefing_quality_score": 80
-    }
-  ],
-  "categories": [
-    "Models"
-  ],
+  "items": [],
+  "categories": [],
   "source_quality": [
     {
       "name": "Google DeepMind",
@@ -64,9 +48,9 @@
       "name": "Hugging Face",
       "tier": 4,
       "feed_items_scanned": 794,
-      "selected_items": 1,
-      "signal_ratio": 0.001,
-      "quality_score": 39,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 32,
       "status": "active"
     },
     {
@@ -117,14 +101,6 @@
   ],
   "weekly_trends": [
     {
-      "category": "Models",
-      "items": 12,
-      "critical": 1,
-      "average_score": 56.7,
-      "source_count": 4,
-      "plain_english": "Models produced 1 critical signal. This is worth watching closely this week."
-    },
-    {
       "category": "Policy",
       "items": 5,
       "critical": 1,
@@ -133,28 +109,28 @@
       "plain_english": "Policy produced 1 critical signal. This is worth watching closely this week."
     },
     {
-      "category": "Signals",
-      "items": 18,
-      "critical": 0,
-      "average_score": 32.8,
-      "source_count": 4,
-      "plain_english": "Signals is a busy area this week. Expect incremental product or research movement rather than one big headline."
-    },
-    {
       "category": "Products",
-      "items": 15,
+      "items": 12,
       "critical": 0,
-      "average_score": 51.2,
+      "average_score": 52.2,
       "source_count": 4,
       "plain_english": "Products is a busy area this week. Expect incremental product or research movement rather than one big headline."
     },
     {
-      "category": "Business",
-      "items": 2,
+      "category": "Signals",
+      "items": 12,
       "critical": 0,
-      "average_score": 54.5,
-      "source_count": 2,
-      "plain_english": "Business has a lighter signal this week. Useful context, but not the main priority."
+      "average_score": 30.7,
+      "source_count": 3,
+      "plain_english": "Signals is a busy area this week. Expect incremental product or research movement rather than one big headline."
+    },
+    {
+      "category": "Models",
+      "items": 9,
+      "critical": 0,
+      "average_score": 53.2,
+      "source_count": 4,
+      "plain_english": "Models is a busy area this week. Expect incremental product or research movement rather than one big headline."
     },
     {
       "category": "Research",
@@ -163,6 +139,14 @@
       "average_score": 27.5,
       "source_count": 1,
       "plain_english": "Research has a lighter signal this week. Useful context, but not the main priority."
+    },
+    {
+      "category": "Business",
+      "items": 1,
+      "critical": 0,
+      "average_score": 65.0,
+      "source_count": 1,
+      "plain_english": "Business has a lighter signal this week. Useful context, but not the main priority."
     }
   ]
 }
