@@ -1,10 +1,10 @@
 {
   "metadata": {
     "name": "AI Yesterday",
-    "generated_at": "2026-06-08T12:07:39.650885Z",
+    "generated_at": "2026-06-08T16:20:59.663859Z",
     "coverage_date": "2026-06-07",
     "source_count": 9,
-    "feed_items_scanned": 2221,
+    "feed_items_scanned": 2222,
     "item_count": 0,
     "mode": "no_items",
     "summary_engine": "rules",
@@ -47,7 +47,7 @@
     {
       "name": "Hugging Face",
       "tier": 4,
-      "feed_items_scanned": 794,
+      "feed_items_scanned": 795,
       "selected_items": 0,
       "signal_ratio": 0.0,
       "quality_score": 32,
@@ -102,43 +102,35 @@
   "weekly_trends": [
     {
       "category": "Policy",
-      "items": 5,
+      "items": 4,
       "critical": 1,
-      "average_score": 73.0,
+      "average_score": 71.2,
       "source_count": 2,
       "plain_english": "Policy produced 1 critical signal. This is worth watching closely this week."
     },
     {
-      "category": "Products",
-      "items": 12,
+      "category": "Models",
+      "items": 7,
       "critical": 0,
-      "average_score": 52.2,
-      "source_count": 4,
+      "average_score": 52.7,
+      "source_count": 2,
+      "plain_english": "Models is a busy area this week. Expect incremental product or research movement rather than one big headline."
+    },
+    {
+      "category": "Products",
+      "items": 7,
+      "critical": 0,
+      "average_score": 44.4,
+      "source_count": 3,
       "plain_english": "Products is a busy area this week. Expect incremental product or research movement rather than one big headline."
     },
     {
       "category": "Signals",
-      "items": 12,
+      "items": 7,
       "critical": 0,
-      "average_score": 30.7,
+      "average_score": 34.0,
       "source_count": 3,
       "plain_english": "Signals is a busy area this week. Expect incremental product or research movement rather than one big headline."
-    },
-    {
-      "category": "Models",
-      "items": 8,
-      "critical": 0,
-      "average_score": 53.0,
-      "source_count": 3,
-      "plain_english": "Models is a busy area this week. Expect incremental product or research movement rather than one big headline."
-    },
-    {
-      "category": "Research",
-      "items": 2,
-      "critical": 0,
-      "average_score": 27.5,
-      "source_count": 1,
-      "plain_english": "Research has a lighter signal this week. Useful context, but not the main priority."
     },
     {
       "category": "Business",
@@ -147,6 +139,14 @@
       "average_score": 65.0,
       "source_count": 1,
       "plain_english": "Business has a lighter signal this week. Useful context, but not the main priority."
+    },
+    {
+      "category": "Research",
+      "items": 1,
+      "critical": 0,
+      "average_score": 31.0,
+      "source_count": 1,
+      "plain_english": "Research has a lighter signal this week. Useful context, but not the main priority."
     }
   ]
 }
