@@ -1,21 +1,64 @@
 {
   "metadata": {
     "name": "AI Yesterday",
-    "generated_at": "2026-06-08T16:20:59.663859Z",
+    "generated_at": "2026-06-08T17:43:32.894444Z",
     "coverage_date": "2026-06-07",
     "source_count": 9,
-    "feed_items_scanned": 2222,
-    "item_count": 0,
-    "mode": "no_items",
+    "feed_items_scanned": 2241,
+    "item_count": 3,
+    "mode": "live",
     "summary_engine": "rules",
-    "openrouter_enabled": true,
+    "openrouter_enabled": false,
     "openrouter_items_attempted": 0,
     "openrouter_items_enriched": 0,
-    "openrouter_model": "openrouter/free",
-    "briefing_quality_score": 0
+    "openrouter_model": null,
+    "briefing_quality_score": 86.7
   },
-  "items": [],
-  "categories": [],
+  "items": [
+    {
+      "title": "AI ‘content creators’ are getting harder to spot",
+      "source": "The Verge AI",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/943187/ai-content-creators",
+      "published": "2026-06-07T12:00:00Z",
+      "category": "Signals",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. This is The Stepback, a weekly newsletter breaking down one essential story from the tech world. For more on AI confusion, follow Robert Hart. The Stepback arrives in our subscribers' inboxes at 8AM ET. Opt in for...",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "Anthropic, please ship an official Claude Desktop for Linux",
+      "source": "Hacker News AI",
+      "url": "https://github.com/anthropics/claude-code/issues/65697",
+      "published": "2026-06-07T13:06:52Z",
+      "category": "Models",
+      "importance": "Low",
+      "score": 34,
+      "summary": "In simple terms, this is about making AI systems more capable or cheaper to run. Anthropic, please ship an official Claude Desktop for Linux",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 80
+    },
+    {
+      "title": "The OnlyFans Economy of American AI",
+      "source": "Hacker News AI",
+      "url": "https://leoveanu.com/2026-06-06-qwen3.7max/",
+      "published": "2026-06-07T14:47:17Z",
+      "category": "Signals",
+      "importance": "Low",
+      "score": 24,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. The OnlyFans Economy of American AI",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 80
+    }
+  ],
+  "categories": [
+    "Models",
+    "Signals"
+  ],
   "source_quality": [
     {
       "name": "Google DeepMind",
@@ -45,9 +88,27 @@
       "status": "active"
     },
     {
+      "name": "The Verge AI",
+      "tier": 3,
+      "feed_items_scanned": 10,
+      "selected_items": 1,
+      "signal_ratio": 0.1,
+      "quality_score": 37,
+      "status": "active"
+    },
+    {
+      "name": "Hacker News AI",
+      "tier": 2,
+      "feed_items_scanned": 20,
+      "selected_items": 2,
+      "signal_ratio": 0.1,
+      "quality_score": 34,
+      "status": "active"
+    },
+    {
       "name": "Hugging Face",
       "tier": 4,
-      "feed_items_scanned": 795,
+      "feed_items_scanned": 794,
       "selected_items": 0,
       "signal_ratio": 0.0,
       "quality_score": 32,
@@ -63,15 +124,6 @@
       "status": "active"
     },
     {
-      "name": "The Verge AI",
-      "tier": 3,
-      "feed_items_scanned": 10,
-      "selected_items": 0,
-      "signal_ratio": 0.0,
-      "quality_score": 30,
-      "status": "active"
-    },
-    {
       "name": "Ars Technica AI",
       "tier": 3,
       "feed_items_scanned": 20,
@@ -79,15 +131,6 @@
       "signal_ratio": 0.0,
       "quality_score": 30,
       "status": "active"
-    },
-    {
-      "name": "Hacker News AI",
-      "tier": 2,
-      "feed_items_scanned": 0,
-      "selected_items": 0,
-      "signal_ratio": 0,
-      "quality_score": 20,
-      "status": "unavailable"
     },
     {
       "name": "arXiv AI",
@@ -109,10 +152,18 @@
       "plain_english": "Policy produced 1 critical signal. This is worth watching closely this week."
     },
     {
-      "category": "Models",
-      "items": 7,
+      "category": "Signals",
+      "items": 10,
       "critical": 0,
-      "average_score": 52.7,
+      "average_score": 33.4,
+      "source_count": 4,
+      "plain_english": "Signals is a busy area this week. Expect incremental product or research movement rather than one big headline."
+    },
+    {
+      "category": "Models",
+      "items": 8,
+      "critical": 0,
+      "average_score": 50.4,
       "source_count": 2,
       "plain_english": "Models is a busy area this week. Expect incremental product or research movement rather than one big headline."
     },
@@ -123,14 +174,6 @@
       "average_score": 44.4,
       "source_count": 3,
       "plain_english": "Products is a busy area this week. Expect incremental product or research movement rather than one big headline."
-    },
-    {
-      "category": "Signals",
-      "items": 7,
-      "critical": 0,
-      "average_score": 34.0,
-      "source_count": 3,
-      "plain_english": "Signals is a busy area this week. Expect incremental product or research movement rather than one big headline."
     },
     {
       "category": "Business",
