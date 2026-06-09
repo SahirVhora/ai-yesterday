@@ -1,18 +1,18 @@
 {
   "metadata": {
     "name": "AI Yesterday",
-    "generated_at": "2026-06-09T10:40:39.755994Z",
+    "generated_at": "2026-06-09T15:26:29.286919Z",
     "coverage_date": "2026-06-08",
     "source_count": 9,
     "feed_items_scanned": 2705,
-    "item_count": 12,
+    "item_count": 11,
     "mode": "live",
     "summary_engine": "openrouter",
     "openrouter_enabled": true,
     "openrouter_items_attempted": 4,
     "openrouter_items_enriched": 1,
     "openrouter_model": "openrouter/free",
-    "briefing_quality_score": 97.1
+    "briefing_quality_score": 98.2
   },
   "items": [
     {
@@ -23,10 +23,9 @@
       "category": "Policy",
       "importance": "High",
       "score": 80,
-      "summary": "OpenAI outlines a vision for AI development that prioritizes accessibility, safety, and equitable benefits, aiming to ensure artificial general intelligence serves all of humanity responsibly.",
-      "why_it_matters": "This shapes how AI is governed and used in workplaces, influencing compliance, data practices, and long-term trust in the technology.",
-      "summary_engine": "openrouter",
-      "summary_model": "openrouter/free",
+      "summary": "In simple terms, this affects the rules, risks or responsibilities around AI. A vision for the future of AI, focusing on access, safety, and shared prosperity as OpenAI works to ensure AGI benefits everyone.",
+      "why_it_matters": "Important for anyone using AI at work because compliance and data handling expectations are changing.",
+      "summary_engine": "rules",
       "briefing_quality_score": 100
     },
     {
@@ -50,8 +49,22 @@
       "category": "Policy",
       "importance": "High",
       "score": 70,
-      "summary": "In simple terms, this affects the rules, risks or responsibilities around AI. OpenAI confirms a confidential S-1 submission to the SEC and has not yet determined timing for further action.",
-      "why_it_matters": "Important for anyone using AI at work because compliance and data handling expectations are changing.",
+      "summary": "OpenAI has confidentially submitted a draft S-1 registration statement to the SEC, a standard step for companies considering a public listing. The company says no timing has been set for any further action.",
+      "why_it_matters": "A future listing would bring closer scrutiny of OpenAI’s finances, governance and data practices, which could affect customers, partners and organisations relying on its tools.",
+      "summary_engine": "openrouter",
+      "summary_model": "openrouter/free",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "Measuring the impact of learning with AI in Sierra Leone and beyond",
+      "source": "Google DeepMind",
+      "url": "https://deepmind.google/blog/measuring-the-impact-of-learning-with-ai-in-sierra-leone-and-beyond/",
+      "published": "2026-06-08T13:04:59Z",
+      "category": "Models",
+      "importance": "High",
+      "score": 64,
+      "summary": "In simple terms, this is about making AI systems more capable or cheaper to run. Results from a randomized controlled trial show the potential of Gemini’s Guided Learning feature to boost engagement and accelerate learning.",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
       "summary_engine": "rules",
       "briefing_quality_score": 100
     },
@@ -108,32 +121,6 @@
       "briefing_quality_score": 100
     },
     {
-      "title": "Microsoft’s AI chief says superintelligence is near, but won’t take your job",
-      "source": "The Verge AI",
-      "url": "https://www.theverge.com/podcast/944138/microsoft-ai-ceo-mustafa-suleyman-superintelligence-agi-openai-automation",
-      "published": "2026-06-08T14:00:00Z",
-      "category": "Products",
-      "importance": "Medium",
-      "score": 46,
-      "summary": "In simple terms, this is about turning AI research into tools people can actually use. Today I’m talking with Mustafa Suleyman, the CEO of Microsoft AI. And I’m actually going to keep today’s intro short - I’m working from my wife’s family farm this week, as you’ll see in the video, but also this is a...",
-      "why_it_matters": "Worth testing because it could reduce manual work or create a new workflow for non-technical users.",
-      "summary_engine": "rules",
-      "briefing_quality_score": 85
-    },
-    {
-      "title": "WWDC 2026: How to watch and what to expect",
-      "source": "The Verge AI",
-      "url": "https://www.theverge.com/tech/944099/wwdc-2026-how-to-watch",
-      "published": "2026-06-08T11:00:00Z",
-      "category": "Products",
-      "importance": "Medium",
-      "score": 46,
-      "summary": "In simple terms, this is about turning AI research into tools people can actually use. Apple's biggest event of the year is nearly here. The company's Worldwide Developers Conference will spotlight updates to iOS, macOS, and all of Apple's other operating systems, and this year's event could also...",
-      "why_it_matters": "Worth testing because it could reduce manual work or create a new workflow for non-technical users.",
-      "summary_engine": "rules",
-      "briefing_quality_score": 100
-    },
-    {
       "title": "Amazon is launching AI-generated custom merch",
       "source": "The Verge AI",
       "url": "https://www.theverge.com/news/945905/amazon-alexa-shopping-ai-generated-custom-merch-design-printing",
@@ -181,15 +168,6 @@
   ],
   "source_quality": [
     {
-      "name": "The Verge AI",
-      "tier": 3,
-      "feed_items_scanned": 10,
-      "selected_items": 7,
-      "signal_ratio": 0.7,
-      "quality_score": 89,
-      "status": "active"
-    },
-    {
       "name": "OpenAI",
       "tier": 5,
       "feed_items_scanned": 995,
@@ -199,12 +177,21 @@
       "status": "active"
     },
     {
+      "name": "The Verge AI",
+      "tier": 3,
+      "feed_items_scanned": 10,
+      "selected_items": 5,
+      "signal_ratio": 0.5,
+      "quality_score": 75,
+      "status": "active"
+    },
+    {
       "name": "Google DeepMind",
       "tier": 5,
       "feed_items_scanned": 100,
-      "selected_items": 0,
-      "signal_ratio": 0.0,
-      "quality_score": 50,
+      "selected_items": 1,
+      "signal_ratio": 0.01,
+      "quality_score": 57,
       "status": "active"
     },
     {
@@ -264,36 +251,36 @@
   ],
   "weekly_trends": [
     {
-      "category": "Models",
-      "items": 30,
-      "critical": 1,
-      "average_score": 54.6,
-      "source_count": 4,
-      "plain_english": "Models produced 1 critical signal. This is worth watching closely this week."
-    },
-    {
       "category": "Products",
-      "items": 13,
+      "items": 18,
       "critical": 0,
-      "average_score": 49.8,
+      "average_score": 49.7,
       "source_count": 6,
       "plain_english": "Products is a busy area this week. Expect incremental product or research movement rather than one big headline."
     },
     {
-      "category": "Signals",
-      "items": 7,
+      "category": "Models",
+      "items": 9,
       "critical": 0,
-      "average_score": 33.7,
+      "average_score": 49.6,
+      "source_count": 4,
+      "plain_english": "Models is a busy area this week. Expect incremental product or research movement rather than one big headline."
+    },
+    {
+      "category": "Signals",
+      "items": 8,
+      "critical": 0,
+      "average_score": 36.5,
       "source_count": 3,
       "plain_english": "Signals is a busy area this week. Expect incremental product or research movement rather than one big headline."
     },
     {
       "category": "Policy",
-      "items": 4,
+      "items": 6,
       "critical": 0,
-      "average_score": 66.2,
+      "average_score": 69.2,
       "source_count": 2,
-      "plain_english": "Policy has a lighter signal this week. Useful context, but not the main priority."
+      "plain_english": "Policy is a busy area this week. Expect incremental product or research movement rather than one big headline."
     },
     {
       "category": "Business",
