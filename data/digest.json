@@ -1,10 +1,10 @@
 {
   "metadata": {
     "name": "AI Yesterday",
-    "generated_at": "2026-06-10T11:02:55.363000Z",
+    "generated_at": "2026-06-10T16:06:48.750965Z",
     "coverage_date": "2026-06-09",
     "source_count": 12,
-    "feed_items_scanned": 2450,
+    "feed_items_scanned": 2438,
     "item_count": 24,
     "mode": "live",
     "summary_engine": "openrouter",
@@ -23,9 +23,10 @@
       "category": "Models",
       "importance": "High",
       "score": 70,
-      "summary": "In simple terms, this is about making AI systems more capable or cheaper to run. Gemini 3.5 Live Translate brings near real-time, natural speech translation to Google AI Studio, Google Translate and Google Meet.",
-      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
-      "summary_engine": "rules",
+      "summary": "Google is integrating Gemini 3.5 Live Translate into Google AI Studio, Google Translate and Google Meet to provide near real-time, fluid and natural-sounding speech translation between multiple languages.",
+      "why_it_matters": "It reduces reliance on human interpreters during multilingual meetings and video calls, making real-time collaboration across languages more efficient and coherent.",
+      "summary_engine": "openrouter",
+      "summary_model": "openrouter/free",
       "briefing_quality_score": 100
     },
     {
@@ -62,10 +63,9 @@
       "category": "Models",
       "importance": "High",
       "score": 63,
-      "summary": "Microsoft AI CEO Mustafa Suleyman criticizes Anthropic for suggesting Claude might be conscious, calling it dangerous to discuss such claims in the model's guiding rules.",
-      "why_it_matters": "This debate highlights risks in AI development and the need for responsible framing of model capabilities in public and technical discussions.",
-      "summary_engine": "openrouter",
-      "summary_model": "openrouter/free",
+      "summary": "In simple terms, this is about making AI systems more capable or cheaper to run. Microsoft AI CEO Mustafa Suleyman says it's \"really, really dangerous\" for Anthropic to speculate about Claude's consciousness inside its \"constitution,\" or the instructions that tell the model how to behave. During...",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
       "briefing_quality_score": 100
     },
     {
@@ -303,19 +303,6 @@
       "briefing_quality_score": 100
     },
     {
-      "title": "Autonomous AI Data Loss in DevOps: Building Efficient Defenses",
-      "source": "AI News",
-      "url": "https://www.artificialintelligence-news.com/news/autonomous-ai-data-loss-in-devops/",
-      "published": "2026-06-09T08:50:39Z",
-      "category": "Products",
-      "importance": "Medium",
-      "score": 45,
-      "summary": "In simple terms, this is about turning AI research into tools people can actually use. Autonomous AI agents are altering the speed at which software is shipped. Unfortunately, they are also shrinking the time it takes for a mistake to become a catastrophe, creating a dangerous blind spot in many...",
-      "why_it_matters": "Worth testing because it could reduce manual work or create a new workflow for non-technical users.",
-      "summary_engine": "rules",
-      "briefing_quality_score": 100
-    },
-    {
       "title": "Apple is embracing the fantasy of AI photo editing",
       "source": "The Verge AI",
       "url": "https://www.theverge.com/tech/946850/apple-ai-photo-editing-tools-ios27-wwdc-2026-deepfakes",
@@ -324,6 +311,19 @@
       "importance": "Medium",
       "score": 44,
       "summary": "In simple terms, this is about turning AI research into tools people can actually use. Apple used to question whether generative AI-powered editing features were worth the risk of distorting our perceptions of the world. Now it seems Apple no longer believes that photos should accurately capture...",
+      "why_it_matters": "Worth testing because it could reduce manual work or create a new workflow for non-technical users.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "Apple’s best AI idea looks a lot like vibe coding",
+      "source": "The Verge AI",
+      "url": "https://www.theverge.com/tech/946733/apple-shortcuts-ai-safari-tabs-vibe-code",
+      "published": "2026-06-09T13:34:48Z",
+      "category": "Products",
+      "importance": "Medium",
+      "score": 44,
+      "summary": "In simple terms, this is about turning AI research into tools people can actually use. Most of Apple's current AI ideas are roughly the same as everyone else's AI ideas. A chatbot you can ask questions; quick ways to create or summarize text; bizarre, borderline creepy image-generation tools. The...",
       "why_it_matters": "Worth testing because it could reduce manual work or create a new workflow for non-technical users.",
       "summary_engine": "rules",
       "briefing_quality_score": 100
@@ -359,8 +359,8 @@
       "name": "WIRED",
       "tier": 3,
       "feed_items_scanned": 50,
-      "selected_items": 28,
-      "signal_ratio": 0.56,
+      "selected_items": 23,
+      "signal_ratio": 0.46,
       "quality_score": 100,
       "status": "active"
     },
@@ -419,15 +419,6 @@
       "status": "active"
     },
     {
-      "name": "AI News",
-      "tier": 2,
-      "feed_items_scanned": 12,
-      "selected_items": 2,
-      "signal_ratio": 0.167,
-      "quality_score": 34,
-      "status": "active"
-    },
-    {
       "name": "VentureBeat AI",
       "tier": 3,
       "feed_items_scanned": 7,
@@ -435,6 +426,15 @@
       "signal_ratio": 0.0,
       "quality_score": 30,
       "status": "active"
+    },
+    {
+      "name": "AI News",
+      "tier": 2,
+      "feed_items_scanned": 0,
+      "selected_items": 0,
+      "signal_ratio": 0,
+      "quality_score": 20,
+      "status": "unavailable"
     },
     {
       "name": "arXiv AI",
@@ -449,25 +449,25 @@
   "weekly_trends": [
     {
       "category": "Models",
-      "items": 18,
+      "items": 26,
       "critical": 0,
-      "average_score": 54.3,
+      "average_score": 55.0,
       "source_count": 7,
       "plain_english": "Models is a busy area this week. Expect incremental product or research movement rather than one big headline."
     },
     {
       "category": "Products",
-      "items": 15,
+      "items": 18,
       "critical": 0,
-      "average_score": 50.9,
+      "average_score": 51.1,
       "source_count": 7,
       "plain_english": "Products is a busy area this week. Expect incremental product or research movement rather than one big headline."
     },
     {
       "category": "Signals",
-      "items": 13,
+      "items": 18,
       "critical": 0,
-      "average_score": 42.6,
+      "average_score": 46.4,
       "source_count": 8,
       "plain_english": "Signals is a busy area this week. Expect incremental product or research movement rather than one big headline."
     },
@@ -475,16 +475,16 @@
       "category": "Policy",
       "items": 6,
       "critical": 0,
-      "average_score": 61.8,
-      "source_count": 3,
+      "average_score": 60.3,
+      "source_count": 2,
       "plain_english": "Policy is a busy area this week. Expect incremental product or research movement rather than one big headline."
     },
     {
       "category": "Business",
       "items": 2,
       "critical": 0,
-      "average_score": 57.5,
-      "source_count": 2,
+      "average_score": 50.0,
+      "source_count": 1,
       "plain_english": "Business has a lighter signal this week. Useful context, but not the main priority."
     }
   ]
