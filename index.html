@@ -84,18 +84,18 @@
     .sidebar {
       position: fixed;
       inset: 0 auto 0 0;
-      width: 292px;
+      width: 210px;
       background: linear-gradient(180deg, var(--sidebar), rgba(13,17,25,0.92));
       border-right: 1px solid var(--border);
-      padding: 22px 18px;
+      padding: 18px 14px;
       overflow-y: auto;
       z-index: 100;
     }
     [data-theme="light"] .sidebar { background: linear-gradient(180deg, #ffffff, #f1f5f9); }
-    .brand { margin-bottom: 22px; }
-    .brand-kicker { color: var(--accent2); font-size: 11px; letter-spacing: 1.8px; text-transform: uppercase; font-weight: 700; }
-    .brand h1 { margin: 6px 0 4px; font-size: 26px; line-height: 1.05; }
-    .brand p { margin: 0; color: var(--muted); font-size: 13px; line-height: 1.45; }
+    .brand { margin-bottom: 16px; }
+    .brand-kicker { color: var(--accent2); font-size: 10px; letter-spacing: 1.6px; text-transform: uppercase; font-weight: 700; }
+    .brand h1 { margin: 4px 0 0; font-size: 20px; line-height: 1.1; }
+    .brand p { display: none; }
     .search { margin: 18px 0; position: relative; }
     .search input {
       width: 100%;
@@ -129,7 +129,7 @@
     .pill { font-size: 10px; color: var(--muted); border: 1px solid var(--border); border-radius: 999px; padding: 2px 7px; }
     .status { margin-top: 22px; padding: 12px; border: 1px solid var(--border); border-radius: var(--radius); color: var(--muted); font-size: 12px; background: rgba(255,255,255,0.02); }
     .dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: var(--low); margin-right: 6px; box-shadow: 0 0 12px var(--low); }
-    .main { margin-left: 292px; min-height: 100vh; }
+    .main { margin-left: 210px; min-height: 100vh; }
     .topbar {
       position: sticky;
       top: 0;
@@ -144,7 +144,8 @@
       gap: 16px;
     }
     [data-theme="light"] .topbar { background: rgba(247,249,252,0.9); }
-    .topbar-meta { color: var(--muted); font-size: 12px; }
+    .topbar-meta { color: var(--muted); font-size: 12px; display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+    .topbar-stat { color: var(--text2); font-weight: 700; }
     .theme-toggle-btn, .mobile-menu {
       width: 34px;
       height: 34px;
@@ -159,7 +160,13 @@
     }
     .theme-toggle-btn:hover { border-color: var(--accent); color: var(--accent2); box-shadow: 0 0 16px rgba(200,168,78,0.15); transform: rotate(15deg); }
     .mobile-menu { display: none; position: fixed; top: 12px; left: 12px; z-index: 220; }
-    .content { max-width: 1120px; margin: 0 auto; padding: 36px 28px 80px; }
+    .content { max-width: 1120px; margin: 0 auto; padding: 24px 28px 80px; }
+    .digest-banner { display: flex; align-items: center; justify-content: space-between; gap: 14px; flex-wrap: wrap; margin-bottom: 20px; padding: 14px 18px; background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); }
+    .digest-banner-left { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+    .digest-date { font-size: 18px; font-weight: 800; color: var(--text); }
+    .digest-chip { font-size: 11px; font-weight: 700; padding: 3px 9px; border-radius: 999px; border: 1px solid var(--border); color: var(--text2); background: rgba(255,255,255,0.03); }
+    .digest-chip.crit { color: var(--critical); border-color: rgba(255,93,115,0.35); background: rgba(255,93,115,0.09); }
+    [data-theme="light"] .digest-chip { background: #f8fafc; }
     .hero {
       border: 1px solid var(--border);
       border-radius: 22px;
@@ -311,6 +318,7 @@
       .sidebar.open { transform: translateX(0); }
       .main { margin-left: 0; }
       .topbar { padding-left: 58px; }
+      .topbar-meta { gap: 8px; }
       .content { padding: 24px 16px 70px; }
       .hero { padding: 26px; }
       .stats { grid-template-columns: 1fr; }
@@ -336,13 +344,9 @@
       <p>Plain-English AI news, ranked by importance, saved as a searchable history.</p>
     </div>
     <div class="search"><input id="search" placeholder="Search everything..." autocomplete="off"></div>
-    <div class="nav-title">Views</div>
-    <a class="nav-link" href="#today">Yesterday <span class="pill" id="navCount">0</span></a>
-    <a class="nav-link" href="#trends">Weekly trends <span class="pill">New</span></a>
-    <a class="nav-link" href="#categories">Category pages <span class="pill">Live</span></a>
-    <a class="nav-link" href="#sources">Sources <span class="pill">Quality</span></a>
-    <a class="nav-link" href="#timeline">History <span class="pill">Archive</span></a>
-    <a class="nav-link" href="#months">Month view <span class="pill">May</span></a>
+    <div class="nav-title">Navigate</div>
+    <a class="nav-link" href="#today">Today's briefing <span class="pill" id="navCount">0</span></a>
+    <a class="nav-link" href="#timeline">Archive</a>
     <div class="nav-title">Importance</div>
     <button class="filter-btn active" data-filter="all">All signals <span class="pill">All</span></button>
     <button class="filter-btn" data-filter="Critical">Critical <span class="pill">Must read</span></button>
@@ -350,42 +354,25 @@
     <button class="filter-btn" data-filter="Medium">Medium <span class="pill">Skim</span></button>
     <div class="nav-title">Categories</div>
     <div id="categoryNav"></div>
-    <div class="status"><span class="dot"></span><span id="modeText">Loading live digest...</span></div>
   </aside>
 
   <main class="main">
     <div class="topbar">
-      <div class="topbar-meta"><strong id="coverageDate">Loading...</strong> <span id="generatedAt"></span></div>
+      <div class="topbar-meta">
+        <strong id="coverageDate">Loading...</strong>
+        <span id="topbarSignals" class="topbar-stat"></span>
+        <span id="topbarCritical" class="topbar-stat" style="color:var(--critical)"></span>
+        <span id="generatedAt"></span>
+      </div>
       <button class="theme-toggle-btn" id="themeBtn" aria-label="Toggle theme">☀</button>
     </div>
     <div class="content">
-      <section class="hero">
-        <div class="hero-inner">
-          <div class="eyebrow">Built for busy humans</div>
-          <h2>Understand AI without drowning in AI news.</h2>
-          <p>Every morning this page can collect yesterday's most useful AI developments, translate them into simple language, flag what actually matters, and keep the archive searchable.</p>
-          <div class="hero-actions">
-            <a class="primary" href="#today">Read yesterday's briefing</a>
-            <a class="secondary" href="#trends">See weekly trends</a>
-            <a class="secondary" href="#timeline">Browse history</a>
-          </div>
-        </div>
-      </section>
-
-      <section class="stats" aria-label="Digest statistics">
-        <div class="stat"><strong id="statItems">0</strong><span>Curated signals</span></div>
-        <div class="stat"><strong id="statCritical">0</strong><span>Critical items</span></div>
-        <div class="stat"><strong id="statSources">0</strong><span>Sources monitored</span></div>
-        <div class="stat"><strong id="statScanned">0</strong><span>Feed items scanned</span></div>
-        <div class="stat"><strong id="statEngine">Rules</strong><span>Summary engine</span></div>
-        <div class="stat"><strong id="statTopCategory">-</strong><span>Top weekly theme</span></div>
-      </section>
-
       <section id="today">
-        <div class="section-head">
-          <div>
-            <h3>Yesterday's AI briefing</h3>
-            <p>Ranked by likely impact, with layman summary and source link.</p>
+        <div class="digest-banner">
+          <div class="digest-banner-left">
+            <span class="digest-date" id="bannerDate">Loading...</span>
+            <span class="digest-chip" id="bannerSignals"></span>
+            <span class="digest-chip crit" id="bannerCritical" style="display:none"></span>
           </div>
           <div class="archive-picker" aria-label="Choose archive date">
             <select class="archive-select" id="archiveSelect"><option value="latest">Latest digest</option></select>
@@ -516,9 +503,8 @@
       state.sourceQuality = data.source_quality || [];
       state.archives = data.archives || state.archives || [];
       state.categories = data.categories || [...new Set(state.allItems.map(i => i.category || 'Signals'))];
-      document.getElementById('coverageDate').textContent = 'Coverage: ' + formatDate(state.metadata.coverage_date);
-      document.getElementById('generatedAt').textContent = 'Generated: ' + formatTime(state.metadata.generated_at);
-      document.getElementById('modeText').textContent = state.selectedArchive === 'latest' ? 'Latest digest loaded' : 'Archive loaded: ' + state.metadata.coverage_date;
+      document.getElementById('coverageDate').textContent = formatDate(state.metadata.coverage_date) || 'AI Yesterday';
+      document.getElementById('generatedAt').textContent = state.metadata.generated_at ? 'Updated ' + formatTime(state.metadata.generated_at) : '';
       buildArchivePicker();
       buildCategoryNav();
       render();
@@ -566,13 +552,19 @@
           (state.category === 'all' || item.category === state.category) &&
           (!q || text.includes(q));
       });
-      document.getElementById('statItems').textContent = state.allItems.length;
-      document.getElementById('statCritical').textContent = state.allItems.filter(i => i.importance === 'Critical').length;
-      document.getElementById('statSources').textContent = state.metadata.source_count || 0;
-      document.getElementById('statScanned').textContent = state.metadata.feed_items_scanned || 0;
-      document.getElementById('statEngine').textContent = state.metadata.summary_engine === 'openrouter' ? 'AI' : 'Rules';
-      document.getElementById('statTopCategory').textContent = state.weeklyTrends[0]?.category || '-';
+      const critCount = state.allItems.filter(i => i.importance === 'Critical').length;
       document.getElementById('navCount').textContent = state.allItems.length;
+      // digest banner
+      document.getElementById('bannerDate').textContent = formatDate(state.metadata.coverage_date) || 'Latest briefing';
+      const sigEl = document.getElementById('bannerSignals');
+      sigEl.textContent = state.allItems.length + ' signals';
+      const critEl = document.getElementById('bannerCritical');
+      if (critCount > 0) { critEl.textContent = critCount + ' critical'; critEl.style.display = ''; } else { critEl.style.display = 'none'; }
+      // topbar
+      const topSig = document.getElementById('topbarSignals');
+      const topCrit = document.getElementById('topbarCritical');
+      if (topSig) topSig.textContent = state.allItems.length ? state.allItems.length + ' signals' : '';
+      if (topCrit) topCrit.textContent = critCount > 0 ? critCount + ' critical' : '';
       const cards = document.getElementById('cards');
       if (!state.visibleItems.length) {
         cards.innerHTML = '<div class="empty">No matching AI signals. Clear search or filters.</div>';

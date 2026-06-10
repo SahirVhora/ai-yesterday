@@ -594,6 +594,10 @@ def write_digest(data: dict, write_current: bool = True) -> None:
     OUT.parent.mkdir(parents=True, exist_ok=True)
     HISTORY_DIR.mkdir(parents=True, exist_ok=True)
     history_path = HISTORY_DIR / f"{data['metadata']['coverage_date']}.json"
+    # Never overwrite the live digest with an empty result — keep the last real one visible
+    if write_current and data["metadata"].get("item_count", 0) == 0:
+        write_current = False
+        print(f"INFO No items for {data['metadata']['coverage_date']} — keeping previous digest.json unchanged", file=sys.stderr)
     if write_current:
         OUT.write_text(json.dumps(data, indent=2, ensure_ascii=False), encoding="utf-8")
     history_path.write_text(json.dumps(data, indent=2, ensure_ascii=False), encoding="utf-8")
