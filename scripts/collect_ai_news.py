@@ -34,9 +34,12 @@ SOURCES = [
     {"name": "Google DeepMind", "url": "https://deepmind.google/blog/rss.xml", "tier": 5},
     {"name": "Hugging Face", "url": "https://huggingface.co/blog/feed.xml", "tier": 4},
     {"name": "MIT Technology Review AI", "url": "https://www.technologyreview.com/topic/artificial-intelligence/feed/", "tier": 4},
+    {"name": "TechCrunch AI", "url": "https://techcrunch.com/category/artificial-intelligence/feed/", "tier": 3},
     {"name": "VentureBeat AI", "url": "https://venturebeat.com/category/ai/feed/", "tier": 3},
     {"name": "The Verge AI", "url": "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml", "tier": 3},
     {"name": "Ars Technica AI", "url": "https://feeds.arstechnica.com/arstechnica/technology-lab", "tier": 3},
+    {"name": "WIRED", "url": "https://www.wired.com/feed/rss", "tier": 3},
+    {"name": "AI News", "url": "https://www.artificialintelligence-news.com/feed/", "tier": 2},
     {"name": "Hacker News AI", "url": "https://hnrss.org/newest?q=AI+OR+LLM+OR+OpenAI+OR+Anthropic&points=100", "tier": 2},
     {"name": "arXiv AI", "url": "https://rss.arxiv.org/rss/cs.AI", "tier": 2},
 ]
