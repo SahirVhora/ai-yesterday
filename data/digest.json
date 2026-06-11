@@ -1,18 +1,18 @@
 {
   "metadata": {
     "name": "AI Yesterday",
-    "generated_at": "2026-06-11T11:47:13.360295Z",
+    "generated_at": "2026-06-11T16:20:07.306512Z",
     "coverage_date": "2026-06-10",
     "source_count": 12,
-    "feed_items_scanned": 2360,
+    "feed_items_scanned": 2380,
     "item_count": 24,
     "mode": "live",
     "summary_engine": "openrouter",
     "openrouter_enabled": true,
     "openrouter_items_attempted": 4,
-    "openrouter_items_enriched": 2,
+    "openrouter_items_enriched": 1,
     "openrouter_model": "openrouter/free",
-    "briefing_quality_score": 98.3
+    "briefing_quality_score": 97.5
   },
   "items": [
     {
@@ -36,9 +36,10 @@
       "category": "Models",
       "importance": "Critical",
       "score": 94,
-      "summary": "In simple terms, this is about making AI systems more capable or cheaper to run. Access OpenAI models and Codex through Oracle Cloud, using existing commitments to build and deploy AI with enterprise security and governance.",
-      "why_it_matters": "Track this closely because it may affect products, skills, costs or competitive advantage within weeks.",
-      "summary_engine": "rules",
+      "summary": "Oracle Cloud customers can now access OpenAI models and Codex using their existing cloud spending commitments. This integration allows enterprises to deploy AI tools within their current infrastructure while maintaining established security and governance protocols.",
+      "why_it_matters": "Businesses can now scale AI capabilities without additional procurement cycles, reducing financial friction and simplifying the deployment of generative tools across secure corporate environments.",
+      "summary_engine": "openrouter",
+      "summary_model": "openrouter/free",
       "briefing_quality_score": 100
     },
     {
@@ -49,10 +50,9 @@
       "category": "Models",
       "importance": "High",
       "score": 80,
-      "summary": "\"In simple terms, this is about making AI systems more capable or cheaper to run. Cybersecurity researchers are complaining that Anthropic's new model Fable has guardrails that are too strict for any cybersecurity work.\" Current",
-      "why_it_matters": "\"Good trend signal. Save it if it connects to your work, learning or product ideas.\" I need to write: - summary: 28-45 words, plain English, specific, no hype - why_it_matters: 18-32 words, practical implication - British English, calm.",
-      "summary_engine": "openrouter",
-      "summary_model": "openrouter/free",
+      "summary": "In simple terms, this is about making AI systems more capable or cheaper to run. Cybersecurity researchers are complaining that Anthropic's new model Fable has guardrails that are too strict for any cybersecurity work.",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
       "briefing_quality_score": 100
     },
     {
@@ -63,10 +63,9 @@
       "category": "Models",
       "importance": "High",
       "score": 73,
-      "summary": "Microsoft has limited internal access to Anthropic’s Claude Fable 5, citing concerns that the model’s data retention behaviour could expose sensitive company information. The restriction applies to all employees using the tool for work purposes.",
-      "why_it_matters": "The move signals tighter corporate controls on third‑party AI, affecting how teams can adopt new models while safeguarding proprietary data and compliance requirements.",
-      "summary_engine": "openrouter",
-      "summary_model": "openrouter/free",
+      "summary": "In simple terms, this is about making AI systems more capable or cheaper to run. Anthropic released Claude Fable, its first Mythos-class AI model, yesterday and it's already causing concerns inside Microsoft. Sources tell me that Microsoft is limiting the use of Claude Fable 5 for employees...",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
       "briefing_quality_score": 100
     },
     {
@@ -104,6 +103,19 @@
       "importance": "High",
       "score": 63,
       "summary": "In simple terms, this is about making AI systems more capable or cheaper to run. Anthropic just released Claude Fable 5, calling it the most powerful AI model it has ever made widely available and praising its skills in biology, among others. But the model won't answer basic biology questions -...",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 80
+    },
+    {
+      "title": "AWS Bedrock to require sharing data with Anthropic for Mythos and future models",
+      "source": "Hacker News AI",
+      "url": "https://news.ycombinator.com/item?id=48473166",
+      "published": "2026-06-10T08:21:38Z",
+      "category": "Models",
+      "importance": "Medium",
+      "score": 61,
+      "summary": "In simple terms, this is about making AI systems more capable or cheaper to run. > For Fable 5, Mythos 5, and future models on Bedrock with similar or higher capability levels, Anthropic will require 30-day retention for all traffic on Mythos-class models. Retaining data for a limited period...",
       "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
       "summary_engine": "rules",
       "briefing_quality_score": 80
@@ -291,19 +303,6 @@
       "briefing_quality_score": 100
     },
     {
-      "title": "Lowe’s Promo Codes and Deals: Up to $300 Off Appliances",
-      "source": "WIRED",
-      "url": "https://www.wired.com/story/lowes-promo-code/",
-      "published": "2026-06-10T05:00:00Z",
-      "category": "Products",
-      "importance": "Medium",
-      "score": 46,
-      "summary": "In simple terms, this is about turning AI research into tools people can actually use. Find the latest Lowe’s promo codes and offers, including up to $300 off select major appliances and $5 off $50 with sign-up, here at WIRED.",
-      "why_it_matters": "Worth testing because it could reduce manual work or create a new workflow for non-technical users.",
-      "summary_engine": "rules",
-      "briefing_quality_score": 100
-    },
-    {
       "title": "Google just fired a warning shot in the AI subscription price wars",
       "source": "TechCrunch AI",
       "url": "https://techcrunch.com/2026/06/09/google-just-fired-a-warning-shot-in-the-ai-subscription-price-wars/",
@@ -351,8 +350,8 @@
       "name": "WIRED",
       "tier": 3,
       "feed_items_scanned": 50,
-      "selected_items": 25,
-      "signal_ratio": 0.5,
+      "selected_items": 22,
+      "signal_ratio": 0.44,
       "quality_score": 100,
       "status": "active"
     },
@@ -372,6 +371,15 @@
       "selected_items": 3,
       "signal_ratio": 0.003,
       "quality_score": 81,
+      "status": "active"
+    },
+    {
+      "name": "Hacker News AI",
+      "tier": 2,
+      "feed_items_scanned": 20,
+      "selected_items": 7,
+      "signal_ratio": 0.35,
+      "quality_score": 79,
       "status": "active"
     },
     {
@@ -429,15 +437,6 @@
       "status": "active"
     },
     {
-      "name": "Hacker News AI",
-      "tier": 2,
-      "feed_items_scanned": 0,
-      "selected_items": 0,
-      "signal_ratio": 0,
-      "quality_score": 20,
-      "status": "unavailable"
-    },
-    {
       "name": "arXiv AI",
       "tier": 2,
       "feed_items_scanned": 332,
@@ -450,35 +449,43 @@
   "weekly_trends": [
     {
       "category": "Models",
-      "items": 27,
-      "critical": 1,
-      "average_score": 56.6,
+      "items": 36,
+      "critical": 2,
+      "average_score": 60.1,
       "source_count": 7,
-      "plain_english": "Models produced 1 critical signal. This is worth watching closely this week."
+      "plain_english": "Models produced 2 critical signals. This is worth watching closely this week."
     },
     {
       "category": "Products",
-      "items": 17,
-      "critical": 1,
-      "average_score": 53.0,
-      "source_count": 9,
-      "plain_english": "Products produced 1 critical signal. This is worth watching closely this week."
+      "items": 18,
+      "critical": 2,
+      "average_score": 55.9,
+      "source_count": 8,
+      "plain_english": "Products produced 2 critical signals. This is worth watching closely this week."
     },
     {
       "category": "Signals",
-      "items": 18,
+      "items": 21,
       "critical": 0,
-      "average_score": 46.8,
-      "source_count": 9,
+      "average_score": 51.5,
+      "source_count": 8,
       "plain_english": "Signals is a busy area this week. Expect incremental product or research movement rather than one big headline."
     },
     {
       "category": "Policy",
-      "items": 6,
+      "items": 8,
       "critical": 0,
-      "average_score": 59.2,
+      "average_score": 56.8,
       "source_count": 4,
       "plain_english": "Policy is a busy area this week. Expect incremental product or research movement rather than one big headline."
+    },
+    {
+      "category": "Research",
+      "items": 2,
+      "critical": 0,
+      "average_score": 46.0,
+      "source_count": 1,
+      "plain_english": "Research has a lighter signal this week. Useful context, but not the main priority."
     },
     {
       "category": "Business",
@@ -487,14 +494,6 @@
       "average_score": 50.0,
       "source_count": 1,
       "plain_english": "Business has a lighter signal this week. Useful context, but not the main priority."
-    },
-    {
-      "category": "Research",
-      "items": 1,
-      "critical": 0,
-      "average_score": 46.0,
-      "source_count": 1,
-      "plain_english": "Research has a lighter signal this week. Useful context, but not the main priority."
     }
   ]
 }
