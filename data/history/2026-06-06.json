@@ -1,10 +1,10 @@
 {
   "metadata": {
     "name": "AI Yesterday",
-    "generated_at": "2026-06-07T14:19:02.830269Z",
+    "generated_at": "2026-06-10T09:54:58.241747Z",
     "coverage_date": "2026-06-06",
     "source_count": 9,
-    "feed_items_scanned": 1933,
+    "feed_items_scanned": 2348,
     "item_count": 0,
     "mode": "no_items",
     "summary_engine": "rules",
@@ -29,7 +29,7 @@
     {
       "name": "OpenAI",
       "tier": 5,
-      "feed_items_scanned": 992,
+      "feed_items_scanned": 997,
       "selected_items": 0,
       "signal_ratio": 0.0,
       "quality_score": 42,
@@ -47,7 +47,7 @@
     {
       "name": "Hugging Face",
       "tier": 4,
-      "feed_items_scanned": 794,
+      "feed_items_scanned": 797,
       "selected_items": 0,
       "signal_ratio": 0.0,
       "quality_score": 32,
@@ -92,53 +92,45 @@
     {
       "name": "arXiv AI",
       "tier": 2,
-      "feed_items_scanned": 0,
+      "feed_items_scanned": 407,
       "selected_items": 0,
-      "signal_ratio": 0,
-      "quality_score": 20,
-      "status": "unavailable"
+      "signal_ratio": 0.0,
+      "quality_score": 12,
+      "status": "active"
     }
   ],
   "weekly_trends": [
     {
-      "category": "Policy",
-      "items": 5,
-      "critical": 1,
-      "average_score": 73.0,
-      "source_count": 2,
-      "plain_english": "Policy produced 1 critical signal. This is worth watching closely this week."
-    },
-    {
       "category": "Products",
-      "items": 12,
+      "items": 10,
       "critical": 0,
-      "average_score": 52.2,
-      "source_count": 4,
+      "average_score": 50.1,
+      "source_count": 6,
       "plain_english": "Products is a busy area this week. Expect incremental product or research movement rather than one big headline."
     },
     {
-      "category": "Signals",
-      "items": 12,
-      "critical": 0,
-      "average_score": 30.7,
-      "source_count": 3,
-      "plain_english": "Signals is a busy area this week. Expect incremental product or research movement rather than one big headline."
-    },
-    {
       "category": "Models",
-      "items": 9,
+      "items": 8,
       "critical": 0,
-      "average_score": 53.2,
+      "average_score": 49.1,
       "source_count": 4,
       "plain_english": "Models is a busy area this week. Expect incremental product or research movement rather than one big headline."
     },
     {
-      "category": "Research",
-      "items": 2,
+      "category": "Signals",
+      "items": 7,
       "critical": 0,
-      "average_score": 27.5,
-      "source_count": 1,
-      "plain_english": "Research has a lighter signal this week. Useful context, but not the main priority."
+      "average_score": 33.7,
+      "source_count": 3,
+      "plain_english": "Signals is a busy area this week. Expect incremental product or research movement rather than one big headline."
+    },
+    {
+      "category": "Policy",
+      "items": 4,
+      "critical": 0,
+      "average_score": 66.2,
+      "source_count": 2,
+      "plain_english": "Policy has a lighter signal this week. Useful context, but not the main priority."
     },
     {
       "category": "Business",

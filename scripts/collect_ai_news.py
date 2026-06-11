@@ -590,7 +590,9 @@ def rebuild_history_index() -> None:
             "mode": meta.get("mode", "unknown"),
             "generated_at": meta.get("generated_at"),
         })
-    (HISTORY_DIR / "index.json").write_text(json.dumps({"archives": archives}, indent=2, ensure_ascii=False), encoding="utf-8")
+    tmp_idx = HISTORY_DIR / "index.json.tmp"
+    tmp_idx.write_text(json.dumps({"archives": archives}, indent=2, ensure_ascii=False), encoding="utf-8")
+    tmp_idx.replace(HISTORY_DIR / "index.json")
 
 
 def write_digest(data: dict, write_current: bool = True) -> None:
@@ -602,8 +604,12 @@ def write_digest(data: dict, write_current: bool = True) -> None:
         write_current = False
         print(f"INFO No items for {data['metadata']['coverage_date']} — keeping previous digest.json unchanged", file=sys.stderr)
     if write_current:
-        OUT.write_text(json.dumps(data, indent=2, ensure_ascii=False), encoding="utf-8")
-    history_path.write_text(json.dumps(data, indent=2, ensure_ascii=False), encoding="utf-8")
+        tmp_out = OUT.with_suffix(".json.tmp")
+        tmp_out.write_text(json.dumps(data, indent=2, ensure_ascii=False), encoding="utf-8")
+        tmp_out.replace(OUT)
+    tmp_hist = history_path.with_suffix(".json.tmp")
+    tmp_hist.write_text(json.dumps(data, indent=2, ensure_ascii=False), encoding="utf-8")
+    tmp_hist.replace(history_path)
     rebuild_history_index()
     if write_current:
         print(f"Wrote {OUT} with {data['metadata']['item_count']} items ({data['metadata']['mode']})")

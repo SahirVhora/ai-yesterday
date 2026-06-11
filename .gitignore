@@ -1,17 +1,24 @@
-# OS files
-.DS_Store
-Thumbs.db
-
-# Editor files
-*.swp
-*.swo
-*~
-.vscode/
-.idea/
-
-# Logs
-*.log
-
-# Environment
-.env
-.env.local
+1|# OS files
+2|.DS_Store
+3|Thumbs.db
+4|
+5|# Editor files
+6|*.swp
+7|*.swo
+8|*~
+9|.vscode/
+10|.idea/
+11|
+12|# Logs
+13|*.log
+14|
+15|# Environment
+16|.env
+17|.env.local
+18|
+# Python
+venv/
+__pycache__/
+*.pyc
+# Node
+node_modules/
