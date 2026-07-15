@@ -1,0 +1,356 @@
+{
+  "metadata": {
+    "name": "AI Yesterday",
+    "generated_at": "2026-07-05T09:43:55.042589Z",
+    "coverage_date": "2026-07-04",
+    "source_count": 12,
+    "feed_items_scanned": 2079,
+    "item_count": 13,
+    "mode": "live",
+    "summary_engine": "openrouter",
+    "openrouter_enabled": true,
+    "openrouter_items_attempted": 4,
+    "openrouter_items_enriched": 1,
+    "openrouter_model": "openrouter/free",
+    "briefing_quality_score": 98.5
+  },
+  "items": [
+    {
+      "title": "What is Mistral AI? Everything to know about the OpenAI competitor",
+      "source": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/07/04/what-is-mistral-ai-everything-to-know-about-the-openai-competitor/",
+      "published": "2026-07-04T15:51:32Z",
+      "category": "Models",
+      "importance": "Medium",
+      "score": 60,
+      "summary": "In simple terms, this is about making AI systems more capable or cheaper to run. Mistral AI, which offers some open source AI models, has raised significant funding since its creation in 2023, with the ambition to “put frontier AI in the hands of everyone.”",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "New Google commercial imagines a Declaration of Independence written with help from AI",
+      "source": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/07/04/new-google-commercial-imagines-a-declaration-of-independence-written-with-help-from-ai/",
+      "published": "2026-07-04T20:55:25Z",
+      "category": "Signals",
+      "importance": "Medium",
+      "score": 46,
+      "summary": "Google has released an advertisement depicting the American Founding Fathers using Google Workspace to draft the Declaration of Independence, positioning its AI tools as collaborative partners for complex historical and creative writing tasks.",
+      "why_it_matters": "The campaign signals a shift towards marketing AI as a creative collaborator for high-stakes drafting, rather than just a tool for simple productivity or data retrieval.",
+      "summary_engine": "openrouter",
+      "summary_model": "openrouter/free",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "Security Roundup: Apple’s Hide My Email Service Fails to Hide Your Email",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/security-roundup-apples-hide-my-email-service-fails-to-hide-your-email/",
+      "published": "2026-07-04T10:30:00Z",
+      "category": "Products",
+      "importance": "Medium",
+      "score": 46,
+      "summary": "In simple terms, this is about turning AI research into tools people can actually use. Plus: Alleged Scattered Spider hacking member extradited, dozens of license plate reader errors, and Indian officials are concerned about WhatsApp’s username rollout.",
+      "why_it_matters": "Worth testing because it could reduce manual work or create a new workflow for non-technical users.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "This Buried Apple Feature Turns an iPhone Into the Perfect Kids’ Dumb Phone",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/this-buried-apple-feature-turns-an-iphone-into-the-perfect-kids-dumb-phone/",
+      "published": "2026-07-04T10:30:00Z",
+      "category": "Products",
+      "importance": "Medium",
+      "score": 44,
+      "summary": "In simple terms, this is about turning AI research into tools people can actually use. Apple built a tool for people with cognitive disabilities, but I accidentally discovered it’s also the best kids’ phone setup no one is talking about-not even Apple.",
+      "why_it_matters": "Worth testing because it could reduce manual work or create a new workflow for non-technical users.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "The fanfiction community is at war with AI - and itself",
+      "source": "The Verge AI",
+      "url": "https://www.theverge.com/tech/960854/ai-fanfiction-ao3-claude-detector",
+      "published": "2026-07-04T12:00:00Z",
+      "category": "Models",
+      "importance": "Low",
+      "score": 40,
+      "summary": "In simple terms, this is about making AI systems more capable or cheaper to run. Over the past week, a new fanworks movement has kicked off, with the aim to root out authors using generative AI. But the detection methods being implemented are questionable, and any fanfic writer could be caught in...",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "Midjourney wants Hollywood studios to reveal the details of their AI usage",
+      "source": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/07/04/midjourney-wants-hollywood-studios-to-reveal-the-details-of-their-ai-usage/",
+      "published": "2026-07-04T18:00:05Z",
+      "category": "Signals",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. As part of an ongoing legal dispute with three Hollywood studios, Midjourney is seeking to compel those studios to reveal how they use AI themselves.",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "Alibaba reportedly bans employees from using Claude Code",
+      "source": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/07/04/alibaba-reportedly-bans-employees-from-using-claude-code/",
+      "published": "2026-07-04T16:32:08Z",
+      "category": "Models",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this is about making AI systems more capable or cheaper to run. Alibaba reportedly bans employees from using Claude Code",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 80
+    },
+    {
+      "title": "Submit Your Questions: Inside The World of Online Romance Scams",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/livestream-book-club-inside-the-world-of-online-romance-scams/",
+      "published": "2026-07-04T16:00:00Z",
+      "category": "Signals",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. The Yahoo Boys author Carlos Barragán will join Kate Knibbs to answer your questions about Nigeria's romance scammers.",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "15 Best MagSafe Wireless Chargers (2026): Power Banks, Stands, Pads, and Travel Chargers",
+      "source": "WIRED",
+      "url": "https://www.wired.com/gallery/best-magsafe-wireless-chargers/",
+      "published": "2026-07-04T11:30:00Z",
+      "category": "Signals",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. Top up your Qi2 Android phone or MagSafe iPhone with a magnetic wireless charging stand, pad, car charger, or power bank.",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "Where NASA Posts Its Best Space Photos, and How to Find Them",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/where-nasa-posts-its-best-space-photos/",
+      "published": "2026-07-04T11:00:00Z",
+      "category": "Signals",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. Explore decades of incredible images and videos of stars, planets, moons, and galaxies-most of which are free to use and share.",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "Food Preservatives May Increase the Risk of High Blood Pressure and Cardiovascular Disease",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/food-preservatives-may-increase-the-risk-of-high-blood-pressure-and-cardiovascular-disease/",
+      "published": "2026-07-04T09:30:00Z",
+      "category": "Research",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, researchers are testing a new way to make AI better or safer. Aa large-scale study demonstrates that preservatives widely used in everyday processed foods may exacerbate common health risks.",
+      "why_it_matters": "Useful background signal. It may not matter today, but it can shape tools that appear later.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "The Best Fourth of July Mattress Sales on Beds We Actually Sleep On (2026)",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/best-july-fourth-mattress-deals-2026/",
+      "published": "2026-07-04T09:08:00Z",
+      "category": "Policy",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this affects the rules, risks or responsibilities around AI. From cooling hybrids to organic latex beds, these are the mattresses WIRED reviewers actually sleep on and recommend.",
+      "why_it_matters": "Important for anyone using AI at work because compliance and data handling expectations are changing.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "Scientists Have Identified a New Fossil Species of Axolotl in Mexico",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/scientists-have-identified-a-new-fossil-species-of-axolotl-in-mexico/",
+      "published": "2026-07-04T09:00:00Z",
+      "category": "Signals",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. Ambystoma quetzalcoatli is the first fossil salamander to be formally identified in Mexico, revealing that axolotls have inhabited the country for millions of years.",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    }
+  ],
+  "categories": [
+    "Models",
+    "Policy",
+    "Products",
+    "Research",
+    "Signals"
+  ],
+  "source_quality": [
+    {
+      "name": "WIRED",
+      "tier": 3,
+      "feed_items_scanned": 50,
+      "selected_items": 8,
+      "signal_ratio": 0.16,
+      "quality_score": 96,
+      "status": "active"
+    },
+    {
+      "name": "TechCrunch AI",
+      "tier": 3,
+      "feed_items_scanned": 20,
+      "selected_items": 4,
+      "signal_ratio": 0.2,
+      "quality_score": 68,
+      "status": "active"
+    },
+    {
+      "name": "Google DeepMind",
+      "tier": 5,
+      "feed_items_scanned": 100,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 50,
+      "status": "active"
+    },
+    {
+      "name": "OpenAI",
+      "tier": 5,
+      "feed_items_scanned": 1028,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 42,
+      "status": "active"
+    },
+    {
+      "name": "MIT Technology Review AI",
+      "tier": 4,
+      "feed_items_scanned": 10,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 40,
+      "status": "active"
+    },
+    {
+      "name": "The Verge AI",
+      "tier": 3,
+      "feed_items_scanned": 10,
+      "selected_items": 1,
+      "signal_ratio": 0.1,
+      "quality_score": 37,
+      "status": "active"
+    },
+    {
+      "name": "Hugging Face",
+      "tier": 4,
+      "feed_items_scanned": 814,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 32,
+      "status": "active"
+    },
+    {
+      "name": "VentureBeat AI",
+      "tier": 3,
+      "feed_items_scanned": 7,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 30,
+      "status": "active"
+    },
+    {
+      "name": "Ars Technica AI",
+      "tier": 3,
+      "feed_items_scanned": 20,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 30,
+      "status": "active"
+    },
+    {
+      "name": "AI News",
+      "tier": 2,
+      "feed_items_scanned": 0,
+      "selected_items": 0,
+      "signal_ratio": 0,
+      "quality_score": 20,
+      "status": "unavailable"
+    },
+    {
+      "name": "Hacker News AI",
+      "tier": 2,
+      "feed_items_scanned": 20,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 20,
+      "status": "active"
+    },
+    {
+      "name": "arXiv AI",
+      "tier": 2,
+      "feed_items_scanned": 0,
+      "selected_items": 0,
+      "signal_ratio": 0,
+      "quality_score": 20,
+      "status": "unavailable"
+    }
+  ],
+  "weekly_trends": [
+    {
+      "category": "Research",
+      "items": 5,
+      "critical": 1,
+      "average_score": 54.4,
+      "source_count": 3,
+      "plain_english": "Research produced 1 critical signal. This is worth watching closely this week."
+    },
+    {
+      "category": "Products",
+      "items": 37,
+      "critical": 0,
+      "average_score": 46.3,
+      "source_count": 7,
+      "plain_english": "Products is a busy area this week. Expect incremental product or research movement rather than one big headline."
+    },
+    {
+      "category": "Signals",
+      "items": 36,
+      "critical": 0,
+      "average_score": 41.9,
+      "source_count": 6,
+      "plain_english": "Signals is a busy area this week. Expect incremental product or research movement rather than one big headline."
+    },
+    {
+      "category": "Models",
+      "items": 35,
+      "critical": 0,
+      "average_score": 54.9,
+      "source_count": 8,
+      "plain_english": "Models is a busy area this week. Expect incremental product or research movement rather than one big headline."
+    },
+    {
+      "category": "Policy",
+      "items": 7,
+      "critical": 0,
+      "average_score": 40.1,
+      "source_count": 4,
+      "plain_english": "Policy is a busy area this week. Expect incremental product or research movement rather than one big headline."
+    },
+    {
+      "category": "Business",
+      "items": 7,
+      "critical": 0,
+      "average_score": 39.1,
+      "source_count": 3,
+      "plain_english": "Business is a busy area this week. Expect incremental product or research movement rather than one big headline."
+    }
+  ]
+}

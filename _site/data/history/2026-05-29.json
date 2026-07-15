@@ -1,0 +1,238 @@
+{
+  "metadata": {
+    "name": "AI Yesterday",
+    "generated_at": "2026-06-04T17:09:01.040618Z",
+    "coverage_date": "2026-05-29",
+    "source_count": 9,
+    "feed_items_scanned": 2332,
+    "item_count": 7,
+    "mode": "live",
+    "summary_engine": "rules",
+    "openrouter_items_enriched": 0,
+    "openrouter_model": null
+  },
+  "items": [
+    {
+      "title": "A shared playbook for trustworthy third party evaluations",
+      "source": "OpenAI",
+      "url": "https://openai.com/index/trustworthy-third-party-evaluations-foundations",
+      "published": "2026-05-29T00:00:00Z",
+      "category": "Models",
+      "importance": "High",
+      "score": 77,
+      "summary": "In simple terms, this is about making AI systems more capable or cheaper to run. OpenAI shares guidance on third-party AI evaluations, covering how to assess model capabilities, safeguards, and validity for frontier systems.",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules"
+    },
+    {
+      "title": "Boston Children’s uses AI to unlock new diagnoses",
+      "source": "OpenAI",
+      "url": "https://openai.com/index/boston-childrens-hospital",
+      "published": "2026-05-29T12:00:00Z",
+      "category": "Signals",
+      "importance": "High",
+      "score": 70,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. Boston Children’s Hospital uses OpenAI technology to improve patient care, reduce operational burden, and help diagnose more than 40 rare disease cases.",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules"
+    },
+    {
+      "title": "Strengthening societal resilience with Rosalind Biodefense",
+      "source": "OpenAI",
+      "url": "https://openai.com/index/strengthening-societal-resilience-with-rosalind-biodefense",
+      "published": "2026-05-29T03:00:00Z",
+      "category": "Models",
+      "importance": "High",
+      "score": 70,
+      "summary": "In simple terms, this is about making AI systems more capable or cheaper to run. OpenAI launches Rosalind Biodefense, expanding trusted access to GPT-Rosalind for vetted developers and U.S. government partners advancing biodefense, public health, and pandemic preparedness through frontier AI.",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules"
+    },
+    {
+      "title": "How Braintrust turns customer requests into code with Codex",
+      "source": "OpenAI",
+      "url": "https://openai.com/index/braintrust",
+      "published": "2026-05-29T12:00:00Z",
+      "category": "Models",
+      "importance": "Medium",
+      "score": 60,
+      "summary": "In simple terms, this is about making AI systems more capable or cheaper to run. How Braintrust engineers use Codex with GPT-5.5 to run experiments and code faster.",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules"
+    },
+    {
+      "title": "How the Pope’s Magnifica Humanitas offers a template for individuals to meet the AI moment",
+      "source": "MIT Technology Review AI",
+      "url": "https://www.technologyreview.com/2026/05/29/1138107/how-the-popes-magnifica-humanitas-offers-a-template-for-individuals-to-meet-the-ai-moment/",
+      "published": "2026-05-29T10:00:00Z",
+      "category": "Policy",
+      "importance": "Medium",
+      "score": 48,
+      "summary": "In simple terms, this affects the rules, risks or responsibilities around AI. Pope Leo XIV’s new encyclical on artificial intelligence includes a statement that warrants serious attention from technologists and policymakers: “Technology is never neutral.” Magnifica Humanitas (“Magnificent...",
+      "why_it_matters": "Important for anyone using AI at work because compliance and data handling expectations are changing.",
+      "summary_engine": "rules"
+    },
+    {
+      "title": "Profiling in PyTorch (Part 1): A Beginner's Guide to torch.profiler",
+      "source": "Hugging Face",
+      "url": "https://huggingface.co/blog/torch-profiler",
+      "published": "2026-05-29T00:00:00Z",
+      "category": "Signals",
+      "importance": "Medium",
+      "score": 48,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. Profiling in PyTorch (Part 1): A Beginner's Guide to torch.profiler",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules"
+    },
+    {
+      "title": "Botnet of more than 17 million devices dismantled",
+      "source": "Ars Technica AI",
+      "url": "https://arstechnica.com/security/2026/05/botnet-of-more-than-17-million-devices-dismantled/",
+      "published": "2026-05-29T18:46:33Z",
+      "category": "Signals",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. Botnet of more than 17 million devices dismantled",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules"
+    }
+  ],
+  "categories": [
+    "Models",
+    "Policy",
+    "Signals"
+  ],
+  "source_quality": [
+    {
+      "name": "OpenAI",
+      "tier": 5,
+      "feed_items_scanned": 991,
+      "selected_items": 4,
+      "signal_ratio": 0.004,
+      "quality_score": 88,
+      "status": "active"
+    },
+    {
+      "name": "Google DeepMind",
+      "tier": 5,
+      "feed_items_scanned": 100,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 50,
+      "status": "active"
+    },
+    {
+      "name": "MIT Technology Review AI",
+      "tier": 4,
+      "feed_items_scanned": 10,
+      "selected_items": 1,
+      "signal_ratio": 0.1,
+      "quality_score": 47,
+      "status": "active"
+    },
+    {
+      "name": "Hugging Face",
+      "tier": 4,
+      "feed_items_scanned": 793,
+      "selected_items": 1,
+      "signal_ratio": 0.001,
+      "quality_score": 39,
+      "status": "active"
+    },
+    {
+      "name": "Ars Technica AI",
+      "tier": 3,
+      "feed_items_scanned": 20,
+      "selected_items": 1,
+      "signal_ratio": 0.05,
+      "quality_score": 37,
+      "status": "active"
+    },
+    {
+      "name": "VentureBeat AI",
+      "tier": 3,
+      "feed_items_scanned": 7,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 30,
+      "status": "active"
+    },
+    {
+      "name": "The Verge AI",
+      "tier": 3,
+      "feed_items_scanned": 10,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 30,
+      "status": "active"
+    },
+    {
+      "name": "Hacker News AI",
+      "tier": 2,
+      "feed_items_scanned": 20,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 20,
+      "status": "active"
+    },
+    {
+      "name": "arXiv AI",
+      "tier": 2,
+      "feed_items_scanned": 381,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 12,
+      "status": "active"
+    }
+  ],
+  "weekly_trends": [
+    {
+      "category": "Models",
+      "items": 11,
+      "critical": 2,
+      "average_score": 68.3,
+      "source_count": 3,
+      "plain_english": "Models produced 2 critical signals. This is worth watching closely this week."
+    },
+    {
+      "category": "Policy",
+      "items": 6,
+      "critical": 2,
+      "average_score": 72.2,
+      "source_count": 3,
+      "plain_english": "Policy produced 2 critical signals. This is worth watching closely this week."
+    },
+    {
+      "category": "Signals",
+      "items": 20,
+      "critical": 0,
+      "average_score": 39.0,
+      "source_count": 4,
+      "plain_english": "Signals is a busy area this week. Expect incremental product or research movement rather than one big headline."
+    },
+    {
+      "category": "Products",
+      "items": 15,
+      "critical": 0,
+      "average_score": 54.2,
+      "source_count": 5,
+      "plain_english": "Products is a busy area this week. Expect incremental product or research movement rather than one big headline."
+    },
+    {
+      "category": "Business",
+      "items": 2,
+      "critical": 0,
+      "average_score": 60.5,
+      "source_count": 2,
+      "plain_english": "Business has a lighter signal this week. Useful context, but not the main priority."
+    },
+    {
+      "category": "Research",
+      "items": 2,
+      "critical": 0,
+      "average_score": 27.5,
+      "source_count": 1,
+      "plain_english": "Research has a lighter signal this week. Useful context, but not the main priority."
+    }
+  ]
+}

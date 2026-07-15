@@ -1,0 +1,240 @@
+{
+  "metadata": {
+    "name": "AI Yesterday",
+    "generated_at": "2026-06-04T17:08:53.620195Z",
+    "coverage_date": "2026-05-27",
+    "source_count": 9,
+    "feed_items_scanned": 2332,
+    "item_count": 7,
+    "mode": "live",
+    "summary_engine": "rules",
+    "openrouter_items_enriched": 0,
+    "openrouter_model": null
+  },
+  "items": [
+    {
+      "title": "Warp’s big bet on building open source with GPT-5.5",
+      "source": "OpenAI",
+      "url": "https://openai.com/index/warp",
+      "published": "2026-05-27T00:00:00Z",
+      "category": "Models",
+      "importance": "Critical",
+      "score": 84,
+      "summary": "In simple terms, this is about making AI systems more capable or cheaper to run. Warp uses GPT-5.5 and OpenAI models to coordinate coding agents across local, cloud, and open-source development workflows.",
+      "why_it_matters": "Track this closely because it may affect products, skills, costs or competitive advantage within weeks.",
+      "summary_engine": "rules"
+    },
+    {
+      "title": "Cisco and OpenAI redefine enterprise engineering with Codex",
+      "source": "OpenAI",
+      "url": "https://openai.com/index/cisco",
+      "published": "2026-05-27T11:00:00Z",
+      "category": "Business",
+      "importance": "High",
+      "score": 77,
+      "summary": "In simple terms, money and strategy are moving toward this part of AI. Cisco and OpenAI are redefining enterprise engineering with Codex, helping Cisco scale AI-native development, accelerate AI Defense work, and automate defect remediation.",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules"
+    },
+    {
+      "title": "Building self-improving tax agents with Codex",
+      "source": "OpenAI",
+      "url": "https://openai.com/index/building-self-improving-tax-agents-with-codex",
+      "published": "2026-05-27T07:00:00Z",
+      "category": "Products",
+      "importance": "High",
+      "score": 77,
+      "summary": "In simple terms, this is about turning AI research into tools people can actually use. See how OpenAI, Thrive, and Crete built a self-improving tax agent with Codex, automating filings, improving accuracy, and accelerating workflows.",
+      "why_it_matters": "Worth testing because it could reduce manual work or create a new workflow for non-technical users.",
+      "summary_engine": "rules"
+    },
+    {
+      "title": "Election information and safeguards in 2026",
+      "source": "OpenAI",
+      "url": "https://openai.com/index/election-safeguards-2026",
+      "published": "2026-05-27T00:00:00Z",
+      "category": "Signals",
+      "importance": "Medium",
+      "score": 60,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. Ahead of global elections, we’re helping people access information, supporting cyber defenders, and increasing AI transparency",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules"
+    },
+    {
+      "title": "Reachy Mini goes fully local",
+      "source": "Hugging Face",
+      "url": "https://huggingface.co/blog/local-reachy-mini-conversation",
+      "published": "2026-05-27T00:00:00Z",
+      "category": "Signals",
+      "importance": "Medium",
+      "score": 48,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. Reachy Mini goes fully local",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules"
+    },
+    {
+      "title": "Shipping a Trillion Parameters With a Hub Bucket: Delta Weight Sync in TRL",
+      "source": "Hugging Face",
+      "url": "https://huggingface.co/blog/delta-weight-sync",
+      "published": "2026-05-27T00:00:00Z",
+      "category": "Signals",
+      "importance": "Medium",
+      "score": 48,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. Shipping a Trillion Parameters With a Hub Bucket: Delta Weight Sync in TRL",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules"
+    },
+    {
+      "title": "Websites have a new way to spy on visitors: Analyzing their SSD activity",
+      "source": "Ars Technica AI",
+      "url": "https://arstechnica.com/security/2026/05/websites-have-a-new-way-to-spy-on-visitors-analyzing-their-ssd-activity/",
+      "published": "2026-05-27T20:56:03Z",
+      "category": "Policy",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this affects the rules, risks or responsibilities around AI. Websites have a new way to spy on visitors: Analyzing their SSD activity",
+      "why_it_matters": "Important for anyone using AI at work because compliance and data handling expectations are changing.",
+      "summary_engine": "rules"
+    }
+  ],
+  "categories": [
+    "Business",
+    "Models",
+    "Policy",
+    "Products",
+    "Signals"
+  ],
+  "source_quality": [
+    {
+      "name": "OpenAI",
+      "tier": 5,
+      "feed_items_scanned": 991,
+      "selected_items": 4,
+      "signal_ratio": 0.004,
+      "quality_score": 88,
+      "status": "active"
+    },
+    {
+      "name": "Hugging Face",
+      "tier": 4,
+      "feed_items_scanned": 793,
+      "selected_items": 2,
+      "signal_ratio": 0.003,
+      "quality_score": 54,
+      "status": "active"
+    },
+    {
+      "name": "Google DeepMind",
+      "tier": 5,
+      "feed_items_scanned": 100,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 50,
+      "status": "active"
+    },
+    {
+      "name": "MIT Technology Review AI",
+      "tier": 4,
+      "feed_items_scanned": 10,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 40,
+      "status": "active"
+    },
+    {
+      "name": "Ars Technica AI",
+      "tier": 3,
+      "feed_items_scanned": 20,
+      "selected_items": 1,
+      "signal_ratio": 0.05,
+      "quality_score": 37,
+      "status": "active"
+    },
+    {
+      "name": "VentureBeat AI",
+      "tier": 3,
+      "feed_items_scanned": 7,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 30,
+      "status": "active"
+    },
+    {
+      "name": "The Verge AI",
+      "tier": 3,
+      "feed_items_scanned": 10,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 30,
+      "status": "active"
+    },
+    {
+      "name": "Hacker News AI",
+      "tier": 2,
+      "feed_items_scanned": 20,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 20,
+      "status": "active"
+    },
+    {
+      "name": "arXiv AI",
+      "tier": 2,
+      "feed_items_scanned": 381,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 12,
+      "status": "active"
+    }
+  ],
+  "weekly_trends": [
+    {
+      "category": "Models",
+      "items": 8,
+      "critical": 2,
+      "average_score": 67.1,
+      "source_count": 3,
+      "plain_english": "Models produced 2 critical signals. This is worth watching closely this week."
+    },
+    {
+      "category": "Policy",
+      "items": 4,
+      "critical": 1,
+      "average_score": 71.5,
+      "source_count": 2,
+      "plain_english": "Policy produced 1 critical signal. This is worth watching closely this week."
+    },
+    {
+      "category": "Signals",
+      "items": 19,
+      "critical": 0,
+      "average_score": 38.0,
+      "source_count": 5,
+      "plain_english": "Signals is a busy area this week. Expect incremental product or research movement rather than one big headline."
+    },
+    {
+      "category": "Products",
+      "items": 16,
+      "critical": 0,
+      "average_score": 53.0,
+      "source_count": 5,
+      "plain_english": "Products is a busy area this week. Expect incremental product or research movement rather than one big headline."
+    },
+    {
+      "category": "Business",
+      "items": 2,
+      "critical": 0,
+      "average_score": 60.5,
+      "source_count": 2,
+      "plain_english": "Business has a lighter signal this week. Useful context, but not the main priority."
+    },
+    {
+      "category": "Research",
+      "items": 2,
+      "critical": 0,
+      "average_score": 27.5,
+      "source_count": 1,
+      "plain_english": "Research has a lighter signal this week. Useful context, but not the main priority."
+    }
+  ]
+}

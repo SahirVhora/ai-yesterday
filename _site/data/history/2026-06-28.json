@@ -1,0 +1,444 @@
+{
+  "metadata": {
+    "name": "AI Yesterday",
+    "generated_at": "2026-06-29T12:01:41.303307Z",
+    "coverage_date": "2026-06-28",
+    "source_count": 12,
+    "feed_items_scanned": 2305,
+    "item_count": 20,
+    "mode": "live",
+    "summary_engine": "rules",
+    "openrouter_enabled": true,
+    "openrouter_items_attempted": 4,
+    "openrouter_items_enriched": 0,
+    "openrouter_model": "openrouter/free",
+    "briefing_quality_score": 92.0
+  },
+  "items": [
+    {
+      "title": "China’s Z.ai claims it can match Mythos on cybersecurity",
+      "source": "The Verge AI",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/958804/chinas-z-ai-glm-52-mythos-cybersecurity",
+      "published": "2026-06-28T21:42:51Z",
+      "category": "Models",
+      "importance": "Critical",
+      "score": 90,
+      "summary": "In simple terms, this is about making AI systems more capable or cheaper to run. China's Zhipu AI (Z.ai) released its open-weight GLM-5.2, and some researchers have claimed that it matches Mythos in certain bug-finding and cybersecurity scenarios. While GLM lags behind models from Anthropic and...",
+      "why_it_matters": "Track this closely because it may affect products, skills, costs or competitive advantage within weeks.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "HP Inc. launches Frontier strategic partnership with OpenAI",
+      "source": "OpenAI",
+      "url": "https://openai.com/index/hp-frontier-partnership",
+      "published": "2026-06-28T17:00:00Z",
+      "category": "Products",
+      "importance": "High",
+      "score": 77,
+      "summary": "In simple terms, this is about turning AI research into tools people can actually use. HP Inc. scales its OpenAI Frontier partnership to deploy AI across customer experiences, software development, and enterprise operations.",
+      "why_it_matters": "Worth testing because it could reduce manual work or create a new workflow for non-technical users.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "Why Wall Street thinks US memory maker Micron is the next Nvidia",
+      "source": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/06/28/why-wall-street-thinks-us-memory-maker-micron-is-the-next-nvidia/",
+      "published": "2026-06-28T15:00:00Z",
+      "category": "Signals",
+      "importance": "Medium",
+      "score": 46,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. Eager to find more public AI-related companies that may do as well as Nvidia, Wall Street investors think they've found a winner with Micron.",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "Prosecutors used ChatGPT logs as evidence in the Palisades fire trial",
+      "source": "The Verge AI",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/958751/prosecutors-chatgpt-palisades-wildfire-arson-mistrial",
+      "published": "2026-06-28T14:12:06Z",
+      "category": "Models",
+      "importance": "Medium",
+      "score": 46,
+      "summary": "In simple terms, this is about making AI systems more capable or cheaper to run. Jonathan Rinderknecht was facing arson charges for setting a fire on New Year's Day in 2025, which became one of the deadliest wildfires in LA history. To make their case, prosecutors turned to location data from his...",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "We need tech news sources which exclude AI",
+      "source": "Hacker News AI",
+      "url": "https://news.ycombinator.com/item?id=48713041",
+      "published": "2026-06-28T23:49:50Z",
+      "category": "Models",
+      "importance": "Low",
+      "score": 41,
+      "summary": "In simple terms, this is about making AI systems more capable or cheaper to run. Its now clear that we need to preserve tech press for non AI related things. Techmeme for example is now completely overrun with AI stories. HN is getting closer to that every day. If AI kickback deals, phony new...",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "Google limits Meta's use of its Gemini AI models",
+      "source": "Hacker News AI",
+      "url": "https://www.cnbc.com/2026/06/28/google-limits-metas-use-of-its-gemini-ai-models-ft-reports.html",
+      "published": "2026-06-28T13:30:06Z",
+      "category": "Models",
+      "importance": "Low",
+      "score": 41,
+      "summary": "In simple terms, this is about making AI systems more capable or cheaper to run. Google limits Meta's use of its Gemini AI models",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 80
+    },
+    {
+      "title": "Suno launches Spark incubator program to feed independent artists to its AI machine",
+      "source": "The Verge AI",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/958801/suno-launches-spark-incubator-program-to-feed-independent-artists-to-its-ai-machine",
+      "published": "2026-06-28T20:27:36Z",
+      "category": "Products",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this is about turning AI research into tools people can actually use. Suno has ambitions to be more than just a toy to churn out AI slop, it also wants to be a streaming destination and to break new artists. Spark is their new incubator program for independent artists that provides...",
+      "why_it_matters": "Worth testing because it could reduce manual work or create a new workflow for non-technical users.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "Ford rehires ‘gray beard’ engineers after AI falls short",
+      "source": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/06/28/ford-rehires-gray-beard-engineers-after-ai-falls-short/",
+      "published": "2026-06-28T19:05:39Z",
+      "category": "Signals",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. \"Mistakenly we thought that by just introducing artificial intelligence ... that would produce a high-quality product.”",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "What to Do in Houston If You're Here for Business (2026)",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/the-wired-guide-to-houston-for-business-travelers/",
+      "published": "2026-06-28T12:21:00Z",
+      "category": "Signals",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. Where to eat, stay, work, and eat some more while visiting Space City on business.",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "The ‘Almost Homeless’ Subreddit Is a Stark Glimpse at Soaring Wealth Inequality",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/the-almost-homeless-subreddit-is-a-stark-glimpse-at-soaring-wealth-inequality/",
+      "published": "2026-06-28T11:00:00Z",
+      "category": "Signals",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. As the billionaire class gets richer, the growing online community is offering tips on how to survive with very little.",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "Why Wear Anything Other Than a Sun Hoodie This Summer? Our Picks for the Best",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/im-addicted-to-sun-hoodies/",
+      "published": "2026-06-28T10:02:00Z",
+      "category": "Signals",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. Why Wear Anything Other Than a Sun Hoodie This Summer? Our Picks for the Best",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 80
+    },
+    {
+      "title": "This Is the Most Detailed Image Yet of the Milky Way's Center",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/this-is-the-most-detailed-image-yet-of-the-milky-ways-center/",
+      "published": "2026-06-28T09:30:00Z",
+      "category": "Signals",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. The Euclid space telescope's stunning photo of our galaxy's “crowded heart” captures more than 60 million stars.",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "The Ebike Accessories You Need to Help You Haul the Most Stuff",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/how-to-trick-out-your-ebike/",
+      "published": "2026-06-28T09:01:00Z",
+      "category": "Signals",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. An unadorned ebike is a blank canvas. Here, get tips for maximizing its cargo-hauling and person-carrying capabilities.",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "China Defies US Restrictions and Builds the World’s Fastest Supercomputer",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/china-defies-us-restrictions-and-builds-the-worlds-fastest-supercomputer/",
+      "published": "2026-06-28T09:00:00Z",
+      "category": "Signals",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. The Chinese supercomputer LineShine was ranked as the fastest in the world, despite not using any GPUs.",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "Austria Lobbies EU to Host Anthropic After US Access Curbs",
+      "source": "Hacker News AI",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-28/austria-lobbies-eu-to-host-anthropic-after-us-access-curbs",
+      "published": "2026-06-28T13:34:14Z",
+      "category": "Signals",
+      "importance": "Low",
+      "score": 34,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. Austria Lobbies EU to Host Anthropic After US Access Curbs",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 80
+    },
+    {
+      "title": "A way to exclude sensitive files issue still open for OpenAI Codex",
+      "source": "Hacker News AI",
+      "url": "https://github.com/openai/codex/issues/2847",
+      "published": "2026-06-28T12:27:33Z",
+      "category": "Signals",
+      "importance": "Low",
+      "score": 34,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. A way to exclude sensitive files issue still open for OpenAI Codex",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 80
+    },
+    {
+      "title": "Professor denounces mass AI fraud on an exam at Brown",
+      "source": "Hacker News AI",
+      "url": "https://english.elpais.com/education/2026-06-28/ai-fraud-at-brown-university-academic-integrity-is-at-risk.html",
+      "published": "2026-06-28T16:41:12Z",
+      "category": "Signals",
+      "importance": "Low",
+      "score": 24,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. Professor denounces mass AI fraud on an exam at Brown",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 80
+    },
+    {
+      "title": "Wayfinder Router: deterministic routing of queries between local and hosted LLM",
+      "source": "Hacker News AI",
+      "url": "https://github.com/itsthelore/wayfinder-router",
+      "published": "2026-06-28T04:31:18Z",
+      "category": "Models",
+      "importance": "Low",
+      "score": 24,
+      "summary": "In simple terms, this is about making AI systems more capable or cheaper to run. Wayfinder Router: deterministic routing of queries between local and hosted LLM",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 80
+    },
+    {
+      "title": "Ford hired AI and sacked humans. It backfired badly",
+      "source": "Hacker News AI",
+      "url": "https://www.the-independent.com/tech/ford-ai-automation-human-workers-b3003787.html",
+      "published": "2026-06-28T03:09:13Z",
+      "category": "Signals",
+      "importance": "Low",
+      "score": 24,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. Ford hired AI and sacked humans. It backfired badly",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 80
+    },
+    {
+      "title": "The best response to AI slop and online noise is from Robin Williams",
+      "source": "Hacker News AI",
+      "url": "https://jayacunzo.com/blog/your-move-chief",
+      "published": "2026-06-28T01:28:10Z",
+      "category": "Signals",
+      "importance": "Low",
+      "score": 24,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. The best response to AI slop and online noise is from Robin Williams",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 80
+    }
+  ],
+  "categories": [
+    "Models",
+    "Products",
+    "Signals"
+  ],
+  "source_quality": [
+    {
+      "name": "Hacker News AI",
+      "tier": 2,
+      "feed_items_scanned": 20,
+      "selected_items": 8,
+      "signal_ratio": 0.4,
+      "quality_score": 86,
+      "status": "active"
+    },
+    {
+      "name": "WIRED",
+      "tier": 3,
+      "feed_items_scanned": 50,
+      "selected_items": 6,
+      "signal_ratio": 0.12,
+      "quality_score": 82,
+      "status": "active"
+    },
+    {
+      "name": "The Verge AI",
+      "tier": 3,
+      "feed_items_scanned": 10,
+      "selected_items": 3,
+      "signal_ratio": 0.3,
+      "quality_score": 61,
+      "status": "active"
+    },
+    {
+      "name": "Google DeepMind",
+      "tier": 5,
+      "feed_items_scanned": 100,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 50,
+      "status": "active"
+    },
+    {
+      "name": "OpenAI",
+      "tier": 5,
+      "feed_items_scanned": 1024,
+      "selected_items": 1,
+      "signal_ratio": 0.001,
+      "quality_score": 49,
+      "status": "active"
+    },
+    {
+      "name": "TechCrunch AI",
+      "tier": 3,
+      "feed_items_scanned": 20,
+      "selected_items": 2,
+      "signal_ratio": 0.1,
+      "quality_score": 44,
+      "status": "active"
+    },
+    {
+      "name": "MIT Technology Review AI",
+      "tier": 4,
+      "feed_items_scanned": 10,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 40,
+      "status": "active"
+    },
+    {
+      "name": "Hugging Face",
+      "tier": 4,
+      "feed_items_scanned": 811,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 32,
+      "status": "active"
+    },
+    {
+      "name": "VentureBeat AI",
+      "tier": 3,
+      "feed_items_scanned": 7,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 30,
+      "status": "active"
+    },
+    {
+      "name": "Ars Technica AI",
+      "tier": 3,
+      "feed_items_scanned": 20,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 30,
+      "status": "active"
+    },
+    {
+      "name": "AI News",
+      "tier": 2,
+      "feed_items_scanned": 0,
+      "selected_items": 0,
+      "signal_ratio": 0,
+      "quality_score": 20,
+      "status": "unavailable"
+    },
+    {
+      "name": "arXiv AI",
+      "tier": 2,
+      "feed_items_scanned": 233,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 20,
+      "status": "active"
+    }
+  ],
+  "weekly_trends": [
+    {
+      "category": "Models",
+      "items": 35,
+      "critical": 2,
+      "average_score": 54.5,
+      "source_count": 9,
+      "plain_english": "Models produced 2 critical signals. This is worth watching closely this week."
+    },
+    {
+      "category": "Products",
+      "items": 38,
+      "critical": 1,
+      "average_score": 48.7,
+      "source_count": 8,
+      "plain_english": "Products produced 1 critical signal. This is worth watching closely this week."
+    },
+    {
+      "category": "Signals",
+      "items": 31,
+      "critical": 0,
+      "average_score": 40.4,
+      "source_count": 7,
+      "plain_english": "Signals is a busy area this week. Expect incremental product or research movement rather than one big headline."
+    },
+    {
+      "category": "Business",
+      "items": 20,
+      "critical": 0,
+      "average_score": 38.5,
+      "source_count": 3,
+      "plain_english": "Business is a busy area this week. Expect incremental product or research movement rather than one big headline."
+    },
+    {
+      "category": "Policy",
+      "items": 8,
+      "critical": 0,
+      "average_score": 42.2,
+      "source_count": 3,
+      "plain_english": "Policy is a busy area this week. Expect incremental product or research movement rather than one big headline."
+    },
+    {
+      "category": "Research",
+      "items": 3,
+      "critical": 0,
+      "average_score": 50.7,
+      "source_count": 2,
+      "plain_english": "Research has a lighter signal this week. Useful context, but not the main priority."
+    }
+  ]
+}

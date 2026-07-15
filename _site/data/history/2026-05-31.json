@@ -1,0 +1,144 @@
+{
+  "metadata": {
+    "name": "AI Yesterday",
+    "generated_at": "2026-06-10T09:59:38.004389Z",
+    "coverage_date": "2026-05-31",
+    "source_count": 9,
+    "feed_items_scanned": 2368,
+    "item_count": 0,
+    "mode": "no_items",
+    "summary_engine": "rules",
+    "openrouter_enabled": true,
+    "openrouter_items_attempted": 0,
+    "openrouter_items_enriched": 0,
+    "openrouter_model": "openrouter/free",
+    "briefing_quality_score": 0
+  },
+  "items": [],
+  "categories": [],
+  "source_quality": [
+    {
+      "name": "Google DeepMind",
+      "tier": 5,
+      "feed_items_scanned": 100,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 50,
+      "status": "active"
+    },
+    {
+      "name": "OpenAI",
+      "tier": 5,
+      "feed_items_scanned": 997,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 42,
+      "status": "active"
+    },
+    {
+      "name": "MIT Technology Review AI",
+      "tier": 4,
+      "feed_items_scanned": 10,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 40,
+      "status": "active"
+    },
+    {
+      "name": "Hugging Face",
+      "tier": 4,
+      "feed_items_scanned": 797,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 32,
+      "status": "active"
+    },
+    {
+      "name": "VentureBeat AI",
+      "tier": 3,
+      "feed_items_scanned": 7,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 30,
+      "status": "active"
+    },
+    {
+      "name": "The Verge AI",
+      "tier": 3,
+      "feed_items_scanned": 10,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 30,
+      "status": "active"
+    },
+    {
+      "name": "Ars Technica AI",
+      "tier": 3,
+      "feed_items_scanned": 20,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 30,
+      "status": "active"
+    },
+    {
+      "name": "Hacker News AI",
+      "tier": 2,
+      "feed_items_scanned": 20,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 20,
+      "status": "active"
+    },
+    {
+      "name": "arXiv AI",
+      "tier": 2,
+      "feed_items_scanned": 407,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 12,
+      "status": "active"
+    }
+  ],
+  "weekly_trends": [
+    {
+      "category": "Products",
+      "items": 10,
+      "critical": 0,
+      "average_score": 50.1,
+      "source_count": 6,
+      "plain_english": "Products is a busy area this week. Expect incremental product or research movement rather than one big headline."
+    },
+    {
+      "category": "Models",
+      "items": 8,
+      "critical": 0,
+      "average_score": 49.1,
+      "source_count": 4,
+      "plain_english": "Models is a busy area this week. Expect incremental product or research movement rather than one big headline."
+    },
+    {
+      "category": "Signals",
+      "items": 7,
+      "critical": 0,
+      "average_score": 33.7,
+      "source_count": 3,
+      "plain_english": "Signals is a busy area this week. Expect incremental product or research movement rather than one big headline."
+    },
+    {
+      "category": "Policy",
+      "items": 4,
+      "critical": 0,
+      "average_score": 66.2,
+      "source_count": 2,
+      "plain_english": "Policy has a lighter signal this week. Useful context, but not the main priority."
+    },
+    {
+      "category": "Business",
+      "items": 1,
+      "critical": 0,
+      "average_score": 65.0,
+      "source_count": 1,
+      "plain_english": "Business has a lighter signal this week. Useful context, but not the main priority."
+    }
+  ]
+}

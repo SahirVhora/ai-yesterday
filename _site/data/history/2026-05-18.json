@@ -1,0 +1,190 @@
+{
+  "metadata": {
+    "name": "AI Yesterday",
+    "generated_at": "2026-06-04T17:08:14.121132Z",
+    "coverage_date": "2026-05-18",
+    "source_count": 9,
+    "feed_items_scanned": 2332,
+    "item_count": 3,
+    "mode": "live",
+    "summary_engine": "rules",
+    "openrouter_items_enriched": 0,
+    "openrouter_model": null
+  },
+  "items": [
+    {
+      "title": "OpenAI and Dell partner to bring Codex to hybrid and on-premise enterprise environments",
+      "source": "OpenAI",
+      "url": "https://openai.com/index/dell-codex-enterprise-partnership",
+      "published": "2026-05-18T10:00:00Z",
+      "category": "Products",
+      "importance": "Critical",
+      "score": 84,
+      "summary": "In simple terms, this is about turning AI research into tools people can actually use. OpenAI and Dell partner to bring Codex to hybrid and on-premise environments, helping enterprises deploy AI coding agents securely across data and workflows.",
+      "why_it_matters": "Track this closely because it may affect products, skills, costs or competitive advantage within weeks.",
+      "summary_engine": "rules"
+    },
+    {
+      "title": "Fast-tracking genetic leads to reverse cellular aging",
+      "source": "Google DeepMind",
+      "url": "https://deepmind.google/blog/fast-tracking-genetic-leads-to-reverse-cellular-aging/",
+      "published": "2026-05-18T18:21:39Z",
+      "category": "Policy",
+      "importance": "Medium",
+      "score": 60,
+      "summary": "In simple terms, this affects the rules, risks or responsibilities around AI. Biologists use Co-Scientist to find novel factors that successfully rejuvenate human cells.",
+      "why_it_matters": "Important for anyone using AI at work because compliance and data handling expectations are changing.",
+      "summary_engine": "rules"
+    },
+    {
+      "title": "PaddleOCR 3.5: Running OCR and Document Parsing Tasks with a Transformers Backend",
+      "source": "Hugging Face",
+      "url": "https://huggingface.co/blog/PaddlePaddle/paddleocr-transformers",
+      "published": "2026-05-18T15:12:46Z",
+      "category": "Signals",
+      "importance": "Medium",
+      "score": 48,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. PaddleOCR 3.5: Running OCR and Document Parsing Tasks with a Transformers Backend",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules"
+    }
+  ],
+  "categories": [
+    "Policy",
+    "Products",
+    "Signals"
+  ],
+  "source_quality": [
+    {
+      "name": "Google DeepMind",
+      "tier": 5,
+      "feed_items_scanned": 100,
+      "selected_items": 1,
+      "signal_ratio": 0.01,
+      "quality_score": 57,
+      "status": "active"
+    },
+    {
+      "name": "OpenAI",
+      "tier": 5,
+      "feed_items_scanned": 991,
+      "selected_items": 1,
+      "signal_ratio": 0.001,
+      "quality_score": 49,
+      "status": "active"
+    },
+    {
+      "name": "MIT Technology Review AI",
+      "tier": 4,
+      "feed_items_scanned": 10,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 40,
+      "status": "active"
+    },
+    {
+      "name": "Hugging Face",
+      "tier": 4,
+      "feed_items_scanned": 793,
+      "selected_items": 1,
+      "signal_ratio": 0.001,
+      "quality_score": 39,
+      "status": "active"
+    },
+    {
+      "name": "VentureBeat AI",
+      "tier": 3,
+      "feed_items_scanned": 7,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 30,
+      "status": "active"
+    },
+    {
+      "name": "The Verge AI",
+      "tier": 3,
+      "feed_items_scanned": 10,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 30,
+      "status": "active"
+    },
+    {
+      "name": "Ars Technica AI",
+      "tier": 3,
+      "feed_items_scanned": 20,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 30,
+      "status": "active"
+    },
+    {
+      "name": "Hacker News AI",
+      "tier": 2,
+      "feed_items_scanned": 20,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 20,
+      "status": "active"
+    },
+    {
+      "name": "arXiv AI",
+      "tier": 2,
+      "feed_items_scanned": 381,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 12,
+      "status": "active"
+    }
+  ],
+  "weekly_trends": [
+    {
+      "category": "Products",
+      "items": 15,
+      "critical": 1,
+      "average_score": 57.3,
+      "source_count": 5,
+      "plain_english": "Products produced 1 critical signal. This is worth watching closely this week."
+    },
+    {
+      "category": "Models",
+      "items": 10,
+      "critical": 1,
+      "average_score": 64.4,
+      "source_count": 4,
+      "plain_english": "Models produced 1 critical signal. This is worth watching closely this week."
+    },
+    {
+      "category": "Policy",
+      "items": 4,
+      "critical": 1,
+      "average_score": 77.5,
+      "source_count": 2,
+      "plain_english": "Policy produced 1 critical signal. This is worth watching closely this week."
+    },
+    {
+      "category": "Signals",
+      "items": 20,
+      "critical": 0,
+      "average_score": 41.9,
+      "source_count": 5,
+      "plain_english": "Signals is a busy area this week. Expect incremental product or research movement rather than one big headline."
+    },
+    {
+      "category": "Research",
+      "items": 3,
+      "critical": 0,
+      "average_score": 40.7,
+      "source_count": 2,
+      "plain_english": "Research has a lighter signal this week. Useful context, but not the main priority."
+    },
+    {
+      "category": "Business",
+      "items": 1,
+      "critical": 0,
+      "average_score": 44.0,
+      "source_count": 1,
+      "plain_english": "Business has a lighter signal this week. Useful context, but not the main priority."
+    }
+  ]
+}

@@ -1,0 +1,303 @@
+{
+  "metadata": {
+    "name": "AI Yesterday",
+    "generated_at": "2026-06-22T12:51:48.614781Z",
+    "coverage_date": "2026-06-21",
+    "source_count": 12,
+    "feed_items_scanned": 2033,
+    "item_count": 9,
+    "mode": "live",
+    "summary_engine": "openrouter",
+    "openrouter_enabled": true,
+    "openrouter_items_attempted": 4,
+    "openrouter_items_enriched": 1,
+    "openrouter_model": "openrouter/free",
+    "briefing_quality_score": 97.8
+  },
+  "items": [
+    {
+      "title": "Samsung Electronics brings ChatGPT and Codex to employees",
+      "source": "OpenAI",
+      "url": "https://openai.com/index/samsung-electronics-chatgpt-codex-deployment",
+      "published": "2026-06-21T23:00:00Z",
+      "category": "Models",
+      "importance": "High",
+      "score": 77,
+      "summary": "In simple terms, this is about making AI systems more capable or cheaper to run. Samsung Electronics deploys ChatGPT Enterprise and Codex to employees worldwide, marking one of OpenAI’s largest enterprise AI rollouts.",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 80
+    },
+    {
+      "title": "When the Trump administration cracks down on Anthropic, who benefits?",
+      "source": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/06/21/when-the-trump-administration-cracks-down-on-anthropic-who-benefits/",
+      "published": "2026-06-21T15:28:17Z",
+      "category": "Policy",
+      "importance": "Medium",
+      "score": 46,
+      "summary": "In simple terms, this affects the rules, risks or responsibilities around AI. On the new episode of Equity, we discussed what actually prompted the administration's latest moves against Anthropic, and what this might mean for the AI ecosystem.",
+      "why_it_matters": "Important for anyone using AI at work because compliance and data handling expectations are changing.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "28 Tips to Take Your ChatGPT Prompts to the Next Level",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/28-tips-to-take-your-chatgpt-prompts-to-the-next-level/",
+      "published": "2026-06-21T10:30:00Z",
+      "category": "Models",
+      "importance": "Medium",
+      "score": 46,
+      "summary": "WIRED outlines 28 practical techniques for writing clearer, more effective ChatGPT prompts, covering phrasing, context provision, role‑playing, and iterative refinement to help users obtain more accurate and useful responses from the model.",
+      "why_it_matters": "Applying these tips can reduce trial‑and‑error time, improve output quality, and make AI tools more reliable for everyday tasks and decision‑making.",
+      "summary_engine": "openrouter",
+      "summary_model": "openrouter/free",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "A Critical Deadline Is Approaching for Windows and Linux Security",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/a-critical-deadline-is-approaching-for-windows-and-linux-security/",
+      "published": "2026-06-21T09:00:00Z",
+      "category": "Products",
+      "importance": "Medium",
+      "score": 46,
+      "summary": "In simple terms, this is about turning AI research into tools people can actually use. The cryptographic keys that secure your computer’s boot sequence will start to expire on June 24. Here’s what that means for you.",
+      "why_it_matters": "Worth testing because it could reduce manual work or create a new workflow for non-technical users.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "Beyond Siri: Here are the practical AI features coming to your iPhone in iOS 27",
+      "source": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/06/21/beyond-siri-here-are-the-practical-ai-features-coming-to-your-iphone-in-ios-27/",
+      "published": "2026-06-21T14:40:28Z",
+      "category": "Products",
+      "importance": "Low",
+      "score": 40,
+      "summary": "In simple terms, this is about turning AI research into tools people can actually use. Siri’s AI overhaul may have grabbed the headlines at WWDC, but some of Apple’s most useful AI features are arriving elsewhere in iOS 27.",
+      "why_it_matters": "Worth testing because it could reduce manual work or create a new workflow for non-technical users.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "Wooting 60HE v2: Peak Keyboard Perfection",
+      "source": "WIRED",
+      "url": "https://www.wired.com/review/review-wooting-60he-v2/",
+      "published": "2026-06-21T11:01:00Z",
+      "category": "Signals",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. Wooting’s 60HE v2 isn’t just a terrific Hall Effect keyboard. It’s a fantastic keyboard period.",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "The Best NAS Devices for Your Home After Months of Testing",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/best-nas-devices/",
+      "published": "2026-06-21T10:30:00Z",
+      "category": "Signals",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. Network-attached storage (NAS) provides accessible shared space on your home network. After testing, these are my favorite NAS devices.",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "If You’re Searching for a New Skillet, Consider Stainless Steel",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/stainless-steel-skillets-are-great/",
+      "published": "2026-06-21T10:30:00Z",
+      "category": "Signals",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. Stainless-steel pans may lack nonstick coatings, but they’re unfussy, they sear well, and they’re built for a lifetime of hard work.",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "Buying a Used iPhone Makes More Sense Than Ever",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/buying-a-used-iphone-makes-more-sense-than-ever/",
+      "published": "2026-06-21T10:00:00Z",
+      "category": "Products",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this is about turning AI research into tools people can actually use. With Apple raising prices soon, you can save a lot of money by buying a used handset or upgrading an older device-safe in the knowledge that it’ll last longer than ever.",
+      "why_it_matters": "Worth testing because it could reduce manual work or create a new workflow for non-technical users.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    }
+  ],
+  "categories": [
+    "Models",
+    "Policy",
+    "Products",
+    "Signals"
+  ],
+  "source_quality": [
+    {
+      "name": "WIRED",
+      "tier": 3,
+      "feed_items_scanned": 50,
+      "selected_items": 6,
+      "signal_ratio": 0.12,
+      "quality_score": 82,
+      "status": "active"
+    },
+    {
+      "name": "Google DeepMind",
+      "tier": 5,
+      "feed_items_scanned": 100,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 50,
+      "status": "active"
+    },
+    {
+      "name": "OpenAI",
+      "tier": 5,
+      "feed_items_scanned": 1013,
+      "selected_items": 1,
+      "signal_ratio": 0.001,
+      "quality_score": 49,
+      "status": "active"
+    },
+    {
+      "name": "TechCrunch AI",
+      "tier": 3,
+      "feed_items_scanned": 20,
+      "selected_items": 2,
+      "signal_ratio": 0.1,
+      "quality_score": 44,
+      "status": "active"
+    },
+    {
+      "name": "MIT Technology Review AI",
+      "tier": 4,
+      "feed_items_scanned": 10,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 40,
+      "status": "active"
+    },
+    {
+      "name": "Hugging Face",
+      "tier": 4,
+      "feed_items_scanned": 803,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 32,
+      "status": "active"
+    },
+    {
+      "name": "VentureBeat AI",
+      "tier": 3,
+      "feed_items_scanned": 7,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 30,
+      "status": "active"
+    },
+    {
+      "name": "The Verge AI",
+      "tier": 3,
+      "feed_items_scanned": 10,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 30,
+      "status": "active"
+    },
+    {
+      "name": "Ars Technica AI",
+      "tier": 3,
+      "feed_items_scanned": 20,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 30,
+      "status": "active"
+    },
+    {
+      "name": "AI News",
+      "tier": 2,
+      "feed_items_scanned": 0,
+      "selected_items": 0,
+      "signal_ratio": 0,
+      "quality_score": 20,
+      "status": "unavailable"
+    },
+    {
+      "name": "Hacker News AI",
+      "tier": 2,
+      "feed_items_scanned": 0,
+      "selected_items": 0,
+      "signal_ratio": 0,
+      "quality_score": 20,
+      "status": "unavailable"
+    },
+    {
+      "name": "arXiv AI",
+      "tier": 2,
+      "feed_items_scanned": 0,
+      "selected_items": 0,
+      "signal_ratio": 0,
+      "quality_score": 20,
+      "status": "unavailable"
+    }
+  ],
+  "weekly_trends": [
+    {
+      "category": "Models",
+      "items": 36,
+      "critical": 2,
+      "average_score": 57.2,
+      "source_count": 8,
+      "plain_english": "Models produced 2 critical signals. This is worth watching closely this week."
+    },
+    {
+      "category": "Signals",
+      "items": 35,
+      "critical": 0,
+      "average_score": 40.2,
+      "source_count": 6,
+      "plain_english": "Signals is a busy area this week. Expect incremental product or research movement rather than one big headline."
+    },
+    {
+      "category": "Products",
+      "items": 27,
+      "critical": 0,
+      "average_score": 42.2,
+      "source_count": 7,
+      "plain_english": "Products is a busy area this week. Expect incremental product or research movement rather than one big headline."
+    },
+    {
+      "category": "Business",
+      "items": 7,
+      "critical": 0,
+      "average_score": 45.4,
+      "source_count": 3,
+      "plain_english": "Business is a busy area this week. Expect incremental product or research movement rather than one big headline."
+    },
+    {
+      "category": "Policy",
+      "items": 6,
+      "critical": 0,
+      "average_score": 53.3,
+      "source_count": 4,
+      "plain_english": "Policy is a busy area this week. Expect incremental product or research movement rather than one big headline."
+    },
+    {
+      "category": "Research",
+      "items": 5,
+      "critical": 0,
+      "average_score": 42.4,
+      "source_count": 2,
+      "plain_english": "Research is a busy area this week. Expect incremental product or research movement rather than one big headline."
+    }
+  ]
+}

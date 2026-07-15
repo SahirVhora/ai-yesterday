@@ -1,0 +1,433 @@
+{
+  "metadata": {
+    "name": "AI Yesterday",
+    "generated_at": "2026-06-28T10:05:30.228343Z",
+    "coverage_date": "2026-06-27",
+    "source_count": 12,
+    "feed_items_scanned": 2082,
+    "item_count": 19,
+    "mode": "live",
+    "summary_engine": "rules",
+    "openrouter_enabled": true,
+    "openrouter_items_attempted": 4,
+    "openrouter_items_enriched": 0,
+    "openrouter_model": "openrouter/free",
+    "briefing_quality_score": 94.7
+  },
+  "items": [
+    {
+      "title": "Asian AI startups launch Mythos-like models as Anthropic’s export ban drags on",
+      "source": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/06/27/asian-ai-startups-launch-mythos-like-models-as-anthropics-export-ban-drags-on/",
+      "published": "2026-06-27T12:00:00Z",
+      "category": "Models",
+      "importance": "High",
+      "score": 67,
+      "summary": "In simple terms, this is about making AI systems more capable or cheaper to run. New models are launching in Asia that promise Mythos-like capabilities without fear of an export ban. U.S. AI labs may never recover this enormous market.",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "Security News This Week: LastPass Users Had Their Data Stolen-Again",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/security-news-this-week-lastpass-users-had-their-data-stolen-again/",
+      "published": "2026-06-27T10:30:00Z",
+      "category": "Signals",
+      "importance": "High",
+      "score": 66,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. Plus: Former national security advisor John Bolton pleads guilty in classified-materials case, Microsoft helps take down major infostealer infrastructure, and more.",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "Trump Administration Allows Anthropic to Release Mythos to Select US Organizations",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/anthropic-restores-access-to-mythos/",
+      "published": "2026-06-27T00:26:14Z",
+      "category": "Models",
+      "importance": "Medium",
+      "score": 53,
+      "summary": "In simple terms, this is about making AI systems more capable or cheaper to run. After weeks of negotiations, the White House permitted Anthropic to grant access to its most advanced AI model to a select group of US companies and government agencies.",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "Apple Vision Pro exec is reportedly leaving for OpenAI",
+      "source": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/06/27/apple-vision-pro-exec-is-reportedly-leaving-for-openai/",
+      "published": "2026-06-27T16:45:09Z",
+      "category": "Products",
+      "importance": "Medium",
+      "score": 46,
+      "summary": "In simple terms, this is about turning AI research into tools people can actually use. Paul Meade, the Apple vice president in charge of the Vision Pro headset, is reportedly leaving the company to join OpenAI’s hardware team.",
+      "why_it_matters": "Worth testing because it could reduce manual work or create a new workflow for non-technical users.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 80
+    },
+    {
+      "title": "Trump Admin releases Anthropic Mythos to be used by more than 100 US companies, agencies",
+      "source": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/06/26/trump-admin-releases-anthropic-mythos-to-be-used-by-more-than-100-us-companies-agencies/",
+      "published": "2026-06-27T01:01:37Z",
+      "category": "Policy",
+      "importance": "Medium",
+      "score": 46,
+      "summary": "In simple terms, this affects the rules, risks or responsibilities around AI. Over 100 companies and government agencies are reportedly authorized to use Mythos 5, including their non-American employees.",
+      "why_it_matters": "Important for anyone using AI at work because compliance and data handling expectations are changing.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "Anthropic’s Mythos 5 is back",
+      "source": "The Verge AI",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/958458/anthropic-mythos-5-is-back-trump-negotiations",
+      "published": "2026-06-27T00:33:44Z",
+      "category": "Policy",
+      "importance": "Medium",
+      "score": 46,
+      "summary": "In simple terms, this affects the rules, risks or responsibilities around AI. After a rollercoaster negotiation process with the Trump administration that dragged on for two weeks, Anthropic's Mythos 5 is finally back in action - at least, somewhat, for a select group of organizations,...",
+      "why_it_matters": "Important for anyone using AI at work because compliance and data handling expectations are changing.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 80
+    },
+    {
+      "title": "SoftBank’s CEO isn’t the only one with questions about Elon Musk’s orbital data center hype",
+      "source": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/06/27/softbanks-ceo-isnt-the-only-one-with-questions-about-elon-musks-orbital-data-center-hype/",
+      "published": "2026-06-27T20:42:36Z",
+      "category": "Signals",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. SoftBank’s CEO isn’t the only one with questions about Elon Musk’s orbital data center hype",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 80
+    },
+    {
+      "title": "Margaret Atwood says the problem with AI is ‘garbage in, garbage out’",
+      "source": "The Verge AI",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/958715/margaret-atwood-ai-problem-garbage-in-garbage-out",
+      "published": "2026-06-27T18:39:32Z",
+      "category": "Signals",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. Maraget Atwood, the storied author of The Handmaid's Tale and The Blind Assassin, was interviewed as part of the Babell Literary and Cultural Festival in Porto, Portugal. As it usually does at these things, the issue...",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "62 Last Minute Prime Day Weekend Deals: Up to 45% Off (2026)",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/amazon-prime-day-absolute-best-deals-06-27-2026/",
+      "published": "2026-06-27T18:01:21Z",
+      "category": "Business",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, money and strategy are moving toward this part of AI. Prime Day is officially over, but many of our favorite, hand-picked deals are still available through the weekend.",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "The fittest founder in the room got cancer. Here’s how he used AI to fight back.",
+      "source": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/06/27/the-fittest-founder-in-the-room-got-cancer-heres-how-he-used-ai-to-fight-back/",
+      "published": "2026-06-27T14:00:00Z",
+      "category": "Models",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this is about making AI systems more capable or cheaper to run. When confronted with cancer, Connor Christou fed everything tied tied to his regime - blood results, scan data, wearable output, journal entries - into Claude.",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "Why is Apple asking me to pay more for Big Tech’s AI obsession?",
+      "source": "The Verge AI",
+      "url": "https://www.theverge.com/report/958678/apple-consumer-price-increase-ai-big-tech",
+      "published": "2026-06-27T13:30:00Z",
+      "category": "Products",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this is about turning AI research into tools people can actually use. Tim Cook recently said price increases were \"unavoidable\" and described the company's pricing as \"unsustainable.\" The 16-inch MacBook Pro saw its price go up by $300. The 11-inch iPad Air went from $599 to $749. Even...",
+      "why_it_matters": "Worth testing because it could reduce manual work or create a new workflow for non-technical users.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "Duer’s Wear-Everywhere Pants Are on Sale This Weekend",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/save-on-some-stellar-pants-during-a-rare-duer-sale/",
+      "published": "2026-06-27T11:01:00Z",
+      "category": "Signals",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. It’s not often you can score discounts from the outdoor-coded Canadian company that makes understated and stylish performance clothing.",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "Does DeleteMe Actually Get Your Info off the Internet? I Tried It",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/i-tried-deleteme-the-original-data-broker-removal-service/",
+      "published": "2026-06-27T10:31:00Z",
+      "category": "Policy",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this affects the rules, risks or responsibilities around AI. Everyone is sick of spam calls and creeper sites that show weirdos where you live-but can any service solve it?",
+      "why_it_matters": "Important for anyone using AI at work because compliance and data handling expectations are changing.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "The 37 Best Outdoor Deals From the REI 4th of July Sale",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/rei-4th-of-july-sale-2026/",
+      "published": "2026-06-27T10:06:00Z",
+      "category": "Business",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, money and strategy are moving toward this part of AI. Whether you need a tent, sleeping pad, rain jacket, or new pack, REI’s Independence Day sale has something for everyone.",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "Why Venezuela’s Second Earthquake Was So Damaging to Buildings",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/why-venezuelas-second-earthquake-so-damaging-to-buildings/",
+      "published": "2026-06-27T09:00:00Z",
+      "category": "Policy",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this affects the rules, risks or responsibilities around AI. Factors like the short interval between the two powerful quakes and different types of soil led to some structures collapsing while others stayed standing.",
+      "why_it_matters": "Important for anyone using AI at work because compliance and data handling expectations are changing.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "The 28 Best Deals Under $100 Before Prime Day Ends",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/best-prime-day-deals-under-100-06-26-2026/",
+      "published": "2026-06-27T00:59:29Z",
+      "category": "Business",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, money and strategy are moving toward this part of AI. Times are hard in 2026. These Amazon Prime Day deals under $100 on earbuds, Kindles, and other tested products should help make life just a little bit easier.",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "17 Last Minute Prime Day Apple Deals on iPads, Macs, and More",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/best-prime-day-apple-deals-06-26-2026/",
+      "published": "2026-06-27T00:12:52Z",
+      "category": "Products",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this is about turning AI research into tools people can actually use. Despite the surprise price increases to iPads and Macs, there are some fantastic Prime Day deals still left to shop.",
+      "why_it_matters": "Worth testing because it could reduce manual work or create a new workflow for non-technical users.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "Asian AI startups launch Mythos-like models",
+      "source": "Hacker News AI",
+      "url": "https://techcrunch.com/2026/06/27/asian-ai-startups-launch-mythos-like-models-as-anthropics-export-ban-drags-on/",
+      "published": "2026-06-27T13:10:21Z",
+      "category": "Models",
+      "importance": "Low",
+      "score": 35,
+      "summary": "In simple terms, this is about making AI systems more capable or cheaper to run. Asian AI startups launch Mythos-like models",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 80
+    },
+    {
+      "title": "DSpark: Speculative decoding accelerates LLM inference [pdf]",
+      "source": "Hacker News AI",
+      "url": "https://github.com/deepseek-ai/DeepSpec/blob/main/DSpark_paper.pdf",
+      "published": "2026-06-27T09:18:52Z",
+      "category": "Models",
+      "importance": "Low",
+      "score": 24,
+      "summary": "In simple terms, this is about making AI systems more capable or cheaper to run. DSpark: Speculative decoding accelerates LLM inference [pdf]",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 80
+    }
+  ],
+  "categories": [
+    "Business",
+    "Models",
+    "Policy",
+    "Products",
+    "Signals"
+  ],
+  "source_quality": [
+    {
+      "name": "WIRED",
+      "tier": 3,
+      "feed_items_scanned": 50,
+      "selected_items": 9,
+      "signal_ratio": 0.18,
+      "quality_score": 100,
+      "status": "active"
+    },
+    {
+      "name": "TechCrunch AI",
+      "tier": 3,
+      "feed_items_scanned": 20,
+      "selected_items": 5,
+      "signal_ratio": 0.25,
+      "quality_score": 75,
+      "status": "active"
+    },
+    {
+      "name": "The Verge AI",
+      "tier": 3,
+      "feed_items_scanned": 10,
+      "selected_items": 3,
+      "signal_ratio": 0.3,
+      "quality_score": 61,
+      "status": "active"
+    },
+    {
+      "name": "Google DeepMind",
+      "tier": 5,
+      "feed_items_scanned": 100,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 50,
+      "status": "active"
+    },
+    {
+      "name": "OpenAI",
+      "tier": 5,
+      "feed_items_scanned": 1022,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 42,
+      "status": "active"
+    },
+    {
+      "name": "MIT Technology Review AI",
+      "tier": 4,
+      "feed_items_scanned": 10,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 40,
+      "status": "active"
+    },
+    {
+      "name": "Hacker News AI",
+      "tier": 2,
+      "feed_items_scanned": 20,
+      "selected_items": 2,
+      "signal_ratio": 0.1,
+      "quality_score": 34,
+      "status": "active"
+    },
+    {
+      "name": "Hugging Face",
+      "tier": 4,
+      "feed_items_scanned": 811,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 32,
+      "status": "active"
+    },
+    {
+      "name": "VentureBeat AI",
+      "tier": 3,
+      "feed_items_scanned": 7,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 30,
+      "status": "active"
+    },
+    {
+      "name": "Ars Technica AI",
+      "tier": 3,
+      "feed_items_scanned": 20,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 30,
+      "status": "active"
+    },
+    {
+      "name": "AI News",
+      "tier": 2,
+      "feed_items_scanned": 12,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 20,
+      "status": "active"
+    },
+    {
+      "name": "arXiv AI",
+      "tier": 2,
+      "feed_items_scanned": 0,
+      "selected_items": 0,
+      "signal_ratio": 0,
+      "quality_score": 20,
+      "status": "unavailable"
+    }
+  ],
+  "weekly_trends": [
+    {
+      "category": "Models",
+      "items": 37,
+      "critical": 2,
+      "average_score": 56.4,
+      "source_count": 9,
+      "plain_english": "Models produced 2 critical signals. This is worth watching closely this week."
+    },
+    {
+      "category": "Products",
+      "items": 39,
+      "critical": 1,
+      "average_score": 48.1,
+      "source_count": 8,
+      "plain_english": "Products produced 1 critical signal. This is worth watching closely this week."
+    },
+    {
+      "category": "Signals",
+      "items": 27,
+      "critical": 0,
+      "average_score": 45.5,
+      "source_count": 7,
+      "plain_english": "Signals is a busy area this week. Expect incremental product or research movement rather than one big headline."
+    },
+    {
+      "category": "Business",
+      "items": 24,
+      "critical": 0,
+      "average_score": 38.9,
+      "source_count": 3,
+      "plain_english": "Business is a busy area this week. Expect incremental product or research movement rather than one big headline."
+    },
+    {
+      "category": "Policy",
+      "items": 8,
+      "critical": 0,
+      "average_score": 42.2,
+      "source_count": 3,
+      "plain_english": "Policy is a busy area this week. Expect incremental product or research movement rather than one big headline."
+    },
+    {
+      "category": "Research",
+      "items": 4,
+      "critical": 0,
+      "average_score": 48.8,
+      "source_count": 2,
+      "plain_english": "Research has a lighter signal this week. Useful context, but not the main priority."
+    }
+  ]
+}

@@ -1,0 +1,214 @@
+{
+  "metadata": {
+    "name": "AI Yesterday",
+    "generated_at": "2026-06-04T17:08:12.010682Z",
+    "coverage_date": "2026-05-17",
+    "source_count": 9,
+    "feed_items_scanned": 2332,
+    "item_count": 5,
+    "mode": "live",
+    "summary_engine": "rules",
+    "openrouter_items_enriched": 0,
+    "openrouter_model": null
+  },
+  "items": [
+    {
+      "title": "Simulate real-world places with Project Genie and Street View",
+      "source": "Google DeepMind",
+      "url": "https://deepmind.google/blog/simulate-real-world-places-with-project-genie-and-street-view/",
+      "published": "2026-05-17T19:53:18Z",
+      "category": "Signals",
+      "importance": "High",
+      "score": 70,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. We’re expanding access to Google AI Ultra subscribers globally and introducing a new capability powered by Street View.",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules"
+    },
+    {
+      "title": "Introducing Google Antigravity 2.0",
+      "source": "Google DeepMind",
+      "url": "https://deepmind.google/blog/introducing-google-antigravity-2-0/",
+      "published": "2026-05-17T19:43:45Z",
+      "category": "Signals",
+      "importance": "High",
+      "score": 70,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. Introducing Google Antigravity 2.0",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules"
+    },
+    {
+      "title": "Gemini for Science: AI experiments and tools for a new era of discovery",
+      "source": "Google DeepMind",
+      "url": "https://deepmind.google/blog/gemini-for-science-ai-experiments-and-tools-for-a-new-era-of-discovery/",
+      "published": "2026-05-17T13:50:34Z",
+      "category": "Models",
+      "importance": "High",
+      "score": 64,
+      "summary": "In simple terms, this is about making AI systems more capable or cheaper to run. A collection of science tools and experiments to expand the scale and precision of scientific exploration.",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules"
+    },
+    {
+      "title": "Making it easier to understand how content was created and edited",
+      "source": "Google DeepMind",
+      "url": "https://deepmind.google/blog/making-it-easier-to-understand-how-content-was-created-and-edited/",
+      "published": "2026-05-17T13:43:50Z",
+      "category": "Products",
+      "importance": "High",
+      "score": 64,
+      "summary": "In simple terms, this is about turning AI research into tools people can actually use. We're expanding our tools to help you understand how content was created and edited across the web.",
+      "why_it_matters": "Worth testing because it could reduce manual work or create a new workflow for non-technical users.",
+      "summary_engine": "rules"
+    },
+    {
+      "title": "Introducing Gemini Omni",
+      "source": "Google DeepMind",
+      "url": "https://deepmind.google/blog/introducing-gemini-omni/",
+      "published": "2026-05-17T19:50:57Z",
+      "category": "Models",
+      "importance": "Medium",
+      "score": 60,
+      "summary": "In simple terms, this is about making AI systems more capable or cheaper to run. Introducing Gemini Omni",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules"
+    }
+  ],
+  "categories": [
+    "Models",
+    "Products",
+    "Signals"
+  ],
+  "source_quality": [
+    {
+      "name": "Google DeepMind",
+      "tier": 5,
+      "feed_items_scanned": 100,
+      "selected_items": 5,
+      "signal_ratio": 0.05,
+      "quality_score": 95,
+      "status": "active"
+    },
+    {
+      "name": "OpenAI",
+      "tier": 5,
+      "feed_items_scanned": 991,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 42,
+      "status": "active"
+    },
+    {
+      "name": "MIT Technology Review AI",
+      "tier": 4,
+      "feed_items_scanned": 10,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 40,
+      "status": "active"
+    },
+    {
+      "name": "Hugging Face",
+      "tier": 4,
+      "feed_items_scanned": 793,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 32,
+      "status": "active"
+    },
+    {
+      "name": "VentureBeat AI",
+      "tier": 3,
+      "feed_items_scanned": 7,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 30,
+      "status": "active"
+    },
+    {
+      "name": "The Verge AI",
+      "tier": 3,
+      "feed_items_scanned": 10,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 30,
+      "status": "active"
+    },
+    {
+      "name": "Ars Technica AI",
+      "tier": 3,
+      "feed_items_scanned": 20,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 30,
+      "status": "active"
+    },
+    {
+      "name": "Hacker News AI",
+      "tier": 2,
+      "feed_items_scanned": 20,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 20,
+      "status": "active"
+    },
+    {
+      "name": "arXiv AI",
+      "tier": 2,
+      "feed_items_scanned": 381,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 12,
+      "status": "active"
+    }
+  ],
+  "weekly_trends": [
+    {
+      "category": "Models",
+      "items": 13,
+      "critical": 2,
+      "average_score": 66.4,
+      "source_count": 4,
+      "plain_english": "Models produced 2 critical signals. This is worth watching closely this week."
+    },
+    {
+      "category": "Policy",
+      "items": 4,
+      "critical": 1,
+      "average_score": 77.5,
+      "source_count": 1,
+      "plain_english": "Policy produced 1 critical signal. This is worth watching closely this week."
+    },
+    {
+      "category": "Signals",
+      "items": 20,
+      "critical": 0,
+      "average_score": 42.5,
+      "source_count": 5,
+      "plain_english": "Signals is a busy area this week. Expect incremental product or research movement rather than one big headline."
+    },
+    {
+      "category": "Products",
+      "items": 14,
+      "critical": 0,
+      "average_score": 55.4,
+      "source_count": 5,
+      "plain_english": "Products is a busy area this week. Expect incremental product or research movement rather than one big headline."
+    },
+    {
+      "category": "Research",
+      "items": 3,
+      "critical": 0,
+      "average_score": 40.7,
+      "source_count": 2,
+      "plain_english": "Research has a lighter signal this week. Useful context, but not the main priority."
+    },
+    {
+      "category": "Business",
+      "items": 2,
+      "critical": 0,
+      "average_score": 52.0,
+      "source_count": 2,
+      "plain_english": "Business has a lighter signal this week. Useful context, but not the main priority."
+    }
+  ]
+}

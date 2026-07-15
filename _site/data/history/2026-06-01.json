@@ -1,0 +1,311 @@
+{
+  "metadata": {
+    "name": "AI Yesterday",
+    "generated_at": "2026-06-04T16:58:20.080593Z",
+    "coverage_date": "2026-06-01",
+    "source_count": 9,
+    "feed_items_scanned": 2332,
+    "item_count": 13,
+    "mode": "live",
+    "summary_engine": "rules",
+    "openrouter_items_enriched": 0,
+    "openrouter_model": null
+  },
+  "items": [
+    {
+      "title": "OpenAI frontier models and Codex are now available on AWS",
+      "source": "OpenAI",
+      "url": "https://openai.com/index/openai-frontier-models-and-codex-are-now-available-on-aws",
+      "published": "2026-06-01T10:00:00Z",
+      "category": "Models",
+      "importance": "Critical",
+      "score": 84,
+      "summary": "In simple terms, this is about making AI systems more capable or cheaper to run. OpenAI frontier models and Codex are now generally available on AWS, giving enterprises a new path to build with OpenAI through the AWS environments, controls, and procurement workflows they already use. Customers...",
+      "why_it_matters": "Track this closely because it may affect products, skills, costs or competitive advantage within weeks.",
+      "summary_engine": "rules"
+    },
+    {
+      "title": "Our views on AI policy and political advocacy",
+      "source": "OpenAI",
+      "url": "https://openai.com/index/our-views-on-ai-policy-and-political-advocacy",
+      "published": "2026-06-01T17:00:00Z",
+      "category": "Products",
+      "importance": "High",
+      "score": 80,
+      "summary": "In simple terms, this is about turning AI research into tools people can actually use. Our approach to AI policy and political advocacy, transparency, support for thoughtful regulation and AI safety, and that no outside political group speaks on the company’s behalf.",
+      "why_it_matters": "Worth testing because it could reduce manual work or create a new workflow for non-technical users.",
+      "summary_engine": "rules"
+    },
+    {
+      "title": "Building the infrastructure for the Intelligence Age in Michigan",
+      "source": "OpenAI",
+      "url": "https://openai.com/index/stargate-michigan-data-center",
+      "published": "2026-06-01T12:00:00Z",
+      "category": "Signals",
+      "importance": "High",
+      "score": 70,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. OpenAI breaks ground on a 1GW data center project in Michigan as part of Stargate, building AI infrastructure to expand access, create jobs, and support communities.",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules"
+    },
+    {
+      "title": "Beyond LLMs: Why Scalable Enterprise AI Adoption Depends on Agent Logic",
+      "source": "Hugging Face",
+      "url": "https://huggingface.co/blog/ibm-research/agent-logic-and-scalable-ai-adoption",
+      "published": "2026-06-01T13:51:18Z",
+      "category": "Models",
+      "importance": "High",
+      "score": 62,
+      "summary": "In simple terms, this is about making AI systems more capable or cheaper to run. Beyond LLMs: Why Scalable Enterprise AI Adoption Depends on Agent Logic",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules"
+    },
+    {
+      "title": "Introducing Mellum2: A 12B Mixture-of-Experts Model by JetBrains",
+      "source": "Hugging Face",
+      "url": "https://huggingface.co/blog/JetBrains/mellum2-launch",
+      "published": "2026-06-01T15:45:17Z",
+      "category": "Models",
+      "importance": "Medium",
+      "score": 55,
+      "summary": "In simple terms, this is about making AI systems more capable or cheaper to run. Introducing Mellum2: A 12B Mixture-of-Experts Model by JetBrains",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules"
+    },
+    {
+      "title": "Can the stockmarket swallow Anthropic, SpaceX and OpenAI?",
+      "source": "Hacker News AI",
+      "url": "https://www.economist.com/finance-and-economics/2026/06/01/can-the-stockmarket-swallow-anthropic-spacex-and-openai",
+      "published": "2026-06-01T23:45:46Z",
+      "category": "Business",
+      "importance": "Medium",
+      "score": 44,
+      "summary": "In simple terms, money and strategy are moving toward this part of AI. Can the stockmarket swallow Anthropic, SpaceX and OpenAI?",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules"
+    },
+    {
+      "title": "Dozens of Red Hat packages backdoored through its official NPM channel",
+      "source": "Ars Technica AI",
+      "url": "https://arstechnica.com/security/2026/06/dozens-of-red-hat-packages-backdoored-through-its-offical-npm-channel/",
+      "published": "2026-06-01T19:49:09Z",
+      "category": "Signals",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. Anyone who has downloaded affected Red Hat packages should investigate immediately.",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules"
+    },
+    {
+      "title": "Florida sues OpenAI and Sam Altman over AI risks",
+      "source": "Hacker News AI",
+      "url": "https://www.politico.com/news/2026/06/01/openai-hit-with-florida-lawsuit-00944215",
+      "published": "2026-06-01T16:02:04Z",
+      "category": "Signals",
+      "importance": "Low",
+      "score": 34,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. Florida sues OpenAI and Sam Altman over AI risks",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules"
+    },
+    {
+      "title": "Anthropic confidentially submits draft S-1 to the SEC",
+      "source": "Hacker News AI",
+      "url": "https://www.anthropic.com/news/confidential-draft-s1-sec",
+      "published": "2026-06-01T16:00:40Z",
+      "category": "Signals",
+      "importance": "Low",
+      "score": 34,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. Anthropic confidentially submits draft S-1 to the SEC",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules"
+    },
+    {
+      "title": "Alphabet announces $80B equity capital raise to expand AI infra and compute",
+      "source": "Hacker News AI",
+      "url": "https://abc.xyz/investor/news/news-details/2026/Alphabet-Announces-Proposed-80-Billion-Equity-Capital-Raise-to-Expand-AI-Infrastructure-and-Compute-2026-b0myAMewCa/default.aspx",
+      "published": "2026-06-01T20:55:15Z",
+      "category": "Products",
+      "importance": "Low",
+      "score": 31,
+      "summary": "In simple terms, this is about turning AI research into tools people can actually use. Alphabet announces $80B equity capital raise to expand AI infra and compute",
+      "why_it_matters": "Worth testing because it could reduce manual work or create a new workflow for non-technical users.",
+      "summary_engine": "rules"
+    },
+    {
+      "title": "AI Agent Guidelines for CS336 at Stanford",
+      "source": "Hacker News AI",
+      "url": "https://github.com/stanford-cs336/assignment1-basics/blob/main/CLAUDE.md",
+      "published": "2026-06-01T16:41:49Z",
+      "category": "Products",
+      "importance": "Low",
+      "score": 31,
+      "summary": "In simple terms, this is about turning AI research into tools people can actually use. AI Agent Guidelines for CS336 at Stanford",
+      "why_it_matters": "Worth testing because it could reduce manual work or create a new workflow for non-technical users.",
+      "summary_engine": "rules"
+    },
+    {
+      "title": "DuckDuckGo makes its 'no-AI' search engine easier to access as its traffic booms",
+      "source": "Hacker News AI",
+      "url": "https://techcrunch.com/2026/06/01/duckduckgo-makes-its-no-ai-search-engine-easier-to-access-as-its-traffic-booms/",
+      "published": "2026-06-01T16:33:59Z",
+      "category": "Signals",
+      "importance": "Low",
+      "score": 24,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. DuckDuckGo makes its 'no-AI' search engine easier to access as its traffic booms",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules"
+    },
+    {
+      "title": "When AI Crosses the Line: The Matplotlib Incident",
+      "source": "Hacker News AI",
+      "url": "https://members.sigmazero.cc/posts/when-ai-crosses-159174096?postId=when-ai-crosses-159174096",
+      "published": "2026-06-01T12:08:23Z",
+      "category": "Signals",
+      "importance": "Low",
+      "score": 24,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. When AI Crosses the Line: The Matplotlib Incident",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules"
+    }
+  ],
+  "categories": [
+    "Business",
+    "Models",
+    "Products",
+    "Signals"
+  ],
+  "source_quality": [
+    {
+      "name": "OpenAI",
+      "tier": 5,
+      "feed_items_scanned": 991,
+      "selected_items": 3,
+      "signal_ratio": 0.003,
+      "quality_score": 81,
+      "status": "active"
+    },
+    {
+      "name": "Hacker News AI",
+      "tier": 2,
+      "feed_items_scanned": 20,
+      "selected_items": 7,
+      "signal_ratio": 0.35,
+      "quality_score": 79,
+      "status": "active"
+    },
+    {
+      "name": "Hugging Face",
+      "tier": 4,
+      "feed_items_scanned": 793,
+      "selected_items": 2,
+      "signal_ratio": 0.003,
+      "quality_score": 54,
+      "status": "active"
+    },
+    {
+      "name": "Google DeepMind",
+      "tier": 5,
+      "feed_items_scanned": 100,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 50,
+      "status": "active"
+    },
+    {
+      "name": "MIT Technology Review AI",
+      "tier": 4,
+      "feed_items_scanned": 10,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 40,
+      "status": "active"
+    },
+    {
+      "name": "Ars Technica AI",
+      "tier": 3,
+      "feed_items_scanned": 20,
+      "selected_items": 1,
+      "signal_ratio": 0.05,
+      "quality_score": 37,
+      "status": "active"
+    },
+    {
+      "name": "VentureBeat AI",
+      "tier": 3,
+      "feed_items_scanned": 7,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 30,
+      "status": "active"
+    },
+    {
+      "name": "The Verge AI",
+      "tier": 3,
+      "feed_items_scanned": 10,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 30,
+      "status": "active"
+    },
+    {
+      "name": "arXiv AI",
+      "tier": 2,
+      "feed_items_scanned": 381,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 12,
+      "status": "active"
+    }
+  ],
+  "weekly_trends": [
+    {
+      "category": "Models",
+      "items": 9,
+      "critical": 2,
+      "average_score": 64.9,
+      "source_count": 3,
+      "plain_english": "Models produced 2 critical signals. This is worth watching closely this week."
+    },
+    {
+      "category": "Policy",
+      "items": 3,
+      "critical": 1,
+      "average_score": 83.3,
+      "source_count": 1,
+      "plain_english": "Policy produced 1 critical signal. This is worth watching closely this week."
+    },
+    {
+      "category": "Signals",
+      "items": 20,
+      "critical": 0,
+      "average_score": 34.6,
+      "source_count": 4,
+      "plain_english": "Signals is a busy area this week. Expect incremental product or research movement rather than one big headline."
+    },
+    {
+      "category": "Products",
+      "items": 14,
+      "critical": 0,
+      "average_score": 50.7,
+      "source_count": 4,
+      "plain_english": "Products is a busy area this week. Expect incremental product or research movement rather than one big headline."
+    },
+    {
+      "category": "Business",
+      "items": 2,
+      "critical": 0,
+      "average_score": 44.0,
+      "source_count": 1,
+      "plain_english": "Business has a lighter signal this week. Useful context, but not the main priority."
+    },
+    {
+      "category": "Research",
+      "items": 2,
+      "critical": 0,
+      "average_score": 27.5,
+      "source_count": 1,
+      "plain_english": "Research has a lighter signal this week. Useful context, but not the main priority."
+    }
+  ]
+}

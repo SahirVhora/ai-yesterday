@@ -1,0 +1,213 @@
+{
+  "metadata": {
+    "name": "AI Yesterday",
+    "generated_at": "2026-06-04T17:08:29.894773Z",
+    "coverage_date": "2026-05-22",
+    "source_count": 9,
+    "feed_items_scanned": 2332,
+    "item_count": 5,
+    "mode": "live",
+    "summary_engine": "rules",
+    "openrouter_items_enriched": 0,
+    "openrouter_model": null
+  },
+  "items": [
+    {
+      "title": "OpenAI named a Leader in enterprise coding agents by Gartner",
+      "source": "OpenAI",
+      "url": "https://openai.com/index/gartner-2026-agentic-coding-leader",
+      "published": "2026-05-22T00:00:00Z",
+      "category": "Products",
+      "importance": "Critical",
+      "score": 84,
+      "summary": "In simple terms, this is about turning AI research into tools people can actually use. OpenAI is named a leader in the 2026 Gartner Magic Quadrant for Enterprise AI Coding Agents, with Codex recognized for innovation and enterprise-scale deployment.",
+      "why_it_matters": "Track this closely because it may affect products, skills, costs or competitive advantage within weeks.",
+      "summary_engine": "rules"
+    },
+    {
+      "title": "Google I/O showed how the path for AI-driven science is shifting",
+      "source": "MIT Technology Review AI",
+      "url": "https://www.technologyreview.com/2026/05/22/1137813/google-i-o-showed-how-the-path-for-ai-science-is-shifting/",
+      "published": "2026-05-22T10:00:00Z",
+      "category": "Products",
+      "importance": "High",
+      "score": 75,
+      "summary": "In simple terms, this is about turning AI research into tools people can actually use. During Tuesday’s Google I/O keynote, Demis Hassabis, the CEO of Google DeepMind, proclaimed that we are currently “standing in the foothills of the singularity.” It was a striking statement-the singularity is the...",
+      "why_it_matters": "Worth testing because it could reduce manual work or create a new workflow for non-technical users.",
+      "summary_engine": "rules"
+    },
+    {
+      "title": "How Virgin Atlantic ships faster with Codex",
+      "source": "OpenAI",
+      "url": "https://openai.com/index/virgin-atlantic",
+      "published": "2026-05-22T00:00:00Z",
+      "category": "Products",
+      "importance": "Medium",
+      "score": 60,
+      "summary": "In simple terms, this is about turning AI research into tools people can actually use. How Virgin Atlantic used Codex to ship its revamped mobile app on a fixed holiday travel deadline, reaching near-total unit test coverage and zero P1 defects.",
+      "why_it_matters": "Worth testing because it could reduce manual work or create a new workflow for non-technical users.",
+      "summary_engine": "rules"
+    },
+    {
+      "title": "Texas AG sues Meta over claims that WhatsApp doesn't provide end-to-end encryption",
+      "source": "Ars Technica AI",
+      "url": "https://arstechnica.com/security/2026/05/texas-ag-sues-meta-over-claims-that-whatsapp-doesnt-provide-end-to-end-encryption/",
+      "published": "2026-05-22T18:13:05Z",
+      "category": "Products",
+      "importance": "Medium",
+      "score": 43,
+      "summary": "In simple terms, this is about turning AI research into tools people can actually use. Texas AG sues Meta over claims that WhatsApp doesn't provide end-to-end encryption",
+      "why_it_matters": "Worth testing because it could reduce manual work or create a new workflow for non-technical users.",
+      "summary_engine": "rules"
+    },
+    {
+      "title": "A hacker group is poisoning open source code at an unprecedented scale",
+      "source": "Ars Technica AI",
+      "url": "https://arstechnica.com/information-technology/2026/05/a-hacker-group-is-poisoning-open-source-code-at-an-unprecedented-scale/",
+      "published": "2026-05-22T10:30:14Z",
+      "category": "Signals",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. GitHub is just the latest victim of TeamPCP, a gang that has carried out a spree of software supply chain attacks.",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules"
+    }
+  ],
+  "categories": [
+    "Products",
+    "Signals"
+  ],
+  "source_quality": [
+    {
+      "name": "OpenAI",
+      "tier": 5,
+      "feed_items_scanned": 991,
+      "selected_items": 2,
+      "signal_ratio": 0.002,
+      "quality_score": 64,
+      "status": "active"
+    },
+    {
+      "name": "Google DeepMind",
+      "tier": 5,
+      "feed_items_scanned": 100,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 50,
+      "status": "active"
+    },
+    {
+      "name": "MIT Technology Review AI",
+      "tier": 4,
+      "feed_items_scanned": 10,
+      "selected_items": 1,
+      "signal_ratio": 0.1,
+      "quality_score": 47,
+      "status": "active"
+    },
+    {
+      "name": "Ars Technica AI",
+      "tier": 3,
+      "feed_items_scanned": 20,
+      "selected_items": 2,
+      "signal_ratio": 0.1,
+      "quality_score": 44,
+      "status": "active"
+    },
+    {
+      "name": "Hugging Face",
+      "tier": 4,
+      "feed_items_scanned": 793,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 32,
+      "status": "active"
+    },
+    {
+      "name": "VentureBeat AI",
+      "tier": 3,
+      "feed_items_scanned": 7,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 30,
+      "status": "active"
+    },
+    {
+      "name": "The Verge AI",
+      "tier": 3,
+      "feed_items_scanned": 10,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 30,
+      "status": "active"
+    },
+    {
+      "name": "Hacker News AI",
+      "tier": 2,
+      "feed_items_scanned": 20,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 20,
+      "status": "active"
+    },
+    {
+      "name": "arXiv AI",
+      "tier": 2,
+      "feed_items_scanned": 381,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 12,
+      "status": "active"
+    }
+  ],
+  "weekly_trends": [
+    {
+      "category": "Models",
+      "items": 10,
+      "critical": 2,
+      "average_score": 65.5,
+      "source_count": 3,
+      "plain_english": "Models produced 2 critical signals. This is worth watching closely this week."
+    },
+    {
+      "category": "Products",
+      "items": 17,
+      "critical": 1,
+      "average_score": 57.9,
+      "source_count": 6,
+      "plain_english": "Products produced 1 critical signal. This is worth watching closely this week."
+    },
+    {
+      "category": "Policy",
+      "items": 3,
+      "critical": 1,
+      "average_score": 83.3,
+      "source_count": 1,
+      "plain_english": "Policy produced 1 critical signal. This is worth watching closely this week."
+    },
+    {
+      "category": "Signals",
+      "items": 16,
+      "critical": 0,
+      "average_score": 34.5,
+      "source_count": 4,
+      "plain_english": "Signals is a busy area this week. Expect incremental product or research movement rather than one big headline."
+    },
+    {
+      "category": "Business",
+      "items": 2,
+      "critical": 0,
+      "average_score": 42.0,
+      "source_count": 2,
+      "plain_english": "Business has a lighter signal this week. Useful context, but not the main priority."
+    },
+    {
+      "category": "Research",
+      "items": 2,
+      "critical": 0,
+      "average_score": 27.5,
+      "source_count": 1,
+      "plain_english": "Research has a lighter signal this week. Useful context, but not the main priority."
+    }
+  ]
+}

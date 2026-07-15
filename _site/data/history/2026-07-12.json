@@ -1,0 +1,316 @@
+{
+  "metadata": {
+    "name": "AI Yesterday",
+    "generated_at": "2026-07-13T10:30:02.756718Z",
+    "coverage_date": "2026-07-12",
+    "source_count": 12,
+    "feed_items_scanned": 2257,
+    "item_count": 10,
+    "mode": "live",
+    "summary_engine": "openrouter",
+    "openrouter_enabled": true,
+    "openrouter_items_attempted": 4,
+    "openrouter_items_enriched": 1,
+    "openrouter_model": "openrouter/free",
+    "briefing_quality_score": 98.0
+  },
+  "items": [
+    {
+      "title": "Here’s How Apple Is Updating Its Child Safety Features in iOS 27",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/apple-child-safety-ios-27/",
+      "published": "2026-07-12T10:30:00Z",
+      "category": "Products",
+      "importance": "Medium",
+      "score": 50,
+      "summary": "In simple terms, this is about turning AI research into tools people can actually use. Apple has announced several new Child Safety features coming soon to iPhones and other devices. Here’s what’s changing.",
+      "why_it_matters": "Worth testing because it could reduce manual work or create a new workflow for non-technical users.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 80
+    },
+    {
+      "title": "Scientists’ Side Hustle? Using AI and Quantum Computing to Generate New Peptides",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/scientists-using-ai-and-quantum-computing-to-generate-new-peptides/",
+      "published": "2026-07-12T10:00:00Z",
+      "category": "Research",
+      "importance": "Medium",
+      "score": 50,
+      "summary": "In simple terms, researchers are testing a new way to make AI better or safer. Researchers cobbled together funding and time to show how quantum computing could aid in the development of drugs to help underserved populations and combat rare diseases.",
+      "why_it_matters": "Useful background signal. It may not matter today, but it can shape tools that appear later.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "Lorde says Ray-Ban Meta AI glasses are ‘not sexy’",
+      "source": "The Verge AI",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/964539/lorde-says-ray-ban-meta-ai-glasses-are-not-sexy",
+      "published": "2026-07-12T20:10:19Z",
+      "category": "Signals",
+      "importance": "Low",
+      "score": 36,
+      "summary": "Musician Lorde expressed disapproval of AI-integrated eyewear during a performance in Madrid. While she did not name specific brands, her comments suggest a growing cultural resistance to wearable technology that prioritises artificial intelligence over aesthetic appeal.",
+      "why_it_matters": "Consumer adoption of wearable AI depends heavily on fashion and social acceptance. Cultural pushback from influential figures could slow the mainstream integration of smart glasses into daily life.",
+      "summary_engine": "openrouter",
+      "summary_model": "openrouter/free",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "Uber’s Autonomous Vehicle Strategy: Slow Their Adoption",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/ubers-autonomous-vehicle-strategy-slow-their-adoption/",
+      "published": "2026-07-12T19:55:37Z",
+      "category": "Policy",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this affects the rules, risks or responsibilities around AI. In at least two places, Uber has pushed a policy that could give it an advantage over developers of self-driving cars. The company says it’s fighting monopolies.",
+      "why_it_matters": "Important for anyone using AI at work because compliance and data handling expectations are changing.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "Apple’s failed self-driving car program left a legacy of powerful AI chips",
+      "source": "The Verge AI",
+      "url": "https://www.theverge.com/tech/964519/apple-silicon-self-driving-car-ai-m7-ultra",
+      "published": "2026-07-12T16:27:06Z",
+      "category": "Products",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this is about turning AI research into tools people can actually use. Apple's self-driving car program never really got off the ground, but it may have been what made the company's chips the powerful AI performers they are. Early in the development of the self-driving platform, Apple...",
+      "why_it_matters": "Worth testing because it could reduce manual work or create a new workflow for non-technical users.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "The fight against AI data centers is just beginning",
+      "source": "The Verge AI",
+      "url": "https://www.theverge.com/column/963346/ai-data-centers-fight",
+      "published": "2026-07-12T12:00:00Z",
+      "category": "Signals",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. This is The Stepback, a weekly newsletter breaking down one essential story from the tech world. For more on the data center buildout, follow Emma Roth. The Stepback arrives in our subscribers' inboxes on Sunday at...",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "The Best Robotic Pool Cleaners of 2026: Beatbot, iGarden, Dreame",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/best-pool-cleaning-robots/",
+      "published": "2026-07-12T11:09:00Z",
+      "category": "Signals",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. Send the pool guy packing. Let one of these robotic buddies maintain your water quality instead.",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "28 Best STEM Toys for Kids (2026): Learning Made Fun",
+      "source": "WIRED",
+      "url": "https://www.wired.com/gallery/best-stem-toys-for-kids/",
+      "published": "2026-07-12T10:30:00Z",
+      "category": "Signals",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. We found lots of math-filled and science-rich toys for tiny nerds to assemble, bake, squish-or even tear apart and rebuild.",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "Best External Hard Drives (2026): SSD to Store Data, Video, and More",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/best-portable-external-storage-drives/",
+      "published": "2026-07-12T09:33:00Z",
+      "category": "Signals",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. Need an ultrafast drive for video editing or a rugged option to back up your photos in the field? We’ve got a solution for every situation.",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "The 10 Best Pet Cameras of 2026: Furbo, Petcube, and Enabot",
+      "source": "WIRED",
+      "url": "https://www.wired.com/gallery/best-pet-cameras/",
+      "published": "2026-07-12T09:05:00Z",
+      "category": "Signals",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. Whether you’re near or far, keep an eye on your fur baby with our favorite pet cameras.",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    }
+  ],
+  "categories": [
+    "Policy",
+    "Products",
+    "Research",
+    "Signals"
+  ],
+  "source_quality": [
+    {
+      "name": "WIRED",
+      "tier": 3,
+      "feed_items_scanned": 50,
+      "selected_items": 7,
+      "signal_ratio": 0.14,
+      "quality_score": 89,
+      "status": "active"
+    },
+    {
+      "name": "The Verge AI",
+      "tier": 3,
+      "feed_items_scanned": 10,
+      "selected_items": 3,
+      "signal_ratio": 0.3,
+      "quality_score": 61,
+      "status": "active"
+    },
+    {
+      "name": "Google DeepMind",
+      "tier": 5,
+      "feed_items_scanned": 100,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 50,
+      "status": "active"
+    },
+    {
+      "name": "OpenAI",
+      "tier": 5,
+      "feed_items_scanned": 1040,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 42,
+      "status": "active"
+    },
+    {
+      "name": "MIT Technology Review AI",
+      "tier": 4,
+      "feed_items_scanned": 10,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 40,
+      "status": "active"
+    },
+    {
+      "name": "Hugging Face",
+      "tier": 4,
+      "feed_items_scanned": 823,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 32,
+      "status": "active"
+    },
+    {
+      "name": "TechCrunch AI",
+      "tier": 3,
+      "feed_items_scanned": 20,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 30,
+      "status": "active"
+    },
+    {
+      "name": "VentureBeat AI",
+      "tier": 3,
+      "feed_items_scanned": 7,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 30,
+      "status": "active"
+    },
+    {
+      "name": "Ars Technica AI",
+      "tier": 3,
+      "feed_items_scanned": 20,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 30,
+      "status": "active"
+    },
+    {
+      "name": "AI News",
+      "tier": 2,
+      "feed_items_scanned": 0,
+      "selected_items": 0,
+      "signal_ratio": 0,
+      "quality_score": 20,
+      "status": "unavailable"
+    },
+    {
+      "name": "Hacker News AI",
+      "tier": 2,
+      "feed_items_scanned": 0,
+      "selected_items": 0,
+      "signal_ratio": 0,
+      "quality_score": 20,
+      "status": "unavailable"
+    },
+    {
+      "name": "arXiv AI",
+      "tier": 2,
+      "feed_items_scanned": 177,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 20,
+      "status": "active"
+    }
+  ],
+  "weekly_trends": [
+    {
+      "category": "Models",
+      "items": 51,
+      "critical": 2,
+      "average_score": 56.5,
+      "source_count": 8,
+      "plain_english": "Models produced 2 critical signals. This is worth watching closely this week."
+    },
+    {
+      "category": "Products",
+      "items": 19,
+      "critical": 1,
+      "average_score": 50.1,
+      "source_count": 6,
+      "plain_english": "Products produced 1 critical signal. This is worth watching closely this week."
+    },
+    {
+      "category": "Signals",
+      "items": 35,
+      "critical": 0,
+      "average_score": 39.8,
+      "source_count": 7,
+      "plain_english": "Signals is a busy area this week. Expect incremental product or research movement rather than one big headline."
+    },
+    {
+      "category": "Policy",
+      "items": 7,
+      "critical": 0,
+      "average_score": 43.3,
+      "source_count": 3,
+      "plain_english": "Policy is a busy area this week. Expect incremental product or research movement rather than one big headline."
+    },
+    {
+      "category": "Research",
+      "items": 5,
+      "critical": 0,
+      "average_score": 46.6,
+      "source_count": 2,
+      "plain_english": "Research is a busy area this week. Expect incremental product or research movement rather than one big headline."
+    },
+    {
+      "category": "Business",
+      "items": 5,
+      "critical": 0,
+      "average_score": 43.8,
+      "source_count": 2,
+      "plain_english": "Business is a busy area this week. Expect incremental product or research movement rather than one big headline."
+    }
+  ]
+}

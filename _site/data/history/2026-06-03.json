@@ -1,0 +1,288 @@
+{
+  "metadata": {
+    "name": "AI Yesterday",
+    "generated_at": "2026-06-04T17:09:07.515585Z",
+    "coverage_date": "2026-06-03",
+    "source_count": 9,
+    "feed_items_scanned": 2332,
+    "item_count": 11,
+    "mode": "live",
+    "summary_engine": "rules",
+    "openrouter_items_enriched": 0,
+    "openrouter_model": null
+  },
+  "items": [
+    {
+      "title": "A blueprint for democratic governance of frontier AI",
+      "source": "OpenAI",
+      "url": "https://openai.com/index/frontier-safety-blueprint",
+      "published": "2026-06-03T10:00:00Z",
+      "category": "Policy",
+      "importance": "Critical",
+      "score": 90,
+      "summary": "In simple terms, this affects the rules, risks or responsibilities around AI. OpenAI outlines a blueprint for U.S. governance of frontier AI, proposing a federal framework for safety, resilience, and national security.",
+      "why_it_matters": "Track this closely because it may affect products, skills, costs or competitive advantage within weeks.",
+      "summary_engine": "rules"
+    },
+    {
+      "title": "OpenAI public policy agenda",
+      "source": "OpenAI",
+      "url": "https://openai.com/index/public-policy-agenda",
+      "published": "2026-06-03T10:00:00Z",
+      "category": "Policy",
+      "importance": "High",
+      "score": 80,
+      "summary": "In simple terms, this affects the rules, risks or responsibilities around AI. OpenAI outlines its public policy agenda for AI, including safety, youth protection, workforce transition, and global standards to ensure AI benefits society.",
+      "why_it_matters": "Important for anyone using AI at work because compliance and data handling expectations are changing.",
+      "summary_engine": "rules"
+    },
+    {
+      "title": "Introducing new capabilities to GPT-Rosalind",
+      "source": "OpenAI",
+      "url": "https://openai.com/index/introducing-new-capabilities-to-gpt-rosalind",
+      "published": "2026-06-03T13:15:00Z",
+      "category": "Models",
+      "importance": "High",
+      "score": 67,
+      "summary": "In simple terms, this is about making AI systems more capable or cheaper to run. GPT-Rosalind advances life sciences research with enhanced biological reasoning, medicinal chemistry expertise, genomics analysis, and experimental workflow capabilities.",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules"
+    },
+    {
+      "title": "How Wasmer used Codex to build a Node.js runtime for the edge",
+      "source": "OpenAI",
+      "url": "https://openai.com/index/wasmer",
+      "published": "2026-06-03T12:00:00Z",
+      "category": "Models",
+      "importance": "Medium",
+      "score": 60,
+      "summary": "In simple terms, this is about making AI systems more capable or cheaper to run. See how Wasmer used Codex with GPT-5.5 to build a Node.js runtime for the edge, accelerating development 10x to 20x and shipping in weeks instead of months.",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules"
+    },
+    {
+      "title": "Adding MCP Tools to Reachy Mini",
+      "source": "Hugging Face",
+      "url": "https://huggingface.co/blog/adding-mcp-tools-to-reachy-mini",
+      "published": "2026-06-03T00:00:00Z",
+      "category": "Products",
+      "importance": "Medium",
+      "score": 52,
+      "summary": "In simple terms, this is about turning AI research into tools people can actually use. Adding MCP Tools to Reachy Mini",
+      "why_it_matters": "Worth testing because it could reduce manual work or create a new workflow for non-technical users.",
+      "summary_engine": "rules"
+    },
+    {
+      "title": "Direct Preference Optimization Beyond Chatbots",
+      "source": "Hugging Face",
+      "url": "https://huggingface.co/blog/Dharma-AI/direct-preference-optimization-beyond-chatbots",
+      "published": "2026-06-03T12:55:11Z",
+      "category": "Signals",
+      "importance": "Medium",
+      "score": 48,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. Direct Preference Optimization Beyond Chatbots",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules"
+    },
+    {
+      "title": "Can't make sense of Dashlane's vault theft notification? You're not alone.",
+      "source": "Ars Technica AI",
+      "url": "https://arstechnica.com/security/2026/06/dashlane-issues-opaque-advisory-warning-20-encrypted-vaults-were-stolen/",
+      "published": "2026-06-03T19:53:14Z",
+      "category": "Signals",
+      "importance": "Medium",
+      "score": 46,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. Can't make sense of Dashlane's vault theft notification? You're not alone.",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules"
+    },
+    {
+      "title": "Mathematicians issue warning as AI rapidly gains ground",
+      "source": "Hacker News AI",
+      "url": "https://www.science.org/content/article/mathematicians-issue-warning-ai-rapidly-gains-ground",
+      "published": "2026-06-03T10:05:48Z",
+      "category": "Products",
+      "importance": "Low",
+      "score": 31,
+      "summary": "In simple terms, this is about turning AI research into tools people can actually use. Mathematicians issue warning as AI rapidly gains ground",
+      "why_it_matters": "Worth testing because it could reduce manual work or create a new workflow for non-technical users.",
+      "summary_engine": "rules"
+    },
+    {
+      "title": "U of T researchers demonstrate AI worm could target any online device",
+      "source": "Hacker News AI",
+      "url": "https://www.utoronto.ca/news/u-t-researchers-demonstrate-ai-worm-could-target-any-online-device",
+      "published": "2026-06-03T03:47:21Z",
+      "category": "Research",
+      "importance": "Low",
+      "score": 31,
+      "summary": "In simple terms, researchers are testing a new way to make AI better or safer. U of T researchers demonstrate AI worm could target any online device",
+      "why_it_matters": "Useful background signal. It may not matter today, but it can shape tools that appear later.",
+      "summary_engine": "rules"
+    },
+    {
+      "title": "Uber's $1,500/month AI limit is a useful signal for AI tool pricing",
+      "source": "Hacker News AI",
+      "url": "https://simonwillison.net/2026/Jun/3/uber-caps-usage/",
+      "published": "2026-06-03T12:25:14Z",
+      "category": "Products",
+      "importance": "Low",
+      "score": 28,
+      "summary": "In simple terms, this is about turning AI research into tools people can actually use. Uber's $1,500/month AI limit is a useful signal for AI tool pricing",
+      "why_it_matters": "Worth testing because it could reduce manual work or create a new workflow for non-technical users.",
+      "summary_engine": "rules"
+    },
+    {
+      "title": "32GB of DDR5 now costs $375 - AI shortage continues to squeeze PC building",
+      "source": "Hacker News AI",
+      "url": "https://www.tomshardware.com/pc-components/ddr5/32gb-of-ddr5-now-costs-usd375-minimum-ai-shortage-continues-to-squeeze-pc-building",
+      "published": "2026-06-03T12:43:43Z",
+      "category": "Signals",
+      "importance": "Low",
+      "score": 24,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. 32GB of DDR5 now costs $375 - AI shortage continues to squeeze PC building",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules"
+    }
+  ],
+  "categories": [
+    "Models",
+    "Policy",
+    "Products",
+    "Research",
+    "Signals"
+  ],
+  "source_quality": [
+    {
+      "name": "OpenAI",
+      "tier": 5,
+      "feed_items_scanned": 991,
+      "selected_items": 4,
+      "signal_ratio": 0.004,
+      "quality_score": 88,
+      "status": "active"
+    },
+    {
+      "name": "Hacker News AI",
+      "tier": 2,
+      "feed_items_scanned": 20,
+      "selected_items": 4,
+      "signal_ratio": 0.2,
+      "quality_score": 58,
+      "status": "active"
+    },
+    {
+      "name": "Hugging Face",
+      "tier": 4,
+      "feed_items_scanned": 793,
+      "selected_items": 2,
+      "signal_ratio": 0.003,
+      "quality_score": 54,
+      "status": "active"
+    },
+    {
+      "name": "Google DeepMind",
+      "tier": 5,
+      "feed_items_scanned": 100,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 50,
+      "status": "active"
+    },
+    {
+      "name": "MIT Technology Review AI",
+      "tier": 4,
+      "feed_items_scanned": 10,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 40,
+      "status": "active"
+    },
+    {
+      "name": "Ars Technica AI",
+      "tier": 3,
+      "feed_items_scanned": 20,
+      "selected_items": 1,
+      "signal_ratio": 0.05,
+      "quality_score": 37,
+      "status": "active"
+    },
+    {
+      "name": "VentureBeat AI",
+      "tier": 3,
+      "feed_items_scanned": 7,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 30,
+      "status": "active"
+    },
+    {
+      "name": "The Verge AI",
+      "tier": 3,
+      "feed_items_scanned": 10,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 30,
+      "status": "active"
+    },
+    {
+      "name": "arXiv AI",
+      "tier": 2,
+      "feed_items_scanned": 381,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 12,
+      "status": "active"
+    }
+  ],
+  "weekly_trends": [
+    {
+      "category": "Policy",
+      "items": 5,
+      "critical": 2,
+      "average_score": 84.0,
+      "source_count": 1,
+      "plain_english": "Policy produced 2 critical signals. This is worth watching closely this week."
+    },
+    {
+      "category": "Models",
+      "items": 8,
+      "critical": 1,
+      "average_score": 63.8,
+      "source_count": 3,
+      "plain_english": "Models produced 1 critical signal. This is worth watching closely this week."
+    },
+    {
+      "category": "Signals",
+      "items": 17,
+      "critical": 0,
+      "average_score": 34.6,
+      "source_count": 4,
+      "plain_english": "Signals is a busy area this week. Expect incremental product or research movement rather than one big headline."
+    },
+    {
+      "category": "Products",
+      "items": 14,
+      "critical": 0,
+      "average_score": 48.5,
+      "source_count": 4,
+      "plain_english": "Products is a busy area this week. Expect incremental product or research movement rather than one big headline."
+    },
+    {
+      "category": "Research",
+      "items": 3,
+      "critical": 0,
+      "average_score": 28.7,
+      "source_count": 1,
+      "plain_english": "Research has a lighter signal this week. Useful context, but not the main priority."
+    },
+    {
+      "category": "Business",
+      "items": 1,
+      "critical": 0,
+      "average_score": 44.0,
+      "source_count": 1,
+      "plain_english": "Business has a lighter signal this week. Useful context, but not the main priority."
+    }
+  ]
+}
