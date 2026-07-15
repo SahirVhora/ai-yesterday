@@ -22,3 +22,6 @@ __pycache__/
 *.pyc
 # Node
 node_modules/
+
+# Generated Pages artifact
+_site/
