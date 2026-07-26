@@ -19,10 +19,18 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
       - uses: actions/configure-pages@v6
+      - name: Build curated Pages artifact
+        run: ./scripts/build-pages-artifact.sh
+      - name: Check scripts and documentation are absent
+        run: |
+          set -euo pipefail
+          for path in scripts docs tests linkedin-drafts .github README.md CONTRIBUTING.md SECURITY.md LICENSE; do
+            test ! -e "_site/$path" || { echo "Unexpected public path: $path"; exit 1; }
+          done
       - uses: actions/upload-pages-artifact@v5
         with:
-          path: '.'
+          path: '_site'
       - uses: actions/deploy-pages@v5
         id: deployment
