@@ -1,6 +1,14 @@
 {
   "archives": [
     {
+      "date": "2026-09-05",
+      "file": "data/history/2026-09-05.json",
+      "item_count": 10,
+      "critical_count": 0,
+      "mode": "live",
+      "generated_at": "2026-09-06T11:33:53.361946Z"
+    },
+    {
       "date": "2026-09-04",
       "file": "data/history/2026-09-04.json",
       "item_count": 24,
