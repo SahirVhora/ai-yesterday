@@ -1,0 +1,343 @@
+{
+  "metadata": {
+    "name": "AI Yesterday",
+    "generated_at": "2026-10-12T16:34:56.178226Z",
+    "coverage_date": "2026-10-11",
+    "source_count": 12,
+    "feed_items_scanned": 2586,
+    "item_count": 12,
+    "mode": "live",
+    "summary_engine": "rules",
+    "openrouter_enabled": true,
+    "openrouter_items_attempted": 4,
+    "openrouter_items_enriched": 0,
+    "openrouter_model": "openrouter/free",
+    "briefing_quality_score": 95.4
+  },
+  "items": [
+    {
+      "title": "Learning to use local AI is exciting, overwhelming, and frustrating",
+      "source": "The Verge AI",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1008484/learning-local-ai-hermes-qwen-model-mac-studio-testing-diary-progress",
+      "published": "2026-10-11T11:00:00Z",
+      "category": "Models",
+      "importance": "Medium",
+      "score": 53,
+      "summary": "In simple terms, this is about making AI systems more capable or cheaper to run. I'm embarking on a journey I've so far been hesitant to go on: actually using AI on the regular. Giving my most personal data to cloud services has been a major hold up for me, but it's increasingly possible to run...",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 85
+    },
+    {
+      "title": "I Made Terrible Games With Google’s AI Playground",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/i-made-terrible-games-with-googles-ai-playground/",
+      "published": "2026-10-11T11:30:00Z",
+      "category": "Signals",
+      "importance": "Medium",
+      "score": 46,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. I Made Terrible Games With Google’s AI Playground",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 80
+    },
+    {
+      "title": "Will the HomeView be Apple’s first smart home success?",
+      "source": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/10/11/will-the-homeview-be-apples-first-smart-home-success/",
+      "published": "2026-10-11T21:14:40Z",
+      "category": "Products",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this is about turning AI research into tools people can actually use. Over the past couple of years, we’ve seen multiple reports that Apple was working on a new smart home product, but now it seems the product has a name and a launch date.",
+      "why_it_matters": "Worth testing because it could reduce manual work or create a new workflow for non-technical users.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "48 hours to TechCrunch Disrupt 2026 - hear directly from the people building what’s next",
+      "source": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/10/11/48-hours-to-techcrunch-disrupt-2026-hear-directly-from-the-people-building-whats-next/",
+      "published": "2026-10-11T19:00:00Z",
+      "category": "Business",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, money and strategy are moving toward this part of AI. Less than 48 hours, TechCrunch Disrupt 2026 starts in San Francisco’s Moscone West. Save up to $100 on your pass before prices increase at the door, plus get 50% on a second pass. Or score other deals.",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "Silicon Valley is falling in line with Trump’s attempt to rename AI",
+      "source": "The Verge AI",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1009406/silicon-valley-is-falling-in-line-with-trumps-attempt-to-rename-ai",
+      "published": "2026-10-11T18:33:56Z",
+      "category": "Signals",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. When President Donald Trump announced his plans to rebrand artificial intelligence as \"super intelligence,\" you'd be forgiven for being skeptical that it would catch on. While most of the broader population is...",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "Can the AI industry persuade data center opponents by getting rid of NDAs?",
+      "source": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/10/11/can-the-ai-industry-persuade-data-center-opponents-by-getting-rid-of-ndas/",
+      "published": "2026-10-11T16:52:33Z",
+      "category": "Policy",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this affects the rules, risks or responsibilities around AI. On Equity, we debate the impact of data center moratoriums and whether the AI industry has a communication problem.",
+      "why_it_matters": "Important for anyone using AI at work because compliance and data handling expectations are changing.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "These execs think voice AI hasn’t reached its ChatGPT moment yet",
+      "source": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/10/11/these-execs-think-voice-ai-hasnt-reached-its-chatgpt-moment-yet/",
+      "published": "2026-10-11T14:00:00Z",
+      "category": "Models",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this is about making AI systems more capable or cheaper to run. Voice AI often misses important points for its context layer, and causes the whole pipeline to break.",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "13 Best Gifts Every Traveler Should Have (2026)",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/best-gifts-for-travelers/",
+      "published": "2026-10-11T10:33:00Z",
+      "category": "Signals",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. 13 Best Gifts Every Traveler Should Have (2026)",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 80
+    },
+    {
+      "title": "Inside the Muslim Manosphere Policing Women Online",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/inside-the-muslim-manosphere-policing-women-online/",
+      "published": "2026-10-11T10:30:00Z",
+      "category": "Signals",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. From Red Pill coaches to “Dawah Bros,” influencers are dressing up hypermasculinity and misogyny in religious language-and finding audiences across social platforms.",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "These Midterm Races Will Decide Data Centers’ Political Fate",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/midterm-races-decide-data-centers-political-fate/",
+      "published": "2026-10-11T10:00:00Z",
+      "category": "Signals",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. From the Senate to governors’ mansions, candidates are trying to outcompete each other to be the most anti-data center in races across the US.",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "How the 2026 Super El Niño and Climate Change Are Related",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/super-el-nino-climate-change-connections/",
+      "published": "2026-10-11T09:30:00Z",
+      "category": "Signals",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. Here’s what we know about the record-setting El Niño on a record-hot planet, and the most important questions scientists are trying to answer.",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "California’s Tallest and Most Iconic Trees Are Getting Heatstroke",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/californias-tallest-and-most-iconic-trees-are-getting-heat-stroke/",
+      "published": "2026-10-11T09:00:00Z",
+      "category": "Research",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, researchers are testing a new way to make AI better or safer. Redwoods adapted to a cool, foggy climate. Now a new study shows they slow down photosynthesis when their environment warms.",
+      "why_it_matters": "Useful background signal. It may not matter today, but it can shape tools that appear later.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    }
+  ],
+  "categories": [
+    "Business",
+    "Models",
+    "Policy",
+    "Products",
+    "Research",
+    "Signals"
+  ],
+  "source_quality": [
+    {
+      "name": "WIRED",
+      "tier": 3,
+      "feed_items_scanned": 50,
+      "selected_items": 6,
+      "signal_ratio": 0.12,
+      "quality_score": 82,
+      "status": "active"
+    },
+    {
+      "name": "TechCrunch AI",
+      "tier": 3,
+      "feed_items_scanned": 20,
+      "selected_items": 4,
+      "signal_ratio": 0.2,
+      "quality_score": 68,
+      "status": "active"
+    },
+    {
+      "name": "Google DeepMind",
+      "tier": 5,
+      "feed_items_scanned": 0,
+      "selected_items": 0,
+      "signal_ratio": 0,
+      "quality_score": 50,
+      "status": "unavailable"
+    },
+    {
+      "name": "The Verge AI",
+      "tier": 3,
+      "feed_items_scanned": 10,
+      "selected_items": 2,
+      "signal_ratio": 0.2,
+      "quality_score": 44,
+      "status": "active"
+    },
+    {
+      "name": "OpenAI",
+      "tier": 5,
+      "feed_items_scanned": 1287,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 42,
+      "status": "active"
+    },
+    {
+      "name": "MIT Technology Review AI",
+      "tier": 4,
+      "feed_items_scanned": 10,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 40,
+      "status": "active"
+    },
+    {
+      "name": "Hugging Face",
+      "tier": 4,
+      "feed_items_scanned": 876,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 32,
+      "status": "active"
+    },
+    {
+      "name": "VentureBeat AI",
+      "tier": 3,
+      "feed_items_scanned": 0,
+      "selected_items": 0,
+      "signal_ratio": 0,
+      "quality_score": 30,
+      "status": "unavailable"
+    },
+    {
+      "name": "Ars Technica AI",
+      "tier": 3,
+      "feed_items_scanned": 20,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 30,
+      "status": "active"
+    },
+    {
+      "name": "AI News",
+      "tier": 2,
+      "feed_items_scanned": 0,
+      "selected_items": 0,
+      "signal_ratio": 0,
+      "quality_score": 20,
+      "status": "unavailable"
+    },
+    {
+      "name": "Hacker News AI",
+      "tier": 2,
+      "feed_items_scanned": 0,
+      "selected_items": 0,
+      "signal_ratio": 0,
+      "quality_score": 20,
+      "status": "unavailable"
+    },
+    {
+      "name": "arXiv AI",
+      "tier": 2,
+      "feed_items_scanned": 313,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 12,
+      "status": "active"
+    }
+  ],
+  "weekly_trends": [
+    {
+      "category": "Models",
+      "items": 50,
+      "critical": 2,
+      "average_score": 56.1,
+      "source_count": 8,
+      "plain_english": "Models produced 2 critical signals. This is worth watching closely this week."
+    },
+    {
+      "category": "Products",
+      "items": 33,
+      "critical": 0,
+      "average_score": 47.2,
+      "source_count": 5,
+      "plain_english": "Products is a busy area this week. Expect incremental product or research movement rather than one big headline."
+    },
+    {
+      "category": "Signals",
+      "items": 25,
+      "critical": 0,
+      "average_score": 43.8,
+      "source_count": 5,
+      "plain_english": "Signals is a busy area this week. Expect incremental product or research movement rather than one big headline."
+    },
+    {
+      "category": "Research",
+      "items": 8,
+      "critical": 0,
+      "average_score": 53.0,
+      "source_count": 5,
+      "plain_english": "Research is a busy area this week. Expect incremental product or research movement rather than one big headline."
+    },
+    {
+      "category": "Business",
+      "items": 7,
+      "critical": 0,
+      "average_score": 40.6,
+      "source_count": 2,
+      "plain_english": "Business is a busy area this week. Expect incremental product or research movement rather than one big headline."
+    },
+    {
+      "category": "Policy",
+      "items": 5,
+      "critical": 0,
+      "average_score": 47.8,
+      "source_count": 4,
+      "plain_english": "Policy is a busy area this week. Expect incremental product or research movement rather than one big headline."
+    }
+  ]
+}
