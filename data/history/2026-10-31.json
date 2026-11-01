@@ -1,0 +1,461 @@
+{
+  "metadata": {
+    "name": "AI Yesterday",
+    "generated_at": "2026-11-01T14:07:44.074352Z",
+    "coverage_date": "2026-10-31",
+    "source_count": 12,
+    "feed_items_scanned": 2465,
+    "item_count": 21,
+    "mode": "live",
+    "summary_engine": "openrouter",
+    "openrouter_enabled": true,
+    "openrouter_items_attempted": 4,
+    "openrouter_items_enriched": 1,
+    "openrouter_model": "openrouter/free",
+    "briefing_quality_score": 95.2
+  },
+  "items": [
+    {
+      "title": "An AI Agent Injected Drugs Into a Live Mouse’s Brain",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/an-ai-agent-did-brain-surgery-on-live-mouse/",
+      "published": "2026-10-31T10:00:00Z",
+      "category": "Products",
+      "importance": "Medium",
+      "score": 54,
+      "summary": "28-45 words, plain English, specific, no hype - why_it_matters: 18-32 words, practical implication - British English, calm analytical tone - No mention of article/feed/briefing/AI news item - No URLs, markdown, source labels, invented facts Let me draft: Summary: A biotech startup allowed an AI agent to select a gene therapy and autonomously inject it into.",
+      "why_it_matters": "This shows AI agents can move beyond analysis to execute complex physical lab tasks, potentially accelerating drug discovery while reducing human error and manual workload in research. (28 words) Check word counts: Summary: 3",
+      "summary_engine": "openrouter",
+      "summary_model": "openrouter/free",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "OpenAI reportedly lowers funding target for new round",
+      "source": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/10/31/openai-reportedly-lowers-funding-target-for-new-round/",
+      "published": "2026-10-31T16:12:55Z",
+      "category": "Business",
+      "importance": "Medium",
+      "score": 53,
+      "summary": "In simple terms, money and strategy are moving toward this part of AI. OpenAI reportedly lowers funding target for new round",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 80
+    },
+    {
+      "title": "Nvidia weighs playing the cosigner for Nscale’s AI data center in West Virginia",
+      "source": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/10/30/nvidia-weighs-playing-the-cosigner-for-nscales-ai-data-center-in-west-virginia/",
+      "published": "2026-10-31T01:20:05Z",
+      "category": "Signals",
+      "importance": "Medium",
+      "score": 46,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. When investors get nervous about AI spending, it helps to have the chipmaker that sells the chips offer to cosign the loan.",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "Judge allows NAACP lawsuit over xAI data center pollution to move forward",
+      "source": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/10/31/judge-allows-naacp-lawsuit-over-xai-data-center-pollution-to-move-forward/",
+      "published": "2026-10-31T21:17:03Z",
+      "category": "Policy",
+      "importance": "Medium",
+      "score": 43,
+      "summary": "In simple terms, this affects the rules, risks or responsibilities around AI. An NAACP lawsuit accuses the SpaceX-owned AI company of violating the Clean Air Act.",
+      "why_it_matters": "Important for anyone using AI at work because compliance and data handling expectations are changing.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "Meta’s Muse Could Upend All Kinds of Businesses. It Hasn’t Yet",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/metas-muse-could-upend-all-kinds-of-businesses-it-hasnt-yet/",
+      "published": "2026-10-31T10:30:00Z",
+      "category": "Products",
+      "importance": "Medium",
+      "score": 43,
+      "summary": "In simple terms, this is about turning AI research into tools people can actually use. Companies have spent the past several weeks trying to reassure investors that Muse and other AI agents pose more of an opportunity than a threat.",
+      "why_it_matters": "Worth testing because it could reduce manual work or create a new workflow for non-technical users.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "Anthropic blocks users for anything touching training larger models",
+      "source": "Hacker News AI",
+      "url": "https://twitter.com/jiahaoshao1/status/2116475922190922088",
+      "published": "2026-10-31T19:39:19Z",
+      "category": "Models",
+      "importance": "Low",
+      "score": 41,
+      "summary": "In simple terms, this is about making AI systems more capable or cheaper to run. Anthropic blocks users for anything touching training larger models",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 80
+    },
+    {
+      "title": "4 days left: How TechCrunch Founder Summit helps you make more useful connections to scale",
+      "source": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/10/31/4-days-left-how-techcrunch-founder-summit-helps-you-make-more-useful-connections-to-scale/",
+      "published": "2026-10-31T21:36:07Z",
+      "category": "Business",
+      "importance": "Low",
+      "score": 40,
+      "summary": "In simple terms, money and strategy are moving toward this part of AI. On November 4 at Boston’s SoWa Power Station, get ready for a full day packed with meaningful networking opportunities, actionable insights, and connections that could change the trajectory of your idea and startup....",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "Spooky New Infostealer Malware Uses AI to ‘Autodox’ Victims",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/kernel-panic-volta-autodoxer-ai-infostealer-malware/",
+      "published": "2026-10-31T12:00:00Z",
+      "category": "Products",
+      "importance": "Low",
+      "score": 40,
+      "summary": "In simple terms, this is about turning AI research into tools people can actually use. Named “Volta-Autodoxer,” the recently uncovered malware uses AI tools to collect troves of data about victims, from login credentials and credit card numbers to Discord sessions and UberEats receipts.",
+      "why_it_matters": "Worth testing because it could reduce manual work or create a new workflow for non-technical users.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "Apple CEO says the company doesn’t ‘want to ship AI for AI’s sake’",
+      "source": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/10/31/apple-ceo-says-the-company-doesnt-want-to-ship-ai-for-ais-sake/",
+      "published": "2026-10-31T21:41:00Z",
+      "category": "Products",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this is about turning AI research into tools people can actually use. Apple CEO says the company doesn’t ‘want to ship AI for AI’s sake’",
+      "why_it_matters": "Worth testing because it could reduce manual work or create a new workflow for non-technical users.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 80
+    },
+    {
+      "title": "I built an AI Tamagotchi before Meta could",
+      "source": "The Verge AI",
+      "url": "https://www.theverge.com/gadgets/1013375/muse-charm-gadgets-preview-waveshare-esp32-claude-vibe-code",
+      "published": "2026-10-31T16:05:00Z",
+      "category": "Signals",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. Mark Zuckerberg's Meta made AI look so stinking cute by giving it a squishy little face - and this holiday season, he wants to sell you a Muse Charm so you can carry your jolly AI helper around like a Tamagotchi. But...",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "Govee Christmas Lights 2 Deal: Save $25 on These Smart String Lights",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/govee-christmas-lights-deal-october-2026/",
+      "published": "2026-10-31T11:00:00Z",
+      "category": "Business",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, money and strategy are moving toward this part of AI. Glow up your home indoors or out with these versatile, discounted, full color smart string lights. They’re WIRED-tested and 25 percent off right now.",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "There’s a Completely New Type of Whisky. It’s French and Made in Concrete Eggs",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/theres-a-completely-new-type-of-whisky-its-french-and-made-in-concrete-eggs/",
+      "published": "2026-10-31T11:00:00Z",
+      "category": "Signals",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. The founders of Maison Lineti are, in a world first, making single malt whisky as if it were wine-and the spirit world is mighty impressed.",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "Backup by Biolite Review: A Cool Idea",
+      "source": "WIRED",
+      "url": "https://www.wired.com/review/backup-by-biolite/",
+      "published": "2026-10-31T10:33:00Z",
+      "category": "Signals",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. Backup by BioLite is designed to power your fridge when the grid goes down. It works, but protecting your ice cream doesn’t come cheap.",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "Bose QC Headphones (2nd Gen) Sale: Lowest Price Ahead of Black Friday",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/bose-deals-october-2026/",
+      "published": "2026-10-31T10:00:00Z",
+      "category": "Business",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, money and strategy are moving toward this part of AI. They’re a steal at over 40 percent off in multiple colors. Plus, other great Bose deals you should know about ahead of Black Friday.",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "Keurig Alta Brewer Review: Brand-New Tech, Classically Good Coffee",
+      "source": "WIRED",
+      "url": "https://www.wired.com/review/keurig-alta-brewer/",
+      "published": "2026-10-31T09:35:00Z",
+      "category": "Signals",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. This multifaceted home coffee brewer and its new AltaRounds will make you rethink everything you know about Keurig machines.",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "Are Memories Transferable? Meet the Scientists Replicating an Infamous Study to Find Out",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/are-memories-transferable-meet-the-scientists-replicating-an-infamous-study-to-find-out/",
+      "published": "2026-10-31T09:30:00Z",
+      "category": "Research",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, researchers are testing a new way to make AI better or safer. In the 1960’s, an odd experiment showed planarian worms could transfer memories by consuming each other. It was a sensational finding-that is until the worms stopped learning.",
+      "why_it_matters": "Useful background signal. It may not matter today, but it can shape tools that appear later.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "Best Sunrise Alarm Clock (2026): Hatch, Lumie",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/should-you-get-a-sunrise-alarm-clock/",
+      "published": "2026-10-31T09:01:00Z",
+      "category": "Signals",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. I’ve never been a morning person. This bedside gadget is the only thing that’s ever changed that.",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "White Dwarfs Aren’t Just White. Scientists Discover Dying Stars Turning Pink and Green",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/white-dwarfs-arent-just-white-scientists-discover-dying-stars-turning-pink-and-green/",
+      "published": "2026-10-31T09:00:00Z",
+      "category": "Signals",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. Astronomers find that a white dwarf’s density and the kind of material it absorbed from its surroundings can produce a rainbow of shades in the star’s atmosphere.",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "Wayfair Coupons: Up to 80% Off November 2026",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/wayfair-promo-code/",
+      "published": "2026-10-31T05:00:00Z",
+      "category": "Signals",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. Get 10% off with Wayfair promo code, up to 80% off furniture, and more top coupons.",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "Anthropic takes steps to block Claude from reverse-engineering video games",
+      "source": "Hacker News AI",
+      "url": "https://mashable.com/tech/anthropic-takes-steps-to-block-video-game-cloning-and-reverse-engineering",
+      "published": "2026-10-31T21:07:58Z",
+      "category": "Models",
+      "importance": "Low",
+      "score": 34,
+      "summary": "In simple terms, this is about making AI systems more capable or cheaper to run. Anthropic takes steps to block Claude from reverse-engineering video games",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 80
+    },
+    {
+      "title": "OpenAI raises less than half of $30B target",
+      "source": "Hacker News AI",
+      "url": "https://www.wsj.com/tech/ai/openai-raises-less-than-half-of-30-billion-target-in-latest-round-91aecdc5",
+      "published": "2026-10-31T03:22:44Z",
+      "category": "Signals",
+      "importance": "Low",
+      "score": 34,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. OpenAI raises less than half of $30B target",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 80
+    }
+  ],
+  "categories": [
+    "Business",
+    "Models",
+    "Policy",
+    "Products",
+    "Research",
+    "Signals"
+  ],
+  "source_quality": [
+    {
+      "name": "WIRED",
+      "tier": 3,
+      "feed_items_scanned": 50,
+      "selected_items": 12,
+      "signal_ratio": 0.24,
+      "quality_score": 100,
+      "status": "active"
+    },
+    {
+      "name": "TechCrunch AI",
+      "tier": 3,
+      "feed_items_scanned": 20,
+      "selected_items": 5,
+      "signal_ratio": 0.25,
+      "quality_score": 75,
+      "status": "active"
+    },
+    {
+      "name": "Hacker News AI",
+      "tier": 2,
+      "feed_items_scanned": 20,
+      "selected_items": 3,
+      "signal_ratio": 0.15,
+      "quality_score": 51,
+      "status": "active"
+    },
+    {
+      "name": "Google DeepMind",
+      "tier": 5,
+      "feed_items_scanned": 100,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 50,
+      "status": "active"
+    },
+    {
+      "name": "OpenAI",
+      "tier": 5,
+      "feed_items_scanned": 1341,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 42,
+      "status": "active"
+    },
+    {
+      "name": "MIT Technology Review AI",
+      "tier": 4,
+      "feed_items_scanned": 10,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 40,
+      "status": "active"
+    },
+    {
+      "name": "The Verge AI",
+      "tier": 3,
+      "feed_items_scanned": 10,
+      "selected_items": 1,
+      "signal_ratio": 0.1,
+      "quality_score": 37,
+      "status": "active"
+    },
+    {
+      "name": "Hugging Face",
+      "tier": 4,
+      "feed_items_scanned": 894,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 32,
+      "status": "active"
+    },
+    {
+      "name": "VentureBeat AI",
+      "tier": 3,
+      "feed_items_scanned": 0,
+      "selected_items": 0,
+      "signal_ratio": 0,
+      "quality_score": 30,
+      "status": "unavailable"
+    },
+    {
+      "name": "Ars Technica AI",
+      "tier": 3,
+      "feed_items_scanned": 20,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 30,
+      "status": "active"
+    },
+    {
+      "name": "AI News",
+      "tier": 2,
+      "feed_items_scanned": 0,
+      "selected_items": 0,
+      "signal_ratio": 0,
+      "quality_score": 20,
+      "status": "unavailable"
+    },
+    {
+      "name": "arXiv AI",
+      "tier": 2,
+      "feed_items_scanned": 0,
+      "selected_items": 0,
+      "signal_ratio": 0,
+      "quality_score": 20,
+      "status": "unavailable"
+    }
+  ],
+  "weekly_trends": [
+    {
+      "category": "Models",
+      "items": 51,
+      "critical": 6,
+      "average_score": 59.2,
+      "source_count": 7,
+      "plain_english": "Models produced 6 critical signals. This is worth watching closely this week."
+    },
+    {
+      "category": "Products",
+      "items": 26,
+      "critical": 1,
+      "average_score": 49.3,
+      "source_count": 4,
+      "plain_english": "Products produced 1 critical signal. This is worth watching closely this week."
+    },
+    {
+      "category": "Research",
+      "items": 11,
+      "critical": 1,
+      "average_score": 56.7,
+      "source_count": 4,
+      "plain_english": "Research produced 1 critical signal. This is worth watching closely this week."
+    },
+    {
+      "category": "Signals",
+      "items": 34,
+      "critical": 0,
+      "average_score": 45.5,
+      "source_count": 8,
+      "plain_english": "Signals is a busy area this week. Expect incremental product or research movement rather than one big headline."
+    },
+    {
+      "category": "Business",
+      "items": 12,
+      "critical": 0,
+      "average_score": 48.4,
+      "source_count": 2,
+      "plain_english": "Business is a busy area this week. Expect incremental product or research movement rather than one big headline."
+    },
+    {
+      "category": "Policy",
+      "items": 7,
+      "critical": 0,
+      "average_score": 55.6,
+      "source_count": 4,
+      "plain_english": "Policy is a busy area this week. Expect incremental product or research movement rather than one big headline."
+    }
+  ]
+}
