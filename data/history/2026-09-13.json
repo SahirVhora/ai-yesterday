@@ -1,0 +1,367 @@
+{
+  "metadata": {
+    "name": "AI Yesterday",
+    "generated_at": "2026-09-14T13:45:10.990462Z",
+    "coverage_date": "2026-09-13",
+    "source_count": 12,
+    "feed_items_scanned": 2554,
+    "item_count": 14,
+    "mode": "live",
+    "summary_engine": "rules",
+    "openrouter_enabled": true,
+    "openrouter_items_attempted": 4,
+    "openrouter_items_enriched": 0,
+    "openrouter_model": "openrouter/free",
+    "briefing_quality_score": 92.9
+  },
+  "items": [
+    {
+      "title": "David Sacks: OpenAI and Anthropic Don't Need Regulations to Pace Frontier Models",
+      "source": "Hacker News AI",
+      "url": "https://twitter.com/DavidSacks/status/2098973625252708460",
+      "published": "2026-09-13T16:52:33Z",
+      "category": "Models",
+      "importance": "Medium",
+      "score": 61,
+      "summary": "In simple terms, this is about making AI systems more capable or cheaper to run. David Sacks: OpenAI and Anthropic Don't Need Regulations to Pace Frontier Models",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 80
+    },
+    {
+      "title": "Trump and Mike Johnson think the AI industry is overreacting",
+      "source": "The Verge AI",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/994441/trump-mike-johnson-ai-industry-overreacting",
+      "published": "2026-09-13T19:41:48Z",
+      "category": "Policy",
+      "importance": "Medium",
+      "score": 56,
+      "summary": "In simple terms, this affects the rules, risks or responsibilities around AI. Yesterday, Anthropic CEO Dario Amodei published a lengthy open letter saying it was time to \"pace the frontier\" and slow down AI development. OpenAI's Sam Altman and Elon Musk both agreed, publicly voicing their...",
+      "why_it_matters": "Important for anyone using AI at work because compliance and data handling expectations are changing.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "Obama urges Democrats to have a ‘clear plan’ for AI safeguards",
+      "source": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/09/13/obama-urges-democrats-to-have-a-clear-plan-for-ai-safeguards/",
+      "published": "2026-09-13T16:30:00Z",
+      "category": "Policy",
+      "importance": "Medium",
+      "score": 46,
+      "summary": "In simple terms, this affects the rules, risks or responsibilities around AI. Obama recently said that Democrats need to make artificial intelligence one of their “central agendas” and “have a very clear plan” to address concerns around the technology’s economic impact and safety.",
+      "why_it_matters": "Important for anyone using AI at work because compliance and data handling expectations are changing.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "AI Agents Are Thirsty for Power",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/ai-agents-are-thirsty-for-power/",
+      "published": "2026-09-13T10:00:00Z",
+      "category": "Products",
+      "importance": "Medium",
+      "score": 43,
+      "summary": "In simple terms, this is about turning AI research into tools people can actually use. Silicon Valley is shifting away from chatbot queries toward a future filled with resource-intensive agentic AI-and it's driving the data center buildout.",
+      "why_it_matters": "Worth testing because it could reduce manual work or create a new workflow for non-technical users.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "Try These 3 iOS 27 Safari Settings to Get More Out of Apple’s Browser",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/iphone-settings-ios-27-safari-browser/",
+      "published": "2026-09-13T10:30:00Z",
+      "category": "Products",
+      "importance": "Low",
+      "score": 40,
+      "summary": "In simple terms, this is about turning AI research into tools people can actually use. Apple’s Safari browser gets a few helpful automation and personalization features in iOS 27.",
+      "why_it_matters": "Worth testing because it could reduce manual work or create a new workflow for non-technical users.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "What’s behind the AI industry’s latest warnings of doom?",
+      "source": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/09/13/whats-behind-the-ai-industrys-latest-warnings-of-doom/",
+      "published": "2026-09-13T19:40:15Z",
+      "category": "Signals",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. On Equity, we discussed the AI industry's latest debate about whether it poses an existential threat to humanity.",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "The Smart Bird Feeders Everyone’s Talking About (and Actually Buying) (2026)",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/best-smart-bird-feeders/",
+      "published": "2026-09-13T11:00:00Z",
+      "category": "Products",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this is about turning AI research into tools people can actually use. These bird feeders come with cameras and connected apps to let you see and learn about the birds in your neighborhood.",
+      "why_it_matters": "Worth testing because it could reduce manual work or create a new workflow for non-technical users.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "Best Indoor Garden Systems I’ve Been Testing All Year (2026)",
+      "source": "WIRED",
+      "url": "https://www.wired.com/gallery/best-indoor-gardening-systems/",
+      "published": "2026-09-13T10:30:00Z",
+      "category": "Signals",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. Grow a backyard’s worth of greens and vegetables in your house with a vertical hydroponic garden. Here are a few that might be worth the investment.",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "Coway Airmega Halo Review: Is Your Air Really Clean?",
+      "source": "WIRED",
+      "url": "https://www.wired.com/review/coway-airmega-halo/",
+      "published": "2026-09-13T10:05:00Z",
+      "category": "Signals",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. Coway’s new Airmega Halo runs quietly and clears visible smoke quickly, but its air-quality readings weren’t always reassuring.",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "With a Better Understanding of Physics, We Could Predict Volcanic Eruptions",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/physics-predict-volcanic-eruptions/",
+      "published": "2026-09-13T09:30:00Z",
+      "category": "Signals",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. “There’s no reason we can’t think that, at some point in the future, we can have volcano forecasts that are like weather forecasts.”",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "Houthis used Claude Code to develop missile guidance software: Anthropic",
+      "source": "Hacker News AI",
+      "url": "https://clashreport.com/world/articles/houthis-used-claude-code-to-develop-missile-guidance-software-anthropic-s52mnx4pwpo",
+      "published": "2026-09-13T14:15:40Z",
+      "category": "Models",
+      "importance": "Low",
+      "score": 34,
+      "summary": "In simple terms, this is about making AI systems more capable or cheaper to run. Houthis used Claude Code to develop missile guidance software: Anthropic",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 80
+    },
+    {
+      "title": "Garry Tan wants US open-weight AI labs to 'distill' frontier models, too",
+      "source": "Hacker News AI",
+      "url": "https://techcrunch.com/2026/09/11/y-combinators-garry-tan-wants-u-s-open-weight-ai-labs-to-distill-frontier-models-too/",
+      "published": "2026-09-13T15:44:38Z",
+      "category": "Models",
+      "importance": "Low",
+      "score": 31,
+      "summary": "In simple terms, this is about making AI systems more capable or cheaper to run. Garry Tan wants US open-weight AI labs to 'distill' frontier models, too",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 80
+    },
+    {
+      "title": "Why are AI agents lying, cheating and coordinating?",
+      "source": "Hacker News AI",
+      "url": "https://yoshuabengio.org/en/publication/why-are-ai-agents-lying-cheating-and-coordinating",
+      "published": "2026-09-13T01:22:31Z",
+      "category": "Products",
+      "importance": "Low",
+      "score": 31,
+      "summary": "In simple terms, this is about turning AI research into tools people can actually use. Why are AI agents lying, cheating and coordinating?",
+      "why_it_matters": "Worth testing because it could reduce manual work or create a new workflow for non-technical users.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 80
+    },
+    {
+      "title": "Everyone should slow down AI development except for me",
+      "source": "Hacker News AI",
+      "url": "https://xeiaso.net/notes/2026/everyone-slowdown-but-me/",
+      "published": "2026-09-13T00:30:44Z",
+      "category": "Signals",
+      "importance": "Low",
+      "score": 24,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. Everyone should slow down AI development except for me",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 80
+    }
+  ],
+  "categories": [
+    "Models",
+    "Policy",
+    "Products",
+    "Signals"
+  ],
+  "source_quality": [
+    {
+      "name": "WIRED",
+      "tier": 3,
+      "feed_items_scanned": 50,
+      "selected_items": 6,
+      "signal_ratio": 0.12,
+      "quality_score": 82,
+      "status": "active"
+    },
+    {
+      "name": "Hacker News AI",
+      "tier": 2,
+      "feed_items_scanned": 20,
+      "selected_items": 5,
+      "signal_ratio": 0.25,
+      "quality_score": 65,
+      "status": "active"
+    },
+    {
+      "name": "Google DeepMind",
+      "tier": 5,
+      "feed_items_scanned": 100,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 50,
+      "status": "active"
+    },
+    {
+      "name": "TechCrunch AI",
+      "tier": 3,
+      "feed_items_scanned": 19,
+      "selected_items": 2,
+      "signal_ratio": 0.105,
+      "quality_score": 44,
+      "status": "active"
+    },
+    {
+      "name": "OpenAI",
+      "tier": 5,
+      "feed_items_scanned": 1193,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 42,
+      "status": "active"
+    },
+    {
+      "name": "MIT Technology Review AI",
+      "tier": 4,
+      "feed_items_scanned": 10,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 40,
+      "status": "active"
+    },
+    {
+      "name": "The Verge AI",
+      "tier": 3,
+      "feed_items_scanned": 10,
+      "selected_items": 1,
+      "signal_ratio": 0.1,
+      "quality_score": 37,
+      "status": "active"
+    },
+    {
+      "name": "Hugging Face",
+      "tier": 4,
+      "feed_items_scanned": 862,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 32,
+      "status": "active"
+    },
+    {
+      "name": "VentureBeat AI",
+      "tier": 3,
+      "feed_items_scanned": 0,
+      "selected_items": 0,
+      "signal_ratio": 0,
+      "quality_score": 30,
+      "status": "unavailable"
+    },
+    {
+      "name": "Ars Technica AI",
+      "tier": 3,
+      "feed_items_scanned": 20,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 30,
+      "status": "active"
+    },
+    {
+      "name": "AI News",
+      "tier": 2,
+      "feed_items_scanned": 0,
+      "selected_items": 0,
+      "signal_ratio": 0,
+      "quality_score": 20,
+      "status": "unavailable"
+    },
+    {
+      "name": "arXiv AI",
+      "tier": 2,
+      "feed_items_scanned": 270,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 20,
+      "status": "active"
+    }
+  ],
+  "weekly_trends": [
+    {
+      "category": "Products",
+      "items": 38,
+      "critical": 2,
+      "average_score": 53.3,
+      "source_count": 6,
+      "plain_english": "Products produced 2 critical signals. This is worth watching closely this week."
+    },
+    {
+      "category": "Policy",
+      "items": 11,
+      "critical": 1,
+      "average_score": 58.2,
+      "source_count": 5,
+      "plain_english": "Policy produced 1 critical signal. This is worth watching closely this week."
+    },
+    {
+      "category": "Signals",
+      "items": 33,
+      "critical": 0,
+      "average_score": 44.3,
+      "source_count": 9,
+      "plain_english": "Signals is a busy area this week. Expect incremental product or research movement rather than one big headline."
+    },
+    {
+      "category": "Models",
+      "items": 31,
+      "critical": 0,
+      "average_score": 54.7,
+      "source_count": 6,
+      "plain_english": "Models is a busy area this week. Expect incremental product or research movement rather than one big headline."
+    },
+    {
+      "category": "Research",
+      "items": 7,
+      "critical": 0,
+      "average_score": 52.7,
+      "source_count": 3,
+      "plain_english": "Research is a busy area this week. Expect incremental product or research movement rather than one big headline."
+    },
+    {
+      "category": "Business",
+      "items": 4,
+      "critical": 0,
+      "average_score": 46.2,
+      "source_count": 2,
+      "plain_english": "Business has a lighter signal this week. Useful context, but not the main priority."
+    }
+  ]
+}

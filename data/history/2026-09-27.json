@@ -1,0 +1,342 @@
+{
+  "metadata": {
+    "name": "AI Yesterday",
+    "generated_at": "2026-09-28T15:06:00.410506Z",
+    "coverage_date": "2026-09-27",
+    "source_count": 12,
+    "feed_items_scanned": 2540,
+    "item_count": 12,
+    "mode": "live",
+    "summary_engine": "rules",
+    "openrouter_enabled": true,
+    "openrouter_items_attempted": 4,
+    "openrouter_items_enriched": 0,
+    "openrouter_model": "openrouter/free",
+    "briefing_quality_score": 96.7
+  },
+  "items": [
+    {
+      "title": "OpenAI agents tried to ‘bruteforce’ a UN website",
+      "source": "The Verge AI",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1001178/openai-agents-bruteforce-un-website",
+      "published": "2026-09-27T17:21:07Z",
+      "category": "Products",
+      "importance": "High",
+      "score": 70,
+      "summary": "In simple terms, this is about turning AI research into tools people can actually use. Security researcher Rowan Howard-Jones says that OpenAI agents scanned the UN Conference on Trade and Development's (UNCTAD) statistics site over 16,000 times between April and June. While the incident doesn't quite...",
+      "why_it_matters": "Worth testing because it could reduce manual work or create a new workflow for non-technical users.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "Can Muse overcome Meta’s trust issues?",
+      "source": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/09/27/can-muse-overcome-metas-trust-issues/",
+      "published": "2026-09-27T19:57:30Z",
+      "category": "Signals",
+      "importance": "Medium",
+      "score": 56,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. On Equity, we discussed how Meta's AI announcement managed to steal the spotlight from OpenAI and Anthropic.",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "Anthropic’s CEO is about to have dinner with President Trump",
+      "source": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/09/27/anthropics-ceo-is-about-to-have-dinner-with-president-trump/",
+      "published": "2026-09-27T20:34:28Z",
+      "category": "Signals",
+      "importance": "Medium",
+      "score": 46,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. Anthropic’s CEO is about to have dinner with President Trump",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 80
+    },
+    {
+      "title": "Anthropic’s Dario Amodei gets the SNL treatment",
+      "source": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/09/27/anthropics-dario-amodei-gets-the-snl-treatment/",
+      "published": "2026-09-27T16:30:00Z",
+      "category": "Signals",
+      "importance": "Medium",
+      "score": 46,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. Anthropic’s Dario Amodei gets the SNL treatment",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 80
+    },
+    {
+      "title": "Google tests buying from Walmart-owned Flipkart through Gemini and AI Mode in India",
+      "source": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/09/26/google-tests-buying-from-walmart-owned-flipkart-through-gemini-and-ai-mode-in-india/",
+      "published": "2026-09-27T01:30:00Z",
+      "category": "Models",
+      "importance": "Medium",
+      "score": 46,
+      "summary": "In simple terms, this is about making AI systems more capable or cheaper to run. The limited test covers select products and users, with a broader rollout planned for later in October.",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "Some Pancreatic Cells Are Just One Genetic Tweak Away From Treating Diabetes",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/pancreatic-cells-just-one-genetic-tweak-away-from-treating-diabetes/",
+      "published": "2026-09-27T09:00:00Z",
+      "category": "Research",
+      "importance": "Medium",
+      "score": 43,
+      "summary": "In simple terms, researchers are testing a new way to make AI better or safer. By deactivating a gene, researchers were able to cause cells in the pancreatic ducts to produce insulin to regulate blood sugar.",
+      "why_it_matters": "Useful background signal. It may not matter today, but it can shape tools that appear later.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "Engram is a sampler that turns broken AI hallucinations into music",
+      "source": "The Verge AI",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1001193/engram-sampler-ai-hallucinations-music",
+      "published": "2026-09-27T20:46:36Z",
+      "category": "Products",
+      "importance": "Low",
+      "score": 40,
+      "summary": "In simple terms, this is about turning AI research into tools people can actually use. Music startup Thoughtful Things has just launched the Kickstarter campaign for its first instrument, Engram. It's a sampler and groovebox that uses AI to mangle incoming audio and even hallucinate completely new...",
+      "why_it_matters": "Worth testing because it could reduce manual work or create a new workflow for non-technical users.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "Best Party Speakers (2026): JBL, Sony, Marshall, and More",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/best-party-speaker/",
+      "published": "2026-09-27T11:30:00Z",
+      "category": "Signals",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. These speakers combine serious volume, big bass, portability, and the occasional karaoke session to bring the party anywhere.",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "What’s the Best Pet DNA Test? We Tested the Most Popular Ones",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/best-pet-dna-test-kits/",
+      "published": "2026-09-27T11:02:00Z",
+      "category": "Signals",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. I sent my cats’ saliva to the lab to get health and genetic insights sent to my inbox-with very different results.",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "You Don’t Need to Pay for Distraction-Blocking Software",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/you-dont-need-to-pay-for-distraction-blocking-software/",
+      "published": "2026-09-27T10:15:00Z",
+      "category": "Products",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this is about turning AI research into tools people can actually use. These free iOS and Android apps create the physical friction you need to put down your phone.",
+      "why_it_matters": "Worth testing because it could reduce manual work or create a new workflow for non-technical users.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "The Data Center Backlash Should Also Be a Climate Reckoning. It Isn’t Yet",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/data-center-backlash-climate-reckoning/",
+      "published": "2026-09-27T10:00:00Z",
+      "category": "Policy",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this affects the rules, risks or responsibilities around AI. Climate groups are latching onto the data center opposition movement, but it remains to be seen if they can get people to care about the facilities’ impact on the atmosphere.",
+      "why_it_matters": "Important for anyone using AI at work because compliance and data handling expectations are changing.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "Nicotine Is Mounting a Comeback in the Wellness Movement",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/nicotine-is-mounting-a-comeback-in-the-wellness-movement/",
+      "published": "2026-09-27T09:30:00Z",
+      "category": "Signals",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. Improving mood and increasing longevity are just some of the unfounded claims about this substance circling around the “natural” medicine corners of the internet.",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    }
+  ],
+  "categories": [
+    "Models",
+    "Policy",
+    "Products",
+    "Research",
+    "Signals"
+  ],
+  "source_quality": [
+    {
+      "name": "WIRED",
+      "tier": 3,
+      "feed_items_scanned": 50,
+      "selected_items": 6,
+      "signal_ratio": 0.12,
+      "quality_score": 82,
+      "status": "active"
+    },
+    {
+      "name": "TechCrunch AI",
+      "tier": 3,
+      "feed_items_scanned": 20,
+      "selected_items": 4,
+      "signal_ratio": 0.2,
+      "quality_score": 68,
+      "status": "active"
+    },
+    {
+      "name": "Google DeepMind",
+      "tier": 5,
+      "feed_items_scanned": 0,
+      "selected_items": 0,
+      "signal_ratio": 0,
+      "quality_score": 50,
+      "status": "unavailable"
+    },
+    {
+      "name": "The Verge AI",
+      "tier": 3,
+      "feed_items_scanned": 10,
+      "selected_items": 2,
+      "signal_ratio": 0.2,
+      "quality_score": 44,
+      "status": "active"
+    },
+    {
+      "name": "OpenAI",
+      "tier": 5,
+      "feed_items_scanned": 1230,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 42,
+      "status": "active"
+    },
+    {
+      "name": "MIT Technology Review AI",
+      "tier": 4,
+      "feed_items_scanned": 10,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 40,
+      "status": "active"
+    },
+    {
+      "name": "Hugging Face",
+      "tier": 4,
+      "feed_items_scanned": 869,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 32,
+      "status": "active"
+    },
+    {
+      "name": "VentureBeat AI",
+      "tier": 3,
+      "feed_items_scanned": 0,
+      "selected_items": 0,
+      "signal_ratio": 0,
+      "quality_score": 30,
+      "status": "unavailable"
+    },
+    {
+      "name": "Ars Technica AI",
+      "tier": 3,
+      "feed_items_scanned": 20,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 30,
+      "status": "active"
+    },
+    {
+      "name": "AI News",
+      "tier": 2,
+      "feed_items_scanned": 0,
+      "selected_items": 0,
+      "signal_ratio": 0,
+      "quality_score": 20,
+      "status": "unavailable"
+    },
+    {
+      "name": "Hacker News AI",
+      "tier": 2,
+      "feed_items_scanned": 0,
+      "selected_items": 0,
+      "signal_ratio": 0,
+      "quality_score": 20,
+      "status": "unavailable"
+    },
+    {
+      "name": "arXiv AI",
+      "tier": 2,
+      "feed_items_scanned": 331,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 12,
+      "status": "active"
+    }
+  ],
+  "weekly_trends": [
+    {
+      "category": "Models",
+      "items": 38,
+      "critical": 4,
+      "average_score": 60.3,
+      "source_count": 8,
+      "plain_english": "Models produced 4 critical signals. This is worth watching closely this week."
+    },
+    {
+      "category": "Products",
+      "items": 43,
+      "critical": 1,
+      "average_score": 48.8,
+      "source_count": 7,
+      "plain_english": "Products produced 1 critical signal. This is worth watching closely this week."
+    },
+    {
+      "category": "Policy",
+      "items": 9,
+      "critical": 1,
+      "average_score": 53.6,
+      "source_count": 6,
+      "plain_english": "Policy produced 1 critical signal. This is worth watching closely this week."
+    },
+    {
+      "category": "Signals",
+      "items": 24,
+      "critical": 0,
+      "average_score": 42.1,
+      "source_count": 7,
+      "plain_english": "Signals is a busy area this week. Expect incremental product or research movement rather than one big headline."
+    },
+    {
+      "category": "Business",
+      "items": 6,
+      "critical": 0,
+      "average_score": 46.3,
+      "source_count": 2,
+      "plain_english": "Business is a busy area this week. Expect incremental product or research movement rather than one big headline."
+    },
+    {
+      "category": "Research",
+      "items": 3,
+      "critical": 0,
+      "average_score": 40.7,
+      "source_count": 2,
+      "plain_english": "Research has a lighter signal this week. Useful context, but not the main priority."
+    }
+  ]
+}

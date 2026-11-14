@@ -1,0 +1,392 @@
+{
+  "metadata": {
+    "name": "AI Yesterday",
+    "generated_at": "2026-11-02T16:54:03.380834Z",
+    "coverage_date": "2026-11-01",
+    "source_count": 12,
+    "feed_items_scanned": 2763,
+    "item_count": 16,
+    "mode": "live",
+    "summary_engine": "rules",
+    "openrouter_enabled": true,
+    "openrouter_items_attempted": 4,
+    "openrouter_items_enriched": 0,
+    "openrouter_model": "openrouter/free",
+    "briefing_quality_score": 90.0
+  },
+  "items": [
+    {
+      "title": "OpenAI might rebrand its data centers as ‘AI compute campuses’",
+      "source": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/11/01/openai-might-rebrand-its-data-centers-as-ai-compute-campuses/",
+      "published": "2026-11-01T21:55:23Z",
+      "category": "Signals",
+      "importance": "Medium",
+      "score": 46,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. OpenAI might rebrand its data centers as ‘AI compute campuses’",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 80
+    },
+    {
+      "title": "There’s a Free Video Editor Inside Google Drive That Anyone Can Use",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/google-vids-free-video-editor-inside-google-drive/",
+      "published": "2026-11-01T12:00:00Z",
+      "category": "Products",
+      "importance": "Medium",
+      "score": 46,
+      "summary": "In simple terms, this is about turning AI research into tools people can actually use. You may not have noticed everything Google’s free software suite offers-especially a web app called Google Vids.",
+      "why_it_matters": "Worth testing because it could reduce manual work or create a new workflow for non-technical users.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "Best Chromebooks and Googlebooks (2026): Laptops With a Google Touch",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/best-chromebooks/",
+      "published": "2026-11-01T10:00:00Z",
+      "category": "Signals",
+      "importance": "Medium",
+      "score": 46,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. While Google is heralding a new series of laptops called Googlebooks, Chromebooks are sticking around-for now. These are the ones to consider.",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "AI can make tech CEOs’ lives easier. What about everyone else?",
+      "source": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/11/01/ai-can-make-tech-ceos-lives-easier-what-about-everyone-else/",
+      "published": "2026-11-01T20:57:58Z",
+      "category": "Signals",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. AI can make tech CEOs’ lives easier. What about everyone else?",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 80
+    },
+    {
+      "title": "The 30 Best Gifts for Star Wars Fans (2026)",
+      "source": "WIRED",
+      "url": "https://www.wired.com/gallery/best-star-wars-gifts/",
+      "published": "2026-11-01T12:30:00Z",
+      "category": "Signals",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. From marble runs to advent calendars, these are the best Star Wars gifts for fans of all ages.",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 80
+    },
+    {
+      "title": "The Hollywood Color Nerd Who Shot ‘Knives Out’ Explains His Viral iPhone Camera App",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/the-hollywood-color-nerd-who-shot-knives-out-explains-his-viral-iphone-camera-app/",
+      "published": "2026-11-01T12:00:00Z",
+      "category": "Products",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this is about turning AI research into tools people can actually use. The Chromagraph Camera app costs $13 and processes iPhone photos with the same color math Rian Johnson’s cinematographer, Steve Yedlin, uses for film.",
+      "why_it_matters": "Worth testing because it could reduce manual work or create a new workflow for non-technical users.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "Lenovo LOQ 15: The Only Gaming Laptop Worth Buying Below $1,500",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/lenovo-loq-15-best-deal/",
+      "published": "2026-11-01T11:30:00Z",
+      "category": "Signals",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. As prices escalate on gaming laptops, there’s really only one affordable option still around: the Lenovo LOQ 15, which offers a better performance and display than its competitors.",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "8 Best Space Heaters (2026): Tested, Measured, and Mistreated",
+      "source": "WIRED",
+      "url": "https://www.wired.com/gallery/the-best-space-heaters/",
+      "published": "2026-11-01T11:30:00Z",
+      "category": "Signals",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. 8 Best Space Heaters (2026): Tested, Measured, and Mistreated",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 80
+    },
+    {
+      "title": "What Democrats Can Learn From New York’s Data Center Moratorium",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/what-democrats-can-learn-new-york-data-center-moratorium/",
+      "published": "2026-11-01T11:00:00Z",
+      "category": "Policy",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this affects the rules, risks or responsibilities around AI. With a number of anti-data-center candidates poised to win on Tuesday, New York provides a glimpse at the tensions around actually having to do something about the digital infrastructure.",
+      "why_it_matters": "Important for anyone using AI at work because compliance and data handling expectations are changing.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "7 Best Travel Mugs (2026): Insulated, Leakproof, and Self-Heating",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/the-best-travel-mugs/",
+      "published": "2026-11-01T10:31:00Z",
+      "category": "Signals",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. These top picks from brands like Ember, Owala, and Hydro Flask are built to last, keeping your drinks hot and your mornings smooth.",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "Chatbots Are Leading Hikers Astray, With Dangerous Consequences",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/chatbots-are-leading-hikers-astray-with-dangerous-consequences/",
+      "published": "2026-11-01T10:30:00Z",
+      "category": "Signals",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. Outsourcing planning to AI can lead people to surrender their own critical thinking, which can have potentially deadly results in places like the backcountry.",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "A Newly Discovered Trail of Cosmic Debris Illustrates How the End of the Solar System Could Look",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/a-newly-discovered-trail-of-cosmic-debris-illustrates-what-the-end-of-the-solar-system-could-look-like/",
+      "published": "2026-11-01T10:00:00Z",
+      "category": "Signals",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. A dying star 1,600 light-years from Earth is surrounded by two rings of gas and dust that astronomers believe are the remnants of the planetary bodies it once hosted.",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "AI agent swarms in Minecraft fail to build civilization, drown in bureaucracy",
+      "source": "Hacker News AI",
+      "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/ai-agent-swarms-unleashed-in-minecraft-to-build-a-thriving-civilization-50-agent-teams-fail-after-falling-into-paralyzing-bureaucracy",
+      "published": "2026-11-01T13:47:24Z",
+      "category": "Products",
+      "importance": "Low",
+      "score": 31,
+      "summary": "In simple terms, this is about turning AI research into tools people can actually use. AI agent swarms in Minecraft fail to build civilization, drown in bureaucracy",
+      "why_it_matters": "Worth testing because it could reduce manual work or create a new workflow for non-technical users.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 80
+    },
+    {
+      "title": "AI delivers 'zero financial payoff' to most companies, Apollo economist says",
+      "source": "Hacker News AI",
+      "url": "https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist/",
+      "published": "2026-11-01T22:10:45Z",
+      "category": "Signals",
+      "importance": "Low",
+      "score": 24,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. AI delivers 'zero financial payoff' to most companies, Apollo economist says",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 80
+    },
+    {
+      "title": "It wasn't AI that flipped Proton's charge",
+      "source": "Hacker News AI",
+      "url": "https://blog.raed.dev/posts/proton-loser-thinking/",
+      "published": "2026-11-01T18:53:55Z",
+      "category": "Signals",
+      "importance": "Low",
+      "score": 24,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. It wasn't AI that flipped Proton's charge",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 80
+    },
+    {
+      "title": "The AI cost of JavaScript frameworks",
+      "source": "Hacker News AI",
+      "url": "https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/",
+      "published": "2026-11-01T06:06:19Z",
+      "category": "Signals",
+      "importance": "Low",
+      "score": 24,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. The AI cost of JavaScript frameworks",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 80
+    }
+  ],
+  "categories": [
+    "Policy",
+    "Products",
+    "Signals"
+  ],
+  "source_quality": [
+    {
+      "name": "WIRED",
+      "tier": 3,
+      "feed_items_scanned": 50,
+      "selected_items": 10,
+      "signal_ratio": 0.2,
+      "quality_score": 100,
+      "status": "active"
+    },
+    {
+      "name": "Hacker News AI",
+      "tier": 2,
+      "feed_items_scanned": 20,
+      "selected_items": 4,
+      "signal_ratio": 0.2,
+      "quality_score": 58,
+      "status": "active"
+    },
+    {
+      "name": "Google DeepMind",
+      "tier": 5,
+      "feed_items_scanned": 100,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 50,
+      "status": "active"
+    },
+    {
+      "name": "TechCrunch AI",
+      "tier": 3,
+      "feed_items_scanned": 20,
+      "selected_items": 2,
+      "signal_ratio": 0.1,
+      "quality_score": 44,
+      "status": "active"
+    },
+    {
+      "name": "OpenAI",
+      "tier": 5,
+      "feed_items_scanned": 1342,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 42,
+      "status": "active"
+    },
+    {
+      "name": "MIT Technology Review AI",
+      "tier": 4,
+      "feed_items_scanned": 10,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 40,
+      "status": "active"
+    },
+    {
+      "name": "Hugging Face",
+      "tier": 4,
+      "feed_items_scanned": 894,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 32,
+      "status": "active"
+    },
+    {
+      "name": "VentureBeat AI",
+      "tier": 3,
+      "feed_items_scanned": 0,
+      "selected_items": 0,
+      "signal_ratio": 0,
+      "quality_score": 30,
+      "status": "unavailable"
+    },
+    {
+      "name": "The Verge AI",
+      "tier": 3,
+      "feed_items_scanned": 10,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 30,
+      "status": "active"
+    },
+    {
+      "name": "Ars Technica AI",
+      "tier": 3,
+      "feed_items_scanned": 20,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 30,
+      "status": "active"
+    },
+    {
+      "name": "AI News",
+      "tier": 2,
+      "feed_items_scanned": 0,
+      "selected_items": 0,
+      "signal_ratio": 0,
+      "quality_score": 20,
+      "status": "unavailable"
+    },
+    {
+      "name": "arXiv AI",
+      "tier": 2,
+      "feed_items_scanned": 297,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 20,
+      "status": "active"
+    }
+  ],
+  "weekly_trends": [
+    {
+      "category": "Models",
+      "items": 42,
+      "critical": 5,
+      "average_score": 58.4,
+      "source_count": 7,
+      "plain_english": "Models produced 5 critical signals. This is worth watching closely this week."
+    },
+    {
+      "category": "Products",
+      "items": 26,
+      "critical": 1,
+      "average_score": 48.0,
+      "source_count": 5,
+      "plain_english": "Products produced 1 critical signal. This is worth watching closely this week."
+    },
+    {
+      "category": "Research",
+      "items": 11,
+      "critical": 1,
+      "average_score": 56.7,
+      "source_count": 4,
+      "plain_english": "Research produced 1 critical signal. This is worth watching closely this week."
+    },
+    {
+      "category": "Signals",
+      "items": 38,
+      "critical": 0,
+      "average_score": 41.1,
+      "source_count": 8,
+      "plain_english": "Signals is a busy area this week. Expect incremental product or research movement rather than one big headline."
+    },
+    {
+      "category": "Business",
+      "items": 11,
+      "critical": 0,
+      "average_score": 46.2,
+      "source_count": 2,
+      "plain_english": "Business is a busy area this week. Expect incremental product or research movement rather than one big headline."
+    },
+    {
+      "category": "Policy",
+      "items": 5,
+      "critical": 0,
+      "average_score": 48.2,
+      "source_count": 3,
+      "plain_english": "Policy is a busy area this week. Expect incremental product or research movement rather than one big headline."
+    }
+  ]
+}

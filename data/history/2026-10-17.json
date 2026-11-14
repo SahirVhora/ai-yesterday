@@ -1,0 +1,341 @@
+{
+  "metadata": {
+    "name": "AI Yesterday",
+    "generated_at": "2026-10-18T11:58:22.533520Z",
+    "coverage_date": "2026-10-17",
+    "source_count": 12,
+    "feed_items_scanned": 2289,
+    "item_count": 12,
+    "mode": "live",
+    "summary_engine": "rules",
+    "openrouter_enabled": true,
+    "openrouter_items_attempted": 4,
+    "openrouter_items_enriched": 0,
+    "openrouter_model": "openrouter/free",
+    "briefing_quality_score": 100.0
+  },
+  "items": [
+    {
+      "title": "Replit makes OpenAI its default over Anthropic, CEO says",
+      "source": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/",
+      "published": "2026-10-17T18:48:08Z",
+      "category": "Models",
+      "importance": "High",
+      "score": 63,
+      "summary": "In simple terms, this is about making AI systems more capable or cheaper to run. Over the weekend, Masad clarified that OpenAI would replace Anthropic as its default model provider. Claude will still be available to customers on the platform.",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "Websites are closing their doors to AI agents",
+      "source": "The Verge AI",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web",
+      "published": "2026-10-17T13:00:00Z",
+      "category": "Products",
+      "importance": "High",
+      "score": 63,
+      "summary": "In simple terms, this is about turning AI research into tools people can actually use. Autonomous agents are the hottest thing in AI. OpenAI, Meta, Google, Instinct, and others promise their agents can scour the internet on your behalf, doing anything from booking a dinner reservation and cleaning out...",
+      "why_it_matters": "Worth testing because it could reduce manual work or create a new workflow for non-technical users.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "Anthropic says its workforce has become less junior and is spending more time in meetings",
+      "source": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/10/17/anthropic-says-its-workforce-has-become-less-junior-and-is-spending-more-time-in-meetings/",
+      "published": "2026-10-17T20:21:19Z",
+      "category": "Signals",
+      "importance": "Medium",
+      "score": 46,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. The composition of Anthropic’s workforce and the type of work getting done have changed significantly in the past year.",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "Meta removes language that raised scraping and AI training concerns",
+      "source": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/10/17/meta-removes-language-that-raised-scraping-and-ai-training-concerns/",
+      "published": "2026-10-17T21:31:32Z",
+      "category": "Products",
+      "importance": "Medium",
+      "score": 43,
+      "summary": "In simple terms, this is about turning AI research into tools people can actually use. A Meta spokesperson insisted that the updated terms did not reflect a change in the way Meta crawls the web.",
+      "why_it_matters": "Worth testing because it could reduce manual work or create a new workflow for non-technical users.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "Why AI Isn’t Ready to Tackle Our Convoluted Genomes",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/why-ai-isnt-ready-to-tackle-our-convoluted-genomes/",
+      "published": "2026-10-17T09:00:00Z",
+      "category": "Models",
+      "importance": "Medium",
+      "score": 43,
+      "summary": "In simple terms, this is about making AI systems more capable or cheaper to run. The DNA inside our cells isn’t just a series of instructions, but something far more dynamic. Like scientists, AI models don't yet have the data to properly decode it.",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "Meta removes language that may have allowed it to scrape news sites",
+      "source": "The Verge AI",
+      "url": "https://www.theverge.com/tech/1013409/meta-removes-language-that-may-have-allowed-it-to-scrape-news-sites",
+      "published": "2026-10-17T15:04:36Z",
+      "category": "Products",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this is about turning AI research into tools people can actually use. After backlash, Meta is updating its terms again to remove language that suggested it could scrape content from sites, including news sites, to train its AI. Specifically, the following language no longer appears on...",
+      "why_it_matters": "Worth testing because it could reduce manual work or create a new workflow for non-technical users.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "Encryption Is Getting Squeezed From All Sides",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/kernel-panic-encryption-is-getting-squeezed-from-all-sides/",
+      "published": "2026-10-17T12:00:00Z",
+      "category": "Signals",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. Canada’s planned surveillance law is the latest grim step in a series of threats to encryption that are spreading around the world.",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "The Best LED Grow Lights for Houseplants This Winter (2026)",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/best-led-grow-lights/",
+      "published": "2026-10-17T11:30:00Z",
+      "category": "Signals",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. Shorter days don’t have to spell trouble for your houseplants. These are the lights we’ve used and loved in our own homes.",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "These 12 Automatic Cat Feeders Were the Best We Tested in 2026",
+      "source": "WIRED",
+      "url": "https://www.wired.com/gallery/best-automatic-cat-feeders/",
+      "published": "2026-10-17T11:02:00Z",
+      "category": "Signals",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. We tested some of the most popular automatic dry- and wet-food pet feeders to see which ones are worth the money.",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "HTC Made Smart Glasses That Are Way More Private",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/htc-wants-its-vive-eagle-smart-glasses-to-be-the-anti-meta/",
+      "published": "2026-10-17T10:30:00Z",
+      "category": "Signals",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. These smart glasses do just about everything Meta glasses can, but they're not tied to a social media platform.",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "Don’t Let a Crypto Inheritance Get Stuck on the Blockchain",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/crypto-inheritance-how-to/",
+      "published": "2026-10-17T10:30:00Z",
+      "category": "Signals",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. Claiming an inheritance of Bitcoin or other cryptocurrency can be like hunting for buried treasure. It doesn’t have to be.",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "Microplastics React With Water, a New Study Says. That’s a Problem for Biology",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/microplastics-react-with-water-new-study-says-thats-a-problem-for-biology/",
+      "published": "2026-10-17T09:00:00Z",
+      "category": "Research",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, researchers are testing a new way to make AI better or safer. Though plastic is usually inert, tiny pieces of it have the potential to react with one of the most pervasive molecules in the environment and in our bodies.",
+      "why_it_matters": "Useful background signal. It may not matter today, but it can shape tools that appear later.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    }
+  ],
+  "categories": [
+    "Models",
+    "Products",
+    "Research",
+    "Signals"
+  ],
+  "source_quality": [
+    {
+      "name": "WIRED",
+      "tier": 3,
+      "feed_items_scanned": 50,
+      "selected_items": 7,
+      "signal_ratio": 0.14,
+      "quality_score": 89,
+      "status": "active"
+    },
+    {
+      "name": "TechCrunch AI",
+      "tier": 3,
+      "feed_items_scanned": 20,
+      "selected_items": 3,
+      "signal_ratio": 0.15,
+      "quality_score": 61,
+      "status": "active"
+    },
+    {
+      "name": "Google DeepMind",
+      "tier": 5,
+      "feed_items_scanned": 0,
+      "selected_items": 0,
+      "signal_ratio": 0,
+      "quality_score": 50,
+      "status": "unavailable"
+    },
+    {
+      "name": "The Verge AI",
+      "tier": 3,
+      "feed_items_scanned": 10,
+      "selected_items": 2,
+      "signal_ratio": 0.2,
+      "quality_score": 44,
+      "status": "active"
+    },
+    {
+      "name": "OpenAI",
+      "tier": 5,
+      "feed_items_scanned": 1299,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 42,
+      "status": "active"
+    },
+    {
+      "name": "MIT Technology Review AI",
+      "tier": 4,
+      "feed_items_scanned": 10,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 40,
+      "status": "active"
+    },
+    {
+      "name": "Hugging Face",
+      "tier": 4,
+      "feed_items_scanned": 880,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 32,
+      "status": "active"
+    },
+    {
+      "name": "VentureBeat AI",
+      "tier": 3,
+      "feed_items_scanned": 0,
+      "selected_items": 0,
+      "signal_ratio": 0,
+      "quality_score": 30,
+      "status": "unavailable"
+    },
+    {
+      "name": "Ars Technica AI",
+      "tier": 3,
+      "feed_items_scanned": 20,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 30,
+      "status": "active"
+    },
+    {
+      "name": "AI News",
+      "tier": 2,
+      "feed_items_scanned": 0,
+      "selected_items": 0,
+      "signal_ratio": 0,
+      "quality_score": 20,
+      "status": "unavailable"
+    },
+    {
+      "name": "Hacker News AI",
+      "tier": 2,
+      "feed_items_scanned": 0,
+      "selected_items": 0,
+      "signal_ratio": 0,
+      "quality_score": 20,
+      "status": "unavailable"
+    },
+    {
+      "name": "arXiv AI",
+      "tier": 2,
+      "feed_items_scanned": 0,
+      "selected_items": 0,
+      "signal_ratio": 0,
+      "quality_score": 20,
+      "status": "unavailable"
+    }
+  ],
+  "weekly_trends": [
+    {
+      "category": "Models",
+      "items": 41,
+      "critical": 4,
+      "average_score": 58.2,
+      "source_count": 8,
+      "plain_english": "Models produced 4 critical signals. This is worth watching closely this week."
+    },
+    {
+      "category": "Products",
+      "items": 47,
+      "critical": 0,
+      "average_score": 46.7,
+      "source_count": 5,
+      "plain_english": "Products is a busy area this week. Expect incremental product or research movement rather than one big headline."
+    },
+    {
+      "category": "Signals",
+      "items": 26,
+      "critical": 0,
+      "average_score": 44.5,
+      "source_count": 5,
+      "plain_english": "Signals is a busy area this week. Expect incremental product or research movement rather than one big headline."
+    },
+    {
+      "category": "Research",
+      "items": 7,
+      "critical": 0,
+      "average_score": 46.6,
+      "source_count": 4,
+      "plain_english": "Research is a busy area this week. Expect incremental product or research movement rather than one big headline."
+    },
+    {
+      "category": "Business",
+      "items": 7,
+      "critical": 0,
+      "average_score": 41.7,
+      "source_count": 3,
+      "plain_english": "Business is a busy area this week. Expect incremental product or research movement rather than one big headline."
+    },
+    {
+      "category": "Policy",
+      "items": 2,
+      "critical": 0,
+      "average_score": 52.0,
+      "source_count": 2,
+      "plain_english": "Policy has a lighter signal this week. Useful context, but not the main priority."
+    }
+  ]
+}

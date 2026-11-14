@@ -1,0 +1,316 @@
+{
+  "metadata": {
+    "name": "AI Yesterday",
+    "generated_at": "2026-10-19T14:26:54.940948Z",
+    "coverage_date": "2026-10-18",
+    "source_count": 12,
+    "feed_items_scanned": 2390,
+    "item_count": 10,
+    "mode": "live",
+    "summary_engine": "openrouter",
+    "openrouter_enabled": true,
+    "openrouter_items_attempted": 4,
+    "openrouter_items_enriched": 1,
+    "openrouter_model": "openrouter/free",
+    "briefing_quality_score": 98.0
+  },
+  "items": [
+    {
+      "title": "Anthropic says it’s committing 5% of its shares to a ‘public benefit fund’",
+      "source": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/10/18/anthropic-says-its-committing-5-of-its-shares-to-a-public-benefit-fund/",
+      "published": "2026-10-18T20:37:40Z",
+      "category": "Signals",
+      "importance": "Medium",
+      "score": 46,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. Anthropic says it’s committing 5% of its shares to a ‘public benefit fund’",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 80
+    },
+    {
+      "title": "Disney agrees to hire the majority of Character.AI’s workforce",
+      "source": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/10/18/disney-agrees-to-hire-the-majority-of-character-ais-workforce/",
+      "published": "2026-10-18T16:30:00Z",
+      "category": "Policy",
+      "importance": "Medium",
+      "score": 46,
+      "summary": "In simple terms, this affects the rules, risks or responsibilities around AI. The filing also says that the “vast majority” of Character.AI employees who were offered jobs at Disney accepted them. However, this is a stalking horse bid, so another company could come forward with a higher offer.",
+      "why_it_matters": "Important for anyone using AI at work because compliance and data handling expectations are changing.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "OnlyFans Creators Are Pissed That Meta Lets Muse Talk Dirty",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/onlyfans-creators-are-pissed-that-meta-lets-muse-talk-dirty/",
+      "published": "2026-10-18T10:30:00Z",
+      "category": "Products",
+      "importance": "Medium",
+      "score": 43,
+      "summary": "Meta’s AI assistant Muse can engage in explicit conversation, prompting OnlyFans creators to protest after their own accounts faced restrictions for similar content The inconsistency highlights a double standard in Meta’s platform policies",
+      "why_it_matters": "It may streamline content moderation for creators, allowing AI to handle dialogue while platforms enforce consistent rules, potentially lowering operational effort",
+      "summary_engine": "openrouter",
+      "summary_model": "openrouter/free",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "A woman was arrested in Philly for blocking a delivery robot",
+      "source": "The Verge AI",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1013541/a-woman-was-arrested-in-philly-for-blocking-a-delivery-robot",
+      "published": "2026-10-18T18:28:10Z",
+      "category": "Signals",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. Carolyn Marvin was arrested and charged with disorderly conduct after blocking the path of an Uber delivery robot and refusing to get out of the way. Marvin told Philadelphia's ABC13 \"I know they're taking the jobs...",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "20 Best Gifts for Men, Manly Men, and Manly Man Men (2026)",
+      "source": "WIRED",
+      "url": "https://www.wired.com/gallery/best-gifts-for-manly-men-2026/",
+      "published": "2026-10-18T11:01:00Z",
+      "category": "Signals",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. When you need something that’s as mannishly masculinized as you can get for the Man™ in your life, we have you covered.",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "Data Centers Have a New PR Plan: Your Kid’s Field Trip",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/data-center-industry-is-trying-to-woo-kids/",
+      "published": "2026-10-18T10:30:00Z",
+      "category": "Signals",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. Amid a wave of backlash, some industry-friendly groups are employing creative and time-tested strategies to woo the youth.",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "Valerion VisionMaster Max 4K Projector Review: Looks Great, Sounds OK",
+      "source": "WIRED",
+      "url": "https://www.wired.com/review/valerion-visionmaster-max-4k-projector/",
+      "published": "2026-10-18T10:00:00Z",
+      "category": "Signals",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. The Valerion VisionMaster Max 4K Projector delivers superb blacks, great brightness, and more adjustment capabilities than many users need.",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "Magnesium May Not Reach Your Brain, Despite Supplement Label Promises",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/magnesium-may-not-reach-your-brain-despite-supplement-label-promises/",
+      "published": "2026-10-18T09:00:00Z",
+      "category": "Business",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, money and strategy are moving toward this part of AI. Some of the many variants sold today promise to penetrate our gray matter, but biology isn’t in the habit of respecting marketing declarations.",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "Climate Change Has It In for the World’s Best Surfing",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/climate-change-has-it-in-for-the-worlds-best-surfing/",
+      "published": "2026-10-18T09:00:00Z",
+      "category": "Signals",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. As coastlines change, so do surf breaks. That may spell the end for premier waves and the tourist economies that depend on them.",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "The Best AirPods Cases We’ve Used In Our Day-to-Day Lives (2026)",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/best-airpods-case/",
+      "published": "2026-10-18T09:00:00Z",
+      "category": "Products",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this is about turning AI research into tools people can actually use. These accessories add personality to your Apple headphones case, make them easy to find, and offer some protection, too.",
+      "why_it_matters": "Worth testing because it could reduce manual work or create a new workflow for non-technical users.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    }
+  ],
+  "categories": [
+    "Business",
+    "Policy",
+    "Products",
+    "Signals"
+  ],
+  "source_quality": [
+    {
+      "name": "WIRED",
+      "tier": 3,
+      "feed_items_scanned": 50,
+      "selected_items": 7,
+      "signal_ratio": 0.14,
+      "quality_score": 89,
+      "status": "active"
+    },
+    {
+      "name": "Google DeepMind",
+      "tier": 5,
+      "feed_items_scanned": 100,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 50,
+      "status": "active"
+    },
+    {
+      "name": "TechCrunch AI",
+      "tier": 3,
+      "feed_items_scanned": 20,
+      "selected_items": 2,
+      "signal_ratio": 0.1,
+      "quality_score": 44,
+      "status": "active"
+    },
+    {
+      "name": "OpenAI",
+      "tier": 5,
+      "feed_items_scanned": 1299,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 42,
+      "status": "active"
+    },
+    {
+      "name": "MIT Technology Review AI",
+      "tier": 4,
+      "feed_items_scanned": 10,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 40,
+      "status": "active"
+    },
+    {
+      "name": "The Verge AI",
+      "tier": 3,
+      "feed_items_scanned": 10,
+      "selected_items": 1,
+      "signal_ratio": 0.1,
+      "quality_score": 37,
+      "status": "active"
+    },
+    {
+      "name": "Hugging Face",
+      "tier": 4,
+      "feed_items_scanned": 881,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 32,
+      "status": "active"
+    },
+    {
+      "name": "VentureBeat AI",
+      "tier": 3,
+      "feed_items_scanned": 0,
+      "selected_items": 0,
+      "signal_ratio": 0,
+      "quality_score": 30,
+      "status": "unavailable"
+    },
+    {
+      "name": "Ars Technica AI",
+      "tier": 3,
+      "feed_items_scanned": 20,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 30,
+      "status": "active"
+    },
+    {
+      "name": "AI News",
+      "tier": 2,
+      "feed_items_scanned": 0,
+      "selected_items": 0,
+      "signal_ratio": 0,
+      "quality_score": 20,
+      "status": "unavailable"
+    },
+    {
+      "name": "Hacker News AI",
+      "tier": 2,
+      "feed_items_scanned": 0,
+      "selected_items": 0,
+      "signal_ratio": 0,
+      "quality_score": 20,
+      "status": "unavailable"
+    },
+    {
+      "name": "arXiv AI",
+      "tier": 2,
+      "feed_items_scanned": 0,
+      "selected_items": 0,
+      "signal_ratio": 0,
+      "quality_score": 20,
+      "status": "unavailable"
+    }
+  ],
+  "weekly_trends": [
+    {
+      "category": "Models",
+      "items": 37,
+      "critical": 4,
+      "average_score": 58.2,
+      "source_count": 8,
+      "plain_english": "Models produced 4 critical signals. This is worth watching closely this week."
+    },
+    {
+      "category": "Products",
+      "items": 39,
+      "critical": 0,
+      "average_score": 47.9,
+      "source_count": 5,
+      "plain_english": "Products is a busy area this week. Expect incremental product or research movement rather than one big headline."
+    },
+    {
+      "category": "Signals",
+      "items": 26,
+      "critical": 0,
+      "average_score": 44.5,
+      "source_count": 5,
+      "plain_english": "Signals is a busy area this week. Expect incremental product or research movement rather than one big headline."
+    },
+    {
+      "category": "Research",
+      "items": 7,
+      "critical": 0,
+      "average_score": 46.6,
+      "source_count": 4,
+      "plain_english": "Research is a busy area this week. Expect incremental product or research movement rather than one big headline."
+    },
+    {
+      "category": "Business",
+      "items": 7,
+      "critical": 0,
+      "average_score": 41.1,
+      "source_count": 3,
+      "plain_english": "Business is a busy area this week. Expect incremental product or research movement rather than one big headline."
+    },
+    {
+      "category": "Policy",
+      "items": 2,
+      "critical": 0,
+      "average_score": 47.0,
+      "source_count": 2,
+      "plain_english": "Policy has a lighter signal this week. Useful context, but not the main priority."
+    }
+  ]
+}

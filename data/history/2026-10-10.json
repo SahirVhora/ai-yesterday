@@ -1,0 +1,446 @@
+{
+  "metadata": {
+    "name": "AI Yesterday",
+    "generated_at": "2026-10-11T13:51:18.747088Z",
+    "coverage_date": "2026-10-10",
+    "source_count": 12,
+    "feed_items_scanned": 2373,
+    "item_count": 20,
+    "mode": "live",
+    "summary_engine": "rules",
+    "openrouter_enabled": true,
+    "openrouter_items_attempted": 4,
+    "openrouter_items_enriched": 0,
+    "openrouter_model": "openrouter/free",
+    "briefing_quality_score": 95.2
+  },
+  "items": [
+    {
+      "title": "Anthropic is cutting off its internal evaluations from the internet",
+      "source": "The Verge AI",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1009286/anthropic-is-cutting-off-its-internal-evaluations-from-the-internet",
+      "published": "2026-10-10T14:41:16Z",
+      "category": "Models",
+      "importance": "Medium",
+      "score": 60,
+      "summary": "In simple terms, this is about making AI systems more capable or cheaper to run. After a recent spate of high-profile incidents in which AI agents escaped containment, Anthropic is cutting off internet access for all internal evaluations. In a report Friday, the company detailed \"unintended model...",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 80
+    },
+    {
+      "title": "Satya Nadella says we should assume all AI models are ‘compromised’",
+      "source": "The Verge AI",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1009337/satya-nadella-says-we-should-assume-all-ai-models-are-compromised",
+      "published": "2026-10-10T22:10:17Z",
+      "category": "Models",
+      "importance": "Medium",
+      "score": 53,
+      "summary": "In simple terms, this is about making AI systems more capable or cheaper to run. In a lengthy post on X, Microsoft's CEO laid out his views on the dangers posed by highly advanced AI models and how to confront those risks. Nadella says we can no longer accept a world where AI is treated as a \"set...",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 85
+    },
+    {
+      "title": "Microsoft’s Satya Nadella says AI models need an ‘emergency brake’",
+      "source": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/10/10/microsofts-satya-nadella-says-ai-models-need-an-emergency-brake/",
+      "published": "2026-10-10T21:47:51Z",
+      "category": "Models",
+      "importance": "Medium",
+      "score": 53,
+      "summary": "In simple terms, this is about making AI systems more capable or cheaper to run. In a Saturday morning post, Microsoft's CEO wrote that it’s time “to step back and assess the trust architecture” of AI.",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "AI agent makers are promising privacy - will they deliver?",
+      "source": "The Verge AI",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1009051/privacy-ai-agent-promises-openai-meta-muse-dots",
+      "published": "2026-10-10T13:00:00Z",
+      "category": "Products",
+      "importance": "Medium",
+      "score": 53,
+      "summary": "In simple terms, this is about turning AI research into tools people can actually use. At this year's OpenAI DevDay, CEO Sam Altman unveiled the company's new AI agent Dots - and told the crowd that the company wants to \"set a new standard for privacy in frontier AI.\" OpenAI would spend the day taking...",
+      "why_it_matters": "Worth testing because it could reduce manual work or create a new workflow for non-technical users.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "Anthropic can’t reliably control its AI agents. It’s cutting off its internal evals from the live internet instead",
+      "source": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/10/09/anthropic-cant-reliably-control-its-ai-agents-its-cutting-off-its-internal-evals-from-the-live-internet-instead/",
+      "published": "2026-10-10T00:18:32Z",
+      "category": "Products",
+      "importance": "Medium",
+      "score": 53,
+      "summary": "In simple terms, this is about turning AI research into tools people can actually use. Anthropic said it \"turned off live internet access\" for \"all our internal evaluations\" until further notice.",
+      "why_it_matters": "Worth testing because it could reduce manual work or create a new workflow for non-technical users.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "DistroKid has been quietly taking down songs in response to UMG lawsuit",
+      "source": "The Verge AI",
+      "url": "https://www.theverge.com/entertainment/1009309/distrokid-take-down-songs-umg-lawsuit",
+      "published": "2026-10-10T18:52:07Z",
+      "category": "Policy",
+      "importance": "Medium",
+      "score": 43,
+      "summary": "In simple terms, this affects the rules, risks or responsibilities around AI. Artists are taking to social media to complain that DistroKid has unceremoniously removed their work without notice. Now DistroKid has confirmed to The Verge that the takedowns are a direct response to claims made by...",
+      "why_it_matters": "Important for anyone using AI at work because compliance and data handling expectations are changing.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "Here are the top AI agents that can live in your text messages",
+      "source": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/10/10/all-the-ai-agents-that-can-live-in-your-text-messages/",
+      "published": "2026-10-10T14:00:00Z",
+      "category": "Products",
+      "importance": "Medium",
+      "score": 43,
+      "summary": "In simple terms, this is about turning AI research into tools people can actually use. We created a list of the most notable AI agents that can live in your text messages, from general assistants to agents designed for families, travel, and work.",
+      "why_it_matters": "Worth testing because it could reduce manual work or create a new workflow for non-technical users.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 80
+    },
+    {
+      "title": "Altra Running Promo Codes: 10% Off October 2026",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/altra-promo-code/",
+      "published": "2026-10-10T05:00:00Z",
+      "category": "Models",
+      "importance": "Medium",
+      "score": 43,
+      "summary": "In simple terms, this is about making AI systems more capable or cheaper to run. Score big savings on Altra Running shoes with up to 50% off sale styles, 20% off select models, 10% off your first order when you sign up, plus free standard delivery on every purchase.",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "Apple discloses deal to hire team and license tech from personalized podcast startup Huxe",
+      "source": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/10/10/apple-discloses-deal-to-hire-team-and-license-tech-from-personalized-podcast-startup-huxe/",
+      "published": "2026-10-10T19:50:00Z",
+      "category": "Products",
+      "importance": "Low",
+      "score": 40,
+      "summary": "In simple terms, this is about turning AI research into tools people can actually use. Apple discloses deal to hire team and license tech from personalized podcast startup Huxe",
+      "why_it_matters": "Worth testing because it could reduce manual work or create a new workflow for non-technical users.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 80
+    },
+    {
+      "title": "3 days to TechCrunch Disrupt 2026: Meet the startups before they hit mainstream",
+      "source": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/10/10/3-days-to-disrupt-2026-meet-the-startups-before-they-hit-mainstream/",
+      "published": "2026-10-10T15:00:00Z",
+      "category": "Business",
+      "importance": "Low",
+      "score": 40,
+      "summary": "In simple terms, money and strategy are moving toward this part of AI. TechCrunch Disrupt 2026 takes place October 13-15 in San Francisco. Over 300 startups will show what they’ve built to 10,000 tech leaders. Plus, 250+ speakers are ready to share insights across 200+ sessions....",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "How This Tiny Startup Built the World’s Safest Bike Helmet",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/how-this-tiny-startup-pikio-built-the-worlds-safest-bike-helmet/",
+      "published": "2026-10-10T09:00:00Z",
+      "category": "Products",
+      "importance": "Low",
+      "score": 40,
+      "summary": "In simple terms, this is about turning AI research into tools people can actually use. Inspired by head-banging woodpeckers, Vancouver-based Pikio Labs has discovered a new approach to skull protection.",
+      "why_it_matters": "Worth testing because it could reduce manual work or create a new workflow for non-technical users.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "Home Depot Promo Codes: 30% Off in October 2026",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/home-depot-promo-code/",
+      "published": "2026-10-10T05:00:00Z",
+      "category": "Products",
+      "importance": "Low",
+      "score": 40,
+      "summary": "In simple terms, this is about turning AI research into tools people can actually use. Save up to 50% today with the latest Home Depot promo codes for appliances, power tools, and more this October.",
+      "why_it_matters": "Worth testing because it could reduce manual work or create a new workflow for non-technical users.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 80
+    },
+    {
+      "title": "AI Is Getting Really Good at Messing With Cybercriminals",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/ai-is-getting-really-good-at-messing-with-cybercriminals/",
+      "published": "2026-10-10T12:00:00Z",
+      "category": "Signals",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. Anti-cybercrime initiatives are increasingly using AI to scam the scammers by tricking them into talking to lifelike bots that they think are real victims.",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "Best Lego Gifts for Brick Builders (2026): Smart Bricks, Video Games, and More",
+      "source": "WIRED",
+      "url": "https://www.wired.com/gallery/gifts-for-lego-lovers/",
+      "published": "2026-10-10T11:30:00Z",
+      "category": "Signals",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. There's more to Lego than just another basic set. We tested tons of Lego-themed gifts to find the perfect ones for the brick builder in your life.",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "The Best Smart Scales for Tracking Weight and Body Composition (2026)",
+      "source": "WIRED",
+      "url": "https://www.wired.com/gallery/best-smart-scales/",
+      "published": "2026-10-10T11:04:00Z",
+      "category": "Signals",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. Whether you want a weight log on your phone or a bathroom gadget packed with sensors, I’ve found an option for you.",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "Humans Watched This Supernova Explode Nearly a Millennium Ago. Now You Can See It in High Definition",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/humans-watched-this-supernova-explode-nearly-a-millennium-ago-now-you-can-see-it-in-high-definition/",
+      "published": "2026-10-10T09:30:00Z",
+      "category": "Signals",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. The new image isn’t just stunning-it may also provide clues about how this star survived its own explosion.",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "LG Promo Codes and Coupons for October 2026",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/lg-promo-code/",
+      "published": "2026-10-10T05:00:00Z",
+      "category": "Products",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this is about turning AI research into tools people can actually use. Save 20% with an LG promo code today, plus up to $1,000 off appliances, 40% off bestselling TVs and monitors.",
+      "why_it_matters": "Worth testing because it could reduce manual work or create a new workflow for non-technical users.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "30% Off Canon Promo Codes | October 2026",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/canon-promo-code/",
+      "published": "2026-10-10T05:00:00Z",
+      "category": "Signals",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. Save an extra 10% or 30% with Canon coupon codes, plus up to $1,600 on cameras, printers, and more this October 2026.",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "Disney Plus Discount Codes: 52% Off October 2026",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/disney-plus-discounts/",
+      "published": "2026-10-10T05:00:00Z",
+      "category": "Business",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, money and strategy are moving toward this part of AI. Cut your subscription costs with the latest active Disney+ bundle deals, verified student offers, and partner promotions.",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "eBay Coupons: 20% Off in October 2026",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/ebay-coupon-code/",
+      "published": "2026-10-10T05:00:00Z",
+      "category": "Signals",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. Save up to 60% on a selection of items at eBay, including electronics, home products, card games, car parts and more.",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    }
+  ],
+  "categories": [
+    "Business",
+    "Models",
+    "Policy",
+    "Products",
+    "Signals"
+  ],
+  "source_quality": [
+    {
+      "name": "WIRED",
+      "tier": 3,
+      "feed_items_scanned": 50,
+      "selected_items": 11,
+      "signal_ratio": 0.22,
+      "quality_score": 100,
+      "status": "active"
+    },
+    {
+      "name": "TechCrunch AI",
+      "tier": 3,
+      "feed_items_scanned": 20,
+      "selected_items": 5,
+      "signal_ratio": 0.25,
+      "quality_score": 75,
+      "status": "active"
+    },
+    {
+      "name": "The Verge AI",
+      "tier": 3,
+      "feed_items_scanned": 10,
+      "selected_items": 4,
+      "signal_ratio": 0.4,
+      "quality_score": 68,
+      "status": "active"
+    },
+    {
+      "name": "Google DeepMind",
+      "tier": 5,
+      "feed_items_scanned": 100,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 50,
+      "status": "active"
+    },
+    {
+      "name": "OpenAI",
+      "tier": 5,
+      "feed_items_scanned": 1287,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 42,
+      "status": "active"
+    },
+    {
+      "name": "MIT Technology Review AI",
+      "tier": 4,
+      "feed_items_scanned": 10,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 40,
+      "status": "active"
+    },
+    {
+      "name": "Hugging Face",
+      "tier": 4,
+      "feed_items_scanned": 876,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 32,
+      "status": "active"
+    },
+    {
+      "name": "VentureBeat AI",
+      "tier": 3,
+      "feed_items_scanned": 0,
+      "selected_items": 0,
+      "signal_ratio": 0,
+      "quality_score": 30,
+      "status": "unavailable"
+    },
+    {
+      "name": "Ars Technica AI",
+      "tier": 3,
+      "feed_items_scanned": 20,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 30,
+      "status": "active"
+    },
+    {
+      "name": "AI News",
+      "tier": 2,
+      "feed_items_scanned": 0,
+      "selected_items": 0,
+      "signal_ratio": 0,
+      "quality_score": 20,
+      "status": "unavailable"
+    },
+    {
+      "name": "Hacker News AI",
+      "tier": 2,
+      "feed_items_scanned": 0,
+      "selected_items": 0,
+      "signal_ratio": 0,
+      "quality_score": 20,
+      "status": "unavailable"
+    },
+    {
+      "name": "arXiv AI",
+      "tier": 2,
+      "feed_items_scanned": 0,
+      "selected_items": 0,
+      "signal_ratio": 0,
+      "quality_score": 20,
+      "status": "unavailable"
+    }
+  ],
+  "weekly_trends": [
+    {
+      "category": "Models",
+      "items": 57,
+      "critical": 2,
+      "average_score": 56.5,
+      "source_count": 8,
+      "plain_english": "Models produced 2 critical signals. This is worth watching closely this week."
+    },
+    {
+      "category": "Products",
+      "items": 42,
+      "critical": 0,
+      "average_score": 48.4,
+      "source_count": 6,
+      "plain_english": "Products is a busy area this week. Expect incremental product or research movement rather than one big headline."
+    },
+    {
+      "category": "Signals",
+      "items": 19,
+      "critical": 0,
+      "average_score": 45.7,
+      "source_count": 5,
+      "plain_english": "Signals is a busy area this week. Expect incremental product or research movement rather than one big headline."
+    },
+    {
+      "category": "Research",
+      "items": 10,
+      "critical": 0,
+      "average_score": 55.9,
+      "source_count": 5,
+      "plain_english": "Research is a busy area this week. Expect incremental product or research movement rather than one big headline."
+    },
+    {
+      "category": "Policy",
+      "items": 6,
+      "critical": 0,
+      "average_score": 49.2,
+      "source_count": 4,
+      "plain_english": "Policy is a busy area this week. Expect incremental product or research movement rather than one big headline."
+    },
+    {
+      "category": "Business",
+      "items": 6,
+      "critical": 0,
+      "average_score": 41.3,
+      "source_count": 2,
+      "plain_english": "Business is a busy area this week. Expect incremental product or research movement rather than one big headline."
+    }
+  ]
+}

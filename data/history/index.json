@@ -1,6 +1,598 @@
 {
   "archives": [
     {
+      "date": "2026-11-12",
+      "file": "data/history/2026-11-12.json",
+      "item_count": 24,
+      "critical_count": 2,
+      "mode": "live",
+      "generated_at": "2026-11-13T15:11:11.462268Z"
+    },
+    {
+      "date": "2026-11-11",
+      "file": "data/history/2026-11-11.json",
+      "item_count": 24,
+      "critical_count": 0,
+      "mode": "live",
+      "generated_at": "2026-11-12T15:50:34.768277Z"
+    },
+    {
+      "date": "2026-11-10",
+      "file": "data/history/2026-11-10.json",
+      "item_count": 24,
+      "critical_count": 3,
+      "mode": "live",
+      "generated_at": "2026-11-11T14:58:13.796974Z"
+    },
+    {
+      "date": "2026-11-09",
+      "file": "data/history/2026-11-09.json",
+      "item_count": 24,
+      "critical_count": 2,
+      "mode": "live",
+      "generated_at": "2026-11-10T15:27:46.699583Z"
+    },
+    {
+      "date": "2026-11-08",
+      "file": "data/history/2026-11-08.json",
+      "item_count": 16,
+      "critical_count": 0,
+      "mode": "live",
+      "generated_at": "2026-11-09T17:16:11.393640Z"
+    },
+    {
+      "date": "2026-11-07",
+      "file": "data/history/2026-11-07.json",
+      "item_count": 19,
+      "critical_count": 0,
+      "mode": "live",
+      "generated_at": "2026-11-08T14:08:35.549002Z"
+    },
+    {
+      "date": "2026-11-06",
+      "file": "data/history/2026-11-06.json",
+      "item_count": 24,
+      "critical_count": 1,
+      "mode": "live",
+      "generated_at": "2026-11-07T13:47:20.170592Z"
+    },
+    {
+      "date": "2026-11-05",
+      "file": "data/history/2026-11-05.json",
+      "item_count": 24,
+      "critical_count": 1,
+      "mode": "live",
+      "generated_at": "2026-11-06T14:51:11.032471Z"
+    },
+    {
+      "date": "2026-11-04",
+      "file": "data/history/2026-11-04.json",
+      "item_count": 24,
+      "critical_count": 0,
+      "mode": "live",
+      "generated_at": "2026-11-05T15:14:37.863393Z"
+    },
+    {
+      "date": "2026-11-03",
+      "file": "data/history/2026-11-03.json",
+      "item_count": 24,
+      "critical_count": 1,
+      "mode": "live",
+      "generated_at": "2026-11-04T15:13:35.095925Z"
+    },
+    {
+      "date": "2026-11-02",
+      "file": "data/history/2026-11-02.json",
+      "item_count": 24,
+      "critical_count": 1,
+      "mode": "live",
+      "generated_at": "2026-11-03T14:54:12.545734Z"
+    },
+    {
+      "date": "2026-11-01",
+      "file": "data/history/2026-11-01.json",
+      "item_count": 16,
+      "critical_count": 0,
+      "mode": "live",
+      "generated_at": "2026-11-02T16:54:03.380834Z"
+    },
+    {
+      "date": "2026-10-31",
+      "file": "data/history/2026-10-31.json",
+      "item_count": 21,
+      "critical_count": 0,
+      "mode": "live",
+      "generated_at": "2026-11-01T14:07:44.074352Z"
+    },
+    {
+      "date": "2026-10-30",
+      "file": "data/history/2026-10-30.json",
+      "item_count": 24,
+      "critical_count": 1,
+      "mode": "live",
+      "generated_at": "2026-10-31T13:26:53.556731Z"
+    },
+    {
+      "date": "2026-10-29",
+      "file": "data/history/2026-10-29.json",
+      "item_count": 24,
+      "critical_count": 1,
+      "mode": "live",
+      "generated_at": "2026-10-30T13:54:24.256113Z"
+    },
+    {
+      "date": "2026-10-28",
+      "file": "data/history/2026-10-28.json",
+      "item_count": 24,
+      "critical_count": 3,
+      "mode": "live",
+      "generated_at": "2026-10-29T13:59:06.269140Z"
+    },
+    {
+      "date": "2026-10-27",
+      "file": "data/history/2026-10-27.json",
+      "item_count": 24,
+      "critical_count": 2,
+      "mode": "live",
+      "generated_at": "2026-10-28T13:53:37.300568Z"
+    },
+    {
+      "date": "2026-10-26",
+      "file": "data/history/2026-10-26.json",
+      "item_count": 24,
+      "critical_count": 1,
+      "mode": "live",
+      "generated_at": "2026-10-27T13:02:49.333666Z"
+    },
+    {
+      "date": "2026-10-25",
+      "file": "data/history/2026-10-25.json",
+      "item_count": 18,
+      "critical_count": 0,
+      "mode": "live",
+      "generated_at": "2026-10-26T14:00:39.380235Z"
+    },
+    {
+      "date": "2026-10-24",
+      "file": "data/history/2026-10-24.json",
+      "item_count": 20,
+      "critical_count": 0,
+      "mode": "live",
+      "generated_at": "2026-10-25T12:24:21.452586Z"
+    },
+    {
+      "date": "2026-10-23",
+      "file": "data/history/2026-10-23.json",
+      "item_count": 24,
+      "critical_count": 1,
+      "mode": "live",
+      "generated_at": "2026-10-24T11:53:32.356851Z"
+    },
+    {
+      "date": "2026-10-22",
+      "file": "data/history/2026-10-22.json",
+      "item_count": 24,
+      "critical_count": 0,
+      "mode": "live",
+      "generated_at": "2026-10-23T12:28:50.516763Z"
+    },
+    {
+      "date": "2026-10-21",
+      "file": "data/history/2026-10-21.json",
+      "item_count": 24,
+      "critical_count": 3,
+      "mode": "live",
+      "generated_at": "2026-10-22T12:50:15.548602Z"
+    },
+    {
+      "date": "2026-10-20",
+      "file": "data/history/2026-10-20.json",
+      "item_count": 24,
+      "critical_count": 0,
+      "mode": "live",
+      "generated_at": "2026-10-21T12:47:10.667662Z"
+    },
+    {
+      "date": "2026-10-19",
+      "file": "data/history/2026-10-19.json",
+      "item_count": 24,
+      "critical_count": 1,
+      "mode": "live",
+      "generated_at": "2026-10-20T12:35:47.288582Z"
+    },
+    {
+      "date": "2026-10-18",
+      "file": "data/history/2026-10-18.json",
+      "item_count": 10,
+      "critical_count": 0,
+      "mode": "live",
+      "generated_at": "2026-10-19T14:26:54.940948Z"
+    },
+    {
+      "date": "2026-10-17",
+      "file": "data/history/2026-10-17.json",
+      "item_count": 12,
+      "critical_count": 0,
+      "mode": "live",
+      "generated_at": "2026-10-18T11:58:22.533520Z"
+    },
+    {
+      "date": "2026-10-16",
+      "file": "data/history/2026-10-16.json",
+      "item_count": 24,
+      "critical_count": 0,
+      "mode": "live",
+      "generated_at": "2026-10-17T11:28:34.753911Z"
+    },
+    {
+      "date": "2026-10-15",
+      "file": "data/history/2026-10-15.json",
+      "item_count": 24,
+      "critical_count": 0,
+      "mode": "live",
+      "generated_at": "2026-10-16T12:10:20.286964Z"
+    },
+    {
+      "date": "2026-10-14",
+      "file": "data/history/2026-10-14.json",
+      "item_count": 24,
+      "critical_count": 3,
+      "mode": "live",
+      "generated_at": "2026-10-15T12:31:09.285637Z"
+    },
+    {
+      "date": "2026-10-13",
+      "file": "data/history/2026-10-13.json",
+      "item_count": 24,
+      "critical_count": 1,
+      "mode": "live",
+      "generated_at": "2026-10-14T12:42:53.918327Z"
+    },
+    {
+      "date": "2026-10-12",
+      "file": "data/history/2026-10-12.json",
+      "item_count": 22,
+      "critical_count": 0,
+      "mode": "live",
+      "generated_at": "2026-10-13T14:52:14.938777Z"
+    },
+    {
+      "date": "2026-10-11",
+      "file": "data/history/2026-10-11.json",
+      "item_count": 12,
+      "critical_count": 0,
+      "mode": "live",
+      "generated_at": "2026-10-12T16:34:56.178226Z"
+    },
+    {
+      "date": "2026-10-10",
+      "file": "data/history/2026-10-10.json",
+      "item_count": 20,
+      "critical_count": 0,
+      "mode": "live",
+      "generated_at": "2026-10-11T13:51:18.747088Z"
+    },
+    {
+      "date": "2026-10-09",
+      "file": "data/history/2026-10-09.json",
+      "item_count": 24,
+      "critical_count": 0,
+      "mode": "live",
+      "generated_at": "2026-10-10T13:23:44.514761Z"
+    },
+    {
+      "date": "2026-10-08",
+      "file": "data/history/2026-10-08.json",
+      "item_count": 24,
+      "critical_count": 0,
+      "mode": "live",
+      "generated_at": "2026-10-09T14:13:25.452930Z"
+    },
+    {
+      "date": "2026-10-07",
+      "file": "data/history/2026-10-07.json",
+      "item_count": 24,
+      "critical_count": 0,
+      "mode": "live",
+      "generated_at": "2026-10-08T14:26:42.898528Z"
+    },
+    {
+      "date": "2026-10-06",
+      "file": "data/history/2026-10-06.json",
+      "item_count": 24,
+      "critical_count": 2,
+      "mode": "live",
+      "generated_at": "2026-10-07T14:18:32.031648Z"
+    },
+    {
+      "date": "2026-10-05",
+      "file": "data/history/2026-10-05.json",
+      "item_count": 24,
+      "critical_count": 0,
+      "mode": "live",
+      "generated_at": "2026-10-06T14:00:54.411578Z"
+    },
+    {
+      "date": "2026-10-04",
+      "file": "data/history/2026-10-04.json",
+      "item_count": 14,
+      "critical_count": 0,
+      "mode": "live",
+      "generated_at": "2026-10-05T15:40:26.629079Z"
+    },
+    {
+      "date": "2026-10-03",
+      "file": "data/history/2026-10-03.json",
+      "item_count": 20,
+      "critical_count": 0,
+      "mode": "live",
+      "generated_at": "2026-10-04T13:04:57.470021Z"
+    },
+    {
+      "date": "2026-10-02",
+      "file": "data/history/2026-10-02.json",
+      "item_count": 24,
+      "critical_count": 0,
+      "mode": "live",
+      "generated_at": "2026-10-03T12:19:40.343450Z"
+    },
+    {
+      "date": "2026-10-01",
+      "file": "data/history/2026-10-01.json",
+      "item_count": 24,
+      "critical_count": 1,
+      "mode": "live",
+      "generated_at": "2026-10-02T13:40:29.337744Z"
+    },
+    {
+      "date": "2026-09-30",
+      "file": "data/history/2026-09-30.json",
+      "item_count": 24,
+      "critical_count": 1,
+      "mode": "live",
+      "generated_at": "2026-10-01T14:18:28.045868Z"
+    },
+    {
+      "date": "2026-09-29",
+      "file": "data/history/2026-09-29.json",
+      "item_count": 24,
+      "critical_count": 2,
+      "mode": "live",
+      "generated_at": "2026-09-30T13:25:44.923474Z"
+    },
+    {
+      "date": "2026-09-28",
+      "file": "data/history/2026-09-28.json",
+      "item_count": 24,
+      "critical_count": 1,
+      "mode": "live",
+      "generated_at": "2026-09-29T13:51:29.798105Z"
+    },
+    {
+      "date": "2026-09-27",
+      "file": "data/history/2026-09-27.json",
+      "item_count": 12,
+      "critical_count": 0,
+      "mode": "live",
+      "generated_at": "2026-09-28T15:06:00.410506Z"
+    },
+    {
+      "date": "2026-09-26",
+      "file": "data/history/2026-09-26.json",
+      "item_count": 15,
+      "critical_count": 0,
+      "mode": "live",
+      "generated_at": "2026-09-27T12:51:40.941411Z"
+    },
+    {
+      "date": "2026-09-25",
+      "file": "data/history/2026-09-25.json",
+      "item_count": 24,
+      "critical_count": 1,
+      "mode": "live",
+      "generated_at": "2026-09-26T12:06:39.387947Z"
+    },
+    {
+      "date": "2026-09-24",
+      "file": "data/history/2026-09-24.json",
+      "item_count": 24,
+      "critical_count": 0,
+      "mode": "live",
+      "generated_at": "2026-09-25T12:37:44.812512Z"
+    },
+    {
+      "date": "2026-09-23",
+      "file": "data/history/2026-09-23.json",
+      "item_count": 24,
+      "critical_count": 2,
+      "mode": "live",
+      "generated_at": "2026-09-24T12:36:42.372418Z"
+    },
+    {
+      "date": "2026-09-22",
+      "file": "data/history/2026-09-22.json",
+      "item_count": 24,
+      "critical_count": 3,
+      "mode": "live",
+      "generated_at": "2026-09-23T12:38:07.354022Z"
+    },
+    {
+      "date": "2026-09-21",
+      "file": "data/history/2026-09-21.json",
+      "item_count": 24,
+      "critical_count": 0,
+      "mode": "live",
+      "generated_at": "2026-09-22T12:27:19.848619Z"
+    },
+    {
+      "date": "2026-09-20",
+      "file": "data/history/2026-09-20.json",
+      "item_count": 21,
+      "critical_count": 0,
+      "mode": "live",
+      "generated_at": "2026-09-21T13:44:56.090310Z"
+    },
+    {
+      "date": "2026-09-19",
+      "file": "data/history/2026-09-19.json",
+      "item_count": 24,
+      "critical_count": 0,
+      "mode": "live",
+      "generated_at": "2026-09-20T12:06:30.417333Z"
+    },
+    {
+      "date": "2026-09-18",
+      "file": "data/history/2026-09-18.json",
+      "item_count": 24,
+      "critical_count": 0,
+      "mode": "live",
+      "generated_at": "2026-09-19T11:50:04.894448Z"
+    },
+    {
+      "date": "2026-09-17",
+      "file": "data/history/2026-09-17.json",
+      "item_count": 24,
+      "critical_count": 1,
+      "mode": "live",
+      "generated_at": "2026-09-18T12:07:32.953232Z"
+    },
+    {
+      "date": "2026-09-16",
+      "file": "data/history/2026-09-16.json",
+      "item_count": 24,
+      "critical_count": 3,
+      "mode": "live",
+      "generated_at": "2026-09-17T12:28:44.099819Z"
+    },
+    {
+      "date": "2026-09-15",
+      "file": "data/history/2026-09-15.json",
+      "item_count": 24,
+      "critical_count": 1,
+      "mode": "live",
+      "generated_at": "2026-09-16T12:29:04.539027Z"
+    },
+    {
+      "date": "2026-09-14",
+      "file": "data/history/2026-09-14.json",
+      "item_count": 24,
+      "critical_count": 2,
+      "mode": "live",
+      "generated_at": "2026-09-15T12:31:12.830078Z"
+    },
+    {
+      "date": "2026-09-13",
+      "file": "data/history/2026-09-13.json",
+      "item_count": 14,
+      "critical_count": 0,
+      "mode": "live",
+      "generated_at": "2026-09-14T13:45:10.990462Z"
+    },
+    {
+      "date": "2026-09-12",
+      "file": "data/history/2026-09-12.json",
+      "item_count": 14,
+      "critical_count": 0,
+      "mode": "live",
+      "generated_at": "2026-09-13T12:36:38.000697Z"
+    },
+    {
+      "date": "2026-09-11",
+      "file": "data/history/2026-09-11.json",
+      "item_count": 24,
+      "critical_count": 0,
+      "mode": "live",
+      "generated_at": "2026-09-12T11:31:30.591406Z"
+    },
+    {
+      "date": "2026-09-10",
+      "file": "data/history/2026-09-10.json",
+      "item_count": 24,
+      "critical_count": 0,
+      "mode": "live",
+      "generated_at": "2026-09-11T12:05:14.243271Z"
+    },
+    {
+      "date": "2026-09-09",
+      "file": "data/history/2026-09-09.json",
+      "item_count": 24,
+      "critical_count": 1,
+      "mode": "live",
+      "generated_at": "2026-09-10T12:06:38.035011Z"
+    },
+    {
+      "date": "2026-09-08",
+      "file": "data/history/2026-09-08.json",
+      "item_count": 24,
+      "critical_count": 2,
+      "mode": "live",
+      "generated_at": "2026-09-09T12:12:48.607905Z"
+    },
+    {
+      "date": "2026-09-07",
+      "file": "data/history/2026-09-07.json",
+      "item_count": 15,
+      "critical_count": 0,
+      "mode": "live",
+      "generated_at": "2026-09-08T12:01:31.636490Z"
+    },
+    {
+      "date": "2026-09-06",
+      "file": "data/history/2026-09-06.json",
+      "item_count": 12,
+      "critical_count": 1,
+      "mode": "live",
+      "generated_at": "2026-09-07T13:21:39.698531Z"
+    },
+    {
+      "date": "2026-09-05",
+      "file": "data/history/2026-09-05.json",
+      "item_count": 10,
+      "critical_count": 0,
+      "mode": "live",
+      "generated_at": "2026-09-06T11:33:53.361946Z"
+    },
+    {
+      "date": "2026-09-04",
+      "file": "data/history/2026-09-04.json",
+      "item_count": 24,
+      "critical_count": 0,
+      "mode": "live",
+      "generated_at": "2026-09-05T11:10:36.854553Z"
+    },
+    {
+      "date": "2026-09-03",
+      "file": "data/history/2026-09-03.json",
+      "item_count": 24,
+      "critical_count": 1,
+      "mode": "live",
+      "generated_at": "2026-09-04T12:01:13.734011Z"
+    },
+    {
+      "date": "2026-09-02",
+      "file": "data/history/2026-09-02.json",
+      "item_count": 24,
+      "critical_count": 1,
+      "mode": "live",
+      "generated_at": "2026-09-03T11:59:33.653006Z"
+    },
+    {
+      "date": "2026-09-01",
+      "file": "data/history/2026-09-01.json",
+      "item_count": 24,
+      "critical_count": 2,
+      "mode": "live",
+      "generated_at": "2026-09-02T11:59:49.356281Z"
+    },
+    {
+      "date": "2026-08-31",
+      "file": "data/history/2026-08-31.json",
+      "item_count": 24,
+      "critical_count": 1,
+      "mode": "live",
+      "generated_at": "2026-09-01T12:25:58.666230Z"
+    },
+    {
       "date": "2026-08-30",
       "file": "data/history/2026-08-30.json",
       "item_count": 10,

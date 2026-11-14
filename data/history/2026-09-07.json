@@ -1,0 +1,381 @@
+{
+  "metadata": {
+    "name": "AI Yesterday",
+    "generated_at": "2026-09-08T12:01:31.636490Z",
+    "coverage_date": "2026-09-07",
+    "source_count": 12,
+    "feed_items_scanned": 2254,
+    "item_count": 15,
+    "mode": "live",
+    "summary_engine": "openrouter",
+    "openrouter_enabled": true,
+    "openrouter_items_attempted": 4,
+    "openrouter_items_enriched": 1,
+    "openrouter_model": "openrouter/free",
+    "briefing_quality_score": 96.0
+  },
+  "items": [
+    {
+      "title": "Supporting independent journalism in Ukraine",
+      "source": "OpenAI",
+      "url": "https://openai.com/index/supporting-independent-journalism-in-ukraine",
+      "published": "2026-09-07T00:00:00Z",
+      "category": "Products",
+      "importance": "High",
+      "score": 70,
+      "summary": "OpenAI, AIRPPU and WAN‑IFRA have launched an AI programme to help Ukrainian news organisations strengthen innovation, resilience and independent journalism by providing practical tools and support for their ongoing development",
+      "why_it_matters": "It may reduce manual workload and give non‑technical journalists access to AI‑driven workflows, helping sustain independent news outlets",
+      "summary_engine": "openrouter",
+      "summary_model": "openrouter/free",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "Home Depot Labor Day Sale (2026): BOGO on Best Grills and Tools",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/home-depot-labor-day-sale-deals-2026/",
+      "published": "2026-09-07T16:35:52Z",
+      "category": "Products",
+      "importance": "Low",
+      "score": 40,
+      "summary": "In simple terms, this is about turning AI research into tools people can actually use. The Home Depot Labor Day sale goes hard on grills and tools. Here are our recommendations on what to buy-and what to ignore.",
+      "why_it_matters": "Worth testing because it could reduce manual work or create a new workflow for non-technical users.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "MG Ship adds AI route optimisation as logistics returns accelerate",
+      "source": "AI News",
+      "url": "https://www.artificialintelligence-news.com/news/mg-ship-ai-route-optimisation-logistics-returns-accelerate/",
+      "published": "2026-09-07T13:01:23Z",
+      "category": "Products",
+      "importance": "Low",
+      "score": 38,
+      "summary": "In simple terms, this is about turning AI research into tools people can actually use. MG Ship has introduced an AI route optimisation and carrier selection module as logistics deployments demonstrate rapid cost and time returns. The technical module targets global retailers and commercial shippers,...",
+      "why_it_matters": "Worth testing because it could reduce manual work or create a new workflow for non-technical users.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "Le Creuset x Star Trek Collection: Prices, Availability, Release Date",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/to-boldly-dough-le-creuset-sent-its-new-star-trek-cooking-collection-into-space/",
+      "published": "2026-09-07T23:00:00Z",
+      "category": "Business",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, money and strategy are moving toward this part of AI. Vulcan oven mitts, spaceship baking dishes, and an out-of-this-world communicator grater-you'll need warp speed to Klingon to this limited edition kitchen kit, ideal for perfecting the broth of Khan.",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "Opaque recurrence, and other AI terms that you should probably know",
+      "source": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/09/07/artificial-intelligence-definition-glossary-hallucinations-guide-to-common-ai-terms/",
+      "published": "2026-09-07T19:24:00Z",
+      "category": "Signals",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. The rise of AI has brought an avalanche of new terms and slang. Here is a glossary with definitions of some of the most important words and phrases you might encounter.",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "Best Tech Labor Day Sales I’d Shop Myself (2026): Vacuums, Headphones, and More",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/tech-labor-day-sales-2026/",
+      "published": "2026-09-07T16:33:37Z",
+      "category": "Signals",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. From cordless vacuums to the best wireless earbuds we’ve tested, some of our favorite tech is on sale for Labor Day this year.",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "The 57 Best Deals From the REI Labor Day Sale",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/rei-labor-day-sale-2026/",
+      "published": "2026-09-07T13:33:30Z",
+      "category": "Business",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, money and strategy are moving toward this part of AI. Labor Day already? Say it ain’t so. Today is the last day to shop the best deals on WIRED-tested outdoor gear from REI, Nemo, MSR, Coleman, and more during REI’s Labor Day sale.",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 80
+    },
+    {
+      "title": "Two of the Universe's Great Mysteries May Have Their Own Dimension",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/dark-energy-matter-may-have-own-dimension/",
+      "published": "2026-09-07T12:00:00Z",
+      "category": "Policy",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this affects the rules, risks or responsibilities around AI. Dark energy might be getting weaker. Scientists are wondering if interactions with dark matter in a “dark dimension” may be responsible.",
+      "why_it_matters": "Important for anyone using AI at work because compliance and data handling expectations are changing.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "Astronomers Have Completed the Largest Map of Space. Yes, You Can Play With It.",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/astronomers-complete-largest-map-of-space-yes-you-can-play-with-it/",
+      "published": "2026-09-07T11:30:00Z",
+      "category": "Products",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this is about turning AI research into tools people can actually use. The intricate, 5.6 trillion-pixel map covers approximately 75 percent of the sky and includes about 4 billion celestial objects.",
+      "why_it_matters": "Worth testing because it could reduce manual work or create a new workflow for non-technical users.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "Every Samsung Galaxy Phone Comes With This Unique Add-On",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/every-samsung-galaxy-phone-comes-with-this-unique-add-on/",
+      "published": "2026-09-07T11:00:00Z",
+      "category": "Signals",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. Every Samsung Galaxy Phone Comes With This Unique Add-On",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 80
+    },
+    {
+      "title": "Whispering Complaints Into Your Phone May Be the Future of Customer Feedback",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/whispering-complaints-into-your-phone-may-be-the-future-of-customer-feedback/",
+      "published": "2026-09-07T10:30:00Z",
+      "category": "Signals",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. Forget email surveys or long calls spent on hold. Voicebox lets people send customer feedback by recording a voice note on their phone.",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "How to Watch the Apple September Event (2026)",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/how-to-watch-apple-iphone-september-event-2026/",
+      "published": "2026-09-07T10:15:00Z",
+      "category": "Products",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this is about turning AI research into tools people can actually use. Apple’s annual hardware launch event may feel different as the company welcomes a new CEO alongside a folding iPhone.",
+      "why_it_matters": "Worth testing because it could reduce manual work or create a new workflow for non-technical users.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "What’s the Best Kindle of 2026 (So Far)?",
+      "source": "WIRED",
+      "url": "https://www.wired.com/gallery/best-kindle/",
+      "published": "2026-09-07T10:04:00Z",
+      "category": "Signals",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. What’s the Best Kindle of 2026 (So Far)?",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 80
+    },
+    {
+      "title": "The Best Labor Day Mattress Deals on Beds We’ve Tried in Our Homes",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/labor-day-mattress-deals-9-7-2026/",
+      "published": "2026-09-07T09:36:00Z",
+      "category": "Business",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, money and strategy are moving toward this part of AI. It’s one of the best times of the year to buy a mattress, and our top tested picks are on sale.",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "Plastics Companies Are Writing Lesson Plans. What Could Go Wrong?",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/plastics-companies-writing-lesson-plans-what-could-go-wrong/",
+      "published": "2026-09-07T09:00:00Z",
+      "category": "Signals",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. The science curriculum the industry is offering to schools casts plastics as safe, recyclable, and a source of good jobs. Critics say it’s propaganda.",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    }
+  ],
+  "categories": [
+    "Business",
+    "Policy",
+    "Products",
+    "Signals"
+  ],
+  "source_quality": [
+    {
+      "name": "WIRED",
+      "tier": 3,
+      "feed_items_scanned": 50,
+      "selected_items": 12,
+      "signal_ratio": 0.24,
+      "quality_score": 100,
+      "status": "active"
+    },
+    {
+      "name": "Google DeepMind",
+      "tier": 5,
+      "feed_items_scanned": 100,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 50,
+      "status": "active"
+    },
+    {
+      "name": "OpenAI",
+      "tier": 5,
+      "feed_items_scanned": 1173,
+      "selected_items": 1,
+      "signal_ratio": 0.001,
+      "quality_score": 49,
+      "status": "active"
+    },
+    {
+      "name": "MIT Technology Review AI",
+      "tier": 4,
+      "feed_items_scanned": 10,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 40,
+      "status": "active"
+    },
+    {
+      "name": "TechCrunch AI",
+      "tier": 3,
+      "feed_items_scanned": 20,
+      "selected_items": 1,
+      "signal_ratio": 0.05,
+      "quality_score": 37,
+      "status": "active"
+    },
+    {
+      "name": "Hugging Face",
+      "tier": 4,
+      "feed_items_scanned": 859,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 32,
+      "status": "active"
+    },
+    {
+      "name": "VentureBeat AI",
+      "tier": 3,
+      "feed_items_scanned": 0,
+      "selected_items": 0,
+      "signal_ratio": 0,
+      "quality_score": 30,
+      "status": "unavailable"
+    },
+    {
+      "name": "The Verge AI",
+      "tier": 3,
+      "feed_items_scanned": 10,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 30,
+      "status": "active"
+    },
+    {
+      "name": "Ars Technica AI",
+      "tier": 3,
+      "feed_items_scanned": 20,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 30,
+      "status": "active"
+    },
+    {
+      "name": "AI News",
+      "tier": 2,
+      "feed_items_scanned": 12,
+      "selected_items": 1,
+      "signal_ratio": 0.083,
+      "quality_score": 27,
+      "status": "active"
+    },
+    {
+      "name": "Hacker News AI",
+      "tier": 2,
+      "feed_items_scanned": 0,
+      "selected_items": 0,
+      "signal_ratio": 0,
+      "quality_score": 20,
+      "status": "unavailable"
+    },
+    {
+      "name": "arXiv AI",
+      "tier": 2,
+      "feed_items_scanned": 0,
+      "selected_items": 0,
+      "signal_ratio": 0,
+      "quality_score": 20,
+      "status": "unavailable"
+    }
+  ],
+  "weekly_trends": [
+    {
+      "category": "Models",
+      "items": 38,
+      "critical": 2,
+      "average_score": 57.3,
+      "source_count": 7,
+      "plain_english": "Models produced 2 critical signals. This is worth watching closely this week."
+    },
+    {
+      "category": "Products",
+      "items": 30,
+      "critical": 1,
+      "average_score": 50.0,
+      "source_count": 8,
+      "plain_english": "Products produced 1 critical signal. This is worth watching closely this week."
+    },
+    {
+      "category": "Signals",
+      "items": 20,
+      "critical": 0,
+      "average_score": 40.7,
+      "source_count": 6,
+      "plain_english": "Signals is a busy area this week. Expect incremental product or research movement rather than one big headline."
+    },
+    {
+      "category": "Business",
+      "items": 11,
+      "critical": 0,
+      "average_score": 43.8,
+      "source_count": 4,
+      "plain_english": "Business is a busy area this week. Expect incremental product or research movement rather than one big headline."
+    },
+    {
+      "category": "Policy",
+      "items": 7,
+      "critical": 0,
+      "average_score": 44.7,
+      "source_count": 3,
+      "plain_english": "Policy is a busy area this week. Expect incremental product or research movement rather than one big headline."
+    },
+    {
+      "category": "Research",
+      "items": 3,
+      "critical": 0,
+      "average_score": 55.3,
+      "source_count": 2,
+      "plain_english": "Research has a lighter signal this week. Useful context, but not the main priority."
+    }
+  ]
+}

@@ -1,0 +1,462 @@
+{
+  "metadata": {
+    "name": "AI Yesterday",
+    "generated_at": "2026-09-21T13:44:56.090310Z",
+    "coverage_date": "2026-09-20",
+    "source_count": 12,
+    "feed_items_scanned": 2529,
+    "item_count": 21,
+    "mode": "live",
+    "summary_engine": "openrouter",
+    "openrouter_enabled": true,
+    "openrouter_items_attempted": 4,
+    "openrouter_items_enriched": 2,
+    "openrouter_model": "openrouter/free",
+    "briefing_quality_score": 95.2
+  },
+  "items": [
+    {
+      "title": "Humans, not rogue AI, are still the biggest cybersecurity risk to energy systems",
+      "source": "The Verge AI",
+      "url": "https://www.theverge.com/science/997834/ai-cyberattack-energy-critical-infrastructure",
+      "published": "2026-09-20T12:00:00Z",
+      "category": "Products",
+      "importance": "Medium",
+      "score": 56,
+      "summary": "In simple terms, this is about turning AI research into tools people can actually use. Before recent high-profile hacks raised the specter of AI possibly \"killing all humans,\" our energy systems were already disturbingly vulnerable to cyberattack - and the risk is growing. \"We were always prey. We were... Current",
+      "why_it_matters": "Worth testing because it could reduce manual work or create a new workflow for non-technical users. We need to produce a concise daily briefing entry for a smart non-technical reader. Use British English, calm analytical tone. No mention.",
+      "summary_engine": "openrouter",
+      "summary_model": "openrouter/free",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "No one is surprised that Nvidia’s Jensen Huang thinks AI fears are overblown",
+      "source": "The Verge AI",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/997936/nvidia-jensen-huang-ai-fears-overblown",
+      "published": "2026-09-20T18:50:18Z",
+      "category": "Research",
+      "importance": "Medium",
+      "score": 53,
+      "summary": "Nvidia chief Jensen Huang told CBS that concerns about AI being dangerous are exaggerated, arguing that the technology’s benefits outweigh the risks despite warnings from long‑time AI researchers.",
+      "why_it_matters": "His view may influence public perception and investment decisions, potentially downplaying safety measures that could affect future AI regulation and product development.",
+      "summary_engine": "openrouter",
+      "summary_model": "openrouter/free",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "What ChatGPT Thinks It Knows About You Is Affecting Its Answers. Here’s How to Change That",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/how-to-use-memory-in-chatgpt/",
+      "published": "2026-09-20T09:30:00Z",
+      "category": "Models",
+      "importance": "Medium",
+      "score": 50,
+      "summary": "In simple terms, this is about making AI systems more capable or cheaper to run. Understanding how ChatGPT’s latest memory upgrade works will help you get even more out of OpenAI’s productivity tool.",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "An undercover Google analyst infiltrated a notorious supply-chain hacking gang",
+      "source": "Ars Technica AI",
+      "url": "https://arstechnica.com/security/2026/09/an-undercover-google-analyst-infiltrated-a-notorious-supply-chain-hacking-gang/",
+      "published": "2026-09-20T11:07:00Z",
+      "category": "Signals",
+      "importance": "Medium",
+      "score": 46,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. Google’s threat intelligence group said it had a mole inside TeamPCP's inner circle.",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "World model companies are keeping a lot of secrets",
+      "source": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/09/20/world-model-companies-are-keeping-a-lot-of-secrets/",
+      "published": "2026-09-20T20:29:07Z",
+      "category": "Models",
+      "importance": "Medium",
+      "score": 43,
+      "summary": "In simple terms, this is about making AI systems more capable or cheaper to run. Everyone in the world-models space is sitting on a pile of cash and a ton of buzz, but good luck getting anyone - from the founders to their own data suppliers - to tell you what they're actually building.",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "ScrollEd wants to turn textbooks into TikTok",
+      "source": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/09/20/scrolled-wants-to-turn-textbooks-into-tiktok/",
+      "published": "2026-09-20T18:00:00Z",
+      "category": "Business",
+      "importance": "Low",
+      "score": 40,
+      "summary": "In simple terms, money and strategy are moving toward this part of AI. ScrollEd turns textbooks into a scrollable, Instagram-like feed with video, audio, and quizzes. The Palo Alto startup, founded by student co-founders (and spouses) Utsav Gupta and Rebecca Neff, pitches at TechCrunch...",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "6 days left to save up to $200 to TechCrunch Disrupt 2026",
+      "source": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/09/20/6-days-left-to-get-ahead-at-techcrunch-disrupt-2026/",
+      "published": "2026-09-20T21:41:08Z",
+      "category": "Signals",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. Current ticket pricing ends in 6 days on Sept. 25 at 11:59 p.m. PT. Join 10,000+ founders, investors and tech leaders at Disrupt and save up to $200 on your ticket until then.",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "Is the AI industry really ready to slow down?",
+      "source": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/09/20/is-the-ai-industry-really-ready-to-slow-down/",
+      "published": "2026-09-20T18:56:04Z",
+      "category": "Signals",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. On Equity, we debated whether AI executives are serious about wanting to slow down.",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "Vocci’s ring adds a new form factor to meeting note-taking",
+      "source": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/09/20/voccis-ring-adds-a-new-form-factor-to-meeting-note-taking/",
+      "published": "2026-09-20T18:32:52Z",
+      "category": "Policy",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this affects the rules, risks or responsibilities around AI. Vocci’s ring adds a new form factor to meeting note-taking",
+      "why_it_matters": "Important for anyone using AI at work because compliance and data handling expectations are changing.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 80
+    },
+    {
+      "title": "Trump now says he wants to form an ‘AI Force’",
+      "source": "The Verge AI",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/997867/trump-ai-force-ai-czar",
+      "published": "2026-09-20T15:39:22Z",
+      "category": "Products",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this is about turning AI research into tools people can actually use. The president posted on Truth Social that he wanted to appoint an \"AI czar\" to lead a new \"AI force.\" He made the announcement amid growing calls from across the political spectrum and even within the industry to...",
+      "why_it_matters": "Worth testing because it could reduce manual work or create a new workflow for non-technical users.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "Thermacell LIV 2.0 Review: Taking My Yard Back",
+      "source": "WIRED",
+      "url": "https://www.wired.com/review/thermacell-liv-smart-mosquito-repellent-system-2/",
+      "published": "2026-09-20T11:07:00Z",
+      "category": "Signals",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. Thermacell LIV 2.0 is expensive and imperfect, but it outperforms nearly every mosquito-control method I’ve tried.",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "Welcome to Dogs Anonymous, the Online Support Group for People With Difficult Dogs",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/inside-dogs-anonymous-the-online-support-group-for-people-with-difficult-dogs/",
+      "published": "2026-09-20T11:00:00Z",
+      "category": "Signals",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. “This is a place where you can come and say, I fucking hate my dog today,” a Dogs Anonymous cofounder tells WIRED. “And there are people who are going to be like, yeah, that was me last Tuesday.”",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "Meta's Muse Is Better at Surveilling Than Helping Me",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/metas-muse-is-better-at-surveilling-than-helping-me/",
+      "published": "2026-09-20T10:30:00Z",
+      "category": "Products",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this is about turning AI research into tools people can actually use. The Muse app continues Meta’s trend of opting users into data collection for AI training. It also nudges you to share your bank account, email, and passport information.",
+      "why_it_matters": "Worth testing because it could reduce manual work or create a new workflow for non-technical users.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "It’s Donald Trump Versus MAGA on Data Centers",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/donald-trump-versus-maga-on-data-centers/",
+      "published": "2026-09-20T10:30:00Z",
+      "category": "Signals",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. The president has doubled down on data centers and AI. His base is running in the opposite direction.",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "Meet the Academics Trying to Stop You From Having Sex in Robotaxis",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/meet-the-academics-trying-to-stop-you-from-having-sex-in-robotaxis/",
+      "published": "2026-09-20T10:00:00Z",
+      "category": "Signals",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. Meet the Academics Trying to Stop You From Having Sex in Robotaxis",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 80
+    },
+    {
+      "title": "What You Need to Know About the Foreign-Made Router Ban in the US",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/us-government-foreign-made-router-ban-explained/",
+      "published": "2026-09-20T10:00:00Z",
+      "category": "Policy",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this affects the rules, risks or responsibilities around AI. The FCC banned the sale of new consumer-grade Wi-Fi routers and mobile hot spots manufactured outside the US. Here’s what it means for you.",
+      "why_it_matters": "Important for anyone using AI at work because compliance and data handling expectations are changing.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "How to Avoid Scams and Sketchy Products on Amazon (2026)",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/how-shop-safe-amazon/",
+      "published": "2026-09-20T09:38:00Z",
+      "category": "Business",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, money and strategy are moving toward this part of AI. Amazon is a murky mess of ads, unknown sellers, misleading sales, and specious information. Stay safe while shopping on Prime Big Deal Days and beyond with these tips and tricks.",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "Tiny Hairs That Help Corals Breathe May Malfunction in Warming Oceans",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/tiny-hairs-that-help-corals-breathe-may-malfunction-in-warming-oceans/",
+      "published": "2026-09-20T09:00:00Z",
+      "category": "Signals",
+      "importance": "Low",
+      "score": 36,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. Several new studies have uncovered this long overlooked aspect of coral physiology that could be the key to the animals’ fate in a changing climate.",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 100
+    },
+    {
+      "title": "Pirate Face Rescues LLM Models from Deletion",
+      "source": "Hacker News AI",
+      "url": "https://pirateface.co/",
+      "published": "2026-09-20T15:16:07Z",
+      "category": "Models",
+      "importance": "Low",
+      "score": 31,
+      "summary": "In simple terms, this is about making AI systems more capable or cheaper to run. Pirate Face Rescues LLM Models from Deletion",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 80
+    },
+    {
+      "title": "If AI coding is lowering your code quality, you're not managing quality right",
+      "source": "Hacker News AI",
+      "url": "https://www.i-kh.net/p/if-ai-coding-is-lowering-your-code",
+      "published": "2026-09-20T11:37:10Z",
+      "category": "Signals",
+      "importance": "Low",
+      "score": 24,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. If AI coding is lowering your code quality, you're not managing quality right",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 80
+    },
+    {
+      "title": "AI and the Destruction of the Creative Commons",
+      "source": "Hacker News AI",
+      "url": "https://www.chesterwisniewski.com/post/2026-09-13-ai-is-destroying-the-creative-commons/",
+      "published": "2026-09-20T10:07:51Z",
+      "category": "Signals",
+      "importance": "Low",
+      "score": 24,
+      "summary": "In simple terms, this is a useful signal about where AI is heading. AI and the Destruction of the Creative Commons",
+      "why_it_matters": "Good trend signal. Save it if it connects to your work, learning or product ideas.",
+      "summary_engine": "rules",
+      "briefing_quality_score": 80
+    }
+  ],
+  "categories": [
+    "Business",
+    "Models",
+    "Policy",
+    "Products",
+    "Research",
+    "Signals"
+  ],
+  "source_quality": [
+    {
+      "name": "WIRED",
+      "tier": 3,
+      "feed_items_scanned": 50,
+      "selected_items": 9,
+      "signal_ratio": 0.18,
+      "quality_score": 100,
+      "status": "active"
+    },
+    {
+      "name": "TechCrunch AI",
+      "tier": 3,
+      "feed_items_scanned": 20,
+      "selected_items": 5,
+      "signal_ratio": 0.25,
+      "quality_score": 75,
+      "status": "active"
+    },
+    {
+      "name": "The Verge AI",
+      "tier": 3,
+      "feed_items_scanned": 10,
+      "selected_items": 3,
+      "signal_ratio": 0.3,
+      "quality_score": 61,
+      "status": "active"
+    },
+    {
+      "name": "Hacker News AI",
+      "tier": 2,
+      "feed_items_scanned": 20,
+      "selected_items": 3,
+      "signal_ratio": 0.15,
+      "quality_score": 51,
+      "status": "active"
+    },
+    {
+      "name": "Google DeepMind",
+      "tier": 5,
+      "feed_items_scanned": 100,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 50,
+      "status": "active"
+    },
+    {
+      "name": "OpenAI",
+      "tier": 5,
+      "feed_items_scanned": 1211,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 42,
+      "status": "active"
+    },
+    {
+      "name": "MIT Technology Review AI",
+      "tier": 4,
+      "feed_items_scanned": 10,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 40,
+      "status": "active"
+    },
+    {
+      "name": "Ars Technica AI",
+      "tier": 3,
+      "feed_items_scanned": 20,
+      "selected_items": 1,
+      "signal_ratio": 0.05,
+      "quality_score": 37,
+      "status": "active"
+    },
+    {
+      "name": "Hugging Face",
+      "tier": 4,
+      "feed_items_scanned": 862,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 32,
+      "status": "active"
+    },
+    {
+      "name": "VentureBeat AI",
+      "tier": 3,
+      "feed_items_scanned": 0,
+      "selected_items": 0,
+      "signal_ratio": 0,
+      "quality_score": 30,
+      "status": "unavailable"
+    },
+    {
+      "name": "AI News",
+      "tier": 2,
+      "feed_items_scanned": 12,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 20,
+      "status": "active"
+    },
+    {
+      "name": "arXiv AI",
+      "tier": 2,
+      "feed_items_scanned": 214,
+      "selected_items": 0,
+      "signal_ratio": 0.0,
+      "quality_score": 20,
+      "status": "active"
+    }
+  ],
+  "weekly_trends": [
+    {
+      "category": "Policy",
+      "items": 17,
+      "critical": 2,
+      "average_score": 53.4,
+      "source_count": 5,
+      "plain_english": "Policy produced 2 critical signals. This is worth watching closely this week."
+    },
+    {
+      "category": "Models",
+      "items": 37,
+      "critical": 1,
+      "average_score": 54.6,
+      "source_count": 8,
+      "plain_english": "Models produced 1 critical signal. This is worth watching closely this week."
+    },
+    {
+      "category": "Products",
+      "items": 33,
+      "critical": 1,
+      "average_score": 48.5,
+      "source_count": 7,
+      "plain_english": "Products produced 1 critical signal. This is worth watching closely this week."
+    },
+    {
+      "category": "Research",
+      "items": 10,
+      "critical": 1,
+      "average_score": 63.0,
+      "source_count": 4,
+      "plain_english": "Research produced 1 critical signal. This is worth watching closely this week."
+    },
+    {
+      "category": "Signals",
+      "items": 32,
+      "critical": 0,
+      "average_score": 41.1,
+      "source_count": 7,
+      "plain_english": "Signals is a busy area this week. Expect incremental product or research movement rather than one big headline."
+    },
+    {
+      "category": "Business",
+      "items": 12,
+      "critical": 0,
+      "average_score": 38.9,
+      "source_count": 2,
+      "plain_english": "Business is a busy area this week. Expect incremental product or research movement rather than one big headline."
+    }
+  ]
+}
